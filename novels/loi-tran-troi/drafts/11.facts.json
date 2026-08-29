@@ -1,0 +1,71 @@
+{
+  "chapter": 11,
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Bảy, 08:00–11:00",
+      "event": "Nam và kiểm sát viên lấy lời khai chính thức của Đặng Tiến Đạt; công bố Bản Kết luận Giám định Tư pháp số 86; Đạt thừa nhận lỗi lầm năm 2005 và giao nộp thẻ nhớ sao lưu tài liệu mật; Huy báo cáo kết quả truy vết dòng tiền từ pháp nhân Hải Khê dẫn thẳng tới Thao (C19); Viện Công tố ban hành lệnh triệu tập, quyết định cấm xuất cảnh và lệnh giám sát 24/24 đối với Hoàng Đình Thao (C18)."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "role": "Chỉ huy Đội Trọng án (đang chịu kiểm tra)",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "role": "Đối tượng điều tra trọng tâm (P)",
+      "first_seen": 1,
+      "last_seen": 11
+    }
+  ],
+  "relationships": {
+    "Dang_Hoang_Nam": {
+      "Dang_Tien_Dat": "Tiếp nhận toàn bộ lời khai và tài liệu sao lưu bảo mật",
+      "Hoang_Dinh_Thao": "Chuẩn bị thi hành lệnh triệu tập và đấu tranh pháp lý"
+    }
+  },
+  "state_changes": {
+    "Dang_Tien_Dat": "Thừa nhận hoàn toàn sai phạm im lặng năm 2005; bàn giao thẻ nhớ chứng cứ gốc; chấp nhận kỷ luật",
+    "Hoang_Dinh_Thao": "Bị khóa 4 nguồn độc lập; bị áp dụng lệnh triệu tập khẩn cấp, cấm xuất cảnh và giám sát di biến động 24/24 (C18, C19)"
+  },
+  "foreshadow_updates": [
+    {
+      "id": "C18",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 11
+    },
+    {
+      "id": "C19",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 11
+    },
+    {
+      "id": "C07",
+      "status": "resolved",
+      "action": "resolve",
+      "chapter": 11
+    },
+    {
+      "id": "C12",
+      "status": "resolved",
+      "action": "resolve",
+      "chapter": 11
+    }
+  ]
+}

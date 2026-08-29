@@ -1,0 +1,20 @@
+{
+  "goal": "Nam đàm phán giải cứu con tin với Trần Văn Sinh bằng hồ sơ phục hồi vụ án và trao lại chiếc thước mộc gỗ lim di vật; Sinh thức tỉnh lương tri buông vũ khí chấp nhận pháp luật (C21); Nam bóc trần 4 nguồn chứng cứ độc lập khóa chặt Thao; Viện Công tố phê chuẩn Lệnh giữ người trong trường hợp khẩn cấp đối với Hoàng Đình Thao lúc 04:40 sáng Chủ nhật; dẫn giải hai đối tượng về quy án.",
+  "scenes": [
+    "Cảnh 1: 00:30 sáng Chủ nhật tại sảnh Nhà tưởng niệm, Nam đàm phán với Sinh; Nam mở bản sao hồ sơ phục hồi Chuyên án 2005 và trao lại chiếc thước mộc gỗ lim của nghệ nhân Trần Văn Cửu.",
+    "Cảnh 2: Sinh bật khóc nới lỏng sợi cáp thép, buông vũ khí và chấp nhận sự phán xét của pháp luật để bảo vệ danh dự cho người cha (C21).",
+    "Cảnh 3: Nam đối chất bóc trần Hoàng Đình Thao bằng 4 nguồn chứng cứ độc lập (bút tích lệnh xe TN-1479, giám định đáy rương keo nhiệt, dòng tiền Hải Khê, lời khai nhân chứng Đạt/Long).",
+    "Cảnh 4: 04:40 sáng Chủ nhật, Kiểm sát viên cao cấp công bố Lệnh giữ người trong trường hợp khẩn cấp hợp lệ, tra còng số 8 vào tay Hoàng Đình Thao; đoàn xe dẫn giải rời đỉnh Mường Biên trong ánh bình minh."
+  ],
+  "required_beats": [
+    "Nam đàm phán bằng hồ sơ phục hồi vụ án và chiếc thước mộc di vật",
+    "Sinh thức tỉnh lương tri, buông vũ khí hợp tác với pháp luật (C21)",
+    "Khóa Thao bằng 4 nguồn chứng cứ độc lập hoàn chỉnh",
+    "Lệnh giữ người đối với Thao được phê chuẩn hợp lệ lúc 04:40 sáng Chủ nhật",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
+  ],
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Ánh bình minh đầu tiên trên đỉnh Mường Biên rọi sáng chiếc còng số 8 trên tay kẻ chủ mưu và bước chân thanh thản của người lính trinh sát.",
+  "planned_at": "2026-08-29T20:13:56.963209"
+}

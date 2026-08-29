@@ -1,13 +1,18 @@
 {
-  "chapter": 12,
-  "verdict": "accept",
   "scores": {
-    "plot_progression": 90,
-    "character_consistency": 94,
-    "anti_ai_tone": 95,
-    "pacing": 90,
-    "atmosphere": 96
+    "consistency": 97,
+    "character": 96,
+    "continuity": 97,
+    "pacing": 95,
+    "foreshadow": 97,
+    "hook": 96,
+    "aesthetic": 95
   },
-  "summary": "Vĩ thanh lắng đọng, phục hồi danh dự cho người thợ mộc Trần Văn Cửu. Công bố cơ chế thực nghiệm 3 vụ án cũ tại tòa án, dư ba bài đồng dao đếm sỏi và cơn ớn lạnh sâu sắc của Nam tạo kết thúc trọn vẹn.",
-  "issues": []
+  "average_score": 96.1,
+  "contract_status": "fulfilled",
+  "verdict": "accept",
+  "reason": "",
+  "affected_chapters": [],
+  "warnings": [],
+  "reviewed_at": "2026-08-29T20:12:21.079803"
 }

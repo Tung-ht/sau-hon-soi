@@ -1,0 +1,100 @@
+{
+  "chapter": 14,
+  "revision": "r004",
+  "created_at": "2026-08-29T21:12:17.097821",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Rạng sáng Chủ nhật, 00:00–05:30",
+      "event": "Nam đàm phán giải cứu con tin với Trần Văn Sinh bằng hồ sơ phục hồi Chuyên án 2005 và chiếc thước mộc gỗ lim di vật; Sinh thức tỉnh lương tri buông vũ khí chấp nhận sự phán xét của pháp luật (C21); Nam đối chất bóc trần Hoàng Đình Thao bằng 4 nguồn chứng cứ độc lập; Kiểm sát viên cao cấp tống đạt Lệnh giữ người trong trường hợp khẩn cấp đối với Thao lúc 04:40 sáng Chủ nhật; dẫn giải hai đối tượng về quy án.",
+      "chapter": 14
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C18",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C19",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C20",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C21",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C08",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C11",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C12",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C15",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 14
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 14
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 14
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 14
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

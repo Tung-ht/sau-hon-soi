@@ -1,0 +1,91 @@
+{
+  "chapter": 5,
+  "revision": "r007",
+  "created_at": "2026-08-29T19:59:55.435126",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Năm, 08:00–11:30",
+      "event": "Công bố kết quả GC-MS độc chất D-Alkaloid mạn tính của N4; khám chòi trạm bơm thu mỏ cắt Tây Phong; đối soát 4 ID giả cùng batch và dòng tiền từ Hải Khê; trích lục hồ sơ phát hiện 3 cơ chế cơ học bất thường trong 3 vụ tai nạn cũ (C09, C10); Nam phát hiện ảnh Thao khen thưởng Lũng Nậm 2005; Đạt ký công văn ủy thác thu hồi hồ sơ gốc.",
+      "chapter": 5
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C09",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C10",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C01",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C03",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C05",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 5
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

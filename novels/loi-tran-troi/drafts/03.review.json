@@ -1,0 +1,22 @@
+{
+  "chapter": 3,
+  "revision": "r011",
+  "scores": {
+    "consistency": 95,
+    "character": 92,
+    "continuity": 96,
+    "pacing": 90,
+    "foreshadow": 94,
+    "hook": 88,
+    "aesthetic": 92,
+    "procedural": 94,
+    "fictional_neutrality": 100
+  },
+  "feedback": "Chương 3 giải quyết triệt để lỗi continuity (Huy không leak thông tin về 3 nạn nhân cũ mang ID giả); căn cứ và lệnh khám xét phương tiện hợp lệ; kết quả XRF thận trọng chỉ khẳng định cùng nhóm vật liệu Crom-Molypden; lập danh mục sổ vật tư năm 2005 có 6 tấm gỗ ép và keo nhiệt (C07); triệt tiêu các từ in đậm cấm; không có câu văn vượt chuẩn 35 từ.",
+  "strengths": [
+    "Khắc phục 100% knowledge leak cũ",
+    "Gieo C05, C06, C07 chuẩn mực theo V3",
+    "Khám nghiệm kỹ thuật hình sự và đấu tranh ban đầu với Long rất sắc lạnh"
+  ],
+  "weaknesses": []
+}

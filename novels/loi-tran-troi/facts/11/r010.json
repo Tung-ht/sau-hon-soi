@@ -1,0 +1,72 @@
+{
+  "chapter": 11,
+  "revision": "r010",
+  "created_at": "2026-08-29T20:10:57.999378",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Bảy, 08:00–11:00",
+      "event": "Nam và kiểm sát viên lấy lời khai chính thức của Đặng Tiến Đạt; công bố Bản Kết luận Giám định Tư pháp số 86; Đạt thừa nhận lỗi lầm năm 2005 và giao nộp thẻ nhớ sao lưu tài liệu mật; Huy báo cáo kết quả truy vết dòng tiền từ pháp nhân Hải Khê dẫn thẳng tới Thao (C19); Viện Công tố ban hành lệnh triệu tập, quyết định cấm xuất cảnh và lệnh giám sát 24/24 đối với Hoàng Đình Thao (C18).",
+      "chapter": 11
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C18",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C19",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C07",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C12",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 11
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

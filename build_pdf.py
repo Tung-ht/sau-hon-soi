@@ -830,7 +830,7 @@ def build_complete_book():
         <div style="font-weight: 700; color: #1e293b; margin-bottom: 2mm;">SÁU HÒN SỎI — TIỂU THUYẾT TRINH THÁM PROCEDURAL NOIR</div>
         <div>Tác giả: Hoàng Tùng</div>
         <div>Định dạng: Sách in tiêu chuẩn A5 (145 x 205 mm) & Digital Master PDF</div>
-        <div>Dung lượng: 20.993 từ / 15 Chương hoàn chỉnh</div>
+        <div>Dung lượng: 40.800 từ / 15 Chương hoàn chỉnh</div>
         <div>Bản quyền tác phẩm © 2026 Hoàng Tùng. Mọi quyền được bảo lưu.</div>
     </div>
 

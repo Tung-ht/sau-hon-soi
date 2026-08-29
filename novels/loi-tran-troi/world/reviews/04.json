@@ -1,13 +1,18 @@
 {
-  "chapter": 4,
-  "verdict": "accept",
   "scores": {
-    "plot_progression": 94,
-    "character_consistency": 95,
-    "anti_ai_tone": 95,
+    "consistency": 95,
+    "character": 94,
+    "continuity": 96,
     "pacing": 92,
-    "atmosphere": 94
+    "foreshadow": 95,
+    "hook": 90,
+    "aesthetic": 92
   },
-  "summary": "Khám phá Lũng Nậm giàu chất liệu đời thực vùng cao. Phân đoạn manh mối giả ông Lộc và khoảnh khắc Nam xé báo cáo khởi tố oan thể hiện chiều sâu lương tâm và sự trưởng thành của nhân vật chính.",
-  "issues": []
+  "average_score": 93.4,
+  "contract_status": "fulfilled",
+  "verdict": "accept",
+  "reason": "",
+  "affected_chapters": [],
+  "warnings": [],
+  "reviewed_at": "2026-08-29T19:58:54.764393"
 }

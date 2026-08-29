@@ -1,23 +1,20 @@
 {
-  "chapter": 4,
-  "title": "Đường cùng",
-  "goal": "Lên Lũng Nậm tìm thấy hồ sơ cháy dở năm 2005 và người con trai tên Sinh; trở về Hạ An đối mặt với bẫy manh mối giả của ông Lộc chủ trọ; Nam xé báo cáo khởi tố oan sau khi Tùng cảnh báo về bước chân.",
+  "goal": "Hỏi cung Lê Văn Long; bẻ gãy lời nói dối ban đầu và xác lập ngoại phạm N4 cho Long bằng 4 nguồn độc lập (camera bến, log cứu hộ, dữ liệu máy phụ, nhân chứng bến phà); Long khai việc thợ Ba lấy dụng cụ thải loại; Huy phát hiện thợ Ba trùng người Nam gặp ở Chương 2; P gọi điện hỏi thăm; chuyển trọng tâm điều tra sang thợ Ba.",
   "scenes": [
-    "Chuyến xe khách lên Lũng Nậm (Mường Biên), nghe bà cụ bán nước kể về bi kịch chú Cửu và đứa con tên Sinh",
-    "Khám phá kho lưu trữ cũ của ông Bình: tìm thấy hộp hồ sơ LS 34/2005 với 6 cái tên (5 gạch đỏ, 1 khoanh tròn Trần Văn Cửu)",
-    "Về Hạ An: Đạt giục nộp báo cáo khởi tố; Huy báo cáo dấu giày và alibi giả của ông Lộc chủ trọ",
-    "Nam viết báo cáo khởi tố bị can Lộc; Tùng gọi điện can thiệp chỉ ra sai lệch chiều cao 1m62 và sải bước chân trên 1m",
-    "Nam triệu tập ông Lộc, xác minh alibi cờ bạc ven đê -> Nam xé nát báo cáo khởi tố oan",
-    "Tùng phát hiện hồ sơ 2005 bị tài khoản cấp tỉnh mở đọc 14 lần cách đây 3 tháng"
+    "Cảnh 1: Phòng hỏi cung số 2, Nam đối chất với Long về 6 giờ bị xóa đè trong nhật ký máy chính.",
+    "Cảnh 2: Long thú nhận việc nhận hợp đồng lặn chui cắt lưới chân vịt tàu hàng ngoài luồng và bị mắc cạn cồn cát đêm thứ Hai; Huy đối chiếu 4 nguồn chứng cứ độc lập xác nhận ngoại phạm N4.",
+    "Cảnh 3: Long khai về thợ Ba từng làm thuê và tự lấy chiếc mỏ cắt thải loại Tây Phong cùng que hàn HK-7018M trước khi rời xưởng; Nam và Huy nhận diện Ba chính là người thợ đã gặp ở bãi Chín Gù (C04, C08 payoff).",
+    "Cảnh 4: Chỉ huy Đạt nhận điện thoại của P (Thao) hỏi thăm tình hình dư luận; tổ án thống nhất chuyển hướng sang truy tìm thợ Ba tại căn chòi trạm bơm bỏ hoang."
   ],
   "required_beats": [
-    "Không khí vùng cao Lũng Nậm và câu chuyện oan khiên của chú Cửu",
-    "Hồ sơ cháy dở có dấu vết bóc nhãn và chữ ký run rẩy",
-    "Bẫy điều tra manh mối giả ông Lộc và cuộc tranh luận về sải bước chân",
-    "Khoảnh khắc Nam giằng xé lương tâm và xé báo cáo khởi tố oan"
+    "Loại Long khỏi vụ N4 bằng 4 nguồn chứng cứ độc lập",
+    "Long khai việc thợ Ba tự lấy dụng cụ thải loại, bỏ chi tiết báo thù lộ liễu",
+    "Huy đối chiếu nhận diện thợ Ba trùng với người Nam gặp ở Chương 2",
+    "P chỉ gọi điện hỏi thăm chung, không biết chi tiết niêm phong",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "payoff_points": [
-    "Tránh được vết xe đổ bắt oan người vô tội; phát hiện có kẻ cấp cao dọn dẹp hồ sơ"
-  ],
-  "hook_goal": "Tài khoản quản trị cấp tỉnh đã mở đọc hồ sơ 2005 trước cả khi vụ án thứ 5 xảy ra"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Quyết định chuyển hướng điều tra khẩn cấp sang căn chòi trạm bơm bỏ hoang để truy tìm hành tung của thợ Ba trước khi quá muộn.",
+  "planned_at": "2026-08-29T19:58:10.766411"
 }

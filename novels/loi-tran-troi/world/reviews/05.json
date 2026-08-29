@@ -1,13 +1,18 @@
 {
-  "chapter": 5,
-  "verdict": "accept",
   "scores": {
-    "plot_progression": 96,
-    "character_consistency": 95,
-    "anti_ai_tone": 94,
-    "pacing": 95,
-    "atmosphere": 96
+    "consistency": 96,
+    "character": 94,
+    "continuity": 96,
+    "pacing": 92,
+    "foreshadow": 96,
+    "hook": 92,
+    "aesthetic": 94
   },
-  "summary": "Đỉnh cao cao trào Cung 1: Cuộc đối đầu nghẹt thở giữa Nam và Trung tá Đạt bộc lộ mâu thuẫn thể chế; hiện trường 5 hòn sỏi suối và lá thư của Sinh chốt hạ Cung 1 hoàn hảo, mở toang cánh cửa sang Cung 2.",
-  "issues": []
+  "average_score": 94.3,
+  "contract_status": "fulfilled",
+  "verdict": "accept",
+  "reason": "",
+  "affected_chapters": [],
+  "warnings": [],
+  "reviewed_at": "2026-08-29T20:00:06.701907"
 }

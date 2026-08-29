@@ -1,0 +1,79 @@
+{
+  "chapter": 13,
+  "revision": "r002",
+  "created_at": "2026-08-29T20:13:34.880570",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Bảy, 19:00–23:30",
+      "event": "Hoàng Đình Thao trốn khỏi nơi cư trú lúc 19:00 lên Nhà tưởng niệm Lũng Nậm; Trần Văn Sinh cắt điện tổng bằng kìm thủy lực pin, tước vũ khí và khống chế Thao lúc 20:50; Nam và tổ đặc nhiệm thiết lập 2 vòng vây nghiêm ngặt lúc 21:30; Nam không mang vật chứng gốc mà mang bản sao hồ sơ phục hồi và chiếc thước mộc gỗ lim di vật vào đại sảnh đối diện với Sinh (C21).",
+      "chapter": 13
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C21",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C09",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C14",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C15",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C20",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 13
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 13
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 13
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 13
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

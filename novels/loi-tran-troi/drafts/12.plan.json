@@ -1,0 +1,20 @@
+{
+  "goal": "Tống đạt lệnh triệu tập và cấm xuất cảnh cho Hoàng Đình Thao lúc 11:30; Thao tìm đường trốn sang Hải Khê nhưng luồng cảng bị khóa chặt; Thao gọi điện đổ tội cho Đạt; Trần Văn Sinh gọi điện trực tiếp ấn định điểm hẹn tại Nhà tưởng niệm Lũng Nậm lúc 21:00 (C20); Thao chuẩn bị trốn đi trong đêm bão.",
+  "scenes": [
+    "Cảnh 1: 11:30 thứ Bảy, Nam cùng tổ công tác tống đạt trực tiếp Lệnh triệu tập và Quyết định cấm xuất cảnh tại biệt thự của Hoàng Đình Thao; Thao tỏ vẻ điềm tĩnh và đổ lỗi cho Đạt.",
+    "Cảnh 2: Thao bí mật đốt tài liệu cá nhân, gọi điện cho đầu mối vượt biên tại Hải Khê nhưng nhận tin toàn bộ luồng lạch đường thủy đã bị phong tỏa nghiêm ngặt.",
+    "Cảnh 3: Thao gọi điện đến cơ quan điều tra xin hoãn làm việc đến sáng thứ Hai, tiếp tục định hướng đổ tội cho Đạt.",
+    "Cảnh 4: 15:45 thứ Bảy, Trần Văn Sinh gọi điện trực tiếp đến máy bàn của Thao từ bốt điện thoại công cộng, đọc câu thứ sáu bài ca đếm sỏi và ấn định điểm hẹn tại Nhà tưởng niệm Lũng Nậm lúc 21:00 (C20)."
+  ],
+  "required_beats": [
+    "Tống đạt văn bản tố tụng đúng quy chuẩn, Thao cố giữ bình tĩnh",
+    "Thao tìm đường tẩu thoát nhưng các tuyến vượt biển bị phong tỏa",
+    "K (Sinh) gọi điện trực tiếp kích hoạt cuộc hẹn phán xét thứ sáu (C20)",
+    "Thao bị dồn vào chân tường giữa pháp luật và kẻ báo thù",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
+  ],
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Tiếng gác máy lạnh lùng của Sinh và nòng súng ngắn trong tay Thao mở đầu cho đêm định mệnh tại thung lũng Lũng Nậm.",
+  "planned_at": "2026-08-29T20:11:20.980927"
+}

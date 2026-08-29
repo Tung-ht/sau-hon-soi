@@ -1,7 +1,7 @@
 # 📖 SÁU HÒN SỎI — TIỂU THUYẾT TRINH THÁM PROCEDURAL NOIR
 **Tác giả:** Hoàng Tùng  
 **Thể loại:** Trinh thám hình sự / Procedural Noir / Cổ điển Fair-Play Mystery  
-**Quy mô:** 3 Hồi · 15 Chương hoàn chỉnh · 20.993 từ  
+**Quy mô:** 3 Hồi · 15 Chương hoàn chỉnh · 40.800 từ  
 **Bản quyền:** © 2026 Hoàng Tùng. Mọi quyền được bảo lưu.
 
 ---

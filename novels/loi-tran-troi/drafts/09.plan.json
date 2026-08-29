@@ -1,25 +1,21 @@
 {
-  "chapter": 9,
-  "title": "Vết rạn trên quân hàm",
-  "goal": "Nam và Tùng bị nhóm sát thủ của Hoàng Đình Thao tập kích tại nhà trọ ven thị xã; Nam nổ súng tự vệ giải cứu Tùng; Sinh gọi điện gửi đoạn băng ghi âm ngã giá năm 2005 và hẹn Nam tới biệt thự đồi thông.",
+  "goal": "Sau khi hiện trường N5 ổn định, Nam vào bản Dền tìm hiểu quá khứ mười chín năm trước qua 3 nguồn (Trưởng bản Ban, Cụ Mộc, hồ sơ quân ngũ); xác định danh tính K là Trần Văn Sinh (cựu lính trinh sát cơ động); Cụ Mộc trao chiếc thước mộc gỗ lim di vật đạo đức (C15); phát hiện phiếu bàn giao 6 rương gỗ ban đầu; cơ quan cấp cao quyết định phục hồi Chuyên án 2005.",
   "scenes": [
-    "Nam và Tùng cải trang ẩn náu tại căn nhà trọ ven đồi thông thị xã Mường Biên",
-    "Cuộc tập kích lúc nửa đêm của nhóm sát thủ bịt mặt; Nam bắn trả tự vệ giải cứu Tùng và thu giữ vũ khí quân dụng",
-    "Trần Văn Sinh bất ngờ gọi điện qua đường truyền mã hóa, hẹn Nam tại xưởng mộc hoang bến suối Lũng Nậm",
-    "Nghe đoạn băng ghi âm cuộc ngã giá năm 2005 giữa Hoàng Đình Thao và Đặng Tiến Đạt; Sinh tuyên bố mang hòn sỏi thứ sáu đến biệt thự đồi thông"
+    "Cảnh 1: Sáng thứ Sáu, sau khi bàn giao tử thi N5, Nam và Huy vào bản Dền; Trưởng bản Lò Văn Ban kể về bi kịch gia đình thợ mộc Trần Văn Cửu và sự tan nát của bản làng sau vụ án 2005.",
+    "Cảnh 2: Thăm xưởng mộc cổ, Cụ Mộc giải thích kỹ thuật mộng đuôi én nguyên bản của ông Cửu và trao lại chiếc thước mộc gỗ lim di vật (C15, lập biên nhận di vật tâm lý, không dùng làm chuẩn pháp chứng).",
+    "Cảnh 3: Huy đối soát tàng thư quân ngũ và hồ sơ trinh sát cơ động, nhận diện chân dung Trần Văn Sinh chính là người thợ mang bí danh Ba thợ cắt; phát hiện phiếu bàn giao 6 thân rương ban đầu trước khi bị đưa vào xưởng công nghiệp.",
+    "Cảnh 4: Cơ quan Điều tra Cấp cao và Viện Công tố ban hành quyết định chính thức phục hồi điều tra Chuyên án 2005, chuẩn bị mở niêm phong 6 chiếc rương tang vật."
   ],
   "required_beats": [
-    "Không gian ngột ngạt đầy bất an của thị xã biên giới trước cơn giông bão",
-    "Pha đấu súng tự vệ quyết liệt, chuẩn xác nghiệp vụ CAND",
-    "Nội dung chấn động của đoạn băng ghi âm cassette năm 2005",
-    "Sự đối thoại nghẹt thở giữa người bảo vệ luật pháp (Nam) và kẻ đi tìm công lý bằng máu (Sinh)"
+    "Vào bản Dền sau khi hiện trường N5 đã được xử lý ổn định (đảo chức năng)",
+    "Thông tin quá khứ chia cho 3 nguồn: Trưởng bản Ban, Cụ Mộc, hồ sơ quân ngũ",
+    "Xác định chân dung K (Trần Văn Sinh) qua ảnh trinh sát cơ động và đối chiếu lời khai",
+    "Chiếc thước mộc gỗ lim chỉ là di vật đạo đức/tâm lý, KHÔNG dùng làm chuẩn pháp chứng",
+    "Hé lộ phiếu bàn giao rương gỗ của ông Cửu trước khi bị can thiệp cơ học",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "forbidden_moves": [
-    "Không để Nam bị thương nặng mất khả năng hành động",
-    "Không để Sinh bị bắt trước khi đến khu biệt thự"
-  ],
-  "payoff_points": [
-    "Nghe trực tiếp bằng chứng ghi âm ngã giá của Hoàng Đình Thao và Đặng Tiến Đạt"
-  ],
-  "hook_goal": "Cơn giông bão ập xuống đồi thông, Nam và Tùng lao đi trong đêm mưa ngăn chặn màn quyết đấu cuối cùng"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Quyết định phục hồi Chuyên án 2005 được ban hành, mở đường cho cuộc giải mã pháp chứng 6 chiếc rương tang vật lịch sử.",
+  "planned_at": "2026-08-29T20:05:24.049236"
 }

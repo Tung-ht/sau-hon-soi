@@ -1,25 +1,21 @@
 {
-  "chapter": 8,
-  "title": "Bóng đè Lũng Nậm",
-  "goal": "Nam và Tùng thoát khỏi vòng vây của cảnh sát địa phương trong rừng phòng hộ Lũng Nậm; thâm nhập trạm kiểm lâm cũ trích xuất nhật ký tuần tra rừng năm 2005 và bàng hoàng phát hiện Trung tá Đạt chính là người lái xe dẫn đường cho đoàn xe ma túy năm xưa.",
+  "goal": "Tổ án đi thẳng đến hiện trường N5 tại bến suối Lũng Nậm (đảo chức năng); khám nghiệm tử thi xác định PMI 22:00-22:45; thu túi thứ năm chứa 5 viên sỏi dưới sạp nằm; phát hiện dấu lốp xe nhóm Đạt (C14); công an sở tại giữ Đạt trên đường nhánh; khóa alibi ngoại phạm N5 cho Đạt bằng 4 nguồn; Đạt bị thanh tra độc lập giữ làm việc và hé lộ bí mật 6 chiếc rương 2005.",
   "scenes": [
-    "Cuộc chạy trốn nghẹt thở trong rừng già Lũng Nậm trước sự truy đuổi của cảnh sát cơ động Mường Biên",
-    "Trú ẩn tại Trạm quản lý bảo vệ rừng bỏ hoang lưng chừng núi; Tùng kết nối bẻ khóa cơ sở dữ liệu nhật ký kiểm lâm năm 2005",
-    "Trích xuất biên bản trực ca đêm 14/11/2005: Đoàn 3 xe tải chở ma túy vượt biên trót lọt nhờ xe U-oát công an dẫn đường",
-    "Đối chiếu tàng thư phát hiện người trực tiếp lái xe dẫn đường là Đại úy Đặng Tiến Đạt; sự sụp đổ niềm tin của Nam"
+    "Cảnh 1: 00:15 thứ Sáu, Nam và Huy đến thẳng hiện trường chòi bến đò Lũng Nậm; công an xã đã căng dây bảo vệ; Nam khám nghiệm hiện trường trong sương đêm.",
+    "Cảnh 2: Bác sĩ pháp y địa phương phối hợp xác định PMI tử vong do siết cổ lúc 22:00-22:45; Nam thu giữ túi thổ cẩm thứ năm chứa 5 viên sỏi suối dưới sạp tre.",
+    "Cảnh 3: Đổ thạch cao dấu lốp xe gần bến nước trùng nhóm xe của Đạt (C14); công an giữ Đạt tại đường nhánh; đối chất alibi xác nhận Đạt đến lúc 23:15 sau khi nạn nhân đã chết và gọi báo ẩn danh.",
+    "Cảnh 4: Đơn vị thanh tra độc lập tiếp nhận làm việc với Đạt; Đạt hé lộ sự tồn tại của biên bản phụ bị loại và yêu cầu bảo vệ 6 chiếc rương tang vật 2005."
   ],
   "required_beats": [
-    "Không gian rừng già Tây Bắc ẩm ướt, dốc đá trơn trượt",
-    "Quá trình Tùng khai thác nhật ký tuần tra rừng nguyên bản",
-    "Bức tranh toàn cảnh về chuyến hàng ma túy khủng năm 2005",
-    "Cú sốc tâm lý dữ dội của Nam khi phát hiện vết nhơ của người thầy"
+    "Tổ án đi thẳng đến hiện trường N5, KHÔNG vào bản nghe kể chuyện trước",
+    "Túi thứ 5 chứa 5 viên sỏi đặt dưới sạp tre, không đặt vào tay co cứng vô lý",
+    "PMI xác định thời gian tử vong 22:00-22:45 bằng nhiệt độ, hoen và co cứng",
+    "Khóa alibi cho Đạt bằng 4 nguồn (camera trạm, PMI y khoa, sóng trạm BTS, log cuộc gọi ẩn danh)",
+    "Đạt bị thanh tra độc lập giữ lại làm việc tại địa phương",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "forbidden_moves": [
-    "Không để Nam và Tùng giao tranh vũ lực với lực lượng công an Mường Biên",
-    "Không để Nam tuyệt vọng bỏ cuộc"
-  ],
-  "payoff_points": [
-    "Phơi bày vai trò của Trung tá Đạt trong chuyên án oan 19 năm trước"
-  ],
-  "hook_goal": "Sự thật về người thầy lộ diện, Nam thề đưa kẻ chủ mưu quyền lực nhất ra trước ánh sáng"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Lời thú nhận nghẹn ngào của Đạt về 6 chiếc rương tang vật năm 2005 mở ra cánh cửa dẫn thẳng tới kẻ chủ mưu thực sự.",
+  "planned_at": "2026-08-29T20:04:08.876901"
 }

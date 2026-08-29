@@ -1,23 +1,21 @@
 {
-  "chapter": 2,
-  "title": "Vệt dầu",
-  "goal": "Bốn ngày sau khi vụ án bế tắc: nhận kết luận giám định pháp y chính thức; Đức từ Bình Nguyên gọi điện sau khi đọc Thông báo nghiệp vụ C02 kết nối chuỗi 5 vụ án mạng; lần ra tiệm Tùng Computer và phát hiện cuộc đào tẩu của Tùng.",
+  "goal": "Xác minh ID giả của N4 và dòng tiền 60 triệu từ công ty vận tải Hải Khê (C03); P đưa lời khuyên nửa đúng nửa sai từ ngoài cửa phòng họp; Nam đến bãi phế liệu Chín Gù và trực tiếp gặp K dưới bí danh Ba thợ cắt (C04); alibi nợ của Chín Gù được xác minh độc lập; mở ra manh mối xưởng Lê Văn Long.",
   "scenes": [
-    "Bốn ngày bế tắc; Bác sĩ pháp y Phong trả kết luận: chết ngạt, rút 15ml máu tĩnh mạch, vết dầu phế liệu, dấu giày cỡ 45 quá khổ",
-    "Khoảng lặng đời thường: Nam ghé gánh bánh của bà Tư ngoài chợ, ăn bát cháo nóng mẹ nấu",
-    "Đức (Phòng CSHS Bình Nguyên) gọi điện sau khi đọc Bản tin thông báo nghiệp vụ C02: tiết lộ chuỗi 5 án mạng và lý do bế tắc của 4 vụ trước",
-    "Huy rà soát nhật ký tàng thư số hóa phát hiện IP tiệm Tùng Computer",
-    "22h đêm ập vào tiệm: Tùng vừa bỏ trốn, để lại bát mì nóng, cuốn sổ 5 cái tên (tên ông Tư bị gạch mực tươi) và vé xe khách"
+    "Cảnh 1: Họp án sáng thứ Ba, Huy báo cáo về thẻ định danh giả của N4 và giao dịch 60 triệu từ công ty vận tải Hải Khê.",
+    "Cảnh 2: P (Thao) ghé bên ngoài phòng họp, xem bảng tóm tắt, đưa lời khuyên về thanh toán nợ nần bến bãi phế liệu.",
+    "Cảnh 3: Nam và Huy đến bãi phế liệu Chín Gù; Nam tiếp xúc trực tiếp với người thợ cơ khí lưu động xưng Ba (K) đang cắt kim loại; đối thoại ngắn về vết cắt nhiệt và ăn mòn.",
+    "Cảnh 4: Thẩm vấn Chín Gù về món nợ của ông Tư; gửi lệnh xác minh camera quán nhậu; người thợ Ba lặng lẽ thu dọn đồ nghề; cuối chương nhận kết quả camera và mở ra tên xưởng cứu hộ Lê Văn Long."
   ],
   "required_beats": [
-    "Cảm giác bế tắc 4 ngày qua của Đội CSHS Hạ An",
-    "Kết quả giám định mẫu máu tĩnh mạch và vệt dầu máy phế liệu",
-    "Gánh cháo sườn mẹ Tư góc chợ",
-    "Cuộc gọi của Đức kết nối chuỗi 5 vụ án và giải thích lý do 4 vụ trước bị tạm đình chỉ",
-    "Khám xét tiệm Tùng Computer và phát hiện cuốn sổ bìa đen"
+    "K xuất hiện trực tiếp dưới bí danh Ba tại bãi phế liệu, đối thoại với Nam (C04)",
+    "Dòng tiền 60 triệu từ công ty vận tải Hải Khê được gieo (C03)",
+    "P chỉ đứng ngoài bậu cửa phòng họp, không ngồi họp mật",
+    "Alibi của Chín Gù được xác minh bằng camera bến ở cuối chương",
+    "Không gọi K là bậc thầy siêu phàm",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "payoff_points": [
-    "Kết nối vụ án Hạ An với chuỗi án mạng 4 tỉnh; minh giải lý do công an bế tắc"
-  ],
-  "hook_goal": "Tùng bỏ trốn lúc nửa đêm để lại cuốn sổ có tên ông Tư bị gạch mực tươi"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Sự biến mất lặng lẽ của người thợ bí danh sau cuộc tiếp xúc ngắn và cái tên xưởng sà-lan Lê Văn Long nổi lên ở cửa biển.",
+  "planned_at": "2026-08-29T19:55:03.603627"
 }

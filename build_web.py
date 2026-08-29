@@ -955,7 +955,7 @@ def build_web():
                         <div class="meta-lbl">Chương</div>
                     </div>
                     <div class="meta-box">
-                        <div class="meta-num">21K</div>
+                        <div class="meta-num">41K</div>
                         <div class="meta-lbl">Từ ngữ</div>
                     </div>
                     <div class="meta-box">

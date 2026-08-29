@@ -1,22 +1,21 @@
 {
-  "chapter": 5,
-  "title": "Đêm lật hồ sơ",
-  "goal": "Bóc trần sự ngụy tạo trong 5 bản khai năm 2005; đối đầu trực diện với Trung tá Đạt; nhận diện Trần Văn Sinh qua mạng lưới phế liệu; khám xét căn nhà trống nhận 5 hòn sỏi và lá thư hẹn tìm hòn thứ 6.",
+  "goal": "Nối 4 nạn nhân N1-N4 bằng danh tính giả cùng batch (C10), dòng tiền bịt miệng và 4 túi dị vật tăng dần; công bố độc chất D-Alkaloid mạn tính của N4; khám chòi trạm bơm thu mỏ cắt Tây Phong; phân tích 3 cơ chế can thiệp cơ học trong 3 vụ tai nạn cũ (C09); Nam phát hiện ảnh Thao trong hồ sơ Lũng Nậm 2005; Đạt ký công văn ủy thác khẩn cấp.",
   "scenes": [
-    "Nam phân tích 5 bản khai năm 2005 giống hệt nhau từng từ và bản khai ma của người lái đò bến suối",
-    "Đức báo tin kho lưu trữ Lũng Nậm bị niêm phong khẩn cấp, ông Bình bị điều chuyển",
-    "Đối đầu gay gắt với Trung tá Đạt: Đạt đe dọa yêu cầu Nam dừng lại vì danh dự thể chế",
-    "Tùng tra ra Trần Văn Sinh (35 tuổi, nghề phế liệu, lộ trình khớp 5 hiện trường); Nam nhận ra Sinh từng âm thầm theo dõi mình",
-    "23h đêm Nam vào căn nhà trống của Sinh ven đê: 5 hòn sỏi xếp thẳng hàng, miếng vải thêu di vật và bức thư gửi anh Nam"
+    "Cảnh 1: Phòng họp án sáng thứ Năm, Bác sĩ Phong công bố kết quả GC-MS độc chất D-Alkaloid mạn tính của N4; đối chiếu lời khai tiệm thuốc Vạn Xuân Đường.",
+    "Cảnh 2: KTV Quang báo cáo kết quả khám chòi trạm bơm nước bỏ hoang ven đê, thu hồi mỏ cắt hơi Tây Phong dính xỉ Crom-Molypden tương thích.",
+    "Cảnh 3: Giám định kỹ thuật số đối soát mã phôi bảo an quang học, xác định 4 nạn nhân mang ID giả cùng đợt và dòng tiền từ pháp nhân Hải Khê; trích lục hồ sơ 3 tai nạn cũ tại Quỳnh Lâm, Tây Phong, Hải Khê và phân tích 3 dấu hiệu cơ học bất thường (C09, C10).",
+    "Cảnh 4: Nam nhìn thấy ảnh Thao bên hàng rương gỗ trong lễ khen thưởng Chuyên án Lũng Nậm 2005; báo cáo Đạt; Đạt bộc lộ sự dao động tâm lý sâu sắc và ký công văn ủy thác thu hồi vật chứng gốc."
   ],
   "required_beats": [
-    "Phân tích nghiệp vụ vạch trần sự giả mạo trong hồ sơ 2005",
-    "Cuộc đối thoại căng thẳng giữa Nam và Trung tá Đạt về công lý và chiếc ghế",
-    "Hình ảnh Sinh âm thầm quan sát quá trình điều tra suốt 7 năm",
-    "Hiện trường 5 hòn sỏi suối láng bóng và bức thư trăn trối hẹn hòn thứ 6"
+    "Nối 4 nạn nhân bằng ID giả cùng batch và dòng tiền pháp nhân (C10)",
+    "Hé lộ 3 cơ chế cơ học bất thường của 3 vụ cũ N1-N3 (C09)",
+    "Độc chất N4 là tích lũy mạn tính do nạn nhân tự uống, không khẳng định tuyệt đối",
+    "Tuyệt đối KHÔNG dùng danh sách gạch đầu dòng (bullet points) trong thân bài",
+    "P xuất hiện trong bức ảnh khen thưởng năm 2005 nhưng chưa bị kết luận",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "payoff_points": [
-    "Nhận diện hung thủ Trần Văn Sinh; kết thúc Cung 1 với lời tuyên chiến tìm kẻ chủ mưu thứ 6"
-  ],
-  "hook_goal": "Thư của Sinh: 'Cha tôi dạy tới sáu... Tôi đi tìm hòn sỏi cuối cùng.'"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Nhận thức rùng mình về một kế hoạch báo thù hoàn hảo kéo dài 4 năm và nguy cơ lưỡi dao thứ năm sắp giáng xuống.",
+  "planned_at": "2026-08-29T19:59:18.081470"
 }

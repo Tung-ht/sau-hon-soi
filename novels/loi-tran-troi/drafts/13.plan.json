@@ -1,0 +1,20 @@
+{
+  "goal": "Hoàng Đình Thao trốn khỏi nơi cư trú đến điểm hẹn tại Nhà tưởng niệm Lũng Nậm; Trần Văn Sinh dùng kỹ năng trinh sát cơ động cắt điện tổng, tước vũ khí và khống chế Thao tại chân bục đá; Nam và lực lượng đặc nhiệm thiết lập hai vòng vây nghiêm ngặt trong đêm bão; Nam chuẩn bị bước vào cuộc đàm phán quyết định mà KHÔNG mang theo vật chứng gốc (Gieo C21).",
+  "scenes": [
+    "Cảnh 1: 19:00 thứ Bảy, Thao vượt qua vòng vây giám sát bằng lối thoát hiểm phía sau, lái xe địa hình trong đêm mưa bão lên đỉnh Mường Biên.",
+    "Cảnh 2: 20:50 thứ Bảy, Thao đến Nhà tưởng niệm Lũng Nậm hoang vắng; Sinh cắt nguồn điện tổng bằng kìm thủy lực pin, áp sát từ bóng tối tước súng và khống chế Thao bằng dây cáp siết tại bục tưởng niệm.",
+    "Cảnh 3: 21:30 thứ Bảy, Nam cùng tổ đặc nhiệm phong tỏa hai vòng vây khép kín quanh ngọn đồi; Nam mang theo bản sao hồ sơ phục hồi vụ án và chiếc thước mộc gỗ lim di vật (tuyệt đối không mang vật chứng gốc).",
+    "Cảnh 4: Nam bước vào tiền sảnh Nhà tưởng niệm dưới ánh đèn pin dã chiến, đối diện trực tiếp với Sinh và Thao trong tình thế nghẹt thở (Gieo C21)."
+  ],
+  "required_beats": [
+    "Thao trốn đến điểm hẹn bằng lối đi bí mật trong đêm bão",
+    "Sinh dùng kỹ năng trinh sát cắt điện tổng và khống chế Thao",
+    "Tổ án thiết lập hai vòng vây, KHÔNG mang vật chứng gốc tới hiện trường con tin",
+    "Nam mang theo bản sao hồ sơ phục hồi vụ án và chiếc thước mộc di vật",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
+  ],
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Khoảnh khắc Nam đối diện với ánh mắt rực lửa của người cựu trinh sát đang kề sợi cáp thép vào cổ kẻ chủ mưu giữa đêm giông bão.",
+  "planned_at": "2026-08-29T20:12:32.658367"
+}

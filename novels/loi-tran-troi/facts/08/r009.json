@@ -1,0 +1,86 @@
+{
+  "chapter": 8,
+  "revision": "r009",
+  "created_at": "2026-08-29T21:12:11.541695",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Rạng sáng thứ Sáu, 00:15–04:30",
+      "event": "Nam và Huy khám nghiệm hiện trường N5 tại bến đò Lũng Nậm; xác định PMI tử vong do siết cổ lúc 22:00–22:45; thu túi thứ 5 chứa 5 viên sỏi suối dưới sạp tre; đổ khuôn thạch cao dấu lốp xe nhóm Đạt (C14); công an giữ Đạt lúc 02:30; khóa alibi ngoại phạm N5 cho Đạt bằng 4 nguồn độc lập; Đạt bị thanh tra độc lập giữ làm việc và hé lộ bí mật 6 chiếc rương tang vật 2005.",
+      "chapter": 8
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C14",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C01",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C02",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C11",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C12",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C13",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 8
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 8
+    },
+    {
+      "name": "Bùi Văn Vượng",
+      "brief_role": "",
+      "first_seen": 8,
+      "last_seen": 8
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 8
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

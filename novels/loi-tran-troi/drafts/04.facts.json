@@ -1,0 +1,74 @@
+{
+  "chapter": 4,
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Tư, 14:00–16:30",
+      "event": "Hỏi cung Lê Văn Long; chứng minh ngoại phạm N4 bằng 4 nguồn độc lập (camera bến, log cứu hộ, dữ liệu máy phụ, nhân chứng bến phà); Long khai về việc thợ Ba lấy dụng cụ thải loại; Huy và Nam nhận diện thợ Ba chính là người ở bãi Chín Gù; P gọi điện hỏi thăm Đạt."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 4
+    },
+    {
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 4
+    },
+    {
+      "name": "Lê Văn Long",
+      "role": "Chủ xưởng cứu hộ",
+      "first_seen": 2,
+      "last_seen": 4
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "role": "Chỉ huy Đội Trọng án",
+      "first_seen": 1,
+      "last_seen": 4
+    }
+  ],
+  "relationships": {
+    "Dang_Hoang_Nam": {
+      "Le_Van_Long": "Minh oan giết người N4 nhưng giữ làm rõ các vi phạm hành chính lặn chui"
+    },
+    "Dang_Tien_Dat": {
+      "Dang_Hoang_Nam": "Đồng thuận chuyển hướng truy lùng thợ Ba"
+    }
+  },
+  "state_changes": {
+    "Le_Van_Long": "Được xác nhận ngoại phạm giết N4; thừa nhận thợ Ba từng làm thuê và lấy mỏ cắt thải loại",
+    "Tran_Van_Sinh": "Được nhận diện là nghi can chính mang bí danh Ba thợ cắt; C04, C08 payoff",
+    "Hoang_Dinh_Thao": "Gọi điện thăm dò Đạt, khuyên tập trung thợ cơ khí lưu động"
+  },
+  "foreshadow_updates": [
+    {
+      "id": "C04",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 4
+    },
+    {
+      "id": "C05",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 4
+    },
+    {
+      "id": "C06",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 4
+    },
+    {
+      "id": "C08",
+      "status": "resolved",
+      "action": "resolve",
+      "chapter": 4
+    }
+  ]
+}

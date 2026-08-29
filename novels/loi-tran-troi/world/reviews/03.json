@@ -1,13 +1,18 @@
 {
-  "chapter": 3,
-  "verdict": "accept",
   "scores": {
-    "plot_progression": 95,
-    "character_consistency": 92,
-    "anti_ai_tone": 92,
-    "pacing": 94,
-    "atmosphere": 90
+    "consistency": 95,
+    "character": 92,
+    "continuity": 96,
+    "pacing": 90,
+    "foreshadow": 94,
+    "hook": 88,
+    "aesthetic": 92
   },
-  "summary": "Màn đấu trí tại phòng hỏi cung đúng điều lệnh tố tụng, phân tích cú nhảy số 1, 2, 3, 4 -> 6 (The Missing 5th) rất sắc bén và mở ra chìa khóa văn hóa suối Lũng Nậm.",
-  "issues": []
+  "average_score": 92.4,
+  "contract_status": "fulfilled",
+  "verdict": "accept",
+  "reason": "",
+  "affected_chapters": [],
+  "warnings": [],
+  "reviewed_at": "2026-08-29T19:57:56.042649"
 }

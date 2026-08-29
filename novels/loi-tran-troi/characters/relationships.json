@@ -1,0 +1,62 @@
+{
+  "factions": {
+    "investigation_team": [
+      "Đặng Hoàng Nam",
+      "Trần Văn Huy",
+      "Quang (Kỹ thuật hình sự)",
+      "Kiểm sát viên cao cấp"
+    ],
+    "suspects_and_perpetrators": [
+      "Trần Văn Sinh (K / Ba)",
+      "Hoàng Đình Thao (P)"
+    ],
+    "historical_witnesses_victims": [
+      "Nguyễn Văn Tư (N1)",
+      "Trịnh Đình Bách (N2)",
+      "Lê Văn Long (N3)",
+      "Phan Chu Hoạt (N4)",
+      "Bùi Văn Vượng (N5)"
+    ],
+    "insiders_and_mentors": [
+      "Đặng Tiến Đạt (M)",
+      "Trần Văn Cửu (O - Nạn nhân oan sai 2005)"
+    ],
+    "experts_and_village_elders": [
+      "Giáo sư Lê Đăng Khoa",
+      "Cụ Mộc bản Dền",
+      "Trưởng bản Ban"
+    ]
+  },
+  "matrices": [
+    {
+      "from": "Đặng Hoàng Nam",
+      "to": "Trần Văn Sinh",
+      "relation": "Đối chất tư pháp, thức tỉnh lương tri bằng di vật và sự thật",
+      "act": "Hồi III"
+    },
+    {
+      "from": "Đặng Hoàng Nam",
+      "to": "Đặng Tiến Đạt",
+      "relation": "Thầy trò, phân hóa điều tra độc lập, tiếp nhận tự thú",
+      "act": "Hồi II-III"
+    },
+    {
+      "from": "Hoàng Đình Thao",
+      "to": "Trần Văn Cửu",
+      "relation": "Chủ mưu ngụy tạo án oan 2005 cướp công danh lợi",
+      "act": "Tiền đề"
+    },
+    {
+      "from": "Trần Văn Sinh",
+      "to": "5 nhân chứng gian dối",
+      "relation": "Báo thù bằng chuỗi án mạng liên hoàn có tính toán",
+      "act": "Hồi I-II"
+    },
+    {
+      "from": "Cụ Mộc",
+      "to": "Đặng Hoàng Nam",
+      "relation": "Trao lại chiếc thước mộc gia bảo đạo đức",
+      "act": "Hồi II"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "chapter": 10,
+  "revision": "r006",
+  "created_at": "2026-08-29T20:07:49.701296",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Sáu, 14:00–17:30",
+      "event": "Hội đồng liên ngành mở niêm phong 6 chiếc rương tang vật 2005 tại Kho Vật chứng Trung tâm theo đúng trình tự tố tụng; phát hiện dấu cưa đĩa đa lưỡi xẻ rãnh, keo dán nhiệt Poly-resin và mã lô gỗ ép công nghiệp đáy giả LOT-2005-WD-06 (C07, C16); thu hồi biên bản phụ bị loại và lệnh điều động xe TN-1479 có bút tích 'phương án B' của Thao (C17); chuyên gia đưa nhận định sơ bộ; Thao chính thức trở thành đối tượng điều tra trọng tâm.",
+      "chapter": 10
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C16",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C17",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C07",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C10",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 10
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 10
+    },
+    {
+      "name": "Kỹ sư Lâm nghiệp Phạm Văn Dũng",
+      "brief_role": "",
+      "first_seen": 10,
+      "last_seen": 10
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 10
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 10
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

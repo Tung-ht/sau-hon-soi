@@ -1,25 +1,21 @@
 {
-  "chapter": 6,
-  "title": "Dấu vết phế liệu",
-  "goal": "Nam bị Trung tá Đạt tước quyền thụ lý vụ án ông Tư để chuyển giao lên tỉnh; Nam cùng Tùng bí mật lần theo mạng lưới bãi phế liệu ven sông Đáy tìm thấy chiếc xe đạp thồ và manh mối chỉ về cựu Đại tá Hoàng Đình Thao ở Mường Biên.",
+  "goal": "Giáo sư Lê Đăng Khoa thẩm định mẫu ảnh/sợi túi thổ cẩm, thu hẹp nguồn gốc về vùng thượng lưu Lũng Nậm và giải mã bài ca đếm sỏi 6 câu (C11); Nam audit hệ thống phát hiện Đạt tra cứu dữ liệu N1-N5 trước các cái chết và tìm thấy phong bì cảnh báo N5 trong két sắt của Đạt (C12); Nam báo cáo đơn vị giám sát độc lập; Đạt rời trụ sở lúc 18:45.",
   "scenes": [
-    "Sáng sớm tại trụ sở Công an huyện: Trung tá Đạt trao Quyết định rút hồ sơ chuyển lên Phòng CSHS tỉnh, yêu cầu Nam bàn giao toàn bộ vật chứng; Nam bí mật sao lưu hồ sơ trước khi giao nộp",
-    "Nam đến tiệm Tùng Computer: Tùng giải mã tài khoản quản trị cấp tỉnh từng mở đọc hồ sơ 2005 là của cựu Đại tá Hoàng Đình Thao (nguyên Phó Giám đốc Công an tỉnh Mường Biên)",
-    "Truy vết bãi phế liệu Chín Gù ven sông Đáy: Tìm thấy chiếc xe đạp thồ của Sinh gửi lại kèm tấm bản đồ vẽ tay tuyến đường lên đồi thông Mường Biên",
-    "Nam và Tùng quyết định bất chấp lệnh cấm, nổ máy xe máy xuyên đêm vượt đèo lên Mường Biên"
+    "Cảnh 1: Chiều thứ Năm tại viện bảo tàng, Nam và Huy làm việc với GS Lê Đăng Khoa; GS Khoa đối chiếu 3 vùng dệt qua ảnh vĩ mô và mẫu sợi tách hợp lệ, xác định nguồn gốc thổ cẩm bản Dền vùng Lũng Nậm (C11).",
+    "Cảnh 2: GS Khoa dịch nghĩa bài đồng dao đếm sỏi 6 câu cổ truyền tiếng bản địa, chỉ ra biểu tượng thứ năm là sỏi bến nước và thứ sáu là thước mộc.",
+    "Cảnh 3: 18:00 thứ Năm, Nam rà soát nhật ký máy chủ phát hiện tài khoản Đạt tra cứu thông tin N1-N5; kiểm tra két sắt phát hiện phong bì cảnh báo mới mang tên Bùi Văn Vượng (N5) tại bến suối Lũng Nậm (C12).",
+    "Cảnh 4: Nam báo cáo dấu hiệu vi phạm dữ liệu cho đơn vị thanh tra độc lập; phát hiện Đạt đã lái xe riêng rời trụ sở lúc 18:45."
   ],
   "required_beats": [
-    "Cảm giác nghẹt thở khi bị tước quyền điều tra chính thức",
-    "Phát hiện danh tính cựu Đại tá Hoàng Đình Thao qua vết tích dữ liệu số hóa",
-    "Hình ảnh chiếc xe đạp thồ han gỉ của Sinh — biểu tượng cho 7 năm ẩn nhẫn",
-    "Quyết định vượt rào kỷ luật của Nam vì món nợ công lý"
+    "Chuyên gia chỉ xem ảnh chụp và mẫu sợi tách, KHÔNG mang 4 túi gốc ra khỏi kho",
+    "GS Khoa so sánh 3 vùng dệt, chỉ thu hẹp nguồn gốc về vùng thượng lưu Lũng Nậm",
+    "Bài ca đếm sỏi chỉ giải số đếm và hình ảnh bến nước, không chỉ thẳng tên N5",
+    "Audit phát hiện Đạt tra cứu N1-N5 và phong bì cảnh báo mới có tên N5",
+    "Nam báo cáo đơn vị giám sát độc lập, không tự ý điều tra cấp trên một mình",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "forbidden_moves": [
-    "Không để Nam cãi vã mất kiểm soát với Trung tá Đạt",
-    "Không để Sinh xuất hiện trực tiếp trong chương này (chỉ để lại dấu vết)"
-  ],
-  "payoff_points": [
-    "Khám phá mục tiêu cuối cùng của Sinh nhắm vào cựu lãnh đạo cấp tỉnh"
-  ],
-  "hook_goal": "Nam và Tùng khởi hành chuyến xe máy xuyên đêm lên Mường Biên trong sự theo dõi ngầm"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Nhận thức bàng hoàng về việc người thầy chỉ huy đã đơn thương độc mã phóng xe trong đêm lên Lũng Nậm và cuộc đua ngăn chặn án mạng thứ năm bắt đầu.",
+  "planned_at": "2026-08-29T20:01:53.942527"
 }

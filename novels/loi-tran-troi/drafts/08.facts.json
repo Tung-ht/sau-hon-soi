@@ -1,0 +1,82 @@
+{
+  "chapter": 8,
+  "timeline_events": [
+    {
+      "time": "Rạng sáng thứ Sáu, 00:15–04:30",
+      "event": "Nam và Huy khám nghiệm hiện trường N5 tại bến đò Lũng Nậm; xác định PMI tử vong do siết cổ lúc 22:00–22:45; thu túi thứ 5 chứa 5 viên sỏi suối dưới sạp tre; đổ khuôn thạch cao dấu lốp xe nhóm Đạt (C14); công an giữ Đạt lúc 02:30; khóa alibi ngoại phạm N5 cho Đạt bằng 4 nguồn độc lập; Đạt bị thanh tra độc lập giữ làm việc và hé lộ bí mật 6 chiếc rương tang vật 2005."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 8
+    },
+    {
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 8
+    },
+    {
+      "name": "Bùi Văn Vượng",
+      "role": "Nạn nhân thứ năm (N5)",
+      "first_seen": 8,
+      "last_seen": 8
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "role": "Chỉ huy Đội Trọng án",
+      "first_seen": 1,
+      "last_seen": 8
+    }
+  ],
+  "relationships": {
+    "Dang_Hoang_Nam": {
+      "Dang_Tien_Dat": "Minh oan giết người N5 cho Đạt bằng 4 nguồn độc lập; tiếp nhận thông tin then chốt về Chuyên án 2005"
+    }
+  },
+  "state_changes": {
+    "Bui_Van_Vuong": "Tử vong do siết cổ tại bến đò Lũng Nậm, để lại túi thứ năm chứa 5 viên sỏi",
+    "Dang_Tien_Dat": "Được xác nhận ngoại phạm N5 (C14); bị thanh tra độc lập giữ làm việc; hé lộ biên bản phụ và 6 chiếc rương"
+  },
+  "foreshadow_updates": [
+    {
+      "id": "C14",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 8
+    },
+    {
+      "id": "C01",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 8
+    },
+    {
+      "id": "C02",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 8
+    },
+    {
+      "id": "C11",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 8
+    },
+    {
+      "id": "C12",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 8
+    },
+    {
+      "id": "C13",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 8
+    }
+  ]
+}

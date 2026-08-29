@@ -1,0 +1,109 @@
+{
+  "chapter": 1,
+  "timeline_events": [
+    {
+      "time": "Tối thứ Hai, 18:30–20:00",
+      "event": "Nam gặp mẹ ở quán cháo sườn; Hoàng Đình Thao ghé thăm trụ sở Đội Trọng án Hạ An trao đổi công tác Quỹ An sinh; Thao nhắc về hồ sơ chìm nổi; Đạt phản ứng kín đáo."
+    },
+    {
+      "time": "Tối thứ Hai, 21:00–23:00",
+      "event": "Nguyễn Văn Tư (N4) bị siết cổ tử vong tại nhà số 42 phố Đò Cũ; hung thủ đặt túi thổ cẩm thứ tư chứa 4 bộ xương cá khô vào hộp đồ nghề."
+    },
+    {
+      "time": "Sáng thứ Ba, 05:30–08:00",
+      "event": "Phát hiện thi thể N4; Nam, Phong, Quang khám nghiệm hiện trường, thu mẫu vi sợi xỉ kim loại và niêm phong túi thổ cẩm."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Mẹ Nam",
+      "role": "Mẹ Nam",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "role": "Chỉ huy Đội Trọng án",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "role": "Chủ tịch danh dự Quỹ An sinh",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Nguyễn Văn Tư",
+      "role": "Nạn nhân N4",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "role": "Giám định viên pháp y",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "role": "Cán bộ kỹ thuật hình sự",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Bà Năm",
+      "role": "Nhân chứng bán trà",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Anh Thắng",
+      "role": "Nhân chứng phát hiện thi thể",
+      "first_seen": 1,
+      "last_seen": 1
+    }
+  ],
+  "relationships": {
+    "Dang_Hoang_Nam": {
+      "Dang_Tien_Dat": "Cấp dưới tin cậy",
+      "Hoang_Dinh_Thao": "Hậu bối tôn trọng",
+      "Me_Nam": "Con trai hiếu thảo"
+    },
+    "Dang_Tien_Dat": {
+      "Hoang_Dinh_Thao": "Cựu cấp dưới chịu áp lực tâm lý từ quá khứ"
+    }
+  },
+  "state_changes": {
+    "Nam": "Tiếp nhận điều tra vụ án mạng phố Đò Cũ",
+    "Nguyen_Van_Tu": "Tử vong do ngạt cơ học vùng cổ",
+    "Hoang_Dinh_Thao": "Xuất hiện xã giao trước giờ án mạng, gieo C01",
+    "Dang_Tien_Dat": "Phản ứng kín đáo trước câu nói của Thao, gieo C02"
+  },
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 1
+    },
+    {
+      "id": "C02",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 1
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "chapter": 7,
+  "revision": "r012",
+  "created_at": "2026-08-29T21:12:10.626866",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Năm, 19:30–21:00",
+      "event": "Giám định kỹ thuật số xác nhận token phần cứng và IP tĩnh của Đạt (C13); trích xuất camera trạm thu phí và trạm xăng khóa lộ trình xe Đạt đi trước.",
+      "chapter": 7
+    },
+    {
+      "time": "Tối thứ Năm, 20:45",
+      "event": "Thao gọi điện cho Nam hỏi thăm bâng quơ khi không liên lạc được với Đạt.",
+      "chapter": 7
+    },
+    {
+      "time": "Đêm thứ Năm, 21:00–23:50",
+      "event": "Nam và Huy xuất phát lúc 21:00; vượt đèo Gió trong sương mù và sạt lở taluy; nhận tin báo án mạng tại bến đò Lũng Nậm lúc 23:50 từ người gọi ẩn danh.",
+      "chapter": 7
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C13",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C11",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C12",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 7
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

@@ -1,0 +1,74 @@
+{
+  "chapter": 7,
+  "timeline_events": [
+    {
+      "time": "Tối thứ Năm, 19:30–21:00",
+      "event": "Giám định kỹ thuật số xác nhận token phần cứng và IP tĩnh của Đạt (C13); trích xuất camera trạm thu phí và trạm xăng khóa lộ trình xe Đạt đi trước."
+    },
+    {
+      "time": "Tối thứ Năm, 20:45",
+      "event": "Thao gọi điện cho Nam hỏi thăm bâng quơ khi không liên lạc được với Đạt."
+    },
+    {
+      "time": "Đêm thứ Năm, 21:00–23:50",
+      "event": "Nam và Huy xuất phát lúc 21:00; vượt đèo Gió trong sương mù và sạt lở taluy; nhận tin báo án mạng tại bến đò Lũng Nậm lúc 23:50 từ người gọi ẩn danh."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "role": "Cựu Phó Chỉ huy",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "role": "Chỉ huy Đội Trọng án",
+      "first_seen": 1,
+      "last_seen": 7
+    }
+  ],
+  "relationships": {
+    "Dang_Hoang_Nam": {
+      "Hoang_Dinh_Thao": "Giữ bí mật điều tra khi Thao gọi điện thăm dò",
+      "Dang_Tien_Dat": "Lần theo dấu vết xe Đạt trên đường đèo Gió"
+    }
+  },
+  "state_changes": {
+    "Dang_Tien_Dat": "Bị khóa lộ trình số và di chuyển độc đạo lên Lũng Nậm trước tổ án (C13)",
+    "Hoang_Dinh_Thao": "Gọi điện thăm dò hành tung của Đạt và tiến độ điều tra",
+    "Bui_Van_Vuong": "Bị sát hại tại bến đò Lũng Nậm (N5)"
+  },
+  "foreshadow_updates": [
+    {
+      "id": "C13",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 7
+    },
+    {
+      "id": "C11",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 7
+    },
+    {
+      "id": "C12",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 7
+    }
+  ]
+}

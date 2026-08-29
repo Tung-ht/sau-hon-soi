@@ -1,25 +1,21 @@
 {
-  "chapter": 10,
-  "title": "Hòn sỏi thứ sáu",
-  "goal": "Đột nhập biệt thự đồi thông trong đêm bão; Đạt nổ súng tước vũ khí Thao cứu Sinh và giao nộp hồ sơ gốc; Nam lần lượt tra còng số 8 vào tay Hoàng Đình Thao, Đặng Tiến Đạt và Trần Văn Sinh — tất cả đều phải chịu sự phán xét nghiêm minh của pháp luật; mở ra phiên tòa Tái thẩm minh oan cho chú Cửu.",
+  "goal": "Mở niêm phong 6 chiếc rương tang vật 2005 tại Kho Vật chứng Trung tâm theo đúng trình tự tố tụng; phát hiện dấu cưa đĩa đa lưỡi xẻ rãnh, keo dán nhiệt Poly-resin và mã lô gỗ ép công nghiệp đáy giả (C07, C16); thu hồi biên bản phụ bị loại và lệnh điều động xe có bút tích của Thao về 'phương án B' (C17); chuyên gia đưa nhận định sơ bộ; Thao chính thức trở thành đối tượng điều tra trọng tâm.",
   "scenes": [
-    "Nam và Tùng đột nhập căn biệt thự đồi thông trong đêm bão giông gào thét",
-    "Đối đầu nghẹt thở tại phòng làm việc tầng ba: Sinh đặt hòn sỏi thứ sáu ép Thao nhận tội; Thao toan rút súng bắn lén",
-    "Trung tá Đạt bất ngờ nổ súng tước vũ khí Thao, giao nộp tập hồ sơ gốc chuyên án 2005 và tự thú",
-    "Sinh buông rơi hòn sỏi thứ sáu; Nam thực hiện điều lệnh bắt giữ và tra còng số 8 cả ba người: Thao (chủ mưu), Đạt (đồng phạm tự thú) và Sinh (hung thủ giết người)",
-    "Ánh bình minh rọi sáng đồi thông; vĩ thanh về phiên tòa Tái thẩm tuyên bố chú Cửu vô tội và bản án nghiêm minh cho Thao, Đạt, Sinh"
+    "Cảnh 1: 14:00 thứ Sáu tại Kho Vật chứng Trung tâm, Hội đồng liên ngành công bố Quyết định phục hồi Chuyên án 2005 và Lệnh mở niêm phong; ghi hình liên tục quá trình kiểm kê 6 chiếc rương gỗ pơ-mu.",
+    "Cảnh 2: Kỹ sư lâm nghiệp Phạm Văn Dũng và KTV Quang khám nghiệm cấu trúc 6 rương; phát hiện dấu cưa đĩa đa lưỡi công nghiệp xẻ rãnh khoang đáy và keo dán nhiệt Poly-resin dán đáy giả (C07, C16).",
+    "Cảnh 3: Thu hồi biên bản phụ bị loại năm 2005 do Đạt lập và Lệnh điều động xe vận tải bạt TN-1479 có bút tích chỉ đạo của Hoàng Đình Thao về 'phương án B' (C17).",
+    "Cảnh 4: Hội đồng giám định đưa ra nhận định sơ bộ tại chỗ; Nam lập biên bản tổng hợp; Hoàng Đình Thao chính thức bị chuyển tư cách sang đối tượng điều tra trọng tâm."
   ],
   "required_beats": [
-    "Tính thượng tôn pháp luật tuyệt đối: Không ai đứng trên luật pháp",
-    "Cảnh Nam lần lượt tra còng số 8 cho Thao, Đạt và Sinh trong sự trang nghiêm của người chiến sĩ CAND",
-    "Sự thanh thản đón nhận hình phạt của Đạt và Sinh",
-    "Phiên tòa Tái thẩm lịch sử rửa sạch nỗi oan 19 năm của chú Cửu"
+    "Trình tự tố tụng chuẩn mực: Quyết định phục hồi -> Lệnh mở niêm phong -> Kiểm kê -> Ghi hình -> Giám định",
+    "Chỉ đưa nhận định sơ bộ vào chiều thứ Sáu, kết luận lab chính thức hoàn tất vào thứ Bảy",
+    "Tuyệt đối KHÔNG dùng chiếc thước mộc đặt cạnh mộng rương để so sánh",
+    "Khám nghiệm cả 6 rương, phát hiện dấu cưa đĩa máy, keo nhiệt và mã lô gỗ ép (C07, C16)",
+    "Thu hồi biên bản phụ và lệnh điều động xe có bút tích của Thao (C17)",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "forbidden_moves": [
-    "Tuyệt đối không để Sinh hay Đạt trốn thoát hoặc được miễn trách nhiệm hình sự ngoài vòng pháp luật"
-  ],
-  "payoff_points": [
-    "Tất cả những người có tội đều bị pháp luật trừng trị; chú Cửu được minh oan chính thức"
-  ],
-  "hook_goal": "Khép lại toàn bộ tác phẩm với thông điệp công lý và pháp luật tối thượng"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Toàn bộ chứng cứ kỹ thuật và tài liệu gốc đã đồng loạt bẻ gãy vỏ bọc mười chín năm của Thao, mở đường cho cuộc thẩm vấn quyết định.",
+  "planned_at": "2026-08-29T20:06:51.962568"
 }

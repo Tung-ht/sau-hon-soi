@@ -1,0 +1,66 @@
+{
+  "chapter": 12,
+  "revision": "r009",
+  "created_at": "2026-08-29T20:12:13.145061",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Trưa thứ Bảy, 11:30–16:00",
+      "event": "Nam tống đạt Lệnh triệu tập và Quyết định cấm xuất cảnh cho Hoàng Đình Thao lúc 11:30; Thao tiêu hủy tài liệu trong lò sưởi, tìm đường vượt biên Hải Khê nhưng các luồng lạch bị phong tỏa; Thao gọi điện đổ lỗi cho Đạt; Trần Văn Sinh gọi điện trực tiếp từ bốt công cộng lúc 15:45 đọc câu thứ sáu bài ca đếm sỏi và ấn định điểm hẹn tại Nhà tưởng niệm Lũng Nậm lúc 21:00 (C20); Thao chuẩn bị vũ khí tẩu thoát trong đêm bão.",
+      "chapter": 12
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C20",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C01",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C06",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C18",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 12
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 12
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 12
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

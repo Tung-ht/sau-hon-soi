@@ -1,13 +1,18 @@
 {
-  "chapter": 2,
-  "verdict": "accept",
   "scores": {
-    "plot_progression": 92,
-    "character_consistency": 90,
-    "anti_ai_tone": 94,
+    "consistency": 94,
+    "character": 92,
+    "continuity": 95,
     "pacing": 90,
-    "atmosphere": 92
+    "foreshadow": 94,
+    "hook": 88,
+    "aesthetic": 90
   },
-  "summary": "Kết quả pháp y chặt chẽ, khoảng lặng gánh cháo mẹ Tư giàu cảm xúc, cuộc đối thoại nghiệp vụ với Đức giải thích triệt để và thuyết phục lý do 4 vụ trước bị bế tắc.",
-  "issues": []
+  "average_score": 91.9,
+  "contract_status": "fulfilled",
+  "verdict": "accept",
+  "reason": "",
+  "affected_chapters": [],
+  "warnings": [],
+  "reviewed_at": "2026-08-29T19:56:14.073372"
 }

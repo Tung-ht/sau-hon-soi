@@ -1,0 +1,32 @@
+{
+  "summary": "18 tháng sau, Phiên tòa Đại hình tuyên phạt Thao Tù Chung thân, Đạt 3 năm án treo, Sinh Tù Chung thân khoan hồng tha tội chết, phục hồi danh dự toàn diện cho ông Cửu. Nam cùng GS Khoa về bản Dền gắn biển di tích xưởng mộc; các em nhỏ hát bài đồng dao tiếng Lũng Nậm và GS Khoa ngâm bản dịch thơ lục bát. Một tuần sau, Nam trở về Hạ An tiếp tục công tác tại Đội Trọng án, ngồi ăn bát cháo sườn nóng của mẹ bên bờ sông Lam Châu.",
+  "timeline_events": [
+    {
+      "time": "Mười tám tháng sau rạng sáng Chủ nhật",
+      "event": "Tòa án Cấp cao mở phiên tòa đại hình xét xử Kỳ án Lũng Nậm 2005."
+    },
+    {
+      "time": "Sau phiên tòa",
+      "event": "Nam cùng GS Khoa về bản Dền làm lễ cải chính minh oan và gắn biển xưởng mộc cho ông Cửu."
+    },
+    {
+      "time": "Một tuần sau phiên tòa",
+      "event": "Nam trở về thị trấn Hạ An, ăn cháo sườn bên gánh hàng của mẹ mé bờ sông Lam Châu."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C11",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Bài đồng dao cổ 6 nấc được giải mã trọn vẹn cả tiếng Lũng Nậm và bản dịch thơ lục bát."
+    },
+    {
+      "id": "C15",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Chiếc thước mộc gỗ lim trở về vị trí thiêng liêng trên bàn thờ xưởng mộc bản Dền."
+    }
+  ],
+  "cast_introduced": []
+}

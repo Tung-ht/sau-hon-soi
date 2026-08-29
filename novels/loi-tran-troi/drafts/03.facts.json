@@ -1,0 +1,68 @@
+{
+  "chapter": 3,
+  "timeline_events": [
+    {
+      "time": "Tối thứ Ba, 19:30–22:30",
+      "event": "Khám xét sà-lan Lê Văn Long tại Cửa Lác theo lệnh hợp lệ; thu xỉ que hàn HK-7018M đo XRF tương thích nhóm Crom-Molypden; phát hiện sà-lan từng qua Quỳnh Lâm, Tây Phong, Hải Khê; lập danh mục sổ vật tư 2005 có 6 tấm gỗ ép và keo nhiệt; phát hiện nhật ký máy tàu bị xóa đè 6 giờ; đưa Long về trụ sở."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 3
+    },
+    {
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 3
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "role": "Cán bộ kỹ thuật hình sự",
+      "first_seen": 1,
+      "last_seen": 3
+    },
+    {
+      "name": "Lê Văn Long",
+      "role": "Chủ xưởng cứu hộ sà-lan",
+      "first_seen": 3,
+      "last_seen": 3
+    }
+  ],
+  "relationships": {
+    "Dang_Hoang_Nam": {
+      "Le_Van_Long": "Khám xét và đấu tranh với nghi can vật chứng cứng đầu"
+    },
+    "Le_Van_Long": {
+      "Dang_Hoang_Nam": "Đề phòng, nói dối che giấu việc làm chui và thợ Ba"
+    }
+  },
+  "state_changes": {
+    "Le_Van_Long": "Bị khám xét phương tiện, thu mẫu xỉ Crom-Molypden, phát hiện xóa đè 6 giờ nhật ký máy tàu; bị đưa về trụ sở",
+    "Chương 3": "Lập danh mục sổ vật tư 2005 (C07); KHÔNG leak thông tin 3 nạn nhân cũ (C06)",
+    "Vật chứng": "Mẫu xỉ và que hàn HK-7018M (C05), ảnh chụp trang sổ vật tư 2005 (C07)"
+  },
+  "foreshadow_updates": [
+    {
+      "id": "C05",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 3
+    },
+    {
+      "id": "C06",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 3
+    },
+    {
+      "id": "C07",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 3
+    }
+  ]
+}

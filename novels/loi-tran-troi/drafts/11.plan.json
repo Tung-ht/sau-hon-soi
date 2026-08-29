@@ -1,0 +1,20 @@
+{
+  "goal": "Lấy lời khai chính thức của Đặng Tiến Đạt tại phòng thanh tra độc lập; công bố bản kết luận giám định chính thức từ Viện Kỹ thuật Hình sự; Đạt thừa nhận lỗi lầm năm 2005 và giao nộp ổ lưu trữ bản scan tài liệu gốc; nhận báo cáo dòng tiền pháp nhân Hải Khê (C19); Viện Công tố phê chuẩn lệnh triệu tập và cấm xuất cảnh đối với Hoàng Đình Thao (C18).",
+  "scenes": [
+    "Cảnh 1: 08:00 thứ Bảy tại phòng lấy lời khai độc lập, Nam và cán bộ thanh tra công bố Kết luận giám định chính thức từ Viện Kỹ thuật Hình sự xác nhận keo nhiệt Poly-resin và mã lô ván ép đáy giả.",
+    "Cảnh 2: Đặng Tiến Đạt khai nhận toàn bộ sự thật năm 2005: bị Thao đe dọa sự nghiệp và gia đình để buộc phải im lặng; Đạt giao nộp ổ USB chứa bản scan tài liệu gốc chưa chỉnh sửa.",
+    "Cảnh 3: Huy tiếp nhận báo cáo giám sát tài chính liên ngân hàng, xác định dòng tiền trợ cấp cho N1-N5 từ pháp nhân Hải Khê bắt nguồn từ tài khoản ủy thác của người thân Hoàng Đình Thao (C19).",
+    "Cảnh 4: Viện Công tố ban hành Quyết định cấm xuất cảnh, phê chuẩn Lệnh triệu tập khẩn cấp đối với Hoàng Đình Thao và triển khai lực lượng giám sát di biến động 24/24 (C18)."
+  ],
+  "required_beats": [
+    "Đạt thừa nhận lỗi im lặng năm 2005 và giao nộp tài liệu sao lưu bảo mật",
+    "Công bố kết luận lab chính thức từ Viện Kỹ thuật Hình sự vào sáng thứ Bảy",
+    "Khóa dòng tiền pháp nhân Hải Khê dẫn thẳng tới Thao (C19)",
+    "Viện Công tố ban hành lệnh triệu tập, cấm xuất cảnh và giám sát Thao (C18)",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
+  ],
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Lưới pháp lý đã siết chặt quanh Hoàng Đình Thao, nhưng kẻ chủ mưu bắt đầu nhận thấy dấu hiệu bị bóc trần và chuẩn bị nước cờ tàn.",
+  "planned_at": "2026-08-29T20:09:59.551640"
+}

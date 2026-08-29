@@ -1,0 +1,21 @@
+{
+  "goal": "Phiên tòa xét xử phúc thẩm công khai minh oan cho nghệ nhân Trần Văn Cửu; tuyên án nghiêm minh đối với Hoàng Đình Thao và giảm nhẹ đặc biệt cho Trần Văn Sinh; Đạt nhận kỷ luật nghiêm khắc; Nam và Huy đưa chiếc thước mộc gỗ lim về đặt trang trọng trên bàn thờ gia tiên bản Dền; khép lại trọn vẹn 21 manh mối C01-C21; vĩ thanh công lý.",
+  "scenes": [
+    "Cảnh 1: Một tháng sau tại phòng xử án Tòa án Cấp cao, Hội đồng xét xử công bố bản án hủy bỏ bản án oan sai năm 2005, minh oan và phục hồi danh dự cho cố nghệ nhân Trần Văn Cửu.",
+    "Cảnh 2: Tòa tuyên phạt Hoàng Đình Thao mức án tù chung thân; tuyên phạt Trần Văn Sinh mức án có thời hạn nhân đạo nhờ tình tiết giảm nhẹ buông vũ khí và tự nguyện chấp nhận pháp luật; kỷ luật nghiêm khắc Đặng Tiến Đạt.",
+    "Cảnh 3: Nam và Huy vượt đèo Gió trở lại thung lũng bản Dền trong một buổi sáng mùa thu rực rỡ; Trưởng bản Ban và Cụ Mộc đón tiếp tổ án giữa tiếng cồng chiêng vang vọng.",
+    "Cảnh 4: Nam trang trọng đặt chiếc thước mộc gỗ lim lên bàn thờ gia tiên; nhìn dòng suối Lũng Nậm trong xanh và chiêm nghiệm về bài học vĩnh cửu của sự thật và công lý."
+  ],
+  "required_beats": [
+    "Phiên tòa phúc thẩm minh oan trọn vẹn cho nghệ nhân Trần Văn Cửu",
+    "Tuyên án nghiêm minh Hoàng Đình Thao và giảm nhẹ nhân đạo cho Trần Văn Sinh",
+    "Tuyệt đối KHÔNG thêm bất kỳ manh mối hay lời giải mới nào trong chương này",
+    "Thu hồi và giải mã toàn bộ 21 manh mối C01-C21",
+    "Đưa chiếc thước mộc về lại bàn thờ gia tiên bản Dền",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
+  ],
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Khép lại toàn bộ tác phẩm bằng khúc vĩ thanh trong trẻo, trang nghiêm và sâu lắng về sự công bằng tối thượng của pháp luật và lương tâm con người.",
+  "planned_at": "2026-08-29T20:15:26.719496"
+}

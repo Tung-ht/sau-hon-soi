@@ -1,21 +1,20 @@
 {
-  "chapter": 1,
-  "title": "Người chết lẩm bẩm",
-  "goal": "Thiết lập hiện trường vụ án mạng thợ sửa xe Nguyễn Văn Tư tại Hạ An đêm mưa; phát hiện các dấu vết vi vết lạ lùng (rút máu tĩnh mạch viết chữ máu nhỏ, vệt dầu mạt sắt, miếng vải thêu) và kết thúc trong bầu không khí bế tắc nghẹt thở của đêm đầu tiên.",
+  "goal": "Mở đầu vụ án mạng N4 tại phố Đò Cũ trong đêm mưa bão; thiết lập nhân vật I (Nam), M (Đạt), P (Thao xuất hiện xã giao), gieo C01 và C02; khám nghiệm hiện trường cẩn trọng theo quy chuẩn tư pháp hư cấu trung tính.",
   "scenes": [
-    "Nam nhận tin báo án lúc 1h17 đêm mưa, chạy xe Dream đến ngõ trọ Nguyễn Trãi",
-    "Khám nghiệm phòng trọ số 3: thi thể chắp tay cầu nguyện, phát hiện vết tiêm rút máu tĩnh mạch, dòng chữ máu nhỏ giấu sau gờ tường, thu giữ miếng vải thêu và vệt dầu máy đặc",
-    "Lấy lời khai Hùng và bà chủ trọ về tiếng đọc lẩm bẩm khum rụng và tiếng thở dài lúc 22h",
-    "Nam về phòng làm việc lúc 4h sáng, đối mặt với hiện trường bí ẩn không dấu vết kẻ thủ ác"
+    "Cảnh 1: Nam ghé quán cháo sườn của mẹ bên góc chợ Đò Cũ trước ca trực tối mưa rào dai dẳng.",
+    "Cảnh 2: Tại trụ sở Đội Trọng án Hạ An, Nam gặp P (Thao) ghé thăm trao đổi công việc Quỹ An sinh; P nhắc về bến bãi và hồ sơ chìm nổi (C01, C02); M (Đạt) có phản ứng tinh tế.",
+    "Cảnh 3: Rạng sáng thứ Ba, điện thoại báo án mạng nhà số 42 phố Đò Cũ; Nam, Huy, Bác sĩ Phong, KTV Quang khám nghiệm hiện trường N4 Nguyễn Văn Tư.",
+    "Cảnh 4: Pháp y xác định dấu siết cổ cơ học và phản ứng sơ bộ an thần; phát hiện 3 sợi xơ chàm dính xỉ kim loại dưới móng tay; phát hiện túi thổ cẩm thứ tư chứa 4 bộ xương cá khô dưới đáy hộp cờ-lê; lấy lời khai ban đầu; niêm phong vật chứng."
   ],
   "required_beats": [
-    "Không khí đêm mưa dầm ẩm ướt của thị trấn Hạ An",
-    "Hiện trường ngăn nắp, thi thể chết trong tư thế sám hối cầu nguyện",
-    "Vết chọc kim tiêm tĩnh mạch rút máu và dòng chữ máu nhỏ ẩn giấu",
-    "Sự bế tắc và cô độc của Nam trước vụ án kỳ lạ"
+    "P chỉ ghé thăm vì hoạt động xã hội trước giờ án mạng, không biết dữ liệu án",
+    "M phản ứng kín đáo khi nghe P nói về hồ sơ chìm nổi",
+    "PMI là một khoảng thời gian thận trọng đêm thứ Hai",
+    "Thu thập mẫu vi sợi xỉ kim loại và túi thổ cẩm 4 bộ xương cá khô",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính, không dùng từ cấm"
   ],
-  "payoff_points": [
-    "Mở màn vụ án mạng bí ẩn mở đầu tác phẩm"
-  ],
-  "hook_goal": "Sự im lặng đặc quánh của đêm đầu tiên và linh cảm về bóng ma quá khứ đang dõi theo"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Sự tĩnh lặng rợn người của hiện trường không dấu vân tay lạ, chỉ còn lại túi bùa 4 bộ xương cá khô và mùi dầu máy bốc lên trong sương sớm.",
+  "planned_at": "2026-08-29T19:53:59.647739"
 }

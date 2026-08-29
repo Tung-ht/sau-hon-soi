@@ -1,0 +1,94 @@
+{
+  "chapter": 5,
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Năm, 08:00–11:30",
+      "event": "Công bố kết quả GC-MS độc chất D-Alkaloid mạn tính của N4; khám chòi trạm bơm thu mỏ cắt Tây Phong; đối soát 4 ID giả cùng batch và dòng tiền từ Hải Khê; trích lục hồ sơ phát hiện 3 cơ chế cơ học bất thường trong 3 vụ tai nạn cũ (C09, C10); Nam phát hiện ảnh Thao khen thưởng Lũng Nậm 2005; Đạt ký công văn ủy thác thu hồi hồ sơ gốc."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "role": "Giám định viên pháp y",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "role": "Cán bộ kỹ thuật hình sự",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "role": "Chỉ huy Đội Trọng án",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "role": "Chủ tịch danh dự Quỹ An sinh",
+      "first_seen": 1,
+      "last_seen": 5
+    }
+  ],
+  "relationships": {
+    "Dang_Hoang_Nam": {
+      "Dang_Tien_Dat": "Báo cáo chuỗi 4 vụ án mạng liên tỉnh",
+      "Hoang_Dinh_Thao": "Phát hiện mối liên hệ lịch sử Chuyên án 2005"
+    },
+    "Dang_Tien_Dat": {
+      "Dang_Hoang_Nam": "Hoang mang tâm lý khi nhận diện 4 nạn nhân cũ nhưng vẫn ký công văn ủy thác"
+    }
+  },
+  "state_changes": {
+    "N1_N4": "Nối 4 nạn nhân mang ID giả cùng đợt, 4 túi dị vật tăng dần (C01), dòng tiền pháp nhân Hải Khê (C03, C10)",
+    "N1_N3": "Phát hiện 3 cơ chế cơ học can thiệp có chủ đích (C09)",
+    "Nguyen_Van_Tu": "Độc chất D-Alkaloid mạn tính do tự uống",
+    "Hoang_Dinh_Thao": "Xuất hiện trong ảnh khen thưởng Chuyên án 2005"
+  },
+  "foreshadow_updates": [
+    {
+      "id": "C09",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 5
+    },
+    {
+      "id": "C10",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 5
+    },
+    {
+      "id": "C01",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 5
+    },
+    {
+      "id": "C03",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 5
+    },
+    {
+      "id": "C05",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 5
+    }
+  ]
+}

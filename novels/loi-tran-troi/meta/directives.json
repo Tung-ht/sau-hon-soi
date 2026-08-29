@@ -6,16 +6,28 @@
     "created_at": "2026-08-28T16:50:00+07:00"
   },
   {
+    "id": "dir_fictional_sanitization_v4_strict",
+    "type": "hard_constraint",
+    "content": "CẤM TUYỆT ĐỐI: 1) Không trích dẫn Điều 375, Điều 356 hay bất kỳ số điều luật thực tế nào -> Dùng 'Quy chế Tư pháp & Tội phạm chức vụ Khu vực'. 2) Không dùng tên tộc người thật (Dao Tiền, Mông, Thái), không dùng tiếng khèn Mông -> Dùng 'cư dân bản Dền', 'người vùng cao Mường Biên', 'điệu cồng đồng bản Dền'. 3) Không dùng Quốc lộ 6, đèo Gió, miền núi Tây Bắc -> Dùng 'Tuyến lộ 9', 'đèo Mây Mường Biên'. 4) Không dùng súng M-54/K54 -> Dùng 'súng ngắn bán tự động P-9 tiêu chuẩn'.",
+    "created_at": "2026-08-29T21:10:00+07:00"
+  },
+  {
     "id": "dir_investigative_scientific_rigor",
     "type": "hard_constraint",
     "content": "Quy chuẩn nghiệp vụ trinh thám noir: Không khẳng định vội vã 100% dựa trên dấu vết gián tiếp; sử dụng ngôn ngữ suy luận giả thuyết nghiệp vụ thận trọng; phân tích XRF đối chiếu thành phần hợp kim tương thích; vật chứng vận chuyển độc lập qua biên bản niêm phong; lời thú tội phải kèm chứng cứ cơ học kiểm chứng.",
     "created_at": "2026-08-29T05:45:00+07:00"
   },
   {
-    "id": "dir_fair_play_upgrade_v2_proposal",
-    "type": "creative_direction_proposal",
-    "status": "pending_author_approval",
-    "content": "Đề xuất nâng cấp Fair-Play V2: mở rộng từ 12 lên 15 chương; gieo P từ Chương 1 với ảnh hưởng xã hội nhưng không có quyền chỉ đạo; thêm L làm nghi phạm vật chứng; phát triển M thành nghi phạm nội bộ qua audit dữ liệu và thư cảnh báo; kết tội P bằng bó chứng cứ độc lập. Không tạo hoặc accept revision theo hướng này trước khi tác giả duyệt sáu quyết định khóa trong outlines/fair_play_upgrade_plan_v2.md.",
-    "created_at": "2026-08-29T18:34:49+07:00"
+    "id": "dir_prose_noir_anti_preaching",
+    "type": "hard_constraint",
+    "content": "CẤM TUYỆT ĐỐI các câu thuyết giảng đạo đức, đao to búa lớn cuối chương (như 'Sự thật không bao giờ có thể bị chôn vùi...', 'Ánh sáng công lý vĩnh hằng...'). Kết chương bằng hình ảnh Noir hình tượng cụ thể (dòng nước, mưa dầm, khói thuốc, tiếng cưa xẻ). Sửa triệt để lỗi ngắt dấu chấm sai ngữ pháp ở giữa câu và loại bỏ trùng lặp thông số kỹ thuật.",
+    "created_at": "2026-08-29T21:10:00+07:00"
+  },
+  {
+    "id": "dir_overhaul_v4_master_mandate",
+    "type": "creative_direction_mandate",
+    "status": "active_executing",
+    "content": "Thi hành toàn diện Kế hoạch Đại tu V4: 1) 3 vụ cũ của K là can thiệp mục tiêu cá nhân cục bộ trong khoang riêng / lối riêng, không gây hại diện rộng người vô tội. 2) P là cáo già bị dồn vào đường cùng sau khi đường biển bị chặn, phải quay về Lũng Nậm tẩu tán tài liệu gốc và bị K phục kích. 3) Chương 14 đối đầu đỉnh cao: Nam khóa lối thoát chiến thuật, đưa chứng cứ phục hồi danh dự đã công bố và lệnh giữ P; K buông dao vì danh dự phiên tòa công khai của cha. 4) Triệt để sửa văn phong Show Don't Tell.",
+    "created_at": "2026-08-29T21:10:00+07:00"
   }
 ]

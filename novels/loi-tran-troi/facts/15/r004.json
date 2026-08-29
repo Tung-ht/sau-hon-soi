@@ -1,0 +1,76 @@
+{
+  "chapter": 15,
+  "revision": "r004",
+  "created_at": "2026-08-29T21:12:17.941982",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Một tháng sau (Mùa thu)",
+      "event": "Tòa án Cấp cao mở phiên tòa xét xử phúc thẩm: tuyên hủy toàn bộ bản án oan sai năm 2005, minh oan và phục hồi danh dự cho cố nghệ nhân Trần Văn Cửu; tuyên phạt Hoàng Đình Thao tù chung thân; tuyên phạt Trần Văn Sinh 12 năm tù có thời hạn nhân đạo; kỷ luật nghiêm khắc Đặng Tiến Đạt; Nam và Huy đưa chiếc thước mộc gỗ lim về đặt trang trọng trên bàn thờ gia tiên bản Dền; khép lại trọn vẹn 21 manh mối C01–C21; vĩ thanh công lý.",
+      "chapter": 15
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    },
+    {
+      "id": "C06",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 15
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 15
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 15
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 15
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 15
+    },
+    {
+      "name": "Trưởng bản Ban",
+      "brief_role": "",
+      "first_seen": 9,
+      "last_seen": 15
+    },
+    {
+      "name": "Cụ già thợ mộc (Cụ Mộc)",
+      "brief_role": "",
+      "first_seen": 9,
+      "last_seen": 15
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

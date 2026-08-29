@@ -1,25 +1,21 @@
 {
-  "chapter": 7,
-  "title": "Người lái đò không tên",
-  "goal": "Nam và Tùng vượt đèo sương mù lên Mường Biên, tìm tới xóm chài ven sông Lũng Nậm truy vết nhân chứng lái đò năm 2005; phát hiện lão Vượng vừa bị siết cổ chết với chiếc vảy cá suối trên ngực, chính thức giải mã The Missing 5th.",
+  "goal": "Xác nhận thiết bị và IP công vụ của Đạt (C13, loại trừ mã độc); khóa lộ trình xe của Đạt qua camera trạm thu phí và trạm xăng; Thao gọi điện thăm dò khi không liên lạc được Đạt; Nam và Huy xuất phát lúc 21:00 trong mưa bão; xe gặp sạt lở đèo Gió; nhận tin báo án mạng vô danh bến suối Lũng Nậm lúc nửa đêm.",
   "scenes": [
-    "Chuyến xe máy xuyên đêm vượt 300km đường đèo trong sương mù dày đặc",
-    "Tiếp cận xóm chài bãi sậy ven sông Lũng Nậm lúc rạng sáng, nghe dân chài kể về lão Vượng nghiện ngập",
-    "Đột nhập căn chòi ven sông: Lão Vượng vừa bị siết cổ chết, hai tay chắp trước ngực, trên áo gài chiếc vảy cá suối lớn",
-    "Phát hiện Sinh vừa rời đi; tiếng còi xe của lực lượng an ninh Mường Biên ập đến bủa vây bến sông"
+    "Cảnh 1: Phòng an ninh mạng rà soát nhật ký thiết bị phần cứng, xác nhận chính máy trạm và khóa thẻ token vật lý của Đạt đã thực hiện các lệnh truy vấn (C13).",
+    "Cảnh 2: Trích xuất camera giao thông và trạm thu phí cầu Lam Châu, khóa lộ trình xe riêng của Đạt rời thị trấn lúc 18:45 và đổ xăng lúc 20:00 hướng lên đèo Gió.",
+    "Cảnh 3: P (Thao) gọi điện cho Nam hỏi thăm bâng quơ khi không gọi được cho Đạt; Nam giữ bí mật tuyệt đối về việc audit Đạt.",
+    "Cảnh 4: 21:00 Nam và Huy xuất phát; vượt đèo Gió trong sương mù và gặp sạt lở đất nhỏ; nhận tin báo khẩn cấp từ công an xã về án mạng tại bến đò Lũng Nậm."
   ],
   "required_beats": [
-    "Cái lạnh buốt và hiểm trở của cung đường đèo đêm Tây Bắc",
-    "Khung cảnh hoang tàn của xóm chài bãi bồi ven sông Lũng Nậm",
-    "Vật chứng chiếc vảy cá suối — giải mã trọn vẹn Hòn sỏi thứ năm bị khuyết",
-    "Cú móc nghẹt thở khi công an Mường Biên bất ngờ xuất hiện bao vây"
+    "Chuyển nội dung audit thành đối thoại và màn hình đối soát, KHÔNG dùng bullet points",
+    "Khóa alibi số và lộ trình xe của Đạt đi trước",
+    "P gọi điện thăm dò bâng quơ, không biết Đạt đang bị nghi vấn",
+    "Sạt lở đèo Gió làm chậm bước tiến của tổ án",
+    "Tin báo án mạng bến nước Lũng Nậm từ người gọi ẩn danh lúc nửa đêm",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "forbidden_moves": [
-    "Không để Nam bị bắt ngay tại bến sông",
-    "Không để lộ toàn bộ danh tính Kẻ thứ sáu"
-  ],
-  "payoff_points": [
-    "Giải mã hoàn toàn bí ẩn The Missing 5th — Hòn sỏi thứ 5 là người lái đò bến suối Lũng Nậm"
-  ],
-  "hook_goal": "Tiếng còi xe công an Mường Biên bao vây bến sông, Nam và Tùng trở thành kẻ bị truy đuổi"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Tiếng chuông điện thoại vệ tinh reo vang giữa đèo Gió mịt mù sương gió báo tin về vụ án mạng thứ năm đã xảy ra.",
+  "planned_at": "2026-08-29T20:02:51.681396"
 }

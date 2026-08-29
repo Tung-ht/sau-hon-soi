@@ -1,23 +1,21 @@
 {
-  "chapter": 3,
-  "title": "Mảnh đồng dao",
-  "goal": "Bắt Tùng tại bến xe; thẩm vấn chuẩn điều lệnh minh oan cho Tùng; giải mã bài đồng dao đếm sỏi cổ và Cú nhảy số 1, 2, 3, 4 -> 6 (The Missing 5th); lần ra địa danh Lũng Nậm ở Mường Biên.",
+  "goal": "Khám xét sà-lan cứu hộ của Lê Văn Long tại Cửa Lác theo lệnh hợp lệ; thu mẫu que hàn HK-7018M và xỉ kim loại phân tích XRF nhóm Crom-Molypden (C05); kiểm tra lịch trình sà-lan qua Quỳnh Lâm, Tây Phong, Hải Khê (C06) KHÔNG leak tin 3 nạn nhân cũ; lập danh mục sổ vật tư 2005 có 6 tấm gỗ ép và keo nhiệt (C07); phát hiện nhật ký máy tàu bị xóa đè 6 giờ; hé lộ mối thù gia đình của Long.",
   "scenes": [
-    "4h30 sáng đón lõng bắt Tùng tại bến xe khách liên tỉnh",
-    "Hỏi cung chuẩn điều lệnh: Tùng giải thích alibi và lý do gạch tên ông Tư vì nghe còi cứu thương đêm qua",
-    "Đức gửi kết quả xác minh alibi vững chắc của Tùng",
-    "Tùng và Nam đối chiếu 5 lời trăn trối, phát hiện bài đồng dao đếm sỏi cổ và cú nhảy số 1, 2, 3, 4 -> 6 (thiếu hòn 5)",
-    "Gọi điện cho bà Nhu nghe bài đồng dao tiếng Mường cổ, xác định địa danh suối Lũng Nậm",
-    "Báo cáo Trung tá Đạt: Đạt cảnh báo về vụ án oan 2005 của Trần Văn Cửu nhưng ký giấy giới thiệu"
+    "Cảnh 1: Ca-nô đặc chủng áp sát sà-lan cứu hộ Lê Văn Long tại bãi xác tàu Cửa Lác trong đêm triều cường cửa biển.",
+    "Cảnh 2: Nam xuất trình lệnh khám xét hợp lệ; KTV Quang lấy mẫu xỉ kim loại và vỏ que hàn HK-7018M, đo quang phổ XRF tương thích nhóm nguyên tố Crom-Molypden (C05).",
+    "Cảnh 3: Huy rà soát nhật ký hải trình thấy sà-lan từng hoạt động tại Quỳnh Lâm, Tây Phong, Hải Khê (C06); Nam quan sát bàn thờ người em trai thợ mộc của Long chết uất ức sau vụ Lũng Nậm 2005; lập danh mục sổ vật tư 2005 ghi nhận 6 tấm gỗ ép và keo nhiệt (C07).",
+    "Cảnh 4: Nam truy vấn về thợ Ba và chiếc mỏ cắt bị thiếu; Huy phát hiện hộp đen dữ liệu máy phát chính bị xóa đè đúng 6 tiếng đêm thứ Hai; Long trở thành nghi phạm vật chứng nặng ký."
   ],
   "required_beats": [
-    "Xưng hô điều lệnh chuẩn mực anh - tôi trong phòng hỏi cung",
-    "Giải mã bài đồng dao tiếng Mường cổ (khum = hòn sỏi)",
-    "Phân tích cú twist The Missing 5th: tại sao người thứ 5 lại đọc câu thứ 6",
-    "Cảnh báo của Trung tá Đạt về bản án oan ma túy năm 2005"
+    "Lệnh khám xét có căn cứ và thẩm quyền rõ ràng",
+    "Huy KHÔNG leak thông tin về 3 nạn nhân mang ID giả (sửa triệt để continuity)",
+    "Lập danh mục sổ vật tư 2005 có 6 tấm gỗ ép và keo nhiệt (C07)",
+    "XRF chỉ kết luận tương thích nhóm vật liệu Crom-Molypden (C05)",
+    "Không dùng chữ in đậm 'động cơ-phương tiện-cơ hội'",
+    "Tuyệt đối tuân thủ hư cấu hóa trung tính"
   ],
-  "payoff_points": [
-    "Minh oan cho Tùng, biến Tùng thành cộng sự giải mã; tìm ra nguồn gốc Lũng Nậm"
-  ],
-  "hook_goal": "Mảnh đồng dao dẫn về vụ án ma túy năm 2005 với người bị kết án oan Trần Văn Cửu"
+  "forbidden_moves": [],
+  "payoff_points": [],
+  "hook_goal": "Khoảng trống 6 giờ bị xóa đè trong hộp đen máy tàu và ánh mắt lạnh trơ của người thợ lặn già giữa sóng gió cửa biển.",
+  "planned_at": "2026-08-29T19:56:27.162079"
 }

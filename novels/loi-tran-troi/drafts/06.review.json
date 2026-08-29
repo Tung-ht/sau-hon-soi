@@ -1,0 +1,22 @@
+{
+  "chapter": 6,
+  "revision": "r010",
+  "scores": {
+    "consistency": 96,
+    "character": 94,
+    "continuity": 96,
+    "pacing": 92,
+    "foreshadow": 96,
+    "hook": 92,
+    "aesthetic": 94,
+    "procedural": 96,
+    "fictional_neutrality": 100
+  },
+  "feedback": "Chương 6 tuân thủ nghiêm ngặt quy chuẩn V3: GS Khoa chỉ xem ảnh chụp vĩ mô và mẫu sợi tách hợp lệ để đối chiếu 3 vùng dệt và giải mã bài ca đếm sỏi 6 câu (C11); Nam audit hệ thống phát hiện Đạt tra cứu N1-N5 và tìm thấy phong bì cảnh báo N5 trong két sắt (C12); Nam báo cáo đơn vị thanh tra độc lập theo đúng quy trình; Đạt rời trụ sở lúc 18:45; 0 câu dài quá 35 từ.",
+  "strengths": [
+    "Quy trình bảo quản chuỗi vật chứng và tham vấn chuyên gia văn hóa rất chuẩn tắc",
+    "Audit an ninh mạng và phát hiện phong bì cảnh báo kịch tính, logic",
+    "Nam hành động chuẩn mực khi báo cáo đơn vị giám sát độc lập"
+  ],
+  "weaknesses": []
+}

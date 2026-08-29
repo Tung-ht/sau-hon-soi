@@ -1,0 +1,77 @@
+{
+  "chapter": 6,
+  "revision": "r012",
+  "created_at": "2026-08-29T21:12:09.713662",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Năm, 13:30–17:00",
+      "event": "GS Lê Đăng Khoa thẩm định mẫu ảnh/sợi đối chứng, xác định nguồn gốc thổ cẩm bản Dền vùng Lũng Nậm và dịch nghĩa bài ca đếm sỏi 6 câu (C11).",
+      "chapter": 6
+    },
+    {
+      "time": "Tối thứ Năm, 18:00–19:00",
+      "event": "Nam audit hệ thống phát hiện tài khoản Đạt tra cứu N1-N5 trước các cái chết; phát hiện phong bì cảnh báo mới mang tên Bùi Văn Vượng (N5) trong két Đạt (C12); Nam báo cáo đơn vị thanh tra độc lập; Đạt lái xe riêng rời trụ sở lúc 18:45.",
+      "chapter": 6
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C11",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C12",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C01",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    },
+    {
+      "id": "C02",
+      "description": "",
+      "action": "advance",
+      "status": "advanced",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 6
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 6
+    },
+    {
+      "name": "Giáo sư Lê Đăng Khoa",
+      "brief_role": "",
+      "first_seen": 6,
+      "last_seen": 6
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 6
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

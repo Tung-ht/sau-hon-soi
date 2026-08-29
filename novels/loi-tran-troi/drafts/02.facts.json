@@ -1,0 +1,86 @@
+{
+  "chapter": 2,
+  "timeline_events": [
+    {
+      "time": "Thứ Ba, 08:30–10:00",
+      "event": "Họp án phát hiện ID giả của N4 và giao dịch 60 triệu từ công ty vận tải Hải Khê; Hoàng Đình Thao ghé bên ngoài phòng họp định hướng nợ nần bến bãi."
+    },
+    {
+      "time": "Thứ Ba, 10:30–12:00",
+      "event": "Nam và Huy đến bãi phế liệu Chín Gù; Nam tiếp xúc trực tiếp với K dưới bí danh Ba thợ cắt; thẩm vấn Chín Gù; Chín Gù có alibi camera quán nhậu; phát hiện manh mối xưởng Lê Văn Long và người thợ Ba biến mất."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "role": "Chỉ huy Đội Trọng án",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "role": "Chủ tịch danh dự Quỹ An sinh",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Chín Gù",
+      "role": "Chủ vựa phế liệu",
+      "first_seen": 2,
+      "last_seen": 2
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "role": "Kẻ báo thù (K) / Ba thợ cắt",
+      "first_seen": 2,
+      "last_seen": 2
+    }
+  ],
+  "relationships": {
+    "Dang_Hoang_Nam": {
+      "Tran_Van_Sinh": "Gặp mặt lần đầu dưới bí danh Ba thợ cắt tại bãi phế liệu mà chưa nhận diện",
+      "Chin_Gu": "Thẩm vấn xác minh quan hệ nợ nần"
+    },
+    "Hoang_Dinh_Thao": {
+      "Dang_Hoang_Nam": "Định hướng điều tra sang mâu thuẫn bến bãi phế liệu"
+    }
+  },
+  "state_changes": {
+    "Nguyen_Van_Tu": "Xác nhận dùng thẻ định danh giả của người chết và nhận 60 triệu từ Hải Khê",
+    "Tran_Van_Sinh": "Xuất hiện trực tiếp dưới bí danh Ba thợ cắt tại bãi Chín Gù, gieo C04; sau đó rời đi",
+    "Chin_Gu": "Được xác minh alibi qua camera quán nhậu; cung cấp thông tin về xưởng Lê Văn Long",
+    "Hoang_Dinh_Thao": "Đưa lời khuyên nửa đúng nửa sai, gieo C01/C03"
+  },
+  "foreshadow_updates": [
+    {
+      "id": "C03",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 2
+    },
+    {
+      "id": "C04",
+      "status": "planted",
+      "action": "plant",
+      "chapter": 2
+    },
+    {
+      "id": "C01",
+      "status": "advanced",
+      "action": "advance",
+      "chapter": 2
+    }
+  ]
+}

@@ -1,13 +1,18 @@
 {
-  "chapter": 11,
-  "verdict": "accept",
   "scores": {
-    "plot_progression": 92,
-    "character_consistency": 95,
-    "anti_ai_tone": 96,
+    "consistency": 97,
+    "character": 96,
+    "continuity": 97,
     "pacing": 94,
-    "atmosphere": 95
+    "foreshadow": 97,
+    "hook": 95,
+    "aesthetic": 95
   },
-  "summary": "Cao trào giải quyết xung đột xuất sắc bằng chiếc thước mộc gỗ lim và bản sao giám định lệnh xe 2005. Tâm lý Sinh thức tỉnh chân thực, Thao bị bắt giữ tại chỗ đúng quy trình tố tụng.",
-  "issues": []
+  "average_score": 95.9,
+  "contract_status": "fulfilled",
+  "verdict": "accept",
+  "reason": "",
+  "affected_chapters": [],
+  "warnings": [],
+  "reviewed_at": "2026-08-29T20:11:08.430260"
 }

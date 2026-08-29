@@ -1,0 +1,104 @@
+{
+  "chapter": 1,
+  "revision": "r007",
+  "created_at": "2026-08-29T19:54:43.965898",
+  "summary": "",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Hai, 18:30–20:00",
+      "event": "Nam gặp mẹ ở quán cháo sườn; Hoàng Đình Thao ghé thăm trụ sở Đội Trọng án Hạ An trao đổi công tác Quỹ An sinh; Thao nhắc về hồ sơ chìm nổi; Đạt phản ứng kín đáo.",
+      "chapter": 1
+    },
+    {
+      "time": "Tối thứ Hai, 21:00–23:00",
+      "event": "Nguyễn Văn Tư (N4) bị siết cổ tử vong tại nhà số 42 phố Đò Cũ; hung thủ đặt túi thổ cẩm thứ tư chứa 4 bộ xương cá khô vào hộp đồ nghề.",
+      "chapter": 1
+    },
+    {
+      "time": "Sáng thứ Ba, 05:30–08:00",
+      "event": "Phát hiện thi thể N4; Nam, Phong, Quang khám nghiệm hiện trường, thu mẫu vi sợi xỉ kim loại và niêm phong túi thổ cẩm.",
+      "chapter": 1
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    },
+    {
+      "id": "C02",
+      "description": "",
+      "action": "plant",
+      "status": "planted",
+      "notes": ""
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Mẹ Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Nguyễn Văn Tư",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Bà Năm",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Anh Thắng",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}
