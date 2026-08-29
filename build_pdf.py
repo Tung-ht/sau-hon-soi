@@ -4,6 +4,7 @@ import glob
 import re
 import subprocess
 import markdown
+import urllib.request
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -40,14 +41,14 @@ VOLUMES = [
 ]
 
 CSS_STYLES = """
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cinzel:wght@600;700;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
 
 @page {
     size: 145mm 205mm;
     margin: 18mm 16mm 18mm 16mm;
     @bottom-center {
         content: counter(page);
-        font-family: 'Lora', 'Times New Roman', serif;
+        font-family: 'Times New Roman', 'Lora', serif;
         font-size: 8.5pt;
         color: #555;
     }
@@ -56,9 +57,9 @@ CSS_STYLES = """
 @page :left {
     @top-left {
         content: "HOÀNG TÙNG — SÁU HÒN SỎI";
-        font-family: 'Be Vietnam Pro', 'Cinzel', sans-serif;
+        font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
         font-size: 7.5pt;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
         color: #777;
     }
 }
@@ -66,10 +67,10 @@ CSS_STYLES = """
 @page :right {
     @top-right {
         content: "TIỂU THUYẾT TRINH THÁM HÌNH SỰ";
-        font-family: 'Lora', 'Georgia', serif;
+        font-family: 'Times New Roman', 'Lora', serif;
         font-size: 7.5pt;
         font-style: italic;
-        letter-spacing: 0.8px;
+        letter-spacing: 0.5px;
         color: #777;
     }
 }
@@ -85,10 +86,10 @@ CSS_STYLES = """
 }
 
 body {
-    font-family: 'Lora', 'Merriweather', 'Times New Roman', serif;
+    font-family: 'Times New Roman', 'Merriweather', 'Lora', serif;
     font-size: 10.5pt;
     line-height: 1.62;
-    color: #1a1a1a;
+    color: #111111;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -115,10 +116,10 @@ body {
 }
 
 .cover-badge {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 8pt;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #d4af37;
     text-transform: uppercase;
     padding-bottom: 6px;
@@ -126,45 +127,45 @@ body {
 }
 
 .cover-author {
-    font-family: 'Be Vietnam Pro', 'Cinzel', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 14pt;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 10mm;
+    margin-top: 8mm;
     margin-bottom: 2mm;
     text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .cover-title-group {
-    margin: 8mm 0 6mm 0;
+    margin: 6mm 0 4mm 0;
 }
 
 .cover-main-title {
-    font-family: 'Playfair Display', 'Cinzel', serif;
-    font-size: 30pt;
+    font-family: 'Times New Roman', 'Merriweather', serif;
+    font-size: 28pt;
     font-weight: 900;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #f4e8c1;
     text-transform: uppercase;
-    line-height: 1.12;
+    line-height: 1.15;
     margin: 0;
     text-shadow: 0 3px 12px rgba(0,0,0,0.7);
 }
 
 .cover-subtitle {
-    font-family: 'Lora', serif;
+    font-family: 'Times New Roman', 'Lora', serif;
     font-size: 10.5pt;
     font-style: italic;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     color: #cbd5e1;
-    margin-top: 5mm;
+    margin-top: 4mm;
 }
 
 .cover-img-preview {
     width: 90%;
-    max-height: 50mm;
+    max-height: 52mm;
     object-fit: cover;
     border-radius: 4px;
     border: 1px solid rgba(212, 175, 55, 0.4);
@@ -173,13 +174,13 @@ body {
 }
 
 .cover-ornament {
-    font-size: 14pt;
+    font-size: 13pt;
     color: #d4af37;
-    margin: 4mm 0;
+    margin: 3mm 0;
 }
 
 .cover-tagline {
-    font-family: 'Lora', serif;
+    font-family: 'Times New Roman', 'Lora', serif;
     font-size: 9pt;
     line-height: 1.45;
     color: #94a3b8;
@@ -190,15 +191,15 @@ body {
 
 .cover-footer {
     border-top: 1px solid rgba(212, 175, 55, 0.3);
-    padding-top: 5mm;
+    padding-top: 4mm;
     width: 85%;
 }
 
 .cover-edition {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 7.5pt;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: #d4af37;
     text-transform: uppercase;
 }
@@ -216,20 +217,20 @@ body {
 }
 
 .title-author-name {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 13pt;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #334155;
     text-transform: uppercase;
     margin-bottom: 6mm;
 }
 
 .title-book-name {
-    font-family: 'Playfair Display', 'Cinzel', serif;
+    font-family: 'Times New Roman', 'Merriweather', serif;
     font-size: 24pt;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: #0f172a;
     margin-bottom: 4mm;
 }
@@ -238,8 +239,9 @@ body {
     font-size: 9.5pt;
     font-style: italic;
     color: #64748b;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
 }
 
 .title-page-divider {
@@ -251,9 +253,9 @@ body {
 
 .title-page-publisher {
     font-size: 8.5pt;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     color: #475569;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     text-transform: uppercase;
 }
 
@@ -276,11 +278,11 @@ body {
 }
 
 .epigraph-author {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 8.5pt;
     font-weight: 600;
     color: #64748b;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
 }
 
@@ -292,10 +294,10 @@ body {
 }
 
 .toc-title {
-    font-family: 'Playfair Display', 'Cinzel', serif;
+    font-family: 'Times New Roman', 'Merriweather', serif;
     font-size: 15pt;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 6mm;
@@ -303,7 +305,7 @@ body {
 }
 
 .toc-volume {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 9.5pt;
     font-weight: 700;
     color: #1e3a8a;
@@ -343,7 +345,7 @@ body {
 
 .volume-img {
     width: 100%;
-    max-height: 62mm;
+    max-height: 64mm;
     object-fit: cover;
     border-radius: 4px;
     border: 1px solid #cbd5e1;
@@ -352,30 +354,30 @@ body {
 }
 
 .volume-number {
-    font-family: 'Playfair Display', 'Cinzel', serif;
+    font-family: 'Times New Roman', 'Merriweather', serif;
     font-size: 16pt;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: #0f172a;
     text-transform: uppercase;
     margin: 0;
 }
 
 .volume-subtitle {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 9.5pt;
     font-weight: 600;
     color: #475569;
     margin-top: 2mm;
     margin-bottom: 5mm;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
 }
 
 .volume-divider {
-    font-size: 12pt;
+    font-size: 11pt;
     color: #94a3b8;
-    margin-bottom: 5mm;
+    margin-bottom: 4mm;
 }
 
 .volume-epigraph {
@@ -398,17 +400,17 @@ body {
 }
 
 .chapter-number-label {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 8.5pt;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: #64748b;
     text-transform: uppercase;
     margin-bottom: 2mm;
 }
 
 .chapter-title {
-    font-family: 'Playfair Display', 'Lora', serif;
+    font-family: 'Times New Roman', 'Merriweather', 'Lora', serif;
     font-size: 15pt;
     font-weight: 700;
     color: #0f172a;
@@ -436,7 +438,7 @@ body {
 }
 
 .chapter-body > p:first-of-type::first-letter {
-    font-family: 'Playfair Display', 'Lora', serif;
+    font-family: 'Times New Roman', 'Merriweather', serif;
     font-size: 2.8em;
     float: left;
     line-height: 0.8;
@@ -490,10 +492,10 @@ body {
 }
 
 .appendix-title {
-    font-family: 'Playfair Display', 'Cinzel', serif;
+    font-family: 'Times New Roman', 'Merriweather', serif;
     font-size: 13pt;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
     color: #0f172a;
@@ -515,10 +517,10 @@ body {
 
 .clue-table th {
     background-color: #f1f5f9;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
     font-size: 7.5pt;
     font-weight: 600;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.5px;
 }
 
 .colophon-page {
@@ -532,7 +534,7 @@ body {
     line-height: 1.6;
     text-align: center;
     padding-bottom: 10mm;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Segoe UI', 'Be Vietnam Pro', sans-serif;
 }
 """
 
@@ -657,7 +659,6 @@ def build_complete_book():
     # Render Chapters by Volume
     for vol in VOLUMES:
         vol_img_path = os.path.join(ASSETS_DIR, vol["image"]).replace(os.sep, '/')
-        # Volume Divider Page
         full_html += f'''
         <div class="volume-page">
             <img class="volume-img" src="file:///{vol_img_path}" alt="{vol['title']}">

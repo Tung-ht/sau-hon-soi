@@ -83,17 +83,6 @@ def build_web():
                 "html": html
             }
 
-    # Generate HTML content
-    chapters_json = json.dumps([
-        {
-            "num": ch_num,
-            "num_str": chapters_data[ch_num]["num_str"],
-            "name_str": chapters_data[ch_num]["name_str"],
-            "title": chapters_data[ch_num]["title"]
-        }
-        for ch_num in sorted(chapters_data.keys())
-    ], ensure_ascii=False)
-
     web_html = f'''<!DOCTYPE html>
 <html lang="vi" data-theme="dark" data-font="be-vietnam">
 <head>
@@ -105,7 +94,7 @@ def build_web():
     <!-- Google Fonts with full Vietnamese support -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cinzel:wght@600;700;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -114,7 +103,7 @@ def build_web():
     :root {{
         --bg-main: #0b132b;
         --bg-card: #1c2541;
-        --bg-glass: rgba(28, 37, 65, 0.85);
+        --bg-glass: rgba(28, 37, 65, 0.88);
         --text-main: #e2e8f0;
         --text-muted: #94a3b8;
         --accent-gold: #d4af37;
@@ -131,7 +120,7 @@ def build_web():
     [data-theme="light"] {{
         --bg-main: #f8fafc;
         --bg-card: #ffffff;
-        --bg-glass: rgba(255, 255, 255, 0.9);
+        --bg-glass: rgba(255, 255, 255, 0.92);
         --text-main: #0f172a;
         --text-muted: #64748b;
         --accent-gold: #b45309;
@@ -156,9 +145,9 @@ def build_web():
         --shadow-elevation: 0 10px 30px -10px rgba(61, 47, 29, 0.15);
     }}
 
-    [data-font="lora"] {{ --font-content: 'Lora', Georgia, serif; }}
-    [data-font="merriweather"] {{ --font-content: 'Merriweather', 'Times New Roman', serif; }}
-    [data-font="be-vietnam"] {{ --font-content: 'Be Vietnam Pro', sans-serif; }}
+    [data-font="lora"] {{ --font-content: 'Lora', 'Times New Roman', serif; }}
+    [data-font="merriweather"] {{ --font-content: 'Merriweather', Georgia, serif; }}
+    [data-font="be-vietnam"] {{ --font-content: 'Be Vietnam Pro', 'Segoe UI', sans-serif; }}
 
     * {{ box-sizing: border-box; margin: 0; padding: 0; }}
 
@@ -219,19 +208,21 @@ def build_web():
     }}
 
     .nav-title {{
-        font-family: 'Cinzel', serif;
+        font-family: 'Be Vietnam Pro', sans-serif;
         font-size: 1.1rem;
-        font-weight: 700;
+        font-weight: 800;
         letter-spacing: 1.5px;
         color: var(--accent-gold);
+        text-transform: uppercase;
     }}
 
     .nav-author {{
-        font-size: 0.8rem;
+        font-size: 0.82rem;
         color: var(--text-muted);
         border-left: 1px solid var(--border-color);
         padding-left: 0.75rem;
         margin-left: 0.25rem;
+        font-weight: 500;
     }}
 
     .nav-controls {{
@@ -306,11 +297,11 @@ def build_web():
     }}
 
     .drawer-title {{
-        font-family: 'Cinzel', serif;
+        font-family: 'Be Vietnam Pro', sans-serif;
         font-size: 1.05rem;
         font-weight: 700;
         color: var(--accent-gold);
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
     }}
 
     .drawer-content {{
@@ -324,10 +315,11 @@ def build_web():
         font-weight: 700;
         color: var(--accent-blue);
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
         margin: 1.2rem 0 0.5rem 0;
         padding-bottom: 4px;
         border-bottom: 1px dashed var(--border-color);
+        font-family: 'Be Vietnam Pro', sans-serif;
     }}
 
     .toc-item-link {{
@@ -450,18 +442,20 @@ def build_web():
         border-radius: 20px;
         font-size: 0.75rem;
         font-weight: 600;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         text-transform: uppercase;
         width: fit-content;
+        font-family: 'Be Vietnam Pro', sans-serif;
     }}
 
     .hero-title {{
-        font-family: 'Playfair Display', 'Cinzel', serif;
-        font-size: 3rem;
-        font-weight: 800;
-        line-height: 1.1;
+        font-family: 'Merriweather', 'Times New Roman', serif;
+        font-size: 2.8rem;
+        font-weight: 900;
+        line-height: 1.15;
         color: var(--text-main);
         letter-spacing: 1px;
+        text-transform: uppercase;
     }}
 
     .hero-subtitle {{
@@ -478,7 +472,7 @@ def build_web():
 
     .hero-author-tag strong {{
         color: var(--text-main);
-        font-weight: 600;
+        font-weight: 700;
     }}
 
     .hero-tagline {{
@@ -506,10 +500,10 @@ def build_web():
     }}
 
     .meta-num {{
-        font-size: 1.2rem;
-        font-weight: 700;
+        font-size: 1.25rem;
+        font-weight: 800;
         color: var(--accent-gold);
-        font-family: 'Cinzel', serif;
+        font-family: 'Be Vietnam Pro', sans-serif;
     }}
 
     .meta-lbl {{
@@ -517,6 +511,7 @@ def build_web():
         color: var(--text-muted);
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        font-family: 'Be Vietnam Pro', sans-serif;
     }}
 
     .hero-actions {{
@@ -537,6 +532,7 @@ def build_web():
         gap: 0.5rem;
         box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
         transition: all 0.2s ease;
+        font-family: 'Be Vietnam Pro', sans-serif;
     }}
 
     .btn-primary:hover {{
@@ -556,6 +552,7 @@ def build_web():
         align-items: center;
         gap: 0.5rem;
         transition: all 0.2s ease;
+        font-family: 'Be Vietnam Pro', sans-serif;
     }}
 
     .btn-secondary:hover {{
@@ -596,7 +593,7 @@ def build_web():
     .volume-hero-overlay {{
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%);
+        background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.88) 100%);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -604,18 +601,18 @@ def build_web():
     }}
 
     .volume-badge {{
-        font-family: 'Cinzel', serif;
+        font-family: 'Be Vietnam Pro', sans-serif;
         font-size: 0.8rem;
         font-weight: 700;
         color: var(--accent-gold);
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
         text-transform: uppercase;
         margin-bottom: 0.25rem;
     }}
 
     .volume-hero-title {{
-        font-family: 'Playfair Display', 'Cinzel', serif;
-        font-size: 2rem;
+        font-family: 'Merriweather', 'Times New Roman', serif;
+        font-size: 1.85rem;
         color: #ffffff;
         font-weight: 800;
         line-height: 1.2;
@@ -656,18 +653,18 @@ def build_web():
     }}
 
     .chapter-num-tag {{
-        font-family: 'Cinzel', serif;
+        font-family: 'Be Vietnam Pro', sans-serif;
         font-size: 0.85rem;
         font-weight: 700;
         color: var(--accent-gold);
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
         text-transform: uppercase;
         margin-bottom: 0.5rem;
     }}
 
     .chapter-main-heading {{
-        font-family: 'Playfair Display', 'Lora', serif;
-        font-size: 1.9rem;
+        font-family: 'Merriweather', 'Lora', serif;
+        font-size: 1.85rem;
         font-weight: 700;
         color: var(--reading-text);
         line-height: 1.3;
@@ -692,7 +689,7 @@ def build_web():
     }}
 
     .chapter-content > p:first-of-type::first-letter {{
-        font-family: 'Playfair Display', 'Cinzel', serif;
+        font-family: 'Merriweather', serif;
         font-size: 3.2em;
         float: left;
         line-height: 0.8;
@@ -731,6 +728,7 @@ def build_web():
         padding-top: 1.5rem;
         border-top: 1px solid var(--border-color);
         font-size: 0.85rem;
+        font-family: 'Be Vietnam Pro', sans-serif;
     }}
 
     .chapter-nav-btn {{
@@ -757,11 +755,12 @@ def build_web():
     }}
 
     .appendix-heading {{
-        font-family: 'Cinzel', serif;
-        font-size: 1.3rem;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
         color: var(--accent-gold);
         text-align: center;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         text-transform: uppercase;
         margin-bottom: 1.5rem;
     }}
@@ -782,9 +781,10 @@ def build_web():
     .custom-table th {{
         background: rgba(212, 175, 55, 0.1);
         color: var(--accent-gold);
-        font-family: 'Cinzel', serif;
+        font-family: 'Be Vietnam Pro', sans-serif;
         font-size: 0.78rem;
-        letter-spacing: 0.8px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
     }}
 
     /* BACK TO TOP */
@@ -972,13 +972,12 @@ def build_web():
             <p style="font-style: italic; font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.5rem; color: var(--accent-gold);">
                 “Cái cây gỗ trong rừng có cong queo thì mình đẽo cho thẳng được, chứ cái bụng người mình mà cong queo thì dựng cái nhà nào lên rồi cũng sập thôi con à.”
             </p>
-            <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-family: 'Be Vietnam Pro', sans-serif;">
                 — Lời dặn của người thợ mộc Trần Văn Cửu (1958 – 2005)
             </p>
         </section>
 '''
 
-    # Loop through volumes and chapters
     for vol in VOLUMES:
         web_html += f'''
         <!-- {vol["title"]} -->
@@ -1161,7 +1160,7 @@ def build_web():
 
     <!-- FOOTER -->
     <footer class="site-footer">
-        <div style="font-family: 'Cinzel', serif; font-size: 1.1rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">
+        <div style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 1.1rem; font-weight: 800; color: var(--accent-gold); margin-bottom: 0.5rem; text-transform: uppercase;">
             SÁU HÒN SỎI
         </div>
         <p>Tiểu thuyết Trinh thám Procedural Noir • Tác giả: Hoàng Tùng</p>
@@ -1172,7 +1171,6 @@ def build_web():
 
     <!-- INTERACTIVE SCRIPT -->
     <script>
-        // Init Lucide icons
         lucide.createIcons();
 
         // Reading Progress
@@ -1182,7 +1180,6 @@ def build_web():
             const scrolled = (winScroll / height) * 100;
             document.getElementById('progress-bar').style.width = scrolled + '%';
 
-            // Back to top button visibility
             const backTop = document.getElementById('btn-back-top');
             if (winScroll > 400) {
                 backTop.classList.add('visible');
@@ -1191,12 +1188,12 @@ def build_web():
             }
         });
 
-        // Back to top click
+        // Back to top
         document.getElementById('btn-back-top').addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Drawer Toggle
+        // Drawer
         const drawer = document.getElementById('drawer');
         const overlay = document.getElementById('drawer-overlay');
         const btnToc = document.getElementById('btn-toc');
@@ -1216,12 +1213,11 @@ def build_web():
         btnCloseDrawer.addEventListener('click', closeDrawer);
         overlay.addEventListener('click', closeDrawer);
 
-        // Close drawer when clicking TOC link
         document.querySelectorAll('.toc-item-link').forEach(link => {
             link.addEventListener('click', closeDrawer);
         });
 
-        // Theme Toggle (Dark / Light / Sepia)
+        // Theme Toggle
         const themeBtns = document.querySelectorAll('#theme-selector .seg-btn');
         const btnThemeNav = document.getElementById('btn-theme');
         const themes = ['dark', 'light', 'sepia'];
@@ -1272,7 +1268,6 @@ def build_web():
             document.documentElement.style.setProperty('--content-font-size', fontSizes[currentSizeIdx]);
         });
 
-        // Restore saved settings
         const savedTheme = localStorage.getItem('novel_theme');
         if (savedTheme) setTheme(savedTheme);
         const savedFont = localStorage.getItem('novel_font');
@@ -1284,7 +1279,7 @@ def build_web():
 
     with open(OUTPUT_INDEX, 'w', encoding='utf-8') as fp:
         fp.write(web_html)
-    print(f"Web version successfully generated at {OUTPUT_INDEX} (Size: {len(web_html):,} bytes)")
+    print(f"Web version successfully regenerated at {OUTPUT_INDEX} (Size: {len(web_html):,} bytes)")
 
 if __name__ == '__main__':
     build_web()
