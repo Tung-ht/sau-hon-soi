@@ -101,9 +101,11 @@ def build_web():
 
     <style>
     :root {{
+        /* Theme: Dark (Default Noir) */
         --bg-main: #0b132b;
         --bg-card: #1c2541;
         --bg-glass: rgba(28, 37, 65, 0.88);
+        --hero-bg: radial-gradient(circle at center, #1e293b 0%, #0b132b 100%);
         --text-main: #e2e8f0;
         --text-muted: #94a3b8;
         --accent-gold: #d4af37;
@@ -118,9 +120,11 @@ def build_web():
     }}
 
     [data-theme="light"] {{
+        /* Theme: Light */
         --bg-main: #f8fafc;
         --bg-card: #ffffff;
         --bg-glass: rgba(255, 255, 255, 0.92);
+        --hero-bg: linear-gradient(180deg, #ffffff 0%, #f1f5f9 60%, #e2e8f0 100%);
         --text-main: #0f172a;
         --text-muted: #64748b;
         --accent-gold: #b45309;
@@ -128,13 +132,15 @@ def build_web():
         --border-color: rgba(180, 83, 9, 0.2);
         --reading-bg: #ffffff;
         --reading-text: #1e293b;
-        --shadow-elevation: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+        --shadow-elevation: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
     }}
 
     [data-theme="sepia"] {{
+        /* Theme: Sepia (Warm Paper) */
         --bg-main: #f4ecd8;
         --bg-card: #faf3e0;
         --bg-glass: rgba(250, 243, 224, 0.92);
+        --hero-bg: linear-gradient(180deg, #faf3e0 0%, #f4ecd8 60%, #ebe0cb 100%);
         --text-main: #3d2f1d;
         --text-muted: #7c6853;
         --accent-gold: #8c531b;
@@ -142,7 +148,7 @@ def build_web():
         --border-color: rgba(140, 83, 27, 0.25);
         --reading-bg: #faf3e0;
         --reading-text: #3d2f1d;
-        --shadow-elevation: 0 10px 30px -10px rgba(61, 47, 29, 0.15);
+        --shadow-elevation: 0 10px 30px -10px rgba(61, 47, 29, 0.12);
     }}
 
     [data-font="lora"] {{ --font-content: 'Lora', 'Times New Roman', serif; }}
@@ -222,7 +228,7 @@ def build_web():
         border-left: 1px solid var(--border-color);
         padding-left: 0.75rem;
         margin-left: 0.25rem;
-        font-weight: 500;
+        font-weight: 600;
     }}
 
     .nav-controls {{
@@ -232,7 +238,7 @@ def build_web():
     }}
 
     .btn-icon {{
-        background: transparent;
+        background: var(--bg-card);
         border: 1px solid var(--border-color);
         color: var(--text-main);
         width: 38px;
@@ -342,7 +348,7 @@ def build_web():
     /* SETTINGS MODAL */
     .settings-panel {{
         padding: 1rem;
-        background: rgba(0,0,0,0.15);
+        background: var(--bg-main);
         border-radius: 8px;
         margin-bottom: 1.2rem;
         border: 1px solid var(--border-color);
@@ -361,7 +367,7 @@ def build_web():
 
     .segmented-control {{
         display: flex;
-        background: var(--bg-main);
+        background: var(--bg-card);
         border-radius: 6px;
         padding: 2px;
         border: 1px solid var(--border-color);
@@ -382,7 +388,7 @@ def build_web():
     .seg-btn.active {{
         background: var(--accent-gold);
         color: #000;
-        font-weight: 600;
+        font-weight: 700;
     }}
 
     /* HERO COVER */
@@ -391,10 +397,11 @@ def build_web():
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 6rem 1.5rem 3rem 1.5rem;
-        background: radial-gradient(circle at center, rgba(30, 41, 59, 0.7) 0%, var(--bg-main) 100%);
+        padding: 6rem 1.5rem 3.5rem 1.5rem;
+        background: var(--hero-bg);
         border-bottom: 1px solid var(--border-color);
         position: relative;
+        transition: background 0.3s ease;
     }}
 
     .hero-container {{
@@ -412,6 +419,7 @@ def build_web():
         overflow: hidden;
         box-shadow: var(--shadow-elevation);
         border: 2px solid var(--border-color);
+        background: var(--bg-card);
     }}
 
     .hero-img {{
@@ -441,7 +449,7 @@ def build_web():
         padding: 4px 12px;
         border-radius: 20px;
         font-size: 0.75rem;
-        font-weight: 600;
+        font-weight: 700;
         letter-spacing: 1px;
         text-transform: uppercase;
         width: fit-content;
@@ -449,7 +457,7 @@ def build_web():
     }}
 
     .hero-title {{
-        font-family: 'Merriweather', 'Times New Roman', serif;
+        font-family: 'Be Vietnam Pro', 'Merriweather', sans-serif;
         font-size: 2.8rem;
         font-weight: 900;
         line-height: 1.15;
@@ -463,6 +471,7 @@ def build_web():
         color: var(--accent-gold);
         font-style: italic;
         letter-spacing: 0.5px;
+        font-family: 'Lora', serif;
     }}
 
     .hero-author-tag {{
@@ -482,6 +491,7 @@ def build_web():
         border-left: 3px solid var(--accent-gold);
         padding-left: 1rem;
         line-height: 1.6;
+        font-family: 'Lora', serif;
     }}
 
     .hero-meta-grid {{
@@ -497,6 +507,7 @@ def build_web():
         padding: 0.75rem;
         border-radius: 8px;
         text-align: center;
+        box-shadow: var(--shadow-elevation);
     }}
 
     .meta-num {{
@@ -611,7 +622,7 @@ def build_web():
     }}
 
     .volume-hero-title {{
-        font-family: 'Merriweather', 'Times New Roman', serif;
+        font-family: 'Be Vietnam Pro', sans-serif;
         font-size: 1.85rem;
         color: #ffffff;
         font-weight: 800;
@@ -623,6 +634,7 @@ def build_web():
         color: #cbd5e1;
         font-style: italic;
         margin-top: 0.25rem;
+        font-family: 'Lora', serif;
     }}
 
     .volume-epigraph-box {{
@@ -632,6 +644,7 @@ def build_web():
         color: var(--text-muted);
         text-align: center;
         border-top: 1px solid var(--border-color);
+        font-family: 'Lora', serif;
     }}
 
     /* CHAPTER CARD */
@@ -663,9 +676,9 @@ def build_web():
     }}
 
     .chapter-main-heading {{
-        font-family: 'Merriweather', 'Lora', serif;
+        font-family: 'Be Vietnam Pro', 'Merriweather', sans-serif;
         font-size: 1.85rem;
-        font-weight: 700;
+        font-weight: 800;
         color: var(--reading-text);
         line-height: 1.3;
     }}
@@ -689,7 +702,7 @@ def build_web():
     }}
 
     .chapter-content > p:first-of-type::first-letter {{
-        font-family: 'Merriweather', serif;
+        font-family: 'Merriweather', 'Lora', serif;
         font-size: 3.2em;
         float: left;
         line-height: 0.8;
@@ -757,7 +770,7 @@ def build_web():
     .appendix-heading {{
         font-family: 'Be Vietnam Pro', sans-serif;
         font-size: 1.2rem;
-        font-weight: 700;
+        font-weight: 800;
         color: var(--accent-gold);
         text-align: center;
         letter-spacing: 1px;
@@ -848,7 +861,7 @@ def build_web():
         </a>
         <div class="nav-controls">
             <button class="btn-icon" id="btn-theme" title="Đổi giao diện (Dark / Light / Sepia)">
-                <i data-lucide="moon"></i>
+                <i data-lucide="moon" id="theme-icon"></i>
             </button>
             <button class="btn-icon" id="btn-font-size" title="Cỡ chữ">
                 <i data-lucide="type"></i>
@@ -969,10 +982,10 @@ def build_web():
         <!-- EPIGRAPH -->
         <section class="appendix-card" id="epigraph" style="text-align: center;">
             <div class="appendix-heading" style="font-size: 1.1rem;">LỜI ĐỀ TỪ</div>
-            <p style="font-style: italic; font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.5rem; color: var(--accent-gold);">
+            <p style="font-style: italic; font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.5rem; color: var(--accent-gold); font-family: 'Lora', serif;">
                 “Cái cây gỗ trong rừng có cong queo thì mình đẽo cho thẳng được, chứ cái bụng người mình mà cong queo thì dựng cái nhà nào lên rồi cũng sập thôi con à.”
             </p>
-            <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-family: 'Be Vietnam Pro', sans-serif;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 600;">
                 — Lời dặn của người thợ mộc Trần Văn Cửu (1958 – 2005)
             </p>
         </section>
@@ -992,7 +1005,7 @@ def build_web():
             </div>
             <div class="volume-epigraph-box">
                 {vol["epigraph"]}
-                {f'<div style="font-size: 0.8rem; margin-top: 0.25rem;">{vol["author_quote"]}</div>' if "author_quote" in vol else ''}
+                {f'<div style="font-size: 0.8rem; margin-top: 0.25rem; font-weight: 600;">{vol["author_quote"]}</div>' if "author_quote" in vol else ''}
             </div>
         </section>
         '''
@@ -1139,13 +1152,13 @@ def build_web():
         <!-- LỜI BẠT -->
         <section class="appendix-card" id="author-note">
             <h3 class="appendix-heading">LỜI BẠT CỦA TÁC GIẢ HOÀNG TÙNG</h3>
-            <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1rem;">
+            <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1rem; font-family: 'Lora', serif;">
                 <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ XRF sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
             </p>
-            <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem;">
+            <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem; font-family: 'Lora', serif;">
                 Hình ảnh chiếc thước mộc bằng gỗ lim của người thợ mộc Trần Văn Cửu — với những vết khắc mòn vẹt sau mười chín năm oan khuất — chính là chiếc neo đạo đức bất biến. Dù giông bão thời cuộc hay sự toan tính cá nhân có bẻ cong những phán quyết tạm thời, thì sự ngay thẳng và phẩm giá của người lao động lương thiện vẫn luôn tìm được con đường trở về với ánh sáng.
             </p>
-            <p style="text-align: right; font-style: italic; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
+            <p style="text-align: right; font-style: italic; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted); font-family: 'Be Vietnam Pro', sans-serif;">
                 <strong>Tác giả: Hoàng Tùng</strong><br>
                 Hạ An – Mường Biên – Mùa thu 2026
             </p>
@@ -1217,16 +1230,30 @@ def build_web():
             link.addEventListener('click', closeDrawer);
         });
 
-        // Theme Toggle
+        // Theme Toggle (Dark / Light / Sepia)
         const themeBtns = document.querySelectorAll('#theme-selector .seg-btn');
         const btnThemeNav = document.getElementById('btn-theme');
         const themes = ['dark', 'light', 'sepia'];
+
+        function updateThemeIcon(t) {
+            const iconEl = document.getElementById('theme-icon');
+            if (!iconEl) return;
+            if (t === 'dark') {
+                iconEl.setAttribute('data-lucide', 'moon');
+            } else if (t === 'light') {
+                iconEl.setAttribute('data-lucide', 'sun');
+            } else {
+                iconEl.setAttribute('data-lucide', 'coffee');
+            }
+            lucide.createIcons();
+        }
 
         function setTheme(t) {
             document.documentElement.setAttribute('data-theme', t);
             themeBtns.forEach(btn => {
                 btn.classList.toggle('active', btn.getAttribute('data-theme') === t);
             });
+            updateThemeIcon(t);
             localStorage.setItem('novel_theme', t);
         }
 
