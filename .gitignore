@@ -1,0 +1,50 @@
+﻿# ==============================================================================
+# Git Ignore Rule - AI Novel Studio (zNovel)
+# ==============================================================================
+
+# --- Bảo mật & Thông tin cấu hình (API Keys / Credentials) ---
+.ainovel/
+config/
+config.json
+*.env
+*.env.*
+*.key
+*.pem
+
+# --- File thực thi & Build artifacts ---
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+
+# --- Runtime Logs, Debug Logs & TUI Logs ---
+*.log
+output/**/logs/
+output/**/logs/*
+logs/
+
+# --- Heavy Session Chat Dumps & LLM Traces ---
+# Các file jsonl ghi lại toàn bộ prompt/completion giữa chừng của subagents (rất nặng)
+output/**/meta/sessions/
+output/**/meta/runtime/
+output/**/meta/checkpoints.jsonl
+output/**/meta/state_changes.json
+output/**/meta/usage.json
+output/**/meta/run.json
+
+# --- File tạm thời & Scratch Scripts ---
+*.tmp
+*.bak
+*~
+convert_pdf.py
+scratch*
+scratch/
+
+# --- File hệ thống & IDE ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

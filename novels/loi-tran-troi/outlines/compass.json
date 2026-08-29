@@ -1,0 +1,121 @@
+{
+  "project_name": "loi-tran-troi",
+  "title": "Sáu Hòn Sỏi",
+  "genre": "Trinh thám hình sự / Tâm lý xã hội / Procedural Noir / Fair-Play Mystery",
+  "total_arcs": 3,
+  "arcs": [
+    {
+      "arc": 1,
+      "title": "Hồi I: Dưới Xuôi — Mắt Xích Thứ Tư & Bẫy Đánh Lạc Hướng",
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "focus": "Án mạng ngõ Đò Cũ, P xuất hiện từ đầu đưa hướng cảng biển, khám xét sà-lan L, thẩm vấn tháo gỡ red herring L, đối soát phôi thẻ định danh 4 tỉnh và giải mã bài ca đếm sỏi."
+    },
+    {
+      "arc": 2,
+      "title": "Hồi II: Ngược Ngàn — Vết Dấu Nội Bộ & Án Oan 2005",
+      "chapters": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "focus": "Audit an ninh mạng M, chuyến đi đêm lên Mường Biên, di vật thước mộc bản Dền, án mạng N5 bến đò, giám định đáy rương vụ 2005 và đối chất Đạt đêm thứ Sáu."
+    },
+    {
+      "arc": 3,
+      "title": "Hồi III: Đối Chất Pháp Lý & Ánh Sáng Công Lý",
+      "chapters": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "focus": "Cuộc gọi thứ sáu của Sinh, sổ vật tư L hoàn thiện bó chứng cứ P, vòng vây biệt thự đồi thông, đột kích cống ngầm ngăn chặn án mạng thứ sáu, phiên tòa cấp cao và vĩ thanh phục hồi danh dự."
+    }
+  ],
+  "chapters_outline": [
+    {
+      "chapter": 1,
+      "title": "Đêm mưa phố Đò Cũ",
+      "summary": "P gặp M và Nam tại HQ trong khuôn khổ Quỹ An sinh; Nam ghé gánh cháo mẹ; 05:30 báo án mạng thợ vá săm Nguyễn Văn Tư (N4); khám nghiệm thu mẫu xơ len chàm, xỉ kim loại và túi bùa 4 bộ xương cá khô."
+    },
+    {
+      "chapter": 2,
+      "title": "Người cố vấn",
+      "summary": "P quay lại trao đổi chuyên môn, gợi ý rà soát tuyến phế liệu bến cảng và thợ cơ khí; Nam kiểm tra phá vỡ hướng nghi phạm nợ nần qua alibi; xuất hiện đầu mối xưởng sà-lan của L."
+    },
+    {
+      "chapter": 3,
+      "title": "Bóng đen bãi xác tàu",
+      "summary": "Nam và Huy tiếp cận sà-lan trục vớt của L trong đêm nước lớn; thu mẫu xỉ Crom-Molypden; phát hiện lịch sà-lan đi qua 3 địa bàn cũ; L giấu việc mất mỏ cắt và quanh co về lao động."
+    },
+    {
+      "chapter": 4,
+      "title": "Đấu trí dưới đáy bùn",
+      "summary": "Thẩm vấn L tại trụ sở; dữ liệu máy tàu và nhật ký tiếp nhiên liệu loại L khỏi hiện trường N4; L khai việc thuê thợ cơ khí Ba dùng tên giả; P gọi điện hỏi thăm M khuyên giữ L."
+    },
+    {
+      "chapter": 5,
+      "title": "Bốn cái chết",
+      "summary": "Bác sĩ Phong định danh độc chất D-Alkaloid Mường Biên; khám chòi hoang bơm nước; đối soát phôi thẻ định danh 4 địa phương xâu chuỗi 4 nạn nhân N1-N4 và 4 túi bùa tăng dần."
+    },
+    {
+      "chapter": 6,
+      "title": "Tiếng hát bản Dền",
+      "summary": "Tiếp nhận 3 túi bùa cũ; GS Lê Đăng Khoa giải mã thổ cẩm bản Dền và bài ca đếm sỏi nguyên tác; M nhìn thấy câu thứ năm và âm thầm tra cứu dữ liệu N5."
+    },
+    {
+      "chapter": 7,
+      "title": "Dấu truy cập lúc nửa đêm",
+      "summary": "Báo cáo audit an ninh mạng phát hiện tài khoản M tra cứu N1-N5 trước các cái chết; M rời trụ sở bằng xe riêng không lệnh công tác; 21:00 Nam và Huy xuất phát ngược ngàn lên đèo Gió."
+    },
+    {
+      "chapter": 8,
+      "title": "Thung lũng oan khuất",
+      "summary": "04:30 đến bản Dền; Trưởng bản Lò Văn Ban kể chuyện quá khứ; Cụ già thợ mộc trao chiếc thước mộc gỗ lim di vật gửi lại cho Sinh; xác nhận 'Ba thợ cắt' chính là Trần Văn Sinh."
+    },
+    {
+      "chapter": 9,
+      "title": "Bến đò trong sương",
+      "summary": "Khám hiện trường N5 Bùi Văn Vượng bị giết lúc 03:00-04:00 tại bến suối Lũng Nậm; thu túi bùa thứ 5 chứa 5 hòn sỏi; phát hiện dấu bùn xe M ở bến; M có mặt lúng túng né tránh."
+    },
+    {
+      "chapter": 10,
+      "title": "Dưới đáy rương",
+      "summary": "Mở kho lưu trữ vụ án 2005; kính hiển vi lập thể soi vết cưa đĩa đa lưỡi và keo nhiệt; phát hiện bút tích phân công phụ của P và lệnh xe của M; 16:00 Nam và Huy quay về Hạ An."
+    },
+    {
+      "chapter": 11,
+      "title": "Người thầy giữ im lặng",
+      "summary": "21:30 đối chất M tại Hạ An; M thừa nhận bị Thao ép buộc, giao nộp bản nháp lệnh xe TN-1479, sổ nhật ký cá nhân và các phong bì cảnh báo; Nam niêm phong chứng cứ và tạm giữ M."
+    },
+    {
+      "chapter": 12,
+      "title": "Cuộc gọi thứ sáu",
+      "summary": "Sinh gọi điện bằng sim rác đặt hạn chót; Nam xác nhận vụ án ông Cửu đã được tái mở; L giao nộp sổ vật tư xưởng liên hệ mạng lưới P; Viện Công tố phê chuẩn lệnh giữ người khẩn cấp với P."
+    },
+    {
+      "chapter": 13,
+      "title": "Dấu chân trên đèo",
+      "summary": "Tổ án quay lại Mường Biên; P dùng luật sư khiếu nại cố thủ trong biệt thự đồi thông; trinh sát phát hiện dấu vết cắt cáp và trinh sát của Sinh; triển khai phương án khép chặt vòng vây."
+    },
+    {
+      "chapter": 14,
+      "title": "Chiếc thước mộc",
+      "summary": "Sinh đột nhập qua cống ngầm khống chế P; P kích động Nam nổ súng; Nam giơ bản sao niêm phong chứng cứ và trao chiếc thước mộc; Sinh thức tỉnh buông dao và hòn sỏi thứ 6; đặc nhiệm còng tay P và Sinh."
+    },
+    {
+      "chapter": 15,
+      "title": "Ánh sáng thung lũng",
+      "summary": "Phiên tòa 18 tháng sau: P chịu án Chung thân, M chịu án che giấu, Sinh chịu án Chung thân tha tội chết; phục hồi danh dự cho ông Cửu; GS Khoa ngâm trọn vẹn bản dịch bài ca đếm sỏi; Nam trở về ăn cháo sườn bên mẹ."
+    }
+  ]
+}

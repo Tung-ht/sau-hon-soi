@@ -1,0 +1,73 @@
+{
+  "chapter": 2,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.583913",
+  "summary": "Sáng thứ Ba, họp án xác minh phôi thẻ giả của N4 và khoản tiền 60 triệu từ Hải Khê. P quay lại họp án gợi ý hướng bến cảng/đòi nợ phế liệu. Nam thẩm vấn Chín Gù (alibi ngoại phạm tại quán nhậu). Chín Gù khai về thợ Ba và xưởng cứu hộ của Long Sà-lan ở Cửa Lác. Tên Lê Văn Long xuất hiện trên 2 chứng từ.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Ba, 08:30-09:30",
+      "event": "Họp án phát hiện ID giả N4; P ghé phòng họp khuyên rà soát phế liệu bến cảng.",
+      "chapter": 2
+    },
+    {
+      "time": "Trưa thứ Ba, 10:30-12:00",
+      "event": "Thẩm vấn Chín Gù, xác nhận ngoại phạm; phát hiện manh mối thợ Ba và xưởng Lê Văn Long.",
+      "chapter": 2
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C03",
+      "description": "Thợ cơ khí bí danh Ba từng làm việc cho xưởng cứu hộ Lê Văn Long",
+      "action": "introduce",
+      "status": "active"
+    },
+    {
+      "id": "C10",
+      "description": "Hoàng Đình Thao định hướng tổ án về phía bến cảng phế liệu",
+      "action": "advance",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 2
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 2
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 2
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 2
+    },
+    {
+      "name": "Chín Gù",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 2
+    },
+    {
+      "name": "Lê Văn Long",
+      "brief_role": "",
+      "first_seen": 2,
+      "last_seen": 2
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

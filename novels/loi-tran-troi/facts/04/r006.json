@@ -1,0 +1,76 @@
+{
+  "chapter": 4,
+  "revision": "r006",
+  "created_at": "2026-08-29T18:21:00+07:00",
+  "summary": "Rạng sáng - trưa thứ Bảy: Bóc tách phôi thẻ Trần Hữu Bằng, đối soát tìm ra 4 nạn nhân chết rải rác 4 năm ở 4 vùng với 4 túi bùa tăng dần (1 lá me, 2 dây gai, 3 hạt muồng, 4 xương cá). Đạt nhìn ảnh 4 nạn nhân, bật lửa trinh sát ngập ngừng rồi ký phê duyệt ủy thác cho Nam.",
+  "timeline_events": [
+    {
+      "time": "Rạng sáng thứ Bảy, 02:00",
+      "event": "Nam và Huy phân tích hai mảnh vật tư cơ khí tại phòng làm việc.",
+      "chapter": 4
+    },
+    {
+      "time": "Sáng thứ Bảy, 08:30-10:00",
+      "event": "Giám định kỹ thuật số bóc tách vi ký tự phôi thẻ; đối soát tàng thư tìm ra chuỗi 4 nạn nhân và 4 túi bùa.",
+      "chapter": 4
+    },
+    {
+      "time": "Trưa thứ Bảy, 11:30",
+      "event": "Nam báo cáo Chỉ huy Đặng Tiến Đạt; Đạt giằng xé tâm lý, bật lửa trinh sát và ký công văn ủy thác khẩn cấp.",
+      "chapter": 4
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_dat_guilt",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Đạt nhận ra 4 kẻ áp tải 2005 qua ảnh và ngầm ký lệnh trao quyền điều tra cho Nam"
+    },
+    {
+      "id": "fs_charm_pouches",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Xác nhận chuỗi 4 túi bùa với số lượng tăng tiến 1-2-3-4"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 4
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 4
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án Hạ An",
+      "first_seen": 1,
+      "last_seen": 4
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Đặng Tiến Đạt",
+      "status": "Trao gửi trọng trách và bước ngoặt ngầm",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "case_scope",
+      "value": "interprovincial_serial_investigation",
+      "chapter": 4
+    }
+  ],
+  "dependencies": [
+    "03"
+  ]
+}

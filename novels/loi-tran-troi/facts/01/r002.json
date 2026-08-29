@@ -1,0 +1,104 @@
+{
+  "chapter": 1,
+  "revision": "r002",
+  "created_at": "2026-08-29T07:05:00+07:00",
+  "summary": "Phát hiện thi thể thợ vá săm đêm Nguyễn Văn Tư bị siết cổ tại số 42 phố Đò Cũ, Hạ An. Khám nghiệm hiện trường thu giữ vi sợi dệt chàm dính xỉ kim loại và túi bùa 4 bộ xương cá suối đá lạnh giấu đáy hộp cờ-lê. Gieo hình ảnh gánh cháo sườn ấm áp của mẹ Nam. Chuẩn hóa xưng hô bối cảnh hư cấu.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Hai, 21:00-23:00",
+      "event": "Nguyễn Văn Tư bị siết cổ sát hại trong đêm mưa rào tại số 42 phố Đò Cũ, thị trấn Hạ An.",
+      "chapter": 1
+    },
+    {
+      "time": "Sáng thứ Ba, 05:30",
+      "event": "Ông Ba kéo xe hàng phát hiện thi thể ông Tư; ĐTV Nam và tổ khám nghiệm có mặt bảo vệ hiện trường.",
+      "chapter": 1
+    },
+    {
+      "time": "Sáng thứ Ba, 06:30",
+      "event": "Thu giữ mẫu vi sợi dệt chàm dính xỉ kim loại dưới móng tay nạn nhân và túi bùa 4 bộ xương cá suối ở đáy hộp đồ nghề.",
+      "chapter": 1
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_charm_pouches",
+      "description": "Chuỗi túi bùa thổ cẩm đựng sản vật rừng suối tăng dần theo từng vụ án",
+      "action": "plant",
+      "status": "active",
+      "notes": "Túi bùa số 4 chứa 4 bộ xương cá suối đá lạnh"
+    },
+    {
+      "id": "fs_father_ruler",
+      "description": "Chiếc thước mộc gỗ lim di vật của người cha thợ mộc Trần Văn Cửu",
+      "action": "plant",
+      "status": "active",
+      "notes": "Gieo biểu tượng người thợ mộc ngay thẳng"
+    },
+    {
+      "id": "fs_oan_sai_2005",
+      "description": "Vụ án oan năm 2005 tại Lũng Nậm liên quan đến rương gỗ bị gài bẫy",
+      "action": "plant",
+      "status": "active",
+      "notes": "Gốc rễ quá khứ 19 năm trước"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "Giám định viên pháp y",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "Chuyên viên pháp chứng hiện trường",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Mẹ ĐTV Nam",
+      "brief_role": "Người mẹ bán cháo sườn góc chợ Đò Cũ",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Nguyễn Văn Tư",
+      "brief_role": "Nạn nhân thợ vá săm đêm",
+      "first_seen": 1,
+      "last_seen": 1
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Trần Văn Huy",
+      "status": "Đồng đội điều tra tin cậy",
+      "action": "update"
+    },
+    {
+      "pair": "Đặng Hoàng Nam - Mẹ ĐTV Nam",
+      "status": "Tình mẫu tử ấm áp bình dị",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "case_status",
+      "value": "investigating_ha_an_murder",
+      "chapter": 1
+    }
+  ],
+  "dependencies": []
+}

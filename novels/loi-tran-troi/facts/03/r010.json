@@ -1,0 +1,69 @@
+{
+  "chapter": 3,
+  "revision": "r010",
+  "created_at": "2026-08-29T18:20:00+07:00",
+  "summary": "Sáng thứ Sáu (ngày thứ 2 chuyên án): loại trừ Hải Khê; cá bống suối đá lạnh; GC-MS rễ đắng thần kinh tiệm Vạn Xuân Đường; khám sâu chòi ven đê tìm mỏ cắt Tây Phong + que hàn HK-7018M Hải Khê; phổ XRF tương thích hợp kim crom-molypden khoanh vùng thợ Ba.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Sáu, 08:00-10:30",
+      "event": "Xác minh tài khoản Hải Khê hợp pháp; giám định sinh học cá bống suối đá lạnh; công bố kết quả GC-MS rễ đắng thần kinh.",
+      "chapter": 3
+    },
+    {
+      "time": "Trưa thứ Sáu, 11:00-12:30",
+      "event": "Nam và Huy xác minh tại tiệm thuốc Vạn Xuân Đường, xác định nạn nhân sống trong hoảng loạn.",
+      "chapter": 3
+    },
+    {
+      "time": "Chiều thứ Sáu, 14:00-16:30",
+      "event": "Khám sâu chòi ven đê, thu giữ mỏ cắt Tây Phong và que hàn Hải Khê; phân tích XRF tương thích hợp kim khoanh vùng thợ Ba.",
+      "chapter": 3
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_fish_bones",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Xác định 4 bộ xương cá thuộc loài cá bống suối đá lạnh đầu nguồn"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 3
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 3
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "Giám định viên pháp y",
+      "first_seen": 1,
+      "last_seen": 3
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "Chuyên viên pháp chứng",
+      "first_seen": 1,
+      "last_seen": 3
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "clues_gathered",
+      "value": "xrf_material_match_and_route_identified",
+      "chapter": 3
+    }
+  ],
+  "dependencies": [
+    "02"
+  ]
+}

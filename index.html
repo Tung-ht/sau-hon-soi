@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark" data-font="be-vietnam">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sáu Hòn Sỏi — Hoàng Tùng | Tiểu Thuyết Trinh Thám Procedural Noir</title>
+    <meta name="description" content="Tiểu thuyết trinh thám hình sự procedural noir 'Sáu Hòn Sỏi' của tác giả Hoàng Tùng. Khám phá kỳ án Lũng Nậm và di vật chiếc thước mộc.">
+    
+    <!-- Google Fonts with full Vietnamese support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cinzel:wght@600;700;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+    :root {
+        --bg-main: #0b132b;
+        --bg-card: #1c2541;
+        --bg-glass: rgba(28, 37, 65, 0.85);
+        --text-main: #e2e8f0;
+        --text-muted: #94a3b8;
+        --accent-gold: #d4af37;
+        --accent-blue: #38bdf8;
+        --border-color: rgba(212, 175, 55, 0.25);
+        --reading-bg: #0f172a;
+        --reading-text: #f1f5f9;
+        --shadow-elevation: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+        --font-content: 'Be Vietnam Pro', sans-serif;
+        --content-font-size: 1.08rem;
+        --content-line-height: 1.75;
+    }
+
+    [data-theme="light"] {
+        --bg-main: #f8fafc;
+        --bg-card: #ffffff;
+        --bg-glass: rgba(255, 255, 255, 0.9);
+        --text-main: #0f172a;
+        --text-muted: #64748b;
+        --accent-gold: #b45309;
+        --accent-blue: #0284c7;
+        --border-color: rgba(180, 83, 9, 0.2);
+        --reading-bg: #ffffff;
+        --reading-text: #1e293b;
+        --shadow-elevation: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="sepia"] {
+        --bg-main: #f4ecd8;
+        --bg-card: #faf3e0;
+        --bg-glass: rgba(250, 243, 224, 0.92);
+        --text-main: #3d2f1d;
+        --text-muted: #7c6853;
+        --accent-gold: #8c531b;
+        --accent-blue: #2c6e80;
+        --border-color: rgba(140, 83, 27, 0.25);
+        --reading-bg: #faf3e0;
+        --reading-text: #3d2f1d;
+        --shadow-elevation: 0 10px 30px -10px rgba(61, 47, 29, 0.15);
+    }
+
+    [data-font="lora"] { --font-content: 'Lora', Georgia, serif; }
+    [data-font="merriweather"] { --font-content: 'Merriweather', 'Times New Roman', serif; }
+    [data-font="be-vietnam"] { --font-content: 'Be Vietnam Pro', sans-serif; }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: var(--font-content);
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        line-height: var(--content-line-height);
+        transition: background-color 0.3s ease, color 0.3s ease;
+        overflow-x: hidden;
+    }
+
+    /* READING PROGRESS BAR */
+    #progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--accent-gold), var(--accent-blue));
+        z-index: 1000;
+        width: 0%;
+        transition: width 0.1s ease;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background: var(--bg-glass);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        text-decoration: none;
+        color: var(--text-main);
+    }
+
+    .nav-logo-icon {
+        color: var(--accent-gold);
+    }
+
+    .nav-title {
+        font-family: 'Cinzel', serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: var(--accent-gold);
+    }
+
+    .nav-author {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        border-left: 1px solid var(--border-color);
+        padding-left: 0.75rem;
+        margin-left: 0.25rem;
+    }
+
+    .nav-controls {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .btn-icon {
+        background: transparent;
+        border: 1px solid var(--border-color);
+        color: var(--text-main);
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .btn-icon:hover {
+        background: rgba(212, 175, 55, 0.15);
+        color: var(--accent-gold);
+        border-color: var(--accent-gold);
+    }
+
+    /* SIDEBAR DRAWER (TOC & SETTINGS) */
+    .drawer-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+        z-index: 1001;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .drawer-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .drawer {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -380px;
+        width: 360px;
+        max-width: 85vw;
+        background: var(--bg-card);
+        border-right: 1px solid var(--border-color);
+        z-index: 1002;
+        display: flex;
+        flex-direction: column;
+        transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 10px 0 40px rgba(0,0,0,0.5);
+    }
+
+    .drawer.active {
+        left: 0;
+    }
+
+    .drawer-header {
+        padding: 1.25rem;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .drawer-title {
+        font-family: 'Cinzel', serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--accent-gold);
+        letter-spacing: 1px;
+    }
+
+    .drawer-content {
+        padding: 1rem 1.25rem;
+        overflow-y: auto;
+        flex-grow: 1;
+    }
+
+    .toc-group-title {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--accent-blue);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 1.2rem 0 0.5rem 0;
+        padding-bottom: 4px;
+        border-bottom: 1px dashed var(--border-color);
+    }
+
+    .toc-item-link {
+        display: block;
+        padding: 0.5rem 0.6rem;
+        color: var(--text-main);
+        text-decoration: none;
+        font-size: 0.9rem;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        line-height: 1.4;
+    }
+
+    .toc-item-link:hover, .toc-item-link.active {
+        background: rgba(212, 175, 55, 0.12);
+        color: var(--accent-gold);
+        padding-left: 0.85rem;
+    }
+
+    /* SETTINGS MODAL */
+    .settings-panel {
+        padding: 1rem;
+        background: rgba(0,0,0,0.15);
+        border-radius: 8px;
+        margin-bottom: 1.2rem;
+        border: 1px solid var(--border-color);
+    }
+
+    .setting-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+    }
+
+    .setting-row:last-child { margin-bottom: 0; }
+
+    .setting-label { font-size: 0.85rem; color: var(--text-muted); }
+
+    .segmented-control {
+        display: flex;
+        background: var(--bg-main);
+        border-radius: 6px;
+        padding: 2px;
+        border: 1px solid var(--border-color);
+    }
+
+    .seg-btn {
+        background: transparent;
+        border: none;
+        color: var(--text-muted);
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: inherit;
+        transition: all 0.2s ease;
+    }
+
+    .seg-btn.active {
+        background: var(--accent-gold);
+        color: #000;
+        font-weight: 600;
+    }
+
+    /* HERO COVER */
+    .hero {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 1.5rem 3rem 1.5rem;
+        background: radial-gradient(circle at center, rgba(30, 41, 59, 0.7) 0%, var(--bg-main) 100%);
+        border-bottom: 1px solid var(--border-color);
+        position: relative;
+    }
+
+    .hero-container {
+        max-width: 1000px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .hero-art {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: var(--shadow-elevation);
+        border: 2px solid var(--border-color);
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .hero-art:hover .hero-img {
+        transform: scale(1.03);
+    }
+
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(212, 175, 55, 0.15);
+        color: var(--accent-gold);
+        border: 1px solid var(--accent-gold);
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        width: fit-content;
+    }
+
+    .hero-title {
+        font-family: 'Playfair Display', 'Cinzel', serif;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.1;
+        color: var(--text-main);
+        letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        color: var(--accent-gold);
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-author-tag {
+        font-size: 1.05rem;
+        color: var(--text-muted);
+    }
+
+    .hero-author-tag strong {
+        color: var(--text-main);
+        font-weight: 600;
+    }
+
+    .hero-tagline {
+        font-size: 0.95rem;
+        font-style: italic;
+        color: var(--text-muted);
+        border-left: 3px solid var(--accent-gold);
+        padding-left: 1rem;
+        line-height: 1.6;
+    }
+
+    .hero-meta-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .meta-box {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 0.75rem;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .meta-num {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--accent-gold);
+        font-family: 'Cinzel', serif;
+    }
+
+    .meta-lbl {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-actions {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #d4af37, #b45309);
+        color: #000;
+        font-weight: 700;
+        padding: 0.75rem 1.75rem;
+        border-radius: 8px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+        transition: all 0.2s ease;
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    }
+
+    .btn-secondary {
+        background: var(--bg-card);
+        color: var(--text-main);
+        border: 1px solid var(--border-color);
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+        border-color: var(--accent-gold);
+        color: var(--accent-gold);
+    }
+
+    /* MAIN NOVEL CONTAINER */
+    .novel-wrapper {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+    }
+
+    /* VOLUME DIVIDER HERO */
+    .volume-hero {
+        margin: 5rem 0 3rem 0;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        background: var(--bg-card);
+        box-shadow: var(--shadow-elevation);
+    }
+
+    .volume-hero-img-wrap {
+        width: 100%;
+        height: 320px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .volume-hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .volume-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 2rem;
+    }
+
+    .volume-badge {
+        font-family: 'Cinzel', serif;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--accent-gold);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 0.25rem;
+    }
+
+    .volume-hero-title {
+        font-family: 'Playfair Display', 'Cinzel', serif;
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    .volume-hero-sub {
+        font-size: 0.95rem;
+        color: #cbd5e1;
+        font-style: italic;
+        margin-top: 0.25rem;
+    }
+
+    .volume-epigraph-box {
+        padding: 1.5rem 2rem;
+        font-style: italic;
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        text-align: center;
+        border-top: 1px solid var(--border-color);
+    }
+
+    /* CHAPTER CARD */
+    .chapter-card {
+        background: var(--reading-bg);
+        color: var(--reading-text);
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+        padding: 3rem 2.5rem;
+        margin-bottom: 3.5rem;
+        box-shadow: var(--shadow-elevation);
+    }
+
+    .chapter-header-wrap {
+        text-align: center;
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .chapter-num-tag {
+        font-family: 'Cinzel', serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--accent-gold);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+
+    .chapter-main-heading {
+        font-family: 'Playfair Display', 'Lora', serif;
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: var(--reading-text);
+        line-height: 1.3;
+    }
+
+    .chapter-content p {
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 1.75em;
+        margin-bottom: 1rem;
+        font-size: var(--content-font-size);
+        line-height: var(--content-line-height);
+    }
+
+    .chapter-content p.dialogue {
+        text-indent: 0;
+        padding-left: 0.5rem;
+    }
+
+    .chapter-content > p:first-of-type {
+        text-indent: 0;
+    }
+
+    .chapter-content > p:first-of-type::first-letter {
+        font-family: 'Playfair Display', 'Cinzel', serif;
+        font-size: 3.2em;
+        float: left;
+        line-height: 0.8;
+        margin-right: 0.15em;
+        margin-top: 0.05em;
+        color: var(--accent-gold);
+        font-weight: 700;
+    }
+
+    .chapter-content hr {
+        border: none;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .chapter-content hr::before {
+        content: "❖   ❖   ❖";
+        color: var(--accent-gold);
+        font-size: 0.85rem;
+        letter-spacing: 8px;
+    }
+
+    .chapter-content blockquote {
+        margin: 1.5rem 0 1.5rem 1rem;
+        padding-left: 1rem;
+        border-left: 3px solid var(--accent-gold);
+        font-style: italic;
+        color: var(--text-muted);
+    }
+
+    .chapter-footer-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        font-size: 0.85rem;
+    }
+
+    .chapter-nav-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .chapter-nav-btn:hover {
+        color: var(--accent-gold);
+    }
+
+    /* APPENDIX SECTIONS */
+    .appendix-card {
+        background: var(--bg-card);
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+        padding: 2.5rem 2rem;
+        margin-bottom: 3rem;
+        box-shadow: var(--shadow-elevation);
+    }
+
+    .appendix-heading {
+        font-family: 'Cinzel', serif;
+        font-size: 1.3rem;
+        color: var(--accent-gold);
+        text-align: center;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+        font-size: 0.88rem;
+    }
+
+    .custom-table th, .custom-table td {
+        border: 1px solid var(--border-color);
+        padding: 0.65rem 0.85rem;
+        text-align: left;
+    }
+
+    .custom-table th {
+        background: rgba(212, 175, 55, 0.1);
+        color: var(--accent-gold);
+        font-family: 'Cinzel', serif;
+        font-size: 0.78rem;
+        letter-spacing: 0.8px;
+    }
+
+    /* BACK TO TOP */
+    .btn-back-top {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: var(--accent-gold);
+        color: #000;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        z-index: 900;
+        border: none;
+    }
+
+    .btn-back-top.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* FOOTER */
+    .site-footer {
+        background: var(--bg-card);
+        border-top: 1px solid var(--border-color);
+        padding: 3rem 1.5rem;
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 868px) {
+        .hero-container { grid-template-columns: 1fr; gap: 2rem; }
+        .hero-title { font-size: 2.2rem; }
+        .chapter-card { padding: 2rem 1.25rem; }
+        .volume-hero-img-wrap { height: 220px; }
+        .volume-hero-title { font-size: 1.5rem; }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- PROGRESS BAR -->
+    <div id="progress-bar"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#hero" class="nav-brand">
+            <i data-lucide="book-open" class="nav-logo-icon"></i>
+            <span class="nav-title">SÁU HÒN SỎI</span>
+            <span class="nav-author">Hoàng Tùng</span>
+        </a>
+        <div class="nav-controls">
+            <button class="btn-icon" id="btn-theme" title="Đổi giao diện (Dark / Light / Sepia)">
+                <i data-lucide="moon"></i>
+            </button>
+            <button class="btn-icon" id="btn-font-size" title="Cỡ chữ">
+                <i data-lucide="type"></i>
+            </button>
+            <button class="btn-icon" id="btn-toc" title="Mục lục & Cài đặt">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- DRAWER (TOC & SETTINGS) -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside class="drawer" id="drawer">
+        <div class="drawer-header">
+            <span class="drawer-title">Mục Lục & Cài Đặt</span>
+            <button class="btn-icon" id="btn-close-drawer" style="border: none;">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="drawer-content">
+            <div class="settings-panel">
+                <div class="setting-row">
+                    <span class="setting-label">Font chữ</span>
+                    <div class="segmented-control" id="font-selector">
+                        <button class="seg-btn active" data-font="be-vietnam">Modern</button>
+                        <button class="seg-btn" data-font="lora">Lora</button>
+                        <button class="seg-btn" data-font="merriweather">Merri</button>
+                    </div>
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Giao diện</span>
+                    <div class="segmented-control" id="theme-selector">
+                        <button class="seg-btn active" data-theme="dark">Tối</button>
+                        <button class="seg-btn" data-theme="light">Sáng</button>
+                        <button class="seg-btn" data-theme="sepia">Sepia</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toc-group-title">Phần Mở Đầu</div>
+            <a href="#hero" class="toc-item-link">Trang bìa & Giới thiệu</a>
+            <a href="#epigraph" class="toc-item-link">Lời đề từ & Đồng dao</a>
+
+            <div class="toc-group-title">TẬP 1: DƯỚI XUÔI</div>
+            <a href="#chuong-1" class="toc-item-link">1. Đêm mưa phố Đò Cũ</a>
+            <a href="#chuong-2" class="toc-item-link">2. Người cố vấn</a>
+            <a href="#chuong-3" class="toc-item-link">3. Bóng đen bãi xác tàu</a>
+            <a href="#chuong-4" class="toc-item-link">4. Đấu trí dưới đáy bùn</a>
+            <a href="#chuong-5" class="toc-item-link">5. Bốn cái chết</a>
+            <a href="#chuong-6" class="toc-item-link">6. Tiếng hát bản Dền</a>
+
+            <div class="toc-group-title">TẬP 2: NGƯỢC NGÀN</div>
+            <a href="#chuong-7" class="toc-item-link">7. Dấu truy cập lúc nửa đêm</a>
+            <a href="#chuong-8" class="toc-item-link">8. Thung lũng oan khuất</a>
+            <a href="#chuong-9" class="toc-item-link">9. Bến đò trong sương</a>
+            <a href="#chuong-10" class="toc-item-link">10. Dưới đáy rương</a>
+            <a href="#chuong-11" class="toc-item-link">11. Người thầy giữ im lặng</a>
+
+            <div class="toc-group-title">TẬP 3: ÁNH SÁNG CÔNG LÝ</div>
+            <a href="#chuong-12" class="toc-item-link">12. Cuộc gọi thứ sáu</a>
+            <a href="#chuong-13" class="toc-item-link">13. Dấu chân trên đèo</a>
+            <a href="#chuong-14" class="toc-item-link">14. Chiếc thước mộc</a>
+            <a href="#chuong-15" class="toc-item-link">15. Ánh sáng thung lũng</a>
+
+            <div class="toc-group-title">Phụ Lục & Hậu Từ</div>
+            <a href="#appendix-1" class="toc-item-link">Phụ lục 1: Bài đồng dao Lũng Nậm</a>
+            <a href="#appendix-2" class="toc-item-link">Phụ lục 2: Ma trận 6 Vật chứng</a>
+            <a href="#author-note" class="toc-item-link">Lời bạt của Tác giả</a>
+        </div>
+    </aside>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-art">
+                <img src="assets/images/key_visual.jpg" alt="Sáu Hòn Sỏi Key Visual" class="hero-img">
+            </div>
+            <div class="hero-info">
+                <div class="hero-badge">
+                    <i data-lucide="shield-alert" style="width: 14px; height: 14px;"></i>
+                    Tiểu Thuyết Trinh Thám Procedural Noir
+                </div>
+                <h1 class="hero-title">SÁU HÒN SỎI</h1>
+                <div class="hero-subtitle">Lời Trăn Trối & Kỳ Án Lũng Nậm</div>
+                <div class="hero-author-tag">Tác giả: <strong>Hoàng Tùng</strong></div>
+                <p class="hero-tagline">“Khi lưỡi dao báo thù tì sát cổ họng kẻ chủ mưu, thứ duy nhất có thể hóa giải mười chín năm oan khuất không phải là họng súng, mà là một chiếc thước mộc gỗ lim mòn vẹt...”</p>
+                
+                <div class="hero-meta-grid">
+                    <div class="meta-box">
+                        <div class="meta-num">15</div>
+                        <div class="meta-lbl">Chương</div>
+                    </div>
+                    <div class="meta-box">
+                        <div class="meta-num">21K</div>
+                        <div class="meta-lbl">Từ ngữ</div>
+                    </div>
+                    <div class="meta-box">
+                        <div class="meta-num">100%</div>
+                        <div class="meta-lbl">Fair-Play</div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#chuong-1" class="btn-primary">
+                        <i data-lucide="book-open"></i> Đọc Ngay
+                    </a>
+                    <a href="Sau_Hon_Soi_Tieu_Thuyet_Trinh_Tham.pdf" target="_blank" class="btn-secondary">
+                        <i data-lucide="download"></i> Tải Bản PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN READING CONTAINER -->
+    <main class="novel-wrapper">
+
+        <!-- EPIGRAPH -->
+        <section class="appendix-card" id="epigraph" style="text-align: center;">
+            <div class="appendix-heading" style="font-size: 1.1rem;">LỜI ĐỀ TỪ</div>
+            <p style="font-style: italic; font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.5rem; color: var(--accent-gold);">
+                “Cái cây gỗ trong rừng có cong queo thì mình đẽo cho thẳng được, chứ cái bụng người mình mà cong queo thì dựng cái nhà nào lên rồi cũng sập thôi con à.”
+            </p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
+                — Lời dặn của người thợ mộc Trần Văn Cửu (1958 – 2005)
+            </p>
+        </section>
+
+        <!-- TẬP 1: DƯỚI XUÔI -->
+        <section class="volume-hero" id="tap-1">
+            <div class="volume-hero-img-wrap">
+                <img src="assets/images/hoi_1.jpg" alt="TẬP 1: DƯỚI XUÔI" class="volume-hero-img">
+                <div class="volume-hero-overlay">
+                    <span class="volume-badge">Tập 1</span>
+                    <h2 class="volume-hero-title">TẬP 1: DƯỚI XUÔI</h2>
+                    <p class="volume-hero-sub">Mắt Xích Thứ Tư & Bẫy Đánh Lạc Hướng</p>
+                </div>
+            </div>
+            <div class="volume-epigraph-box">
+                “Sông Lam Châu chảy từ đại ngàn Mường Biên xuôi về biển cả, cuốn theo những xác tàu rỉ sét và những phận người trôi dạt.”
+                
+            </div>
+        </section>
+        
+                <!-- CHƯƠNG 1 -->
+                <article class="chapter-card" id="chuong-1">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 1</div>
+                        <h3 class="chapter-main-heading">Đêm mưa phố Đò Cũ</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Tối thứ Hai, thị trấn Hạ An chìm trong một trận mưa rào dai dẳng kéo dài từ xế chiều đến tận nửa đêm.</p>
+<p>Những cơn gió bấc đầu mùa mang theo hơi nước buốt lạnh từ lòng sông Lam Châu tràn vào, luồn lách qua từng ngõ ngách chật hẹp của khu phố cũ. Nước mưa từ những mái tôn gỉ sét xối xả tuôn xuống rãnh cống lộ thiên, cuốn theo bùn đất, rác rưởi và mùi mỡ cặn từ các quầy thịt ban ngày. Đoạn ngõ số 42 phố Đò Cũ đêm nay vắng ngắt, lầy lội dưới ánh đèn đường vàng vọt hắt từng vệt sáng nhợt nhạt xuống mặt đường bong tróc loang lổ. Phố Đò Cũ vốn là bến trung chuyển bè gỗ và phế liệu lâu đời của lưu vực sông Lam Châu, nơi dòng nước từ thượng nguồn đại ngàn Mường Biên chảy qua các vùng cưa xẻ gỗ Quỳnh Lâm, mỏ đá Tây Phong trước khi đổ ra vịnh cảng Hải Khê. Sau cơn sốt đất công nghiệp hóa đầu những năm hai nghìn, khu bến cũ thu hẹp thành xóm lao động nghèo ngụ cư, nhà cửa san sát lợp tôn xi măng tạm bợ, không có hệ thống camera giám sát hay hạ tầng chiếu sáng hiện đại.</p>
+<p>Trước ca trực tối, Điều tra viên Đặng Hoàng Nam có thói quen tạt qua góc chợ cũ mé bờ sông. Dưới mái bạt căng tạm tránh mưa, gánh hàng bánh cuốn nóng và cháo sườn của mẹ anh vẫn nghi ngút khói thơm. Bà múc cho con trai bát cháo sườn đầy đặn, rắc nhiều tiêu sọ và hành hoa xanh mướt, khẽ chỉnh lại cổ áo mưa cho anh:</p>
+<p class="dialogue">— Ăn cho ấm bụng rồi hẵng vào ca trực, Nam. Mưa gió thế này, đường sá trơn trượt lắm. Nhớ cẩn thận nghe con.</p>
+<p>Nam ngồi trên chiếc ghế đòn gỗ nhỏ, vừa ăn từng thìa cháo nóng hổi vừa nhìn ngắm những giọt mưa rơi lộp bộp trên mái bạt. Hơi ấm từ bàn tay gầy guộc của mẹ cùng mùi gạo mới thơm nồng theo anh suốt quãng đường ngắn trở về trụ sở Đội Điều tra Trọng án Hạ An.</p>
+<p>Bảy giờ tối, hành lang trụ sở yên tĩnh hơn thường nhật. Tiếng quạt trần quay đều đều trên nền tiếng mưa rả rích ngoài sân. Khi Nam bước qua tiền sảnh, cửa phòng chỉ huy mở rộng. Bên trong, Chỉ huy Đặng Tiến Đạt đang đứng bên bàn tiếp khách, bên cạnh là một người đàn ông lớn tuổi mặc áo khoác len sẫm màu, mái tóc hoa râm chải gọn gàng, phong thái điềm đạm và đĩnh đạc. Đó là ông Hoàng Đình Thao — cựu Phó Chỉ huy Cơ quan Điều tra Khu vực, nay là Chủ tịch danh dự của Quỹ An sinh Lam Châu, một tổ chức thiện nguyện hỗ trợ thân nhân và cựu trinh sát có hoàn cảnh khó khăn.</p>
+<p>Thấy Nam dừng bước chào ở cửa, ông Thao quay lại, mỉm cười đôn hậu. Đôi mắt lão luyện sau cặp kính gọng đồi mồi khẽ nheo lại, ánh lên nét tinh tường của một người đã trải qua hàng chục năm làm án:</p>
+<p class="dialogue">— Cậu Nam đấy à? Đạt vừa nhắc đến cậu xong. Nghe nói đợt triệt phá đường dây buôn lậu phụ tùng dưới bến cảng tháng trước, tổ của cậu làm rất gọn ghẽ.</p>
+<p class="dialogue">— Dạ, chào bác Thao ạ. — Nam khẽ cúi đầu, bước vào phòng. — Chuyên án đó có sự chỉ đạo sát sao của anh Đạt và sự hỗ trợ của các đơn vị cơ sở ạ.</p>
+<p class="dialogue">— Khiêm tốn là phẩm chất quý của người làm án hình sự, nhưng phải giữ được cái đầu lạnh và đôi mắt không bỏ sót chi tiết. — Ông Thao vỗ nhẹ lên vai Nam, giọng trầm ấm và truyền cảm. — Vùng hạ lưu Lam Châu này địa hình phức tạp, dân tứ xứ đổ về nương náu theo các bến bãi sà-lan. Nước sông sâu mấy thì rác rưởi trôi qua rồi cũng lắng xuống đáy bùn, hồ sơ tưởng chừng đã chìm nghỉm đôi khi chỉ cần một con nước ngược là lại nổi lên. Thế nên thế hệ các cậu phải luôn cẩn trọng với từng con số, từng biên bản.</p>
+<p>Chỉ huy Đạt đứng bên cạnh, ngón tay vô thức xoay nhẹ chiếc bật lửa Zippo vỏ đồng mòn vẹt. Ánh mắt Đạt khẽ chùng xuống trong một tích tắc khi nghe câu nói về “những hồ sơ tưởng đã chìm”, nhưng ông nhanh chóng lấy lại vẻ thản nhiên, rót thêm tuần trà nóng mời tiền bối:</p>
+<p class="dialogue">— Anh Thao quá khen. Thế hệ trẻ bây giờ được đào tạo bài bản về khoa học kỹ thuật hình sự, tiếp cận chứng cứ khách quan hơn thời chúng tôi nhiều.</p>
+<p class="dialogue">— Khoa học là công cụ, nhưng trực giác và sự kiên định với sự thật mới là cái gốc. — Ông Thao nâng chén trà, nhấp một ngụm nhỏ rồi nhìn đồng hồ đeo tay. — Thôi, tôi ghé qua trao đổi nốt việc bảo trợ y tế cho gia đình mấy đồng chí cũ ở Lũng Nậm. Mưa ngớt hạt rồi, tôi phải về kẻo đường trơn. Đạt và cậu Nam ở lại trực ban giữ gìn sức khỏe nhé.</p>
+<p>Nam và Đạt tiễn ông Thao ra tận bậc thềm sảnh chính, nhìn chiếc xe sedan màu xám tro của quỹ an sinh lăn bánh hòa vào làn mưa mờ ảo của phố thị.</p>
+<p>Đêm muộn trôi qua trong sự tĩnh mịch của phòng trực ban. Đạt ngồi tựa lưng vào ghế gỗ mun, chìm trong làn khói thuốc lá Lam Ngàn bao bạc lững lờ. Tách trà nguội ngắt để bên cạnh xấp báo cáo công tác tuần. Thỉnh thoảng, tiếng sấm ục ục từ phía dãy núi Mường Biên dội về như những tiếng gầm gừ xa xăm.</p>
+<p>Nhưng sự bình yên của ca trực không kéo dài lâu.</p>
+<p>Năm giờ ba mươi phút sáng thứ Ba, chuông điện thoại trực ban đổ dồn dập, từng hồi chát chúa xé toạc bầu không khí ẩm ướt của sương sớm.</p>
+<p>Nam nhấc ống nghe. Đầu dây bên kia là giọng nói gấp gáp của trinh sát điều tra Trần Văn Huy:</p>
+<p class="dialogue">— Báo cáo anh Nam! Có án mạng tại căn nhà số 42 phố Đò Cũ, mé giáp cổng sau chợ bến. Nạn nhân là ông Nguyễn Văn Tư, sáu mươi tuổi, thợ sửa xe máy kiêm vá săm đêm. Rạng sáng nay, một người kéo xe hàng ghé vào gọi ông Tư bơm lốp thì thấy cửa ngoài khép hờ, đèn neon bên trong vẫn bật sáng, nạn nhân nằm bất động dưới nền xi măng!</p>
+<p>Mười lăm phút sau, chiếc xe đặc chủng của tổ khám nghiệm hiện trường ập tới ngõ chợ cũ. Ánh đèn chớp xanh đỏ hắt những luồng sáng sắc lạnh lên những bức tường gạch bám rêu phong ẩm ướt. Vài người dân lao động xóm chợ trùm áo tơi đứng dồn ứ ngoài mép dải băng phong tỏa, tiếng xì xào bàn tán xen lẫn tiếng mưa rây ràn rạt lên mái hiên tôn.</p>
+<p>Hiện trường là một căn nhà cấp bốn cũ kỹ rộng chừng ba mươi mét vuông. Bên ngoài hiên có tấm biển tôn sơn chữ nguệch ngoạc: <em>Vá săm xe - Bơm xe ngày đêm</em>. Dưới nền xi măng ẩm ướt, chiếc chậu thau nhôm chứa nước thử săm đục ngầu bị sóng sánh, loang vệt dài ra sàn. Cạnh đó là chiếc kẹp vá thủ công, một chiếc bơm tay và chiếc săm xe máy thủng hai lỗ vừa cạy dở vứt lăn lóc. Mùi cao su khét từ miếng vá chín bốc lên quyện với mùi dầu nhớt thải và mùi ẩm mốc của căn nhà lâu năm không có ánh nắng.</p>
+<p>Nạn nhân Nguyễn Văn Tư nằm gục dưới sàn xi măng, đầu tựa vào mép lốp sau của chiếc xe máy cũ dựng trên chân chống giữa. Ông Tư mặc chiếc áo ba lỗ ố vàng dính đầy dầu mỡ cơ khí và chiếc quần đùi xám. Hai mắt nạn nhân trợn trừng, đồng tử giãn to, vùng mặt và cổ bầm tím sẫm lại. Khóe miệng rỉ ra một vệt dịch bọt trong suốt lẫn chút máu tím sẫm do tổn thương niêm mạc hầu họng.</p>
+<p>Nam kéo đôi găng tay cao su chuyên dụng, ngồi xổm xuống bên thi thể nạn nhân.</p>
+<p class="dialogue">— Khám nghiệm sơ bộ thế nào anh Phong? — Nam quay sang hỏi Bác sĩ Phong, giám định viên pháp y của tổ khám nghiệm.</p>
+<p>Bác sĩ Phong nheo mắt qua cặp kính đọng hơi nước, dùng đèn pin chuyên dụng soi kỹ từng chi tiết trên vùng mặt và cổ nạn nhân. Ngón tay ông nhẹ nhàng nắn dọc sụn giáp và hai bên cơ ức đòn chũm:</p>
+<p class="dialogue">— Quan sát vùng mặt trước tiên, Nam. Có rải rác các chấm xuất huyết đỏ thẫm li ti ở niêm mạc mi mắt và củng mạc. Hai bên cổ có vết tụ máu bầm đối xứng, tương thích với dấu hiệu chèn ép cơ học vùng mạch máu và đường thở từ phía sau khi nạn nhân đang ngồi cúi người vá lốp. Sau đó có lực siết ngang sụn giáp làm vỡ mạch máu nhỏ vùng hầu họng. Vết hoen tử thi và độ co cứng cơ cho thấy nạn nhân tử vong vào khoảng giữa đêm qua, từ chín đến mười một giờ đêm trong lúc mưa to gió lớn nhất. Test nhanh dịch dạ dày có phản ứng với nhóm an thần. Tôi sẽ lấy mẫu máu và phủ tạng gửi về viện làm xét nghiệm độc chất, chiều nay mổ tử thi sẽ kiểm tra kỹ tổn thương sụn giáp.</p>
+<p>Kỹ thuật viên Quang — cán bộ kỹ thuật hình sự — lúc này đang tỉ mỉ dùng kính lúp soi từng mẩu móng tay của tử thi:</p>
+<p class="dialogue">— Anh Nam, nhìn này! Dưới kẽ móng tay trỏ và ngón giữa bàn tay phải của nạn nhân có dấu vết cào xước. Chúng tôi vừa thu thập được ba sợi xơ len thô dệt tay ngâm chàm dính những hạt bụi xỉ cắt kim loại nhiệt độ cao li ti màu xám đen.</p>
+<p>Nam cúi sát nhìn vào đĩa lồng thủy tinh, thận trọng quan sát:</p>
+<p class="dialogue">— Cần niêm phong bảo quản cẩn thận mẫu vi sợi này. Có hai khả năng: hoặc trong phản xạ giằng co vài giây đầu nạn nhân đã cào trúng trang phục của kẻ tấn công, hoặc đây là tạp chất nghề nghiệp bám dính từ trước trong lúc ông Tư sửa xe. Thanh móc lốp bằng thép văng ra cọ một vệt xước mới tinh vào lốc máy cho thấy có một xung đột cơ học rất nhanh đã xảy ra tại vị trí này.</p>
+<p>Lúc này, trong quá trình rà soát tư trang và đồ nghề cá nhân của nạn nhân, Quang mở ngăn kéo đáy của chiếc hộp sắt đựng cờ-lê mỏ-lết đặt sát chân tường, cẩn thận dùng nhíp chuyên dụng gắp ra một vật lạ:</p>
+<p class="dialogue">— Anh Nam, có một túi vải nhỏ giấu sâu trong ngăn đáy hộp đồ nghề của nạn nhân.</p>
+<p>Nam nheo mắt nhìn vào đĩa thép không gỉ. Đó là một chiếc túi bùa hộ mệnh bằng vải thổ cẩm màu chàm, miệng túi thắt dây gai tinh xảo. Bên trong túi bùa, bọc trong lớp bông gòn mỏng là bốn bộ xương cá khô nguyên vẹn, dài chừng hai đốt ngón tay. Toàn bộ phần đầu, vây mang, đuôi và từng đốt xương sống cá trắng muốt, khô kiệt và được giữ nguyên hình hài như một tiêu bản sinh vật học.</p>
+<p>Một người thợ vá săm ngụ cư nghèo ở vùng hạ lưu, tại sao lại cất giữ cẩn thận một túi bùa thổ cẩm chứa bốn bộ xương cá khô ở đáy hộp đồ nghề cá nhân? Đây là di vật quê hương, bùa hộ mệnh của ông Tư mang theo, hay có ai đó đã cố tình đặt vào đây như một nghi thức bí ẩn?</p>
+<p>Nam đứng dậy, cùng trinh sát Huy bắt đầu chia nhau đi gõ cửa từng hộ dân xung quanh ngõ số 42 để lấy lời khai nhân chứng.</p>
+<p>Bà Năm bán quán nước chè đầu ngõ co ro trong chiếc áo len cũ, tay bưng chén trà nóng run rẩy kể lại:</p>
+<p class="dialogue">— Khổ thân ông Tư quá mấy chú ơi! Ông ấy ở đây bốn năm rồi, tính ít nói, ngày vá xe, đêm chong đèn thui thủi một mình. Tối qua mưa gió sấm chớp dữ quá, tôi dọn hàng đóng cửa sớm chui vào giường nằm. Tôi không nghe thấy tiếng kêu la hay xô xát gì đâu các chú à!</p>
+<p>Anh Thắng — người chạy xe ba gác kéo hàng rau sớm, người đầu tiên phát hiện vụ việc — vừa run rẩy ký vào biên bản ghi lời khai nhân chứng vừa kể:</p>
+<p class="dialogue">— Năm giờ mười lăm tôi kéo xe qua định nhờ ông Tư bơm phụ cái bánh trước bị non hơi. Thấy cửa khép hờ, đèn tuýp bên trong vẫn sáng choang. Tôi cất tiếng gọi hai ba câu không thấy trả lời, ngó đầu vào thì thấy ông Tư nằm gục bất động dưới sàn, mặt tím ngắt. Tôi hoảng quá hô hoán bà con rồi chạy ra báo công an khu vực ngay.</p>
+<p>Trời sáng dần. Màn mưa rào đã ngớt hẳn, để lại một lớp sương mù ẩm ướt lãng đãng bao phủ lấy dòng sông Lam Châu đỏ ngầu phù sa.</p>
+<p>Toàn bộ khu ngõ Đò Cũ không hề có camera an ninh, không có nhân chứng trực tiếp nhìn thấy thời điểm xảy ra vụ việc. Hiện trường sạch sẽ đến mức kỳ lạ: không có dấu vân tay lạ, không có vết giày ngoại lai nào in trên nền đất bùn. Nạn nhân bị sát hại trong câm lặng giữa đêm mưa gió, để lại những dấu vết bất thường về vi sợi len ngâm chàm dính xỉ kim loại và chiếc túi bùa chứa bốn bộ xương cá khô bí ẩn.</p>
+<p>Nam cẩn thận niêm phong chiếc túi bùa vào hộp bảo quản vật chứng. Ngoài ngõ chợ, tiếng mưa rây trên mái tôn hòa cùng tiếng còi xe đặc chủng xé toạc màn sương sớm, mở đầu cho một cuộc điều tra đầy trắc trở.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <span></span>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-2" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 2 -->
+                <article class="chapter-card" id="chuong-2">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 2</div>
+                        <h3 class="chapter-main-heading">Người cố vấn</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Tám giờ ba mươi phút sáng thứ Ba, phòng họp án của Đội Điều tra Trọng án Hạ An đặc quánh mùi khói thuốc và hơi ẩm chưa tan.</p>
+<p>Trên bảng mica trắng gắn ở đầu phòng, trinh sát Huy vừa ghim xong các bức ảnh chụp hiện trường, sơ đồ nhà số 42 và bản in thông tin nhân thân của nạn nhân. Dưới ánh đèn tuýp trắng nhờ nhờ, Nam đứng tựa vào mép bàn, hai tay khoanh trước ngực, mắt chăm chú nhìn vào dòng chữ số định danh in đậm: <em>Nguyễn Văn Tư, sinh năm 1964, đăng ký tạm trú tại phố Đò Cũ bốn năm.</em></p>
+<p class="dialogue">— Báo cáo anh Đạt và tổ án, — Huy hắng giọng, mở tập tài liệu xác minh nhanh trên tay. — Kết quả đối soát tàng thư hộ tịch vừa gửi về lúc tám giờ sáng. Có một sự bất thường rất lớn: thẻ định danh mang tên Nguyễn Văn Tư mà nạn nhân đang sử dụng thực chất là một phôi thẻ giả tinh vi. Người có tên Nguyễn Văn Tư thật, cùng năm sinh và quê quán ghi trên giấy tờ, đã qua đời trong một vụ tai nạn sạt lở ở miền núi phía Bắc cách đây mười năm. Nạn nhân của chúng ta đã mang danh tính người chết này để sống ngụ cư tại Hạ An suốt bốn năm qua.</p>
+<p>Căn phòng khẽ xôn xao. Nam nhíu mày:</p>
+<p class="dialogue">— Một người thợ vá săm già giấu nhân thân thật, sống thầm lặng không bạn bè thân thích. Tài khoản cá nhân có gì đáng chú ý không?</p>
+<p class="dialogue">— Có, — Huy gật đầu, đưa ra một bảng kê sao kê ngân hàng. — Dù sống trong căn nhà cấp bốn rách nát, nhưng cách đây sáu tháng, tài khoản mang tên giả này nhận một khoản tiền sáu mươi triệu đồng từ một công ty vận tải đường thủy đóng tại vịnh cảng Hải Khê. Sau đó, số tiền này được rút dần bằng tiền mặt qua các cây ATM rải rác ngoài thị trấn.</p>
+<p>Đúng lúc đó, có tiếng gõ cửa nhẹ nhàng. Cửa phòng hé mở, ông Hoàng Đình Thao xuất hiện trong bộ âu phục sẫm màu chỉnh tề. Thấy tổ án đang họp, ông mỉm cười ái ngại, khẽ dừng lại ở bậu cửa:</p>
+<p class="dialogue">— Tôi ghé qua gửi nốt danh sách đối tượng bảo trợ của quỹ an sinh cho văn phòng thì nghe tin phố Đò Cũ có án mạng ban đêm. Tổ án đang họp căng thẳng thế này, có phiền không Đạt?</p>
+<p>Chỉ huy Đạt đứng dậy, xua tay nhã nhặn:</p>
+<p class="dialogue">— Không có gì phiền đâu anh Thao. Anh là bậc tiền bối kỳ cựu của lực lượng, vào nghe anh em sơ kết hiện trường một chút cũng tốt.</p>
+<p>Ông Thao bước vào, nhưng giữ đúng mực thước của một cựu chỉ huy đã về hưu. Ông không tiến lại gần bàn hồ sơ niêm phong mà chỉ đứng ở hàng ghế phía sau, đưa mắt nhìn lên bảng mica trắng nơi ghim các thông tin cơ bản:</p>
+<p class="dialogue">— Nạn nhân dùng thân phận giả à? Lại có giao dịch tiền bạc lớn với mảng vận tải đường thủy?</p>
+<p class="dialogue">— Dạ đúng ạ, — Nam báo cáo tóm tắt. — Nạn nhân bị siết cổ chết lúc nửa đêm, có dấu vết an thần sơ bộ trong dạ dày, nhưng hiện trường không có dấu hiệu cướp tài sản.</p>
+<p>Ông Thao trầm ngâm vuốt nhẹ gọng kính đồi mồi, ánh mắt nhìn vào bản đồ lưu vực sông Lam Châu treo trên tường:</p>
+<p class="dialogue">— Khu vực phố Đò Cũ xưa nay là bãi đáp của giới buôn bán kim loại phế liệu, phụ tùng rã xác tàu và các nhóm thủy thủ lưu động dọc sông. Một người phải thay tên đổi họ để trốn chui trốn lủi, lại nhận tiền từ một đầu mối cảng biển&hellip; Theo kinh nghiệm của tôi, rất có thể đây là một vụ thanh toán nợ nần ngầm hoặc bịt miệng do mâu thuẫn làm ăn chia chác. Kẻ săn tìm nạn nhân này ắt hẳn phải là kẻ rất am hiểu địa bàn sông nước, nắm rõ lịch sinh hoạt và có liên hệ với mạng lưới sửa chữa cơ khí ở các bến bãi. Các cậu nên tập trung rà soát các vựa phế liệu lớn, các xưởng cơ khí ven sông và những tay đòi nợ thuê cộm cán quanh khu vực bến tàu.</p>
+<p>Lời nhận định của ông Thao vang lên rành rọt, khúc chiết và hoàn toàn hợp lý về mặt nghiệp vụ. Chỉ huy Đạt khẽ gật đầu, quay sang Nam:</p>
+<p class="dialogue">— Ý kiến anh Thao rất xác đáng. Nam, cậu cho trinh sát chia làm hai mũi. Mũi thứ nhất xác minh dòng tiền sáu mươi triệu từ Hải Khê. Mũi thứ hai rà soát ngay các vựa phế liệu và các xưởng cơ khí bến sông xem có đối tượng nào cộm cán đang siết nợ ông Tư không.</p>
+<p class="dialogue">— Rõ! — Nam đáp. Nhưng trong đầu anh, hình ảnh chiếc túi bùa thổ cẩm màu chàm chứa bốn bộ xương cá suối khô giấu dưới đáy hộp cờ-lê vẫn dội lên như một dấu hỏi chưa có lời giải. Nếu là thanh toán đòi nợ thông thường, tại sao kẻ thủ ác lại bỏ qua tiền mặt trong ví và nhét một biểu tượng kỳ quái vào đồ nghề của nạn nhân?</p>
+<p>Ông Thao đứng nán lại nghe thêm vài phút rồi nhẹ nhàng bắt tay Đạt và Nam trước khi rời đi:</p>
+<p class="dialogue">— Chúc các cậu sớm phá án. Giữ gìn an ninh cho bà con phố chợ là việc lớn đấy.</p>
+<p>Mười giờ ba mươi phút trưa, Nam và Huy có mặt tại bãi phế liệu sà-lan của Chín Gù — một đầu nậu thu mua xác tàu và phụ tùng cơ khí có tiếng ở ngã ba sông Lam Châu.</p>
+<p>Khu bãi phế liệu ngập ngụa bùn lầy và rỉ sét. Hàng trăm tấn sắt vụn, khung sườn tàu mục nát nằm chỏng chơ dưới cái nắng hanh nồng sau mưa. Chín Gù — gã đàn ông gần năm mươi tuổi, lưng còng gập xuống như chiếc móc câu do di chứng gánh vác nặng thời trẻ — đang ngồi chồm hổm trên đống xích neo gỉ sét chỉ đạo đám thợ bốc dỡ.</p>
+<p>Thấy sắc phục công an, Chín Gù giật thót mình, vội vàng xoa đôi bàn tay đen nhẻm dầu mỡ vào ống quần, giọng khàn khàn:</p>
+<p class="dialogue">— Mấy chú bên hình sự tìm tôi có việc gì thế? Tôi làm ăn có giấy phép kinh doanh đàng hoàng, phế liệu mua về đều có hóa đơn nguồn gốc cả đấy nhé!</p>
+<p>Nam kéo chiếc ghế nhựa cũ ngồi đối diện gã, ánh mắt sắc lạnh:</p>
+<p class="dialogue">— Ông có biết ông Tư thợ vá săm ở ngõ 42 phố Đò Cũ không?</p>
+<p>Mặt Chín Gù thoáng biến sắc, gã nuốt nước bọt:</p>
+<p class="dialogue">— Biết&hellip; Biết chứ cán bộ. Ổng hay qua đây mua săm cũ, lốp thải về tận dụng vá cho khách kéo xe. Nhưng sáng nay nghe ngoài chợ đồn ổng bị người ta giết rồi mà?</p>
+<p class="dialogue">— Đêm qua từ chín giờ tối đến mười một giờ đêm ông ở đâu? — Nam hỏi dồn. — Có người phản ánh ông Tư từng vay mượn tiền của ông để xoay sở tiền thuê nhà, và ông đã nhiều lần đe dọa đòi nợ.</p>
+<p>Chín Gù tái mặt, vội xua tay lia lịa:</p>
+<p class="dialogue">— Oan cho tôi quá chú ơi! Đúng là lão Tư có mượn tôi năm triệu từ đầu năm ngoái, nhưng lão trả hết từ hồi tháng ba rồi! Đêm qua từ tám giờ tối đến tận hai giờ sáng tôi ngồi nhậu thịt chó với hai ông bảo vệ kho xăng dầu bến Cảng Năm ở ngay quán bà Thơm đầu cầu. Quán đó có gắn camera nhìn thẳng ra bàn nhậu, mấy chú cứ tới trích xuất camera mà xem! Tôi mà bước chân ra khỏi quán nửa bước thì sét đánh chết tôi liền!</p>
+<p>Huy lập tức liên lạc cho công an khu vực xác minh. Chỉ mười lăm phút sau, kết quả báo về: Chín Gù quả thực có mặt tại quán nhậu suốt từ 20:15 tối thứ Hai đến 02:30 sáng thứ Ba mà không rời đi phút nào. Bằng chứng ngoại phạm của gã vững như bàn thạch. Giả thuyết về một vụ giết người đòi nợ thông thường chính thức bị bẻ gãy.</p>
+<p>Nam nhìn quanh bãi phế liệu ngổn ngang những tấm thép dày bị cắt bằng nhiệt độ cao, bỗng nhớ đến mẩu vi sợi dính hạt xỉ kim loại thu được dưới móng tay nạn nhân:</p>
+<p class="dialogue">— Ở bãi của ông có thợ cơ khí nào chuyên cắt thép tấm dày bằng mỏ cắt hơi nhiệt độ cao không?</p>
+<p>Chín Gù gãi đầu gãi tai, ngẫm nghĩ một lát rồi nói:</p>
+<p class="dialogue">— Thợ ở bãi tôi thì toàn làm thủ công, cắt lôm côm thôi. Nhưng hồi tháng trước có một tay thợ cơ khí lưu động xưng tên là Ba tới xin làm khoán vài tuần. Tay này tay nghề cực kỳ siêu đẳng, cầm mỏ cắt oxy-gas cắt những tấm vỏ tàu dày cả gang tay mà đường cắt thẳng tắp, mịn như dao gọt hoa quả, xỉ kim loại bắn ra rất ít. Nhưng tính gã lầm lì, chẳng nói chuyện với ai bao giờ, hết việc là lủi thủi về cái chòi trạm bơm bỏ hoang mé bờ đê. Mấy hôm nay bão gió, gã tự nhiên biến mất, không thấy quay lại lấy nốt tiền công.</p>
+<p class="dialogue">— Tay thợ Ba đó có dụng cụ riêng không? — Nam gặng hỏi.</p>
+<p class="dialogue">— Đồ nghề của gã để trong một túi bạt quân tư trang cũ. Tôi nghe gã bảo trước đây từng làm thợ lặn cắt kim loại dưới nước cho xưởng cứu hộ trục vớt của lão Long Sà-lan ở bãi xác tàu Cửa Lác ngoài cửa biển.</p>
+<p>Cái tên &ldquo;xưởng cứu hộ trục vớt Lê Văn Long&rdquo; bất ngờ xuất hiện.</p>
+<p>Huy rút điện thoại kiểm tra lại dữ liệu công ty vận tải vừa chuyển tiền cho nạn nhân Nguyễn Văn Tư: công ty đó từng thuê xưởng cứu hộ của Long Sà-lan trục vớt hai chiếc sà-lan chìm vào năm ngoái. Tên của xưởng Lê Văn Long xuất hiện đồng thời trên hai chứng từ khác nhau của vụ án.</p>
+<p>Mặt trời đứng bóng hắt ánh sáng gay gắt xuống bãi phế liệu rỉ sét. Một manh mối mới vừa mở ra từ bãi bồi ven sông, kéo tổ án rời khỏi ngõ cụt của những món nợ vặt vãnh để hướng về phía bãi xác tàu Cửa Lác mù mịt sóng gió.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-1" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-3" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 3 -->
+                <article class="chapter-card" id="chuong-3">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 3</div>
+                        <h3 class="chapter-main-heading">Bóng đen bãi xác tàu</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Tối thứ Ba, nước sông Lam Châu dâng cao do đợt xả lũ từ hồ chứa thượng nguồn kết hợp triều cường cửa biển.</p>
+<p>Bãi xác tàu Cửa Lác nằm cách trung tâm Hạ An chừng mười lăm cây số về phía hạ lưu, nơi dòng sông phình rộng rồi đổ ra vịnh cảng Hải Khê. Trong màn đêm đen đặc như mực, những bộ khung sườn sà-lan khổng lồ hoen gỉ nhô lên khỏi mặt nước đục ngầu như những bộ xương hóa thạch của loài thủy quái tiền sử. Gió biển mặn chát quất rát mặt, mang theo mùi dầu cặn, mùi bùn thối rữa và tiếng sóng vỗ bồm bộp vào các tấm tôn be thuyền.</p>
+<p>Chiếc ca-nô đặc chủng của tổ điều tra cặp mạn chiếc sà-lan nổi hai tầng mang biển hiệu <em>Xưởng Cứu hộ &amp; Trục vớt Lê Văn Long</em>. Ánh đèn pha công suất lớn quét qua sàn sà-lan ngổn ngang máy nén khí, bình dưỡng khí lặn sâu, cuộn dây cáp tời bọc mỡ bò đen nhánh và hàng chục bình khí nén oxy-acetylene xếp thẳng hàng.</p>
+<p>Bước lên boong, Nam và Huy đưa Lệnh khám xét phương tiện phục vụ điều tra cho người đàn ông đang đứng tựa vào cabin lái.</p>
+<p>Đó là Lê Văn Long — chủ xưởng trục vớt, người trong giới sông nước thường gọi bằng cái tên Long Sà-lan. Long trạc năm mươi tuổi, thân hình vạm vỡ nhưng hơi còng lưng, làn da sạm đen vì nắng gió biển. Đôi mắt lão hõm sâu, tai phải hơi nghễnh ngãng do di chứng của những năm tháng lặn cứu hộ ở tầng nước sâu có áp suất cao, trên hõm cổ bên trái còn in hằn một vết sẹo co rút do tai nạn giảm áp đột ngột.</p>
+<p>Long liếc nhìn tờ lệnh khám xét trong tay Nam, ánh mắt lạnh tanh không một chút bối rối, giọng nói trầm đục và khô khốc:</p>
+<p class="dialogue">— Các anh bên hình sự muốn khám thì cứ tự nhiên. Xưởng tôi làm nghề trục vớt cứu nạn trên luồng lạch, đồ đạc chỉ có máy móc với sắt thép, chẳng có gì giấu giếm.</p>
+<p>Kỹ thuật viên Quang cùng tổ kỹ thuật lập tức mở vali nghiệp vụ, mang đèn tử ngoại và dụng cụ lấy mẫu rà soát toàn bộ khu vực gia công cơ khí trên mặt boong. Tại góc xưởng nơi đặt bàn cắt phôi kim loại dày, Quang dùng kẹp y tế gắp các mẩu xỉ cắt nhiệt độ cao và thu thập một vỏ hộp que hàn chịu mặn áp lực cao nhãn hiệu <em>Hải Khê HK-7018M</em>.</p>
+<p>Quang lập tức sử dụng thiết bị quang phổ huỳnh quang tia X cầm tay (XRF) để đối chiếu nhanh mẫu xỉ vừa thu được với mẫu xỉ kim loại lấy từ móng tay của nạn nhân Nguyễn Văn Tư ở phố Đò Cũ. Sau chừng năm phút xử lý tín hiệu, Quang quay sang Nam, khẽ gật đầu:</p>
+<p class="dialogue">— Tỷ lệ các nguyên tố hợp kim đặc trưng Crom-Molypden trong mẫu xỉ trên sà-lan này hoàn toàn tương thích về mặt nhóm vật liệu với mẫu xỉ thu được tại hiện trường án mạng sáng nay. Cả hai đều thuộc dòng hợp kim chịu nhiệt và áp lực cao chuyên dùng cho vỏ tàu biển.</p>
+<p>Nam nhìn thẳng vào Long, giọng đanh lại:</p>
+<p class="dialogue">— Ông giải thích thế nào về việc que hàn và xỉ cắt kim loại tại xưởng của ông tương thích với vật chứng tại hiện trường một vụ án mạng xảy ra đêm qua ở phố Đò Cũ?</p>
+<p>Long nhếch mép, đưa bàn tay thô ráp đầy vết chai sần lên xoa xoa vết sẹo trên cổ:</p>
+<p class="dialogue">— Thưa cán bộ, cả cái vùng duyên hải từ Hạ An ra Hải Khê này có hàng trăm xưởng đóng tàu và cắt xác sà-lan. Thép tấm vỏ tàu thì lò nào cũng đúc từ hợp kim Crom-Molypden, que hàn HK-7018M thì đại lý vật tư nào chẳng bán cả tấn. Các anh dựa vào mấy hạt bụi xỉ mà quy cho xưởng tôi thì oan quá.</p>
+<p>Trong lúc đó, Huy tiến vào cabin lái kiểm tra sổ nhật ký hải trình và các hợp đồng trục vớt trong vòng năm năm qua của chiếc sà-lan này. Khi lật từng trang giấy ố vàng dính vệt nước mặn, mắt Huy bỗng dừng lại ở ba bản hợp đồng cứu hộ đặc biệt. Huy bước ra boong, ghé sát tai Nam:</p>
+<p class="dialogue">— Anh Nam, nhìn này. Tháng Chín năm 2021, chiếc sà-lan cứu hộ này có mặt tại bến Quỳnh Lâm trục vớt tàu gỗ trôi dạt. Tháng Chín năm 2022, nó neo đậu tại khu vực mỏ đá Tây Phong để xử lý sự cố sà-lan chở đá. Đến tháng Chín năm ngoái, nó lại hoạt động ngay tại vùng bến cảng Hải Khê. Cả ba địa bàn và thời điểm đều trùng khớp kỳ lạ với ba vụ tai nạn chết người bí ẩn của những kẻ mang thẻ định danh giả.</p>
+<p>Nam bước vào cabin lái của Long. Căn phòng hẹp nồng nặc mùi dầu máy và khói thuốc lá. Trên vách gỗ mun đối diện bàn điều khiển có đặt một bàn thờ nhỏ, bên trên là bức di ảnh của một thanh niên trẻ tầm ngoài hai mươi tuổi với dải băng tang đen đã bạc màu.</p>
+<p class="dialogue">— Đây là ai? — Nam hỏi, mắt nhìn vào bức ảnh thờ.</p>
+<p>Ánh mắt Long chợt co rút lại, bàn tay lão bấu chặt vào mép bàn lái, gân xanh nổi cộm trên mu bàn tay:</p>
+<p class="dialogue">— Em trai tôi. Nó từng đi làm phụ mộc trên mỏ gỗ Lũng Nậm mười chín năm trước&hellip; Bị người ta ép cung, tra tấn dã man trong một vụ án oan rồi phát điên, về nhà nhảy sông tự tử&hellip;</p>
+<p>Một mối thù sâu thẳm từ quá khứ mười chín năm trước bất ngờ lộ diện. Long Sà-lan có đầy đủ <strong>động cơ</strong> (mối thù gia đình từ vụ án oan Lũng Nậm), <strong>phương tiện</strong> (mỏ cắt hơi nhiệt độ cao, que hàn chịu mặn, kỹ năng thợ lặn bậc cao) và <strong>cơ hội</strong> (sà-lan có mặt tại cả ba địa bàn xảy ra các vụ chết người).</p>
+<p>Nam tiếp tục truy vấn:</p>
+<p class="dialogue">— Ông có biết một người thợ cơ khí lưu động tên Ba, người từng làm thuê tại xưởng phế liệu Chín Gù và xưng là thợ của xưởng ông không?</p>
+<p>Long khựng lại một nhịp, mí mắt giật giật rồi nhanh chóng lấy lại vẻ mặt trơ lì:</p>
+<p class="dialogue">— Tôi không biết thằng Ba nào cả. Thợ thuyền bến bãi đến rồi đi, tôi làm sao nhớ hết tên.</p>
+<p class="dialogue">— Vậy chiếc mỏ cắt chuyên dụng mang mã hiệu mỏ đá Tây Phong của xưởng đâu? — Nam chỉ vào giá treo dụng cụ đang trống một vị trí.</p>
+<p class="dialogue">— Mất rồi. — Long đáp cộc lốc. — Rơi xuống đáy sông trong đợt cứu hộ ngoài cửa biển tháng trước, không tìm lại được.</p>
+<p>Lời khai cộc lốc và thái độ quanh co của Long không qua mắt được Nam. Nhưng chi tiết then chốt nhất xuất hiện khi Huy trích xuất hộp đen ghi dữ liệu máy tàu của chiếc sà-lan: Toàn bộ nhật ký hành trình điện tử và dữ liệu tiêu hao nhiên liệu của máy phát chính đã bị <strong>xóa đè một đoạn đúng sáu tiếng đồng hồ</strong>, từ sáu giờ tối thứ Hai đến nửa đêm — đúng vào khoảng thời gian nạn nhân Nguyễn Văn Tư bị sát hại tại ngõ 42 phố Đò Cũ!</p>
+<p>Sóng đêm ngoài cửa biển đập thình thịch vào thân sà-lan. Lê Văn Long đứng sừng sững giữa boong tàu ẩm ướt như một cái bóng đen bí ẩn, che giấu những bí mật chìm sâu dưới đáy bùn lầy của dòng sông Lam Châu.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-2" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-4" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 4 -->
+                <article class="chapter-card" id="chuong-4">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 4</div>
+                        <h3 class="chapter-main-heading">Đấu trí dưới đáy bùn</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Hai giờ chiều thứ Tư, phòng hỏi cung số 2 trụ sở Đội Điều tra Trọng án Hạ An lạnh ngắt dưới luồng gió từ chiếc quạt thông gió gắn trên tường cao.</p>
+<p>Lê Văn Long ngồi đối diện Nam và Huy sau chiếc bàn gỗ đóng cố định xuống sàn bê tông. Bộ quần áo lao động thô ráp đã khô cong, để lại những vệt muối mặn loang lổ trên vai áo. Đôi mắt lão hõm sâu nhìn trân trân vào cốc nước lọc đặt trước mặt, hai bàn tay đan chặt vào nhau đặt trên đùi.</p>
+<p>Nam mở tập hồ sơ kỹ thuật vừa được trích xuất từ Trạm Quản lý Luồng lạch và Cảng vụ Hàng hải, đặt từng trang tài liệu xuống mặt bàn:</p>
+<p class="dialogue">— Ông Long, trong biên bản ghi lời khai đêm qua ngoài bãi xác tàu, ông khai rằng chiếc sà-lan của ông neo đậu cố định tại bến Cửa Lác từ chiều thứ Hai đến sáng thứ Ba, và đoạn dữ liệu máy tàu bị mất là do sự cố chập nguồn điện. Đúng chứ?</p>
+<p>Long ngước mắt lên, gật đầu chậm rãi:</p>
+<p class="dialogue">— Đúng vậy. Máy phát cũ, dây dẫn ẩm ướt nên ngắt cầu chì liên tục.</p>
+<p>Nam không vội vã. Anh rút ra một bản đồ nhật ký thủy văn và biểu đồ tiêu hao nhiên liệu của máy phát phụ độc lập trên sà-lan:</p>
+<p class="dialogue">— Chúng tôi đã làm việc với Trạm Quản lý Luồng lạch Cửa Lác và kiểm tra hệ thống camera giám sát của bến phà đối diện. Vào lúc tám giờ ba mươi tối thứ Hai — khung giờ nước triều bắt đầu rút mạnh — chiếc sà-lan của ông không hề neo tại bến. Nó đã di chuyển ra ngoài luồng chính khoảng ba hải lý và bị mắc cạn tại bãi cồn cát phía ngoài phao số 4. Dữ liệu máy phát phụ cho thấy máy tời thủy lực của sà-lan đã hoạt động hết công suất liên tục từ 20:45 đến 23:15 để neo giữ phương tiện, trước khi được ca-nô cứu hộ của bến phà ra kéo hỗ trợ lúc nửa đêm.</p>
+<p>Mí mắt của Long giật mạnh. Những ngón tay thô ráp của lão siết chặt lại.</p>
+<p>Nam nhìn thẳng vào ánh mắt đang dao động của người thợ lặn già:</p>
+<p class="dialogue">— Ông đã cố tình xóa nhật ký hành trình của máy chính để che giấu một sự việc. Có phải đêm thứ Hai, ông đã rời sà-lan bằng xuồng máy cao tốc để về ngõ 42 phố Đò Cũ giải quyết ân oán với người thợ vá săm?</p>
+<p>Căn phòng im phăng phắc. Tiếng quạt thông gió ro ro đều đều trên vách tường.</p>
+<p>Long cúi gục đầu xuống, một tiếng thở dài nặng nhọc thoát ra từ lồng ngực vạm vỡ:</p>
+<p class="dialogue">— Tôi không giết lão Tư! Tôi thề trên vong hồn em trai tôi, tôi không hề đặt chân đến phố Đò Cũ đêm hôm đó!</p>
+<p class="dialogue">— Vậy tại sao ông phải xóa dữ liệu máy tàu và nói dối cơ quan điều tra? — Huy đập nhẹ tay xuống bàn.</p>
+<p>Long ngẩng lên, giọng khàn đặc vì cay đắng:</p>
+<p class="dialogue">— Vì đêm đó sà-lan của tôi nhận hợp đồng lặn chui! Một chiếc tàu hàng nước ngoài bị vướng lưới quấn chân vịt ngoài luồng kiểm soát, họ thuê xưởng tôi ra cắt lưới ban đêm để trốn phí phạt và thủ tục hoa tiêu. Làm lậu không giấy phép, nếu bị Cảng vụ phát hiện thì tôi bị tịch thu sà-lan và tước chứng chỉ hành nghề lặn vĩnh viễn! Lúc sà-lan ra tới nơi thì bị sóng đánh dạt vào cồn cát mắc cạn, tôi cùng bốn đứa thợ phải thức trắng đêm hì hục dưới đáy bùn để chằng cáp, có cả đội tàu kéo của bến phà chứng kiến! Các anh không tin cứ gọi đội trưởng phà ra mà đối chất!</p>
+<p>Huy lập tức liên lạc với Đội trưởng ca trực bến phà Cửa Lác đêm thứ Hai. Bản đối chiếu xác nhận: Đúng 21:00 đêm thứ Hai, chính Lê Văn Long và các thợ lặn của xưởng đang dầm mình dưới nước ngập ngang ngực để neo cọc cáp cứu hộ sà-lan ngoài cồn cát, cách hiện trường án mạng phố Đò Cũ hơn mười lăm cây số đường sông.</p>
+<p>Bằng chứng khách quan về thủy triều, nhật ký kéo tàu và sự hiện diện thực tế đã loại trừ khả năng Lê Văn Long trực tiếp ra tay sát hại nạn nhân Nguyễn Văn Tư.</p>
+<p>Nam rót thêm nước vào cốc cho Long, giọng trầm xuống:</p>
+<p class="dialogue">— Bây giờ, ông hãy nói thật về người thợ cơ khí tên Ba.</p>
+<p>Long bưng cốc nước bằng hai bàn tay run rẩy, nhấp một ngụm nhỏ rồi ngước nhìn Nam:</p>
+<p class="dialogue">— Ba tháng trước, có một cậu thanh niên tầm ngoài ba mươi tuổi tìm đến xưởng tôi xin làm thuê. Cậu ta gầy, ít nói, trên mu bàn tay có những vết sẹo bỏng xỉ hàn rất sâu. Cậu ta xưng tên là Ba, bảo là dân miền núi tha hương trôi dạt. Tay nghề cắt gọt và cơ khí của cậu ta giỏi đến mức tôi làm nghề lặn ba mươi năm chưa từng thấy ai khéo léo như vậy. Những đường cắt dưới nước hay trên boong đều chuẩn xác từng mi-li-mét.</p>
+<p>Long ngừng lại một chút, ánh mắt nhìn vào khoảng không vô định:</p>
+<p class="dialogue">— Nhìn nét mặt khắc khổ và đôi mắt u uất của cậu ta, tôi nhớ đến đứa em trai đã khuất của mình. Tôi cho cậu ta ngủ nhờ dưới khoang sà-lan, trả tiền công nhật mà không hỏi han giấy tờ. Một tối ngồi uống trà ngoài mũi tàu, cậu ta nhìn lên dãy núi Mường Biên mù sương rồi lẩm bẩm một câu: <em>&ldquo;Những cỗ rương gỗ lim đáy rỗng mười chín năm trước&hellip; đã đến lúc phải trả về đúng chỗ của nó.&rdquo;</em> Tôi rùng mình nhận ra cậu ta cũng mang một vết thương sâu hoắm từ vụ án oan năm 2005 ở Lũng Nậm giống như gia đình tôi.</p>
+<p class="dialogue">— Sau đó thì sao? — Nam hỏi.</p>
+<p class="dialogue">— Tháng trước, cậu ta xin nghỉ việc, gom hết hành lý rồi rời xưởng. Khi đi, cậu ta có xin tôi chiếc mỏ cắt hơi cũ bị mòn đầu bép mang mã hiệu mỏ đá Tây Phong — đồ nghề cũ của một tay thợ trước đây để lại — cùng một hộp que hàn chịu mặn HK-7018M. Tôi biết cậu ta dạt về ngụ cư ngoài căn chòi trạm bơm nước bỏ hoang bên bờ đê sông Đò Cũ, nhưng tôi thề tôi không hề biết cậu ta lên kế hoạch giết người!</p>
+<p>Đúng lúc Nam đang ghi lời khai chi tiết vào biên bản, cánh cửa phòng hỏi cung khẽ mở. Chỉ huy Đặng Tiến Đạt bước vào, nét mặt đăm chiêu, tay cầm chiếc điện thoại bàn không dây:</p>
+<p class="dialogue">— Nam, ra ngoài có việc một lát.</p>
+<p>Nam bước ra hành lang. Đạt hạ thấp giọng:</p>
+<p class="dialogue">— Ông Thao vừa gọi điện sang hỏi thăm tình hình chuyên án. Nghe tin tổ trinh sát đưa chủ xưởng sà-lan về làm việc, ông Thao khuyên chúng ta nên cẩn trọng, nếu có đủ căn cứ về xỉ hàn và lịch trình sà-lan trùng ba địa bàn cũ thì nên làm thủ tục giữ người ngay để tránh một đối tượng cơ khí nguy hiểm trốn thoát ra biển.</p>
+<p>Nam nhìn vào màn hình máy tính đang hiển thị biên bản xác minh ngoại phạm của Long từ bến phà Cửa Lác:</p>
+<p class="dialogue">— Báo cáo anh Đạt, chứng cứ thủy văn và nhật ký cứu hộ chứng minh Lê Văn Long không trực tiếp giết người. Long chỉ là người từng cho nghi can Ba làm thuê và tá túc. Hung thủ thực sự là người thợ mang tên Ba đang ẩn mình dọc lưu vực sông Lam Châu.</p>
+<p>Đạt đứng lặng nhìn làn khói thuốc lá bay lững lờ ngoài hành lang, ngón tay vô thức xiết chặt chiếc điện thoại, giọng trầm ngâm:</p>
+<p class="dialogue">— Vậy thì phải chuyển toàn bộ trọng tâm sang căn chòi hoang trạm bơm và lật lại toàn bộ danh tính của người thợ tên Ba đó ngay trong đêm nay!</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-3" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-5" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 5 -->
+                <article class="chapter-card" id="chuong-5">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 5</div>
+                        <h3 class="chapter-main-heading">Bốn cái chết</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Sáng thứ Năm, không khí tại phòng làm việc của Đội Điều tra Trọng án Hạ An căng như một sợi dây đàn.</p>
+<p>Tám giờ sáng, Bác sĩ Phong mang bản kết luận độc chất học tử thi sang phòng họp án. Trên màn hình máy chiếu, biểu đồ sắc ký khí khối phổ (GC-MS) hiện lên những đỉnh phân tử sắc nhọn:</p>
+<p class="dialogue">— Mẫu bệnh phẩm dịch dạ dày, máu và mô gan của nạn nhân Nguyễn Văn Tư cho thấy sự hiện diện của một hoạt chất alkaloid tự nhiên có dược tính an thần mạnh chiết xuất từ rễ cây Đoan Đắng — một loài dược liệu đặc hữu chỉ sinh trưởng trên các vách đá vôi ẩm ướt ở vùng thượng lưu Mường Biên. Đáng chú ý, kết quả phân tích mẫu thân tóc và móng tay cho thấy hoạt chất này đã tích lũy trong cơ thể nạn nhân liên tục suốt nhiều tuần trước khi chết. Nạn nhân không bị đầu độc cấp tính, mà tự mình sắc uống rễ cây Đoan Đắng mỗi ngày để kìm nén chứng hoảng loạn thần kinh cực độ.</p>
+<p>Nam ghi nhanh các thông số vào sổ tay:</p>
+<p class="dialogue">— Lời khai của thầy thuốc tại tiệm Vạn Xuân Đường cũng xác nhận nửa tháng qua, ông Tư thường xuyên ghé mua rễ đắng trong trạng thái hoảng loạn, liên tục ngoái nhìn ra đường vì sợ &ldquo;người cũ từ mười chín năm trước&rdquo; tìm đến.</p>
+<p>Cùng lúc đó, kết quả khám nghiệm sâu căn chòi trạm bơm nước bỏ hoang ven đê — nơi nghi can Ba thợ cắt từng trú ngụ — cũng được Kỹ thuật viên Quang chuyển về.</p>
+<p>Dưới góc mái tôn rỉ sét của căn chòi, tổ kỹ thuật đã thu hồi được mẩu cặn nhiệt trên một chiếc mỏ cắt hơi thải loại dập chìm mã quản lý của Xưởng cơ khí mỏ đá số 3 Tây Phong, cùng một vỏ bao que hàn chịu mặn áp lực cao mã hiệu <em>Hải Khê HK-7018M</em>. Phân tích quang phổ huỳnh quang tia X (XRF) xác nhận: cặn xỉ bám trên đầu mỏ cắt và mẫu vi xỉ thu dưới móng tay nạn nhân có cùng nhóm tương thích về tỷ lệ hợp kim Crom-Molypden chuyên dụng.</p>
+<p>Nam đứng trước tấm bản đồ lưu vực sông Lam Châu, từng mảnh ghép dần định hình:</p>
+<p class="dialogue">— Nghi can Ba là một thợ cơ khí lành nghề, mang theo chiếc mỏ cắt thải loại của Tây Phong và que hàn Hải Khê để lần theo tung tích của nạn nhân. Vậy câu hỏi lớn nhất lúc này là: Tại sao người thợ vá săm già này lại là mục tiêu bị săn đuổi?</p>
+<p>Câu trả lời được giải mã vào mười giờ sáng, khi bộ phận giám định kỹ thuật số hoàn tất việc bóc tách mã bảo an quang học trên phôi thẻ định danh của Nguyễn Văn Tư.</p>
+<p>Bằng phương pháp phóng đại quang học và đối soát cơ sở dữ liệu án kinh tế cũ, giám định viên xác định phôi thẻ này thuộc về một gói bốn phôi thẻ bảo an trắng được tuồn ra từ đường dây ngầm Trần Hữu Bằng bốn năm trước. Khi thuật toán đối soát sinh trắc học trên tàng thư cư trú liên tỉnh hoàn tất, màn hình máy tính bộc lộ bốn danh tính giả được cấp cùng một đợt cho bốn người đàn ông trung niên tản đi bốn địa bàn: <strong>Hoàng Văn Nhẫn</strong> trốn về Quỳnh Lâm, <strong>Phạm Văn Sáu</strong> dạt đến mỏ đá Tây Phong, <strong>Đặng Văn Mười</strong> trôi dạt xuống xưởng đóng tàu Hải Khê, và người cuối cùng — <strong>Nguyễn Văn Tư</strong> — nương náu tại phố Đò Cũ thị trấn Hạ An.</p>
+<p>Nam nhấc ống nghe liên lạc khẩn cấp với cơ quan điều tra tại ba địa phương nói trên. Từng bức điện mật và biên bản trích lục lưu trữ được gửi về qua mạng nội bộ, mở ra một chuỗi sự kiện rợn người kéo dài suốt bốn năm qua:</p>
+<p>Tại <strong>Quỳnh Lâm</strong>, Hoàng Văn Nhẫn làm nghề bốc xếp tại xưởng cưa gỗ, đã tử vong vào <strong>mùa thu năm 2021</strong> trong một vụ sập giá gỗ đêm mưa. Trong hòm đồ cá nhân để lại có <strong>một chiếc túi bùa dệt thổ cẩm màu chàm chứa một chiếc lá me rừng khô</strong>.</p>
+<p>Tại <strong>Tây Phong</strong>, Phạm Văn Sáu làm thợ đẽo đá tại mỏ đá số 3, thiệt mạng vào <strong>tháng Chín năm 2022</strong> trong một vụ lở vách đá vôi. Tư trang nạn nhân có <strong>túi bùa thổ cẩm màu chàm đựng hai mẩu dây gai rừng khô</strong>.</p>
+<p>Tại <strong>Hải Khê</strong>, Đặng Văn Mười làm thợ hàn vỏ tàu, chết ngạt vào <strong>mùa thu năm 2023</strong> trong một buồng kín xưởng tàu do hệ thống thông gió bị khóa và nguồn khí trơ bị xả bất thường làm giảm nồng độ oxy. Tại hiện trường có <strong>túi bùa thổ cẩm màu chàm chứa ba hạt muồng đen khô</strong>.</p>
+<p>Và đến <strong>mùa thu năm 2024</strong>, tại <strong>Hạ An</strong>, Nguyễn Văn Tư bị siết cổ chết tại tiệm sửa xe, để lại <strong>túi bùa thổ cẩm chứa bốn bộ xương cá suối khô</strong>.</p>
+<p>Bốn con người cùng mua danh tính giả, cùng trốn chạy về bốn vùng đất khác nhau, và lần lượt bị hạ sát vào mùa thu của bốn năm liên tiếp. Số lượng dị vật tăng dần theo đúng một cấp số cộng lạnh lùng: <em>1 lá me $\rightarrow$ 2 dây gai $\rightarrow$ 3 hạt muồng $\rightarrow$ 4 bộ xương cá</em>!</p>
+<p>Trinh sát Huy nhìn bốn bức ảnh chân dung nạn nhân ghim thẳng hàng trên bảng mica, rùng mình:</p>
+<p class="dialogue">— Ba vụ trước đều được ngụy trang hoàn hảo thành tai nạn lao động nơi công trường hẻo lánh. Nhưng đến vụ thứ tư ở phố Đò Cũ, kẻ thủ ác đã trực tiếp ra tay siết cổ nạn nhân. Hắn không còn muốn giấu diếm nữa, hắn đang gửi một thông điệp thách thức tới toàn bộ hệ thống!</p>
+<p>Khi lật tìm các bức ảnh lưu trữ của các vụ việc cũ trong hệ thống dữ liệu, Nam vô tình thấy một bức ảnh báo chí năm 2005 chụp lễ khen thưởng Chuyên án Ma túy Lũng Nậm. Trong bức ảnh đen trắng đã ố vàng, ông Hoàng Đình Thao — khi đó là Phó Chỉ huy điều tra — đứng tươi cười ở bục vinh danh giữa hàng ngũ cán bộ lập thành tích, bên cạnh là một hàng rương gỗ tang vật niêm phong.</p>
+<p>Mười một giờ ba mươi phút trưa, Nam mang toàn bộ hồ sơ trích lục bốn vụ việc bước sang phòng làm việc của Chỉ huy Đặng Tiến Đạt.</p>
+<p>Thủ trưởng Đạt ngồi tựa lưng vào ghế mun, đăm đăm nhìn dãy mốc thời gian bốn cái chết. Điếu thuốc lá Lam Ngàn bao bạc trên tay ông đã cháy tàn đến tận đầu lọc. Ngón tay Đạt run run khi nhìn vào bốn khuôn mặt đàn ông trung niên xếp cạnh nhau. Ông cầm chiếc bật lửa Zippo vỏ đồng mòn vẹt, quẹt một lần&hellip; tia lửa xẹt qua nhưng bấc chưa cháy. Phải đến lần quẹt thứ hai ngọn lửa mới bùng lên.</p>
+<p>Đạt ngước nhìn Nam, ánh mắt trĩu nặng giằng xé:</p>
+<p class="dialogue">— Bốn người&hellip; Kẻ đó đã kiên nhẫn đi săn suốt bốn năm ròng&hellip;</p>
+<p class="dialogue">— Báo cáo anh Đạt, túi bùa mới chỉ có bốn bộ xương cá, — Nam chỉ vào chuỗi số đếm. — Dãy số đếm này chắc chắn chưa dừng lại ở con số bốn. Kẻ thủ ác đang nhắm tới mục tiêu thứ năm và thứ sáu! Chúng ta phải tìm ra nguồn gốc của những chiếc túi bùa này trước khi hắn ra tay tiếp!</p>
+<p>Đạt cầm bút máy, dứt khoát ký tên vào công văn ủy thác khẩn cấp gửi ba địa phương yêu cầu bàn giao toàn bộ vật chứng gốc:</p>
+<p class="dialogue">— Đi làm ngay đi, Nam. Phải chặn đứng kẻ giấu mặt trước khi lưỡi dao thứ năm vung lên!</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-4" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-6" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 6 -->
+                <article class="chapter-card" id="chuong-6">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 6</div>
+                        <h3 class="chapter-main-heading">Tiếng hát bản Dền</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Một giờ ba mươi phút chiều thứ Năm, chuyến xe chuyển phát hỏa tốc đặc biệt từ ba tỉnh Quỳnh Lâm, Tây Phong và Hải Khê đã bàn giao ba gói vật chứng niêm phong về phòng kỹ thuật hình sự Hạ An.</p>
+<p>Bốn chiếc túi bùa thổ cẩm màu chàm được xếp thẳng hàng trên mặt bàn gỗ. Dưới ánh đèn tuýp trắng, tổ chuyên án lập tức nhận ra sự đồng nhất kỳ lạ giữa chúng: cả bốn chiếc túi đều có kích thước nhỏ chừng nửa bàn tay, dệt bằng sợi len thô pha lanh ngâm nước vỏ chàm rừng, miệng thắt nút dây gai tinh xảo theo cùng một kỹ thuật thủ công. Số lượng sản vật bên trong túi bùa tăng dần từ một đến bốn: <em>1 lá me rừng $\rightarrow$ 2 mẩu dây gai $\rightarrow$ 3 hạt muồng đen $\rightarrow$ 4 bộ xương cá suối</em>.</p>
+<p>Để truy tìm nguồn gốc xuất xứ của loại túi bùa này, Nam và Huy lập tức mang mẫu vật đến Bảo tàng Dân tộc học khu vực để tham vấn chuyên gia.</p>
+<p>Bảo tàng nằm nép mình trong một khuôn viên rợp bóng cây cổ thụ ở ngoại vi thị trấn. Căn phòng làm việc của Giáo sư Lê Đăng Khoa — chuyên gia đầu ngành về nhân chủng học và văn hóa dân gian các tộc người vùng núi cao biên viễn — ngập tràn mùi giấy cũ, gỗ thông sấy và hương thảo mộc điền dã. Trên các kệ gỗ pơ-mu cao kịch trần, hàng trăm tập hồ sơ khảo cứu thực địa và mẫu vật dệt thổ cẩm được xếp ngăn nắp theo từng lưu vực sông.</p>
+<p>Giáo sư Khoa cẩn thận đeo đôi găng tay lụa trắng, dùng kính lúp soi kỹ từng thớ sợi và đường viền miệng túi:</p>
+<p class="dialogue">— Đây là kỹ thuật dệt sợi len thô pha lanh ngâm nước vỏ cây chàm rừng, — Giáo sư Khoa ngẩng đầu lên, đặt kính lúp xuống bàn rồi kéo tập ảnh tư liệu điền dã đặt cạnh mẫu vật. — Hoa văn hình thoi chìm và cách thắt nút dây gai viền miệng túi này là nét văn hóa truyền thống rất đặc thù của đồng bào tại <strong>bản Dền, thuộc thung lũng Lũng Nậm, huyện Mường Biên</strong>. Bản Dền là làng nghề mộc cổ truyền nằm lọt thỏm giữa thung lũng lòng chảo đá vôi đầu nguồn sông Lam Châu.</p>
+<p>Giáo sư chỉ vào tấm ảnh chụp nếp nhà sàn cổ trên vách đá:</p>
+<p class="dialogue">— Người bản Dền bao đời nay sống bằng nghề đốn gỗ lim rừng, nổi tiếng với kỹ thuật dựng nhà sàn ghép mộng mang cá khít khao không dùng một chiếc đinh sắt nào. Người vùng này quan niệm đinh sắt gỉ sét sẽ làm hỏng thớ gỗ, chỉ có mộng gỗ lim ngay thẳng mới đứng vững qua giông bão trăm năm. Từ xa xưa, họ có tập quán trao túi thổ cẩm cho người thân khi đi xa, bên trong thường đựng những sản vật hái lượm từ rừng núi quê hương để làm vật hộ mệnh và nhắc nhở cội nguồn.</p>
+<p>Nam chỉ vào bốn túi vật chứng đặt trên bàn:</p>
+<p class="dialogue">— Thưa Giáo sư, tại sao số lượng các sản vật này lại tăng đều đặn từ một lá me, hai dây gai, ba hạt muồng đến bốn bộ xương cá suối? Nét văn hóa này có liên quan gì đến một nghi thức hay trò chơi dân gian nào ở vùng đó không?</p>
+<p>Giáo sư Khoa trầm ngâm một lát rồi bước đến giá sách gỗ, rút ra một tập tư liệu điền dã sưu tầm văn hóa dân gian mà ông đang biên soạn:</p>
+<p class="dialogue">— Về số lượng sản vật tăng tiến này, nó gợi tôi nhớ đến một nét văn hóa dân gian rất thú vị. Trẻ con ở bản Dền khi ngồi chơi trò rải sỏi bên bờ suối Nậm thường cất tiếng hát một bài đồng dao đếm sỏi cổ truyền bằng tiếng Lũng Nậm nguyên bản:</p>
+<p><em>Nừng thày — bạ mạy hua nặm,</em><br />
+<em>Sóng thày — nhả khảm phia hin,</em><br />
+<em>Xảm thày — mác muồng nả bẩu,</em><br />
+<em>Xí thày — pa nặm vảng sâu,</em><br />
+<em>Hả thày — tha đò bến lạnh,</em><br />
+<em>Hốc thày — mạy lim dăng trời.</em></p>
+<p>Nam chăm chú ghi chép lại sáu câu đồng dao huyền bí:</p>
+<p class="dialogue">— Giáo sư có thể giải nghĩa toàn bộ bài ca này cho chúng tôi được không?</p>
+<p>Giáo sư Khoa mỉm cười giải thích:</p>
+<p class="dialogue">— Bài đồng dao này viết bằng phương ngữ cổ Lũng Nậm của một tộc người vùng đệm đã thất truyền nhiều từ ngữ. Lũ trẻ trong bản từ bao đời nay chỉ hát truyền miệng theo nhịp của người già khi chơi trò rải sỏi. Chúng nhặt lá cây, hạt rừng đầu nguồn làm đồ chơi, chứ không hiểu hết tầng nghĩa cổ xưa của những câu hát cuối. Trong công trình khảo cứu điền dã chưa hoàn tất này, tôi mới chỉ đối chiếu xác định được chắc chắn dãy số đếm từ một đến sáu (<em>Nừng, Sóng, Xảm, Xí, Hả, Hốc</em>) và cụm từ <em>tha đò</em> trong câu thứ năm — tiếng cổ pha phương ngữ vùng đệm có nghĩa là bến đò ven dòng suối Nậm. Các câu còn lại tôi vẫn đang tiếp tục thu thập tư liệu điền dã để dịch nghĩa trọn vẹn. Đây là một sự trùng hợp văn hóa rất đáng chú ý giữa trò chơi dân gian bản Dền và các sản vật trong túi bùa.</p>
+<p>Cuộc trao đổi với Giáo sư Khoa đã mang lại cho tổ điều tra một định hướng then chốt: <strong>Địa bàn gốc gác của nét hoa văn thổ cẩm và bài ca này bắt nguồn từ bản Dền, thung lũng Lũng Nậm, huyện Mường Biên</strong>!</p>
+<p>Năm giờ chiều thứ Năm, Nam và Huy trở về trụ sở Đội Điều tra Trọng án họp khẩn với Ban Chỉ huy.</p>
+<p>Trên bảng mica, sáu câu đồng dao nguyên tác tiếng Lũng Nậm được Nam viết nắn nót cạnh chuỗi bốn túi bùa. Khi phân tích đến câu thứ năm — <em>Hả thày: tha đò bến lạnh</em> — Nam chỉ vào bản đồ:</p>
+<p class="dialogue">— Bốn vật phẩm đầu tiên đã ứng nghiệm vào bốn nạn nhân dọc lưu vực sông Lam Châu. Câu thứ năm chỉ đích danh một bến đò ven suối Nậm ở Mường Biên. Kẻ thủ ác đang trên đường trở về chính quê hương bản Dền để tìm kiếm nạn nhân thứ năm!</p>
+<p>Trong suốt cuộc họp, Chỉ huy Đặng Tiến Đạt ngồi im lặng ở đầu bàn. Khi nghe Nam đọc câu hát <em>“tha đò bến lạnh”</em>, ngón tay Đạt đang cầm bao thuốc lá Lam Ngàn bỗng khựng lại. Nét mặt ông thoáng nhợt đi trong tích tắc, ánh mắt nhìn trân trân vào hai chữ <em>Lũng Nậm</em> trên bản đồ với một vẻ bàng hoàng khó giấu.</p>
+<p>Đạt đứng dậy rất nhanh, dập tắt điếu thuốc dở rồi ra lệnh gãy gọn:</p>
+<p class="dialogue">— Chuẩn bị phương tiện dã chiến. Đúng chín giờ tối nay, Nam và Huy xuất phát ngược ngàn lên Mường Biên phối hợp với công an địa phương rà soát bến đò Lũng Nậm!</p>
+<p>Nói xong, Đạt quay gót bước nhanh về phòng làm việc riêng và đóng chặt cửa.</p>
+<p>Sáu giờ ba mươi phút tối, trong lúc kiểm tra nhật ký truy cập hệ thống an ninh mạng nội bộ theo quy trình bảo mật chuyên án, kỹ thuật viên trực ban phát hiện một dấu vết bất thường: Tài khoản công vụ của Chỉ huy Đặng Tiến Đạt vừa thực hiện một lệnh tra cứu tàng thư hộ tịch khẩn cấp đối với một người đàn ông tên <strong>Bùi Văn Vượng</strong>, làm nghề lái đò tại bến suối Lũng Nậm, huyện Mường Biên — trước khi tổ công tác xuất phát tròn ba tiếng đồng hồ!</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-5" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-7" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+        <!-- TẬP 2: NGƯỢC NGÀN -->
+        <section class="volume-hero" id="tap-2">
+            <div class="volume-hero-img-wrap">
+                <img src="assets/images/hoi_2.jpg" alt="TẬP 2: NGƯỢC NGÀN" class="volume-hero-img">
+                <div class="volume-hero-overlay">
+                    <span class="volume-badge">Tập 2</span>
+                    <h2 class="volume-hero-title">TẬP 2: NGƯỢC NGÀN</h2>
+                    <p class="volume-hero-sub">Vết Dấu Nội Bộ & Kỳ Án 2005</p>
+                </div>
+            </div>
+            <div class="volume-epigraph-box">
+                “Cái cây trong rừng cong queo thì mình đẽo cho thẳng được, chứ cái bụng người mình mà cong queo thì dựng cái nhà nào lên rồi cũng sập thôi con à.”
+                <div style="font-size: 0.8rem; margin-top: 0.25rem;">— Lời dặn của người thợ mộc Trần Văn Cửu (1958 – 2005)</div>
+            </div>
+        </section>
+        
+                <!-- CHƯƠNG 7 -->
+                <article class="chapter-card" id="chuong-7">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 7</div>
+                        <h3 class="chapter-main-heading">Dấu truy cập lúc nửa đêm</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Sáu giờ ba mươi phút tối thứ Năm, phòng làm việc của bộ phận an ninh mạng nội bộ tại trụ sở Hạ An ngập tràn tiếng lách cách của bàn phím cơ.</p>
+<p>Kỹ thuật viên trực ban đẩy màn hình máy tính về phía Nam và Huy, nét mặt hiện rõ sự căng thẳng:</p>
+<p class="dialogue">— Anh Nam, anh Huy, nhìn vào bảng trích xuất nhật ký truy cập này đi. Dấu vết điện tử không biết nói dối.</p>
+<p>Trên màn hình, một bảng dữ liệu kiểm toán hệ thống (audit trail) hiện lên chi tiết từng mốc thời gian, địa chỉ IP và mã tài khoản người dùng. Tài khoản công vụ mang mã hiệu <em>CH-01</em> thuộc quyền sở hữu độc quyền của Chỉ huy Đặng Tiến Đạt không chỉ vừa tra cứu lý lịch của lão lái đò Bùi Văn Vượng lúc chiều nay, mà trong suốt bốn năm qua, tài khoản này đã từng thực hiện các lệnh truy xuất thông tin cư trú đối với cả bốn nạn nhân trước đó:</p>
+<ul>
+<li>Ngày 15 tháng 8 năm 2021: Tra cứu thông tin Hoàng Văn Nhẫn (Quỳnh Lâm) — ba tuần trước khi Nhẫn chết vì sập giá gỗ.</li>
+<li>Ngày 20 tháng 8 năm 2022: Tra cứu thông tin Phạm Văn Sáu (Tây Phong) — hai tuần trước khi Sáu tử vong do lở đá.</li>
+<li>Ngày 10 tháng 8 năm 2023: Tra cứu thông tin Đặng Văn Mười (Hải Khê) — ba tuần trước khi Mười chết ngạt trong khoang tàu.</li>
+<li>Ngày 01 tháng 9 năm 2024: Tra cứu thông tin Nguyễn Văn Tư (Hạ An) — mười ngày trước khi ông Tư bị siết cổ.</li>
+</ul>
+<p>Huy trừng mắt nhìn bảng danh sách, cổ họng nghẹn lại, lắp bắp:</p>
+<p class="dialogue">— Không thể nào&hellip; Chẳng lẽ anh Đạt&hellip; Thủ trưởng chín năm qua của chúng ta lại chính là người theo dõi và cung cấp thông tin để kẻ thủ ác lần lượt tìm đến từng nạn nhân?</p>
+<p>Nam đứng lặng như tượng đá trước màn hình. Một luồng khí lạnh buốt chạy dọc sống lưng. Hình ảnh người thầy trầm lặng ngồi chong đèn hút thuốc lá Lam Ngàn bao bạc thâu đêm, ánh mắt giằng xé khi nhìn vào bức ảnh bốn cái chết, và phản ứng nhợt nhạt lúc nghe sáu câu đồng dao chiều nay bỗng hiện về rõ mồn một.</p>
+<p class="dialogue">— Đừng vội quy chụp bằng cảm tính, — Nam trấn tĩnh, giọng lạnh và đanh thép. — Có hai giả thuyết nghiệp vụ cần đặt ra: Một là, anh Đạt thực sự có liên hệ ngầm với kẻ đi săn hoặc đang che giấu một đường dây bịt miệng. Hai là, anh Đạt đã nhận được những tín hiệu cảnh báo nặc danh từ trước và âm thầm tra cứu để tìm cách can thiệp nhưng vì một lý do bất khả kháng nào đó mà không dám báo cáo công khai. Cả hai trường hợp đều biến anh Đạt thành một nhân tố nghi vấn nội bộ đặc biệt nghiêm trọng.</p>
+<p>Bảy giờ mười lăm phút tối, Nam bước lên tầng hai, gõ cửa phòng chỉ huy để đối chất trực tiếp.</p>
+<p>Nhưng căn phòng làm việc của Đạt tối om. Chiếc bàn gỗ mun trống trơn, tách trà nguội ngắt để lại một vệt ố tròn trên mặt bàn. Chiếc áo khoác gió thường ngày treo trên giá đã biến mất.</p>
+<p>Nam lao xuống phòng trực ban cổng chính. Cán bộ trực ban ngẩng đầu báo cáo:</p>
+<p class="dialogue">— Báo cáo anh Nam, khoảng bảy giờ kém mười lăm, Chỉ huy Đạt đã tự lái chiếc xe SUV cá nhân màu xanh rêu rời khỏi trụ sở. Đồng chí Đạt bảo có việc gia đình đột xuất ra ngoại ô, không ký sổ điều xe công vụ.</p>
+<p>Nam và Huy nhìn nhau. Sự biến mất bất thường của người chỉ huy ngay trước giờ tổ công tác lên đường Mường Biên như một đòn giáng mạnh vào tâm lý của tổ án.</p>
+<p>Hai mươi mốt giờ đêm thứ Năm, chiếc xe dã chiến đặc chủng của Nam và Huy chính thức lăn bánh rời trụ sở Đội Điều tra Trọng án Hạ An, lao vút vào bóng đêm mịt mùng của tuyến quốc lộ liên tỉnh số 12.</p>
+<p>Mưa phùn bắt đầu rơi dày hạt khi xe tiến vào cung đường đèo Gió. Hai bên đường, những vách đá vôi sừng sững dựng đứng như những bức tường thành đen ngòm trong sương mù. Ánh đèn pha vàng cắt xuyên qua những cuộn mây mù ẩm ướt lãng đãng tràn qua mặt đường trơn trượt.</p>
+<p>Huy vừa cầm vô-lăng vừa cắn chặt môi, mắt nhìn trừng trừng vào con đường đèo quanh co:</p>
+<p class="dialogue">— Nếu lên đến bến đò Lũng Nậm mà chúng ta bắt gặp anh Đạt ở đó&hellip; anh tính sao, anh Nam?</p>
+<p>Nam ngồi ở ghế phụ, ngón tay miết nhẹ lên tập hồ sơ audit an ninh mạng:</p>
+<p class="dialogue">— Bổn phận của người làm án là đi theo chứng cứ, không đi theo sự thiên vị hay lòng trung thành mù quáng. Dù người đó là ai, nếu bước qua lằn ranh của luật pháp thì đều phải chịu trách nhiệm trước công lý.</p>
+<p>Đúng lúc đó, máy tính bảng công vụ của Nam reo lên tín hiệu thông báo từ Trạm Kiểm soát Giao thông đèo Gió gửi về. </p>
+<p>Nam mở tệp hình ảnh camera quét tự động: Bức ảnh chụp biển số xe lúc hai mươi giờ mười lăm phút tối nay hiển thị rõ ràng chiếc xe SUV màu xanh rêu mang biển số cá nhân của Chỉ huy Đặng Tiến Đạt đã vượt qua đỉnh đèo Gió, lao thẳng về phía thung lũng Lũng Nậm — đi trước xe của tổ điều tra hơn một giờ đồng hồ!</p>
+<p>Tiếng động cơ xe dã chiến gầm rú xé toạc màn sương mù buốt giá của đại ngàn. Chiếc đồng hồ điện tử trên bảng điều khiển nhấp nháy chuyển sang 22:00. Một cuộc chạy đua nghẹt thở trong đêm đen giữa các thế hệ người làm án đã chính thức bắt đầu trên đỉnh đèo Mường Biên.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-6" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-8" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 8 -->
+                <article class="chapter-card" id="chuong-8">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 8</div>
+                        <h3 class="chapter-main-heading">Thung lũng oan khuất</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Bốn giờ ba mươi phút sáng thứ Sáu, chiếc xe dã chiến đặc chủng của Nam và Huy vượt qua con đèo Gió buốt giá, tiến vào trung tâm xã Lũng Nậm thuộc huyện Mường Biên.</p>
+<p>Tại Trụ sở Trị an cơ sở xã Lũng Nậm, Nam nhanh chóng làm thủ tục phối hợp địa bàn với Đội Điều tra Hình sự địa phương. Năm giờ sáng, khi những vạt sương sớm bắt đầu tan dần quanh sườn núi đá vôi và khói bếp đầu ngày bốc lên từ những nếp nhà sàn, tổ công tác trực tiếp xuống thung lũng bản Dền.</p>
+<p>Khung cảnh bản Dền hiện ra mờ ảo dưới làn sương mỏng bảng lảng. Dòng suối Nậm nước trong vắt, lạnh buốt róc rách chảy qua những bãi cuội tròn nhẵn thó, uốn lượn quanh những nếp nhà sàn truyền thống mái lợp cỏ tranh xám xịt. Không khí ở đây ngập tràn mùi khói bếp củi thông ngai ngái quyện với hương thơm của gỗ rừng mới đốn.</p>
+<p>Tại nhà sàn của Trưởng bản Lò Văn Ban — một người đàn ông trung niên quấn khăn chàm am hiểu từng phong tục thung lũng — Nam cẩn thận đặt bốn chiếc túi bùa thổ cẩm thu được từ các địa phương lên mặt bàn gỗ pơ-mu.</p>
+<p>Ông Ban cầm từng chiếc túi lên, lật qua lật lại dưới ánh đèn dầu:</p>
+<p class="dialogue">— Đúng là túi bùa của bản Dền mình rồi chú à. Người già trong bản ai cũng biết dệt túi len pha lanh ngâm vỏ chàm thế này để con cháu mang theo đi rừng hộ mệnh. Còn mấy thứ đựng bên trong này&hellip; là lá me suối, dây gai đèo Gió, hạt muồng với xương cá bống đá. Đây là đồ con nít trong bản nhặt chơi trò rải sỏi hát đồng dao ven suối. Trò này xưa nay lũ trẻ bản tôi đứa nào lớn lên cũng từng chơi qua cả.</p>
+<p>Nam gật đầu, đi thẳng vào các câu hỏi nghiệp vụ:</p>
+<p class="dialogue">— Thưa bác, tổ điều tra cần rà soát nhân khẩu. Trong vòng mười đến mười lăm năm trở lại đây, bản Dền có ai rời bản đi xa mà gia đình từng trải qua biến cố lớn hay uẩn khúc gì không?</p>
+<p>Trưởng bản Ban trầm ngâm một lát rồi bước ra hiên, gọi sang nếp nhà sàn kế bên:</p>
+<p class="dialogue">— Cụ Mộc ơi, cụ sang đây tôi nhờ chút việc!</p>
+<p>Ít phút sau, một cụ già quấn khăn chàm, bước đi chậm rãi nhưng đôi mắt vẫn tinh anh bước lên cầu thang gỗ. Trưởng bản Ban rót nước chè rừng nóng vào bát sứ, giới thiệu:</p>
+<p class="dialogue">— Cụ Mộc là thợ già cả đời đốn gỗ cùng xóm mộc ven suối. Chuyện người làng mấy mươi năm qua, cụ Mộc nắm rõ nhất.</p>
+<p>Nghe Nam hỏi về những biến cố lớn trong quá khứ của xóm mộc, ánh mắt cụ Mộc chợt chùng xuống, nhìn ra gian nhà gỗ cũ kỹ bỏ hoang bên bờ suối Nậm:</p>
+<p class="dialogue">— Bản Dền hẻo lánh, chỉ có hơn ba chục nóc nhà, bà con quanh năm bám nương rẫy với đốn gỗ, hiếm ai bỏ bản đi xa&hellip; Duy chỉ có một trường hợp mười mấy năm nay bặt vô âm tín, mà cứ nhắc đến là cả cái thung lũng này ai cũng xót xa. Đó là thằng Sinh, con trai người thợ mộc Trần Văn Cửu dưới xóm mộc ven suối.</p>
+<p class="dialogue">— Gia đình ông Cửu năm xưa đã xảy ra chuyện gì thưa cụ? — Nam chăm chú lắng nghe.</p>
+<p>Cụ Mộc thở dài, giọng trĩu nặng nghẹn ngào:</p>
+<p class="dialogue">— Lão Cửu cả đời chỉ biết ngửi mùi mùn cưa với gọt mộng gỗ lim. Gỗ lim đá cứng như sắt mà vào tay lão cũng phẳng phiu, khít rịt không lọt sợi tóc. Lão ít nói, ban ngày cặm cụi đục đẽo, tối về ôm con bên bếp lửa. Năm hai nghìn lẻ năm, bỗng nhiên có người dưới phố lên thuê lão đóng sáu cỗ rương gỗ pơ-mu chở nông sản. Rương vừa đóng xong chưa kịp giao thì lực lượng điều tra do Phó Chỉ huy Hoàng Đình Thao chỉ huy bất ngờ ập vào, bảo trong khoang đáy rương có giấu bốn mươi bánh heroin rồi bắt lão đi vì tội buôn ma túy lớn. Lão Cửu kêu oan không thấu, uất ức đột quỵ qua đời trong trại giam trước ngày xử phúc thẩm. Vợ lão khóc mù cả mắt rồi bệnh mất ít lâu sau. Thằng bé Sinh lúc đó mới mười lăm tuổi, mồ côi cả cha lẫn mẹ, cắm đầu bỏ bản ra đi biền biệt. Từ đó đến nay không ai trong bản biết nó phiêu bạt phương nào, làm nghề gì&hellip;</p>
+<p>Cụ già thợ mộc khẽ ngẩng đầu nhìn Nam với ánh mắt đầy e dè và trăn trở:</p>
+<p class="dialogue">— Mười chín năm trước, cũng có mấy người mặc sắc phục ập vào xưởng khám xét, mang hết đồ nghề của lão Cửu đi&hellip; Giờ các chú từ dưới xuôi lên tìm chuyện người chết để làm gì?</p>
+<p>Nam nhìn thẳng vào ánh mắt trĩu nặng của cụ già, giọng điềm tĩnh và thận trọng:</p>
+<p class="dialogue">— Thưa cụ, bốn người đàn ông dưới xuôi đã lần lượt tử vong bất thường cùng những chiếc túi bùa mang hoa văn bản Dền. Chúng tôi nhận định những vụ việc này nhiều khả năng bắt nguồn từ một mối ân oán cũ gắn liền với thung lũng này. Tổ công tác lên đây là để xác minh từng manh mối thực tế, ngăn chặn những bi kịch tiếp theo và làm sáng tỏ sự thật khách quan cho tất cả những người liên quan.</p>
+<p>Nghe Nam nhắc đến bốn chiếc túi bùa và thứ tự dị vật tăng dần theo trò chơi đồng dao cổ truyền, đôi mắt đục mờ của cụ Mộc bỗng chùng xuống. Người thợ già nhìn trân trân vào bốn chiếc túi vải dệt chàm đặt trên bàn gỗ, đôi bàn tay gầy guộc chằng chịt vết sẹo đục gỗ khẽ run lên bần bật. Cụ không nói thêm lời nào, nhưng lồng ngực phập phồng như đang kìm nén một cơn sóng ngầm trĩu nặng từ quá khứ mười chín năm trước.</p>
+<p>Hồi lâu sau, cụ Mộc thở dài một tiếng thật sâu, chậm rãi quay về nếp nhà sàn của mình. Lát sau, cụ mang sang một chiếc hòm gỗ khóa đồng cũ kỹ, cẩn thận mở nắp lấy ra một chiếc thước mộc bằng gỗ lim đen bóng, các vạch khắc mực chìm đã mòn vẹt theo năm tháng:</p>
+<p class="dialogue">— Mười chín năm trước lúc xưởng bị niêm phong, tôi giấu vội được chiếc thước này dưới đáy hòm&hellip; Đây là chiếc thước lim duy nhất lão Cửu tự tay gọt đẽo để đo cữ mộng gỗ. Ngày thằng Sinh còn bé tí lon ton tập cầm cưa bên bờ suối, lão Cửu hay xoa đầu nó mà dặn: <em>“Cái cây gỗ trong rừng có cong queo thì mình đẽo cho thẳng được, chứ cái bụng người mình mà cong queo thì dựng cái nhà nào lên rồi cũng sập thôi con à.”</em> Thằng Sinh bản tính vốn lương thiện&hellip; Nếu người các chú đang tìm kiếm thực sự là đứa con côi cút của lão Cửu&hellip; xin các chú hãy mang chiếc thước này theo. Dùng lời răn dạy ngay thẳng của người cha mà nhắc nhở nó, giữ lại cho nó một con đường sống, đừng để nó đi đến bước đường cùng mà hủy hoại thanh danh cha nó!</p>
+<p>Nam hai tay đón lấy chiếc thước mộc cũ. Anh ký giấy biên nhận gửi lại cụ Mộc và Trưởng bản Ban, rồi cẩn thận bọc chiếc thước vào tấm khăn nhung, đặt nhẹ nhàng vào hộp bảo quản vật chứng như một di vật tâm lý thiêng liêng.</p>
+<p>Cùng lúc đó, dựa trên thông tin họ tên và năm sinh trích lục từ sổ nhân khẩu của bản Dền, kết hợp với lời khai của chủ xưởng Lê Văn Long, Huy mở máy tính công vụ tra cứu trên tàng thư dữ liệu quốc gia:</p>
+<p class="dialogue">— Anh Nam, đối soát dữ liệu hoàn toàn trùng khớp! <strong>Trần Văn Sinh</strong>, sinh năm 1990 tại bản Dền. Sau khi rời bản, Sinh theo học nghề cơ khí gọt kim loại, rồi phục vụ trong lực lượng trinh sát cơ động vùng biên viễn suốt năm năm (2008-2013). Hồ sơ quân vụ ghi nhận Sinh có kỹ năng trinh sát thực địa, luồn rừng và cận chiến xuất sắc. Năm 2013 Sinh xuất ngũ và xóa toàn bộ dấu vết cư trú. Người thợ mang tên Ba thợ cắt chính là Trần Văn Sinh!</p>
+<p>Đúng năm giờ bốn mươi lăm phút sáng thứ Sáu, khi Nam vừa ghi nhận xong dữ liệu của Sinh thì chuông điện thoại cầm tay reo dồn dập. Giọng người phụ trách trị an xã Lũng Nậm hốt hoảng bên kia đầu dây:</p>
+<p class="dialogue">— Báo cáo các đồng chí! Vừa phát hiện án mạng tại bến đò Lũng Nậm! Nạn nhân là lão lái đò Bùi Văn Vượng, bị sát hại ngay trong chòi gỗ ven suối! Đáng chú ý là có người dân vừa nhìn thấy một chiếc xe SUV màu xanh rêu biển số dưới xuôi xuất hiện gần bến đò cách đây nửa tiếng!</p>
+<p>Chiếc xe SUV màu xanh rêu — chính là chiếc xe của Chỉ huy Đặng Tiến Đạt! Tim Nam thắt lại. Chiếc xe dã chiến lập tức rồ ga, lao nhanh qua màn sương mù dày đặc hướng về phía bến đò Lũng Nậm.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-7" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-9" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 9 -->
+                <article class="chapter-card" id="chuong-9">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 9</div>
+                        <h3 class="chapter-main-heading">Bến đò trong sương</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Sáu giờ đúng sáng thứ Sáu, màn sương mù buốt lạnh dày đặc bao phủ mặt suối Nậm, biến con đường mòn dẫn vào bến đò Lũng Nậm thành một vệt trơn trượt giữa hai bờ lau sậy rậm rạp. Tiếng nước suối cuộn xiết qua các ghềnh đá vôi hòa cùng tiếng gió rít tạo nên bầu không khí âm u, ngột ngạt.</p>
+<p>Chiếc xe dã chiến của Nam và Huy dừng lại cạnh rặng vầu ven suối. Lực lượng Điều tra Hình sự Mường Biên do Điều tra viên Lâm Văn Thành chỉ huy đã thiết lập vành đai bảo vệ nghiêm ngặt. Dải băng phong tỏa màu vàng chăng ngang lối vào căn chòi gỗ của lão lái đò Bùi Văn Vượng. Vài người dân đi thả lưới sớm co ro trong manh áo tơi đứng tụ tập phía xa mé bờ suối, mắt nhìn vào căn chòi với vẻ bàng hoàng.</p>
+<p>Nam và Huy xuất trình công văn ủy thác điều tra khẩn cấp cho ĐTV Thành, rồi cùng bước vào bên trong chòi gỗ phối hợp khám nghiệm.</p>
+<p>Căn chòi dựng bằng phên nứa và cọc gỗ cắm mép nước ẩm thấp, bừa bộn mái chèo cũ, tay lưới rách và những chai rượu ngâm rễ cây rừng vứt lăn lóc dưới sàn ván mục. Trên chiếc sạp nứa kê sát vách, lão lái đò Bùi Văn Vượng nằm bất động, ngực áo cánh nâu ướt đẫm máu loang ra manh chiếu cói. Đôi mắt lão trợn trừng, khuôn mặt co rúm lại trong cơn sốc mất máu cấp trước khi trút hơi thở cuối cùng.</p>
+<p>Bác sĩ pháp y của tổ công tác phối hợp tiến hành soi đèn kiểm tra vết thương trên thi thể:</p>
+<p class="dialogue">— Vết thương hở hình khe sắc gọn nằm ở vùng hõm nách bên trái, mũi dao đi chếch từ trên xuống làm đứt rách bó mạch nách lớn. Miệng vết thương hẹp, bờ mép phẳng nhẵn, gây mất máu cấp tính ồ ạt dẫn đến sốc trụy tuần hoàn nhanh chóng. Nhát đâm gọn gàng, dứt khoát, không có vết cứa trượt xung quanh. Dựa trên độ co cứng khớp chi và vết hoen tử thi, thời gian tử vong ước lượng sơ bộ vào khoảng từ ba đến bốn giờ sáng nay.</p>
+<p>Được sự đồng ý của ĐTV Thành, Nam đeo găng tay cao su cẩn thận mở bàn tay phải co quắp của lão Vượng ra.</p>
+<p>Trong lòng bàn tay lạnh ngắt của nạn nhân là một chiếc túi bùa thổ cẩm màu chàm thứ năm. Bên trong túi vải, bọc trong lớp lanh thô ngâm chàm là <strong>năm hòn sỏi suối nhỏ màu xám chì nhẵn thó</strong>.</p>
+<p>Chuỗi số lượng sản vật đếm sỏi đã đi đến nấc thứ năm: <em>1 lá me $\rightarrow$ 2 dây gai $\rightarrow$ 3 hạt muồng $\rightarrow$ 4 xương cá $\rightarrow$ 5 hòn sỏi suối</em>!</p>
+<p>Huy nhìn vệt máu loang trên manh chiếu, giọng trầm xuống:</p>
+<p class="dialogue">— Đúng như câu đồng dao thứ năm: <em>“Hả thày — tha đò bến lạnh”</em>. Kẻ ra tay đã tìm đến bến đò này trước chúng ta một bước!</p>
+<p>Trong lúc tổ kỹ thuật mở rộng phạm vi khám nghiệm ra ngoài bờ suối, một phát hiện bất ngờ xuất hiện tại khúc cua khuất cách căn chòi chừng hai trăm mét. Trên nền đất sét ướt sũng còn đọng nước, in hằn rõ nét một vệt hoa văn lốp xe ô tô gầm cao. Kỹ thuật viên chụp ảnh đo đạc và đối soát thông số lốp: kích thước và hoa văn rãnh lốp hoàn toàn trùng khớp với dòng lốp của chiếc xe SUV màu xanh rêu mang biển số cá nhân của Chỉ huy Đặng Tiến Đạt!</p>
+<p>Nam đứng lặng bên bờ suối đầy sương mù, ruột gan như lửa đốt. Anh rút điện thoại di động, bấm số gọi trực tiếp cho Đạt.</p>
+<p>Chuông reo hồi lâu, đầu dây bên kia mới có tiếng nhấc máy. Tiếng gió rít và âm thanh xập xình của một trạm xăng ven quốc lộ vọng vào loa:</p>
+<p class="dialogue">— Alo&hellip; Nam đấy à?</p>
+<p class="dialogue">— Báo cáo anh Đạt, em đang có mặt tại hiện trường án mạng bến đò Lũng Nậm, — Nam nói rành rọt từng từ. — Nạn nhân Bùi Văn Vượng vừa bị sát hại lúc ba giờ sáng với chiếc túi bùa đựng năm hòn sỏi. Tại hiện trường, chúng em phát hiện dấu vết lốp xe của anh vừa rời đi cách đây không lâu. Anh đang ở đâu?</p>
+<p>Đầu dây bên kia im lặng một thoáng dài, chỉ nghe thấy tiếng thở nặng nhọc của người chỉ huy già:</p>
+<p class="dialogue">— Tôi đang ở cây xăng đầu thị xã Mường Biên&hellip; Nam, tôi lên đây có lý do riêng cần xác minh thực tế địa bàn. Chuyện bến đò&hellip; tôi đến sau khi mọi chuyện đã rồi. Tôi không giết ông Vượng. Các cậu đừng để bị phân tâm. Chìa khóa thật sự của vụ án không nằm ở bến đò này, mà nằm ở cỗ rương tang vật trong <strong>Kho lưu trữ Tư pháp Mường Biên</strong>. Hãy tới đó mở hồ sơ năm 2005 ra ngay lập tức!</p>
+<p class="dialogue">— Anh Đạt, anh phải ở yên đó chờ tổ công tác tới làm việc theo quy trình, — Nam gằn giọng.</p>
+<p class="dialogue">— Cứ làm việc của cậu đi, Nam. Tôi sẽ tự chịu trách nhiệm về hành động của mình trước cơ quan tổ chức!</p>
+<p>Nói xong, Đạt dập máy.</p>
+<p>ĐTV Lâm Văn Thành bước lại gần Nam:</p>
+<p class="dialogue">— Báo cáo anh Nam, Viện Công tố Cấp cao vừa ký Quyết định hỏa tốc phê chuẩn mở niêm phong đặc biệt toàn bộ hồ sơ và tang vật Chuyên án 2005 tại Kho lưu trữ Mường Biên. Tổ công tác nên di chuyển ngay.</p>
+<p>Nam nhìn ra dòng nước cuộn xiết của suối Nậm, cất chiếc điện thoại vào túi áo:</p>
+<p class="dialogue">— Đi thôi. Sự thật mười chín năm trước đang chờ chúng ta dưới đáy rương ở Mường Biên!</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-8" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-10" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 10 -->
+                <article class="chapter-card" id="chuong-10">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 10</div>
+                        <h3 class="chapter-main-heading">Dưới đáy rương</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Mười một giờ trưa thứ Sáu. Tại phòng giám định kỹ thuật hình sự Cơ quan Điều tra Mường Biên, Hội đồng Giám định tư pháp liên ngành gồm Kỹ sư Lâm nghiệp Phạm Văn Dũng — chuyên gia giám định cơ học gỗ độc lập, Kỹ thuật viên hình sự, cùng Nam, Huy và ĐTV Lâm Văn Thành chính thức tiến hành mở niêm phong cỗ rương gỗ pơ-mu tang vật của Chuyên án 105-MN năm 2005.</p>
+<p>Cỗ rương gỗ pơ-mu sau mười chín năm nằm trong kho lưu trữ đã phủ một lớp bụi xám mờ và có dấu hiệu ố mốc do thời gian. Nhưng ngay khi lớp niêm phong chì được cắt bỏ, các chuyên gia bắt đầu quá trình khám nghiệm tỉ mỉ từng chi tiết liên kết.</p>
+<p>Kỹ sư Dũng dùng chổi lông chuyên dụng quét sạch bụi bẩn, đặt kính lúp phóng đại công nghiệp và nguồn sáng góc nghiêng soi dọc các đường ghép mộng của thân rương. Nam cẩn thận lấy chiếc thước mộc gỗ lim di vật của ông Cửu đặt cạnh các mép rương:</p>
+<p class="dialogue">— Thân rương được gia công hoàn toàn bằng kỹ thuật thủ công truyền thống, — Kỹ sư Dũng chỉ vào các mộng mang cá. — Từng đường cưa tay và mộng ghép gỗ lim đá đều ăn khớp hoàn hảo với các vạch khắc mực chìm trên chiếc thước mộc của thợ mộc Trần Văn Cửu. Sai số giữa các mộng ghép mang đặc trưng tinh xảo của phương pháp đục đẽo bằng tay.</p>
+<p>Tuy nhiên, khi Hội đồng lật ngược cỗ rương để kiểm tra khoang đáy bí mật — nơi mười chín năm trước lực lượng điều tra thu giữ bốn mươi bánh heroin — những dấu vết bất thường mang tính quyết định lập tức lộ diện dưới ánh đèn huỳnh quang tử ngoại.</p>
+<p>Kỹ sư Dũng dùng dao phẫu tích vi mẫu tách một mẩu chất kết dính ở mép đáy rương, đưa lên kính hiển vi soi nổi quang học độ phóng đại lớn:</p>
+<p class="dialogue">— Hãy nhìn vào vết xẻ này! Khoang đáy giả không hề được tạo ra bằng cưa tay hay đục mộc. Bề mặt vách cắt có các vết xước song song chuẩn xác cơ học với bước răng bốn mi-li-mét — đây là dấu tích không thể chối cãi của lưỡi cưa đĩa đa lưỡi công nghiệp! Hơn nữa, chất liên kết khoang đáy là keo nhiệt tổng hợp Poly-resin chuyên dụng, vốn chỉ được trang bị tại các dây chuyền chế biến gỗ công nghiệp quy mô lớn thời điểm năm 2005. Một xưởng mộc thủ công bản xứ ở Lũng Nậm hoàn toàn không thể có loại máy móc và hóa chất này!</p>
+<p>Để củng cố bằng chứng khoa học, tổ giám định tiến hành phân tích thớ gỗ và đối soát tàng thư vật tư lâm sản. Đến mười bốn giờ ba mươi phút chiều, kết quả kiểm tra mẫu vật chính thức hoàn tất: Thân rương là gỗ pơ-mu rừng già Lũng Nậm, nhưng tấm vách ngăn khoang đáy lại là gỗ thông ép công nghiệp nhập khẩu. Ở góc khuất của tấm gỗ thông ép, dưới ánh đèn cực tím hiện rõ dấu mực in mã số phân lô trùng khớp với hồ sơ vật tư của Xưởng cưa số 2 thuộc Công ty Lâm sản Mường Biên — cơ sở do người thân của Hoàng Đình Thao quản lý năm xưa.</p>
+<p>Đúng mười lăm giờ chiều thứ Sáu, Biên bản kết luận giám định pháp chứng liên ngành được toàn thể Hội đồng ký xác nhận: <em>Khoang đáy chứa ma túy là kết cấu ngụy tạo cơ giới ngoài luồng, hoàn toàn không đồng nhất với thân rương thủ công do ông Cửu đóng.</em></p>
+<p>Cùng lúc đó, Nam và Huy lật giở từng trang hồ sơ giấy tờ Chuyên án 2005 vừa được giải mật:</p>
+<p>Bốn kẻ áp tải bị bắt giữ năm 2005 mang tên Lò Văn Thìn, Sùng A Đở, Bàn Văn Chắt và Lý Văn Mằn — đối soát sinh trắc học hoàn toàn trùng khớp với bốn nạn nhân mang ID giả Hoàng Văn Nhẫn, Phạm Văn Sáu, Đặng Văn Mười và Nguyễn Văn Tư đã lần lượt thiệt mạng. Biên bản nhân chứng then chốt buộc tội ông Cửu do chính lão lái đò Bùi Văn Vượng ký. Bản kết luận điều tra do Phó Thủ trưởng Hoàng Đình Thao phê duyệt.</p>
+<p>Và mắt xích sống quyết định xuất hiện ở tờ lệnh xuất xe đặc chủng: Người trực tiếp ký nhận và điều khiển chiếc xe mang biển số <strong>TN-1479</strong> chở các cỗ rương tang vật bị đánh tráo đáy đêm hôm đó chính là Trung úy <strong>Đặng Tiến Đạt — Chỉ huy Đội Trọng án Hạ An hiện nay</strong>!</p>
+<p>Huy tra cứu nhanh trên mạng dữ liệu hàng không quốc gia:</p>
+<p class="dialogue">— Anh Nam! Hoàng Đình Thao hiện đang chuẩn bị xuất cảnh ra nước ngoài vào sáng Chủ nhật tới theo diện định cư diện bảo lãnh gia đình! Chúng ta chỉ còn chưa đầy bốn mươi tám tiếng đồng hồ!</p>
+<p>Nam nắm chặt biên bản giám định, ánh mắt đanh lại:</p>
+<p class="dialogue">— Muốn ngăn chặn Thao tẩu thoát và buộc hắn phải đứng trước vành móng ngựa, chúng ta cần bản gốc tờ phôi lệnh xe có bút tích chỉ đạo viết tay của Thao. Bản gốc đó đang nằm trong tay Chỉ huy Đạt ở Hạ An!</p>
+<p>Mười sáu giờ chiều thứ Sáu, Nam và Huy lên xe đặc chủng dã chiến, xuất phát chạy đua với thời gian vượt đèo quay về Hạ An. Con đường đèo ban ngày thông thoáng hơn, chiếc xe lao vút trong gió núi, hướng thẳng về phía hạ lưu sông Lam Châu.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-9" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-11" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 11 -->
+                <article class="chapter-card" id="chuong-11">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 11</div>
+                        <h3 class="chapter-main-heading">Người thầy giữ im lặng</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Bảy giờ ba mươi phút tối thứ Sáu. Sau hành trình hơn ba tiếng rưỡi chạy đua với thời gian vượt qua con đèo Gió trong ánh chiều tà, chiếc xe dã chiến đặc chủng của Nam và Huy phanh gấp trước cổng trụ sở Đội Điều tra Trọng án Hạ An.</p>
+<p>Không khí tại trụ sở chìm trong một sự tĩnh lặng ngột ngạt bất thường. Chiếc xe SUV màu xanh rêu của Chỉ huy Đặng Tiến Đạt đã đỗ ở góc sân từ lúc chập tối, lớp bùn non vùng núi Mường Biên vẫn còn bám dày trên các hốc bánh xe.</p>
+<p>Đúng hai mươi mốt giờ ba mươi phút, sau khi hoàn tất việc mã hóa và chuyển giao toàn bộ biên bản giám định liên ngành về cơ quan cấp cao, Nam một mình bước lên tầng hai, đẩy cánh cửa gỗ quen thuộc của phòng chỉ huy.</p>
+<p>Căn phòng nồng nặc mùi khói thuốc lá Lam Ngàn bao bạc. Thủ trưởng Đạt ngồi bất động sau chiếc bàn làm việc bằng gỗ mun, hai mắt trũng sâu, gương mặt già sụp đi như vừa đi qua một cơn giông bão khủng khiếp. Trên bàn, chiếc gạt tàn thủy tinh đầy ắp những đầu mẩu thuốc lá đã cháy kiệt. Chiếc bật lửa Zippo vỏ đồng mòn vẹt nằm chỏng chơ cạnh tách trà nguội ngắt đóng váng bọt xám. Đạt không bật đèn trần, chỉ để lại ánh sáng vàng vọt từ ngọn đèn bàn chiếu thẳng vào đôi bàn tay gân guốc đang đan chặt vào nhau.</p>
+<p>Nam bước lại gần, đặt tập Biên bản kết luận giám định pháp chứng cỗ rương và bản trích lục hồ sơ Chuyên án 2005 xuống trước mặt người thầy:</p>
+<p class="dialogue">— Mười chín năm trước ở Lũng Nậm, cỗ rương của ông Cửu đã bị tráo đáy bằng cưa đĩa đa lưỡi công nghiệp và keo dán nhiệt Poly-resin. Thầy từng dạy tụi em làm điều tra viên thì nghèo mấy cũng phải giữ lòng mình cho ngay thẳng&hellip; Nhưng đêm hôm đó, ai là người đã ký lệnh lái chiếc xe mang biển số TN-1479 chở những cỗ rương bị đánh tráo để khép lại số phận của cả một gia đình hả thầy?</p>
+<p>Đạt nhìn chằm chằm vào bản kết luận giám định và tờ lệnh xe mang chính chữ ký thuở thanh xuân của mình. Không gian tĩnh lặng như tờ, chỉ có tiếng kim đồng hồ treo tường gõ từng nhịp nặng nề. Người chỉ huy già không ngẩng đầu lên, nhưng bờ vai khẽ rung lên từng chặp. Một tiếng thở dài trĩu nặng thoát ra từ lồng ngực:</p>
+<p class="dialogue">— Cuối cùng thì ngày này cũng đến&hellip; Mười chín năm qua, chưa một đêm nào tôi chợp mắt thanh thản, Nam à. Mỗi lần nghe tiếng còi xe tuần tra rú lên trong đêm, tôi lại giật mình tưởng như tiếng còi áp giải năm xưa đang đuổi theo chính mình.</p>
+<p>Đạt ngước nhìn Nam, ánh mắt đục mờ vì những đêm mất ngủ đằng đẵng:</p>
+<p class="dialogue">— Năm 2005, tôi là một trinh sát trẻ hai mươi tư tuổi vừa được điều động về Lũng Nậm, coi Hoàng Đình Thao như một tượng đài mẫu mực của ngành điều tra. Khi chuyên án ma túy bắt đầu, chính Thao đã nhận tiền bảo kê khủng của một đường dây ma túy vùng biên, bí mật chỉ đạo xưởng cưa số 2 gia công sẵn sáu chiếc đáy rương giả nhét bốn mươi bánh heroin vào nhằm dựng lên một chiến công giả chấn động, đồng thời gài bẫy bức hại người thợ mộc Trần Văn Cửu. Thao mua chuộc lão lái đò Bùi Văn Vượng ký biên bản nhân chứng khống, ép cung bốn tên áp tải nhận tội để thăng chức.</p>
+<p>Đạt ngừng lại, nhấp một ngụm trà nguội đắng ngắt:</p>
+<p class="dialogue">— Đêm hôm đó, Thao giao cho tôi lệnh lái chiếc xe đặc chủng TN-1479 chở tang vật về kho niêm phong. Khi tôi kiểm tra và phát hiện mép đáy rương có dấu cưa đĩa bất thường cùng mùi keo nhiệt chưa khô, tôi toan làm biên bản báo cáo trung thực lên lãnh đạo cấp trên. Nhưng Thao đã gọi tôi vào phòng riêng, rút khẩu súng ngắn M-54 đặt lên bàn&hellip; Hắn đe dọa tước ngạch điều tra, đe dọa sinh mạng và sự an nguy của mẹ tôi đang đau yếu ở quê nhà nếu tôi dám lên tiếng. Những năm sau đó, mạng lưới chân rết của Thao bao trùm khắp các cấp quản lý, một trinh sát trẻ cô độc như tôi không có bất kỳ cơ hội nào để lật ngược thế cờ&hellip; Tôi đã hèn nhát ký tên vào lệnh xe, rồi xin chuyển công tác về vùng hạ lưu này để trốn chạy quá khứ.</p>
+<p>Đạt đứng dậy, bước đến góc phòng, mở cánh cửa sắt của chiếc két sắt cá nhân. Ông cẩn thận lấy ra một bọc vải dù ố vàng đã sờn mép, mở ra đặt lên bàn:</p>
+<p class="dialogue">— Đây là <strong>tờ phôi lệnh xuất xe TN-1479 bản nháp gốc năm 2005</strong> có dòng chỉ thị nội bộ viết tay vội vã của Hoàng Đình Thao: <em>“Hủy bản kiểm đáy, cho xe chạy ngay”</em>, kèm bút phê ký tắt của hắn. Còn đây là <strong>cuốn nhật ký công tác</strong> tôi ghi lại chính xác từng mốc giờ và địa điểm các cuộc gặp mờ ám của Thao đêm hôm đó. Mười chín năm qua, mỗi lần được thăng hàm hay nhận bằng khen, tôi lại lôi cuốn sổ này ra đọc trong bóng tối để tự nhắc mình về món nợ máu chưa trả&hellip; Tôi giữ nó lại suốt ngần ấy năm như một bản án lương tâm treo lơ lửng trên đầu mình. Càng cố trốn chạy, bóng ma của Lũng Nậm càng bám riết lấy tôi trong từng giấc ngủ. Tôi biết sớm muộn gì sự thật cũng sẽ có ngày phải bước qua cánh cửa này.</p>
+<p>Nam đón lấy tập tài liệu gốc. Trong lòng người học trò trào dâng một cảm giác nhức nhối khôn tả — vừa đau đớn trước sự lầm lạc của người thầy, vừa thấu hiểu bản án lương tâm tàn khốc mà Đạt đã tự thi hành đối với chính mình suốt hai thập kỷ.</p>
+<p>Nam cẩn thận lập biên bản niêm phong vật chứng và truyền dữ liệu khẩn cấp lên Viện Công tố Cấp cao.</p>
+<p>Mười một giờ bốn mươi lăm phút đêm thứ Sáu, Cơ quan Điều tra Cấp cao chính thức ra quyết định phục hồi Chuyên án 2005, thi hành Lệnh Tạm giữ đối với Đặng Tiến Đạt để điều tra về hành vi che giấu tội phạm, đồng thời phát <strong>Lệnh Cấm Xuất cảnh khẩn cấp</strong> đối với Hoàng Đình Thao.</p>
+<p>Trước khi bước lên chiếc xe dẫn giải của cơ quan thanh tra, Đạt dừng lại bên bậu cửa trụ sở, khẽ đặt bàn tay gầy guộc lên vai Nam, giọng nghẹn ngào:</p>
+<p class="dialogue">— Ngăn Sinh lại, Nam. Đừng để thằng bé biến nỗi oan khiên của cha nó thành một tội ác mới&hellip; Hãy thay tôi trả lại sự trong sạch cho chiếc thước mộc bản Dền.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-10" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-12" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+        <!-- TẬP 3: ÁNH SÁNG CÔNG LÝ -->
+        <section class="volume-hero" id="tap-3">
+            <div class="volume-hero-img-wrap">
+                <img src="assets/images/hoi_3.jpg" alt="TẬP 3: ÁNH SÁNG CÔNG LÝ" class="volume-hero-img">
+                <div class="volume-hero-overlay">
+                    <span class="volume-badge">Tập 3</span>
+                    <h2 class="volume-hero-title">TẬP 3: ÁNH SÁNG CÔNG LÝ</h2>
+                    <p class="volume-hero-sub">Bó Chứng Cứ & Vĩ Thanh Bản Dền</p>
+                </div>
+            </div>
+            <div class="volume-epigraph-box">
+                “Sáu sỏi thước mộc giải oan đất trời.”
+                <div style="font-size: 0.8rem; margin-top: 0.25rem;">— Đồng dao cổ truyền Mường Biên</div>
+            </div>
+        </section>
+        
+                <!-- CHƯƠNG 12 -->
+                <article class="chapter-card" id="chuong-12">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 12</div>
+                        <h3 class="chapter-main-heading">Cuộc gọi thứ sáu</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Tám giờ ba mươi phút sáng thứ Bảy, chuông điện thoại đường dây nóng trực ban Đội Điều tra Trọng án Hạ An reo vang dồn dập.</p>
+<p>Nam nhấc ống nghe. Đầu dây bên kia là một khoảng lặng dài chỉ có tiếng gió núi và âm thanh rào rào của một bốt điện thoại công cộng ven đường. Sau vài giây thở ngắt quãng, một giọng nói khàn đặc, đanh quánh vang lên:</p>
+<p class="dialogue">— Cậu là điều tra viên Đặng Hoàng Nam?</p>
+<p>Nam giữ bình tĩnh, ra hiệu cho Huy kích hoạt thiết bị định vị tín hiệu:</p>
+<p class="dialogue">— Tôi là Nam. Anh là Trần Văn Sinh, đúng không?</p>
+<p class="dialogue">— Các người lên bản Dền làm gì? — Giọng Sinh run lên vì giận dữ pha lẫn cay đắng. — Mười chín năm trước các người dồn cha tôi vào chỗ chết, giờ lại kéo người về xới tung cái thung lũng nghèo đó lên để làm gì nữa?</p>
+<p>Nam nói chậm rãi, rành rọt từng từ:</p>
+<p class="dialogue">— Sinh, hãy nghe tôi nói. Chuyên án năm 2005 đã chính thức được Viện Công tố Cấp cao ra quyết định phục hồi điều tra đêm qua. Chúng tôi đã mở niêm phong cỗ rương tang vật tại Mường Biên. Kết quả giám định liên ngành khẳng định khoang đáy chứa ma túy được xẻ bằng cưa đĩa đa lưỡi công nghiệp và dán keo nhiệt Poly-resin — cha anh, ông Trần Văn Cửu, hoàn toàn vô tội!</p>
+<p>Đầu dây bên kia im bặt. Tiếng thở của Sinh nghẹn lại trong lồng ngực như bị ai bóp nghẹt.</p>
+<p>Nam tiếp tục:</p>
+<p class="dialogue">— Chỉ huy Đặng Tiến Đạt đã ra tự thú toàn bộ sự việc đêm hôm đó. Bản nháp gốc lệnh xuất xe mang biển số TN-1479 có bút tích chỉ đạo viết tay của Hoàng Đình Thao cùng cuốn nhật ký công tác 2005 đã được niêm phong vào hồ sơ tái thẩm. Lệnh cấm xuất cảnh đối với Thao đã được thi hành. Công lý đang được thực thi đúng theo trình tự pháp luật!</p>
+<p>Một tiếng nấc nghẹn ngào truyền qua ống nghe. Nhưng rồi, giọng Sinh lại đanh lại, lạnh lùng và dứt khoát:</p>
+<p class="dialogue">— Mười chín năm qua, tôi đã học được một điều: những kẻ có quyền thế như Hoàng Đình Thao luôn biết cách dùng tiền bạc và luật sư để luồn lách qua mọi kẽ hở! Nếu trước bình minh ngày mai pháp luật không còng tay được hắn, tôi sẽ tự mình thi hành phán quyết bằng <strong>hòn sỏi thứ sáu</strong>!</p>
+<p><em>Cạch!</em> Sinh dập máy dứt khoát. </p>
+<p>Huy nhìn màn hình định vị viễn thông:</p>
+<p class="dialogue">— Tín hiệu phát từ bốt điện thoại công cộng bên ngoài Bến xe khách Mường Biên. Hắn đã quay trở lại thị xã và đang áp sát khu vực đồi thông!</p>
+<p>Mười một giờ trưa thứ Bảy, một nhân chứng bất ngờ xuất hiện tại trụ sở Hạ An: Lê Văn Long — chủ xưởng cứu hộ sà-lan Cửa Lác.</p>
+<p>Long bước vào phòng điều tra, trên tay ôm một cuốn sổ tay bọc da cũ kỹ dính vệt dầu mỡ đã ố vàng. Long đặt cuốn sổ lên bàn trước mặt Nam:</p>
+<p class="dialogue">— Cán bộ Nam, đây là cuốn sổ theo dõi hợp đồng và gia công cơ khí của xưởng tôi năm 2005. Tôi mang đến nộp cho cơ quan điều tra.</p>
+<p>Nam mở cuốn sổ. Tại trang ghi chép tháng 8 năm 2005, có một bản hợp đồng gia công cắt gọt sáu tấm thép chịu lực và cung cấp vật tư công nghiệp ký giữa xưởng của Long và <strong>Xưởng cưa số 2 thuộc Công ty Lâm sản Mường Biên</strong> — cơ sở do người thân của Hoàng Đình Thao đứng tên quản lý.</p>
+<p>Long cúi đầu, giọng trĩu nặng:</p>
+<p class="dialogue">— Thằng Sinh ở xưởng tôi mấy tháng, nó chịu thương chịu khó, sống tình nghĩa như đứa em trai đã chết của tôi&hellip; Tôi thương nó, cho nó mượn mỏ cắt và que hàn mà không ngờ nó lại dùng vào việc trả thù. Tôi nộp cuốn sổ này để chứng minh mắt xích gia công cơ khí giữa xưởng cưa của Thao năm xưa, mong góp phần làm rõ vụ án để cứu lấy mạng sống của thằng Sinh.</p>
+<p>Bản hợp đồng vật tư năm 2005 từ xưởng Lê Văn Long chính là mắt xích tài liệu độc lập then chốt, củng cố toàn diện cho biên bản giám định pháp chứng cỗ rương và lời tự thú của Đạt.</p>
+<p>Mười lăm giờ chiều thứ Bảy, Viện Công tố Cấp cao chính thức ký <strong>Quyết định phê chuẩn Lệnh Giữ người trong trường hợp khẩn cấp</strong> đối với Hoàng Đình Thao về tội Làm sai lệch hồ sơ vụ án và Nhận hối lộ.</p>
+<p>Mười bảy giờ chiều thứ Bảy, Nam cùng tổ trinh sát đặc nhiệm cơ động nhận mệnh lệnh hành quân thần tốc, lên xe đặc chủng quay trở lại Mường Biên.</p>
+<p>Đồng hồ đếm ngược sinh tử chỉ còn chưa đầy mười hai tiếng đồng hồ trước khi bình minh ngày Chủ nhật ló dạng trên đỉnh đèo Gió.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-11" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-13" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 13 -->
+                <article class="chapter-card" id="chuong-13">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 13</div>
+                        <h3 class="chapter-main-heading">Dấu chân trên đèo</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Hai mươi hai giờ đêm thứ Bảy. Chiếc xe dã chiến đặc chủng của tổ điều tra âm thầm tiếp cận khu vực đồi thông thị xã Mường Biên trong màn sương đêm buốt giá.</p>
+<p>Thị xã vùng cao chìm sâu trong giấc ngủ dưới làn sương mù dày đặc. Những ngọn đèn đường vàng vọt dọc theo sườn dốc chỉ đủ soi rõ những vệt sương mỏng lượn lờ quanh các rặng thông già. Lệnh giữ người trong trường hợp khẩn cấp đối với Hoàng Đình Thao đã được Viện Công tố Cấp cao phê chuẩn, nhưng đối với một cựu chỉ huy điều tra lọc lõi suốt ba mươi năm trong ngành tư pháp, từng kẽ hở của thủ tục pháp lý đều được tận dụng triệt để.</p>
+<p>Bằng mối quan hệ và sự lão luyện của mình, Thao lập tức mượn cớ bệnh tim tái phát để từ chối mở cổng làm việc ban đêm. Thông qua một luật sư riêng kỳ cựu túc trực sẵn, Thao liên tục gửi các bản kiến nghị qua đường truyền điện tử khiếu nại về trình tự tống đạt lệnh ngoài giờ hành chính nhằm câu giờ đến sáng Chủ nhật. Cùng lúc đó, Thao rút vào cố thủ trong căn biệt thự hai tầng kiên cố nằm biệt lập trên đỉnh đồi thông, thuê một đội vệ sĩ tư nhân gồm sáu người trang bị gậy điện, bình xịt hơi cay và chó nghiệp vụ canh gác nghiêm ngặt.</p>
+<p>Khi các thủ tục tố tụng hành chính buộc phải chờ đến giờ mở cửa chính thức vào sáng sớm, tổ trinh sát hình sự của Nam và ĐTV Lâm Văn Thành chỉ có thể lập vành đai giám sát ngoại vi dưới chân dốc để khóa chặt mọi lối thoát hiểm.</p>
+<p>Nhưng đối với Trần Văn Sinh, thời gian không tính bằng các văn bản hành chính.</p>
+<p>Sau cuộc gọi lúc sáng tại bến xe khách, Sinh đã hoàn toàn lặn sâu vào bóng tối. Suốt mười hai tiếng đồng hồ qua, người con thợ mộc đã một mình luồn qua những hẻm núi đá vôi hiểm trở, tiếp cận sườn đồi thông Mường Biên với toàn bộ trang bị cơ khí và kỹ năng tác chiến của một cựu trinh sát cơ động dạn dày sương gió.</p>
+<p>Hai giờ sáng Chủ nhật. Gió núi rít qua các khe thông cổ thụ từng cơn buốt lạnh thấu xương. Mưa phùn lất phất làm cho những thảm cỏ lá kim trơn như bôi mỡ.</p>
+<p>Trên mỏm đá cao nhất của đỉnh đèo Gió — vị trí hiểm trở nhìn bao quát toàn bộ khuôn viên căn biệt thự đồi thông của Hoàng Đình Thao — Nam và Huy phát hiện những dấu vết thực địa còn mới nguyên:</p>
+<p>Những cành thông gãy gập làm điểm tựa chân ngắm bắn. Vệt bùn ướt in sâu hình gai đế giày bảo hộ cơ khí bám chặt vào thớ đá vôi. Ngay sát mép đá, tổ trinh sát thu thập được một mẩu dây cáp đồng bọc cao su chịu lực dày mười hai mi-li-mét bị cắt rời bằng một vết cắt ngọt xớt, phẳng lỳ, bên cạnh là chiếc vỏ bọc bảo vệ lưỡi của loại kìm cắt thủy lực chạy pin vi áp.</p>
+<p>Nam cúi xuống soi đèn pin vào vết cắt cáp:</p>
+<p class="dialogue">— Hắn đã thử độ ngọt của lưỡi cắt trên đoạn cáp mẫu có cùng đường kính với đường dây điện tổng của biệt thự. Đối tượng đã trinh sát toàn bộ góc quét của hệ thống camera giám sát và quy luật đổi ca của đội vệ sĩ từ mỏm đá này suốt nửa đêm qua.</p>
+<p>Từ mỏm đá đèo Gió nhìn thẳng xuống, căn biệt thự hai tầng sơn trắng của Hoàng Đình Thao hiện ra như một pháo đài cô độc giữa rừng già. Bên dưới sân, chiếc xe ô tô bảy chỗ của viên luật sư đang đỗ dưới mái hiên, sẵn sàng nổ máy đưa Thao rời đi ngay khi trời hửng sáng.</p>
+<p>Bốn giờ ba mươi phút sáng Chủ nhật. Thời gian chỉ còn tính bằng từng phút ngắn ngủi trước bình minh.</p>
+<p>Nam hội ý chớp nhoáng với ĐTV Lâm Văn Thành và tổ đặc nhiệm cơ động:</p>
+<p class="dialogue">— Kế hoạch triển khai thành ba mũi: Mũi một gồm ĐTV Thành và lực lượng địa phương khóa chặt cổng chính, kiểm soát chiếc xe bảy chỗ của luật sư; Mũi hai phong tỏa cửa thoát hiểm sườn đồi phía sau; Mũi ba do tôi và Huy tiếp cận theo đường cống thoát nước ngầm nối từ triền dốc vào tầng hầm kỹ thuật — đây là điểm mù duy nhất không bị quét bởi mắt thần hồng ngoại. Đối tượng Sinh có kỹ năng cận chiến và đồ nghề cơ khí rất nguy hiểm, nhưng mục tiêu cao nhất của chúng ta là bảo toàn tính mạng cho mọi người và khống chế đối tượng theo đúng điều lệnh!</p>
+<p>Đúng năm giờ đúng sáng Chủ nhật, khi tổ trinh sát vừa vào vị trí tiếp cận thì bất ngờ toàn bộ hệ thống đèn chiếu sáng cao áp và camera an ninh quanh biệt thự vụt tắt ngấm.</p>
+<p>Một tiếng tách khô khốc vang lên từ phía chân cột điện hạ thế sườn đồi. Sinh đã cắt đứt đường dây điện tổng, chính thức kích hoạt cuộc xâm nhập vào hang ổ của kẻ thù.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-12" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-14" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 14 -->
+                <article class="chapter-card" id="chuong-14">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 14</div>
+                        <h3 class="chapter-main-heading">Chiếc thước mộc</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Năm giờ mười lăm phút sáng Chủ nhật. Bóng tối và màn sương mù đặc quánh bao trùm toàn bộ khu đồi thông Mường Biên.</p>
+<p>Lợi dụng hệ thống điện tổng vừa bị ngắt, Nam cùng Huy và hai trinh sát đặc nhiệm trườn qua miệng cống ngầm thoát nước ở triền dốc sườn đồi, khẽ lách vào đường ống dẫn kỹ thuật tầng hầm biệt thự. Bốn thanh chốt thép chịu lực của nắp cống đã bị kìm cắt thủy lực cắt ngọt từ trước, mép cắt nhẵn lỳ còn phảng phất mùi dầu máy.</p>
+<p>Tiến vào tầng hầm để xe, bóng tối dày đặc bao trùm. Hai nhân viên vệ sĩ tư nhân của Thao nằm bất động dưới sàn bê-tông ẩm ướt, hai tay bị khóa chặt ra sau lưng bằng dây thít nhựa công nghiệp loại dày. Mắt họ đỏ hoe, cay xè do dính hơi cay nhưng hoàn toàn tỉnh táo, không có vết thương nào nguy hiểm tính mạng. Cạnh họ, một xô nước sạch đã được mở sẵn vòi để họ tự gột rửa bớt chất cay.</p>
+<p>Một người bảo vệ run rẩy thì thào qua hơi thở hổn hển:</p>
+<p class="dialogue">— Hắn&hellip; hắn vừa cắt khóa cửa hầm&hellip; xông lên cầu thang tầng hai!</p>
+<p>Nam ra hiệu cho một trinh sát ở lại tháo dây thít và bảo đảm an toàn cho hai người gác, rồi cùng Huy và trinh sát đặc nhiệm còn lại thận trọng lướt trên bậc cầu thang gỗ sồi tiến lên tầng hai.</p>
+<p>Không gian bên trong căn biệt thự tĩnh mịch đến rợn người, chỉ có tiếng gió rít qua khe cửa kính lùa vào từ ban công. Ánh sáng le lói của buổi sớm hắt qua khung cửa sổ phòng khách rộng lớn, rọi lên những món đồ nội thất gỗ đắt tiền nhưng lạnh lẽo.</p>
+<p>Khi bước lên hành lang tầng hai, Nam nhìn thấy cánh cửa gỗ sồi của phòng làm việc cuối hành lang đang mở toang một nửa.</p>
+<p>Từ bên trong khe cửa, tiếng thở dốc nghẹn ngào và tiếng kim loại va chạm sắc lạnh vang lên rõ mồn một.</p>
+<p>Nam áp lưng vào mép tường, ra hiệu cho các trinh sát chốt chặn hai bên cửa phòng, rồi từ từ hướng mũi súng ngắn M-54 vào khoảng không gian bên trong.</p>
+<p>Căn phòng làm việc rộng thênh thang bề bộn hồ sơ và quần áo xáo trộn. Hoàng Đình Thao — người đàn ông ngoài sáu mươi tuổi, mặc chiếc áo măng-tô xám — đang ngồi bất động trên chiếc ghế bành bọc da sang trọng phía sau bàn làm việc. Cổ áo của Thao bị giật rách, một vệt máu đỏ tươi rỉ ra từ vết cứa mỏng ở hõm cổ.</p>
+<p>Phía sau lưng Thao, Trần Văn Sinh đứng sừng sững như một thân cây rừng bị sét đánh.</p>
+<p>Mười một năm lưu lạc dưới đáy xã hội đã khắc lên gương mặt Sinh những nếp nhăn già trước tuổi. Bộ quần áo công nhân dầm sương dán chặt vào lồng ngực gầy guộc đang phập phồng từng cơn thở dồn dập. Bàn tay thô ráp chai sạn với những vết sẹo bỏng thép nắm chặt cán dao nhọn bằng thép gió, lưỡi dao tì sát vào cuống họng kẻ thù.</p>
+<p>Khẩu súng ngắn công vụ M-54 của Thao bị tước văng ra, nằm chỏng chơ dưới chân tủ sách bên cạnh chiếc vali da mở toang chứa hộ chiếu và những xấp ngoại tệ.</p>
+<p>Nhìn thấy Nam cùng các trinh sát ập vào nhưng không ai siết cò, khóe môi Thao khẽ nhếch lên một tia giễu cợt. Dù lưỡi dao sắc lạnh đang tì vào cổ, ánh mắt người cựu lãnh đạo vẫn toát lên vẻ uy quyền và lạnh lùng của kẻ từng nắm quyền sinh sát. Hắn ngửa đầu ra sau, nhìn thẳng vào Nam, cất giọng trầm đục, đanh thép:</p>
+<p class="dialogue">— Cậu Nam đúng không? Các cậu đến đúng lúc đấy. Kẻ có vũ khí đang đe dọa tính mạng con tin. Theo điều lệnh tác chiến, cậu còn do dự cái gì mà chưa nổ súng hạ gục đối tượng?</p>
+<p>Thao liếc xéo lên gương mặt Sinh, giọng nói trịch thượng như đang răn đe cấp dưới:</p>
+<p class="dialogue">— Mày nghĩ một nhát dao này có thể thay đổi được phán quyết của lịch sử sao? Mười chín năm trước là một chuyên án đã có bản án hiệu lực pháp luật. Mày liên tiếp gây ra năm cái chết, giờ lại muốn hạ sát một sĩ quan điều tra đã nghỉ hưu&hellip; Mày bước qua lằn ranh này, mày sẽ vĩnh viễn khóa chặt cánh cửa công lý.</p>
+<p class="dialogue">— Câm mồm! — Sinh gằn lên qua kẽ răng, lưỡi dao ấn sâu thêm khiến máu tươi chảy dài xuống ve áo Thao.</p>
+<p>Đôi mắt Sinh đỏ quạch, long lên những tia máu dữ dội. Mười một năm uất hận dồn nén bấy lâu tuôn trào ra trong tiếng thét khản đặc, nghẹn ngào:</p>
+<p class="dialogue">— Mày vẫn mở mồm ra nói về pháp luật sao, Hoàng Đình Thao?! Mười chín năm trước chính tay mày vì tiền bảo kê hối lộ mà chỉ đạo nhét bốn mươi bánh heroin vào đáy rương của cha tao! Tụi mày bức cung, ép một người thợ mộc lương thiện vào trại giam cho đến chết uất ức! Mẹ tao khóc đến mù cả hai mắt rồi ngã bệnh chết bên bờ suối Nậm&hellip; Năm mười lăm tuổi, tao phải quỳ lạy bên hai nấm mồ đất đỏ không có lấy một tấm bia tử tế!</p>
+<p>Lưỡi dao Sinh run lên theo từng tiếng thở dốc:</p>
+<p class="dialogue">— Mười mấy năm trời tụi mày ngồi nhà cao cửa rộng, còn tao phải chui rúc lay lắt như một con chó hoang! Hít bụi đá mỏ Tây Phong, ngửi khói độc đóng tàu Hải Khê, tay chân nát bấy vì sắt thép! Tao cắn răng chịu đựng từng ấy năm chỉ để đợi đến ngày hôm nay bắt mày đền tội!</p>
+<p>Thao nhếch mép, dù cổ họng rỉ máu nhưng ánh mắt vẫn lạnh tanh:</p>
+<p class="dialogue">— Mày giết tao thì mày cũng không thoát được lưới trời! Lực lượng điều tra đang đứng ngay sau lưng mày kia kìa!</p>
+<p class="dialogue">— Tao chưa bao giờ sợ chết! — Sinh thét lên, gân xanh nổi cuộn trên trán. — Tao chỉ cần mày phải đền tội trước đất trời!</p>
+<p class="dialogue">— Trần Văn Sinh! Dừng lại! — Nam bước lên một bước, giọng trầm ấm nhưng vang rền, đầy uy lực.</p>
+<p>Nam từ từ hạ họng súng ngắn M-54 xuôi theo ống quần. Anh ra hiệu cho tổ trinh sát giữ nguyên vị trí, rồi một mình bước thẳng về phía bàn làm việc.</p>
+<p>Nam nhìn thẳng vào mắt Thao, giọng đanh thép:</p>
+<p class="dialogue">— Đừng dùng cái vỏ điều lệnh để che đậy nữa, ông Thao. Đêm thứ Sáu, Đặng Tiến Đạt đã tự thú toàn bộ. Tờ phôi lệnh xe năm 2005 có bút tích chỉ đạo của ông đã nằm trong hồ sơ phục hồi của Cơ quan Cấp cao. Lệnh cấm xuất cảnh đã thi hành, lệnh giữ người khẩn cấp đã được phê chuẩn. Chuyến bay sáng nay ông không đi đâu được nữa đâu.</p>
+<p>Nghe đến tên Đặng Tiến Đạt và tờ phôi lệnh xe năm 2005, cơ mặt Thao khẽ giật một cái. Hắn không tranh cãi hay gào thét, nhưng hai bàn tay đang bám vào thành ghế siết chặt lại đến mức các khớp ngón tay trắng bệch. Người cựu thủ trưởng điều tra từ từ khép mi mắt lại, một tiếng thở dài trầm đục thoát ra qua kẽ răng. Hắn hiểu rằng mắt xích yếu nhất mà hắn bỏ quên suốt mười chín năm trước rốt cuộc đã đập tan toàn bộ sự tính toán của cả đời mình.</p>
+<p>Nam quay sang Sinh. Chiếc thước mộc gỗ lim thật của người cha được bảo quản nguyên vẹn trong hộp kính niêm phong đặt sau lưng tổ trinh sát. Nam cẩn thận lấy từ cặp tài liệu ra <strong>bản dập giám định tỷ lệ 1:1 và tấm ảnh chụp độ phân giải cao cận cảnh từng vạch khắc mực chìm của chiếc thước lim</strong>, đặt nhẹ nhàng lên mặt bàn gỗ giữa ba người.</p>
+<p>Cạnh bản dập thước lim, Nam đặt bản sao giám định và ảnh chụp phóng đại bút tích chỉ đạo của Hoàng Đình Thao trên tờ phôi lệnh xe năm 2005.</p>
+<p>Nhìn thấy thớ gỗ lim đen bóng với những vạch khắc mực chìm quen thuộc của người cha qua bản dập chi tiết, toàn thân Sinh khẽ giật bắn. Ánh mắt anh dán chặt vào hình bóng chiếc thước mộc, lồng ngực thắt lại.</p>
+<p>Nam nhìn Sinh, giọng anh chùng xuống, mộc mạc và chân thành:</p>
+<p class="dialogue">— Sinh à. Mười một năm qua anh chịu đựng bao nhiêu cay đắng, tủi nhục, chúng tôi đều biết. Nỗi oan khiên của gia đình anh, cả thung lũng bản Dền đều thấu hiểu. Nhưng anh nhìn chiếc thước lim này xem! Cụ già thợ mộc ở bản Dền trao cho tôi, cụ nhắc lại lời ông Cửu từng dạy anh thuở nhỏ: <em>“Cái cây gỗ trong rừng có cong queo thì mình đẽo cho thẳng được, chứ cái bụng người mình mà cong queo thì dựng cái nhà nào lên rồi cũng sập thôi con à.”</em> Cha anh sống ngay thẳng như chiếc thước mộc này. Ông chết trong oan khuất, nhưng danh dự của ông chưa bao giờ bị vấy bẩn!</p>
+<p>Sinh nhìn trừng trừng vào bản dập chiếc thước. Đôi bàn tay thô ráp của anh bắt đầu run rẩy.</p>
+<p>Nam bước thêm nửa bước, giọng trầm xuống đầy trăn trở:</p>
+<p class="dialogue">— Sinh! Đừng bước qua nấc thang cuối cùng! Đừng khóa nốt con đường sống để giải oan cho cha anh giữa thanh thiên bạch nhật! Hồ sơ gốc đã phục hồi, lệnh bắt Thao đã có. Hắn phải đứng trước tòa nhận tội trước công luận! Anh hạ nhát dao này xuống, cha anh sẽ mãi mãi chỉ là cái cớ cho một vụ thảm sát đẫm máu. Anh muốn linh hồn cha anh được ngẩng đầu giải oan giữa thanh thiên bạch nhật, hay muốn bẻ gãy luôn chiếc thước lim ngay thẳng của ông?!</p>
+<p>Một khoảng lặng thăm thẳm bao trùm căn phòng. Gió rừng thông sớm rít qua khe cửa kính, lạnh buốt.</p>
+<p>Những đường gân trên trán Sinh giật giật. Bàn tay nắm cán dao run lên bần bật. Nước mắt trào ra khỏi khóe mắt đỏ hoe của Sinh, lăn dài qua gò má sạm đen, chảy qua những vết sẹo bỏng kim loại rồi rơi xuống mặt bàn gỗ, ngay cạnh bản dập thớ gỗ lim của cha.</p>
+<p>Ngón tay anh run rẩy, từ từ nới lỏng chuôi dao.</p>
+<p><em>Keng&hellip;</em></p>
+<p>Lưỡi dao thép gió rơi xuống sàn gỗ, vang lên âm thanh khô khốc.</p>
+<p>Hòn sỏi suối thứ sáu trong lòng bàn tay trái của Sinh cũng tuột khỏi kẽ tay, lăn lông lốc trên nền gỗ rồi dừng lại bên mép chân bàn làm việc.</p>
+<p>Sinh thở hắt ra một hơi dài run rẩy, như vừa trút bỏ được ngọn núi đá đè nặng suốt hơn mười năm đằng đẵng. Anh buông Thao ra, lùi lại hai bước, đưa hai bàn tay gầy guộc cáu bẩn ra phía trước.</p>
+<p>Giọng anh nghẹn ngào trong tiếng nấc:</p>
+<p class="dialogue">— Tôi xin hàng&hellip; Ba vụ tai nạn ở Quỳnh Lâm, Tây Phong, Hải Khê&hellip; cả ông Tư và lão Vượng&hellip; đều do một tay tôi làm. Toàn bộ kíp nổ phụ, van cơ khí và sổ ghi chép tính toán thực nghiệm tôi giấu kỹ dưới hốc đá chân cầu bến đò Lũng Nậm&hellip; Xin các anh&hellip; mang chiếc thước mộc này về lại bàn thờ cha tôi ở bản Dền.</p>
+<p>Huy bước tới, nhanh chóng tra chiếc còng số tám vào cổ tay Sinh một cách cẩn trọng.</p>
+<p>Ngay lập tức, Nam bước thẳng tới bàn làm việc, dõng dạc đọc quyết định:</p>
+<p class="dialogue">— Hoàng Đình Thao! Thay mặt Cơ quan Điều tra Cấp cao, tôi công bố lệnh giữ người trong trường hợp khẩn cấp đối với ông do có dấu hiệu nghi vấn liên quan đến hành vi lạm dụng chức vụ, quyền hạn và làm sai lệch hồ sơ vụ án trong Chuyên án năm 2005!</p>
+<p>Hai trinh sát đặc nhiệm tiến lên khóa tay Thao ra sau lưng, tra còng số tám, đồng thời thu hồi khẩu súng ngắn M-54, niêm phong toàn bộ vali tiền mặt, vé máy bay và hộ chiếu trên bàn.</p>
+<p>Hoàng Đình Thao ngồi bất động, hai mắt đờ đẫn nhìn bản dập chiếc thước mộc gỗ lim đang nằm ngay ngắn giữa ánh bình minh rạng rỡ của núi rừng biên viễn.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-13" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#chuong-15" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- CHƯƠNG 15 -->
+                <article class="chapter-card" id="chuong-15">
+                    <div class="chapter-header-wrap">
+                        <div class="chapter-num-tag">Chương 15</div>
+                        <h3 class="chapter-main-heading">Ánh sáng thung lũng</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Mười tám tháng sau rạng sáng đột kích trên đỉnh đồi thông Mường Biên.</p>
+<p>Một buổi sáng mùa thu trong trẻo, thị xã Mường Biên chìm trong làn gió thu biên viễn mát rượi. Tại Hội trường Tòa án Cấp cao, Phiên tòa Đại hình đặc biệt xét xử Kỳ án Lũng Nậm năm 2005 chính thức tuyên án trước sự theo dõi nghẹt thở của đông đảo người dân địa phương và các cơ quan truyền thông.</p>
+<p>Bản cáo trạng và hồ sơ thực nghiệm điều tra được đại diện Viện Công tố công bố chi tiết trước tòa, làm sáng tỏ toàn bộ chuỗi cơ chế cơ học mà người con thợ mộc đã chủ động khai báo tỉ mỉ trong quá trình hợp tác điều tra. Từng cái chết ngụy trang tai nạn suốt ba năm đầu — từ vụ rút chốt giá gỗ ở xưởng cưa Quỳnh Lâm, vụ kích nổ nêm nén kép tại mỏ đá Tây Phong, đến việc khóa chốt van thông gió và mở đường cấp khí trơ argon trong buồng kín tàu Hải Khê — đều được bóc tách rành mạch qua các bản vẽ kỹ thuật và mô hình vật lý. Toàn bộ kíp nổ phụ, van cơ khí và cuốn sổ tay ghi chép tính toán thực nghiệm thu hồi nguyên vẹn dưới hốc đá bến đò Lũng Nậm hoàn toàn trùng khớp với kết quả giám định thực nghiệm.</p>
+<p>Trước vành móng ngựa, bản cung của Sinh được công bố đã làm sáng tỏ lý do người con thợ mộc cẩn thận lưu giữ toàn bộ kho vật chứng tự buộc tội mình: Suốt mười một năm bôn ba dưới đáy xã hội, Sinh hiểu rằng sau khi đối mặt với kẻ chủ mưu, nếu không có hồ sơ kỹ thuật và vật chứng nguyên bản đối chứng, cái chết của những kẻ vu khống sẽ mãi mãi bị xem là tai nạn ngẫu nhiên, còn nỗi oan khuất của cha anh sẽ vĩnh viễn chìm vào bóng tối. Từ những vụ tai nạn cơ giới khép kín suốt ba năm đầu, đến nhát siết lộ diện tại Hạ An kéo cơ quan điều tra vào cuộc phong tỏa kẻ chủ mưu, kho vật chứng và cuốn sổ tay chính là bản hồ sơ giải mã sự thật và nhận tội trước công lý do anh chuẩn bị sẵn để buộc pháp luật phải tái thẩm định vụ án 2005, đồng thời chấp nhận trả giá cho chính hành vi phạm tội của bản thân.</p>
+<p>Trong không gian trang nghiêm và tĩnh lặng của phòng xử án, tiếng búa gỗ của vị Chủ tọa phiên tòa vang lên dõng dạc từng hồi dứt khoát. </p>
+<p>Hội đồng Thẩm phán tuyên phạt bị cáo Hoàng Đình Thao mức án Tù Chung thân về các tội danh Lạm dụng chức vụ, quyền hạn trong khi thi hành công vụ, Vu khống tư pháp, Nhận hối lộ và Tổ chức đường dây tội phạm xuyên vùng. Người cựu thủ trưởng điều tra đứng cúi gục đầu trước vành móng ngựa, hai bàn tay run rẩy bám vào thanh chắn gỗ. </p>
+<p>Đối với Đặng Tiến Đạt, Tòa án tuyên phạt mức án ba năm tù cho hưởng án treo về tội Che giấu tội phạm, ghi nhận sự chủ động tự thú và công lao giao nộp toàn bộ tài liệu chứng cứ gốc phục vụ công tác tái thẩm. Đạt đón nhận phán quyết với một gương mặt bình thản — bản án treo đối với ông là sự cởi bỏ hoàn toàn cho món nợ lương tâm đày đọa suốt mười chín năm qua. </p>
+<p>Trước hoàn cảnh bi kịch gia đình và động cơ phạm tội của Trần Văn Sinh, Tòa án xem xét toàn diện thái độ thành khẩn hợp tác, ghi nhận việc bị cáo chủ động bảo toàn nguyên vẹn kho vật chứng thực nghiệm để làm căn cứ pháp lý giải oan cho cha mẹ và tự nguyện buông vũ khí trước di vật chiếc thước mộc, quyết định áp dụng chính sách khoan hồng đặc biệt để tha tội chết, tuyên phạt bị cáo mức án Tù Chung thân.</p>
+<p>Đặc biệt, trong sự xúc động nghẹn ngào của đông đảo nhân dân vùng cao, Hội đồng Thẩm phán long trọng tuyên bố hủy bỏ toàn bộ bản án oan sai năm 2005, chính thức phục hồi danh dự, nhân phẩm và thực hiện các thủ tục bồi thường tư pháp cho người thợ mộc lương thiện Trần Văn Cửu trước công luận.</p>
+<hr />
+<p>Sau phiên tòa, Nam cùng Giáo sư Lê Đăng Khoa trở lại thung lũng bản Dền để tham dự buổi lễ cải chính minh oan và gắn biển di tích xưởng mộc truyền thống cho ông Cửu.</p>
+<p>Giữa thung lũng bản Dền ngập tràn sắc vàng của nắng thu, dòng suối Nậm trong vắt róc rách chảy qua bãi đá tròn. Những nếp nhà sàn mái tranh xám xịt thơm nồng mùi khói củi thông và gỗ lim mới đốn. Trên bàn thờ gian xưởng mộc cũ ven suối, chiếc thước mộc bằng gỗ lim đen bóng với những vạch khắc mực chìm mòn vẹt nằm ngay ngắn giữa làn khói nhang trầm nghi ngút, bên cạnh tấm biển ghi nhận danh dự người thợ mộc lương thiện.</p>
+<p>Dưới bãi cuội ven bờ suối, những đứa trẻ bản Dền quây quần bên bờ nước, cùng cất tiếng hát bài đồng dao cổ bằng chính ngôn ngữ Lũng Nậm nguyên bản:</p>
+<p><em>Nừng thày — bạ mạy hua nặm,</em><br />
+<em>Sóng thày — nhả khảm phia hin,</em><br />
+<em>Xảm thày — mác muồng nả bẩu,</em><br />
+<em>Xí thày — pa nặm vảng sâu,</em><br />
+<em>Hả thày — tha đò bến lạnh,</em><br />
+<em>Hốc thày — mạy lim dăng trời.</em></p>
+<p>Đứng bên hiên ngôi nhà sàn truyền thống nhìn ra dòng suối, Giáo sư Lê Đăng Khoa lật cuốn sách khảo cứu dân ca cổ vừa xuất bản, chậm rãi ngâm khẽ bản dịch thơ lục bát tiếng phổ thông hoàn chỉnh trong làn gió thu xào xạc:</p>
+<p><em>Một sỏi nhặt lá me rơi,</em><br />
+<em>Hai sỏi gai nhọn cào phơi vách đèo.</em><br />
+<em>Ba sỏi hạt đắng lưng đèo,</em><br />
+<em>Bốn sỏi xương cá lạnh theo thác ngàn.</em><br />
+<em>Năm sỏi bến nước đò tan,</em><br />
+<em>Sáu sỏi thước mộc giải oan đất trời.</em></p>
+<p>Tiếng ngâm thơ của Giáo sư Khoa vừa dứt, một cảm giác ấm áp và thanh thản lan tỏa trong tâm hồn Nam.</p>
+<p>Bàn tay Nam khẽ chạm vào thân cột gỗ pơ-mu cũ của xưởng mộc. Ánh mắt anh hướng về chiếc thước mộc bằng gỗ lim đen bóng đang nằm bình yên giữa làn khói nhang trầm trên bàn thờ, rồi nhìn xuống dòng nước suối Nậm trong vắt róc rách trôi qua những bãi cuội xám tròn nhẵn thó.</p>
+<p>Mười chín năm oan khiên đã được gột rửa sạch sẽ. Công lý không chỉ được thực thi trên những trang án văn bản pháp luật lạnh lùng, mà đã trở về đúng nơi chốn thiêng liêng nhất trong lòng người dân thung lũng.</p>
+<p>Dưới bãi cuội ven suối, một đứa trẻ bản Dền buông tay ném hòn sỏi tròn ra giữa dòng nước.</p>
+<p>Mặt nước trong vắt khẽ chao nghiêng, những vòng sóng tròn xoe lan tỏa ra xa, rồi tan biến nhẹ nhàng vào dòng chảy ngàn năm của đại ngàn biên viễn.</p>
+<hr />
+<p>Một tuần sau phiên tòa, Nam trở về thị trấn Hạ An. Anh từ chối lời đề nghị điều chuyển công tác lên đơn vị cấp trên, quyết định tiếp tục gắn bó với Đội Điều tra Trọng án vùng hạ lưu ven sông.</p>
+<p>Buổi sớm mùa thu trong lành, con ngõ nhỏ phố Đò Cũ rộn rã tiếng người mua bán. Dưới mái bạt quen thuộc mé bờ sông Lam Châu, gánh hàng cháo sườn của mẹ anh vẫn nghi ngút khói thơm.</p>
+<p>Nam kéo chiếc ghế đòn gỗ nhỏ ngồi xuống bên cạnh mẹ, đón lấy bát cháo nóng hổi rắc nhiều tiêu sọ và hành hoa xanh mướt.</p>
+<p>Bà mỉm cười hiền từ nhìn con trai, khẽ vuốt lại nếp áo cho anh:</p>
+<p class="dialogue">— Ăn đi con, cháo mẹ vừa múc còn nóng lắm.</p>
+<p>Hơi ấm từ chiếc bát sành truyền qua lòng bàn tay. Nam bưng thìa cháo nóng đưa lên miệng. Ngoài bờ sông, dòng nước Lam Châu phẳng lặng trôi xuôi dưới ánh nắng sớm mùa thu.</p>
+                    </div>
+                    <div class="chapter-footer-nav">
+                        <a href="#chuong-14" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
+                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
+                        <a href="#appendix-1" class="chapter-nav-btn">Phụ lục <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </article>
+                
+        <!-- PHỤ LỤC 1 -->
+        <section class="appendix-card" id="appendix-1">
+            <h3 class="appendix-heading">PHỤ LỤC 1: BÀI ĐỒNG DAO ĐẾM SỎI LŨNG NẬM</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; text-align: justify;">
+                Bài đồng dao đếm 6 nấc sỏi là trò chơi truyền miệng ngàn đời của trẻ con đồng bào bản Dền, thung lũng Lũng Nậm bên dòng suối Nậm. Dưới đây là văn bản nguyên tác đối chiếu bản dịch thơ tiếng phổ thông của Giáo sư Lê Đăng Khoa:
+            </p>
+            <div style="overflow-x: auto;">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">Nấc</th>
+                            <th style="width: 45%;">Nguyên tác tiếng Lũng Nậm cổ</th>
+                            <th style="width: 40%;">Bản dịch thơ Lục bát phổ thông</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Hòn 1</strong></td>
+                            <td><em>Nừng thày — bạ mạy hua nặm</em></td>
+                            <td>Một sỏi nhặt lá me rơi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hòn 2</strong></td>
+                            <td><em>Sóng thày — nhả khảm phia hin</em></td>
+                            <td>Hai sỏi gai nhọn cào phơi vách đèo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hòn 3</strong></td>
+                            <td><em>Xảm thày — mác muồng nả bẩu</em></td>
+                            <td>Ba sỏi hạt đắng lưng đèo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hòn 4</strong></td>
+                            <td><em>Xí thày — pa nặm vảng sâu</em></td>
+                            <td>Bốn sỏi xương cá lạnh theo thác ngàn</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hòn 5</strong></td>
+                            <td><em>Hả thày — tha đò bến lạnh</em></td>
+                            <td>Năm sỏi bến nước đò tan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hòn 6</strong></td>
+                            <td><em>Hốc thày — mạy lim dăng trời</em></td>
+                            <td>Sáu sỏi thước mộc giải oan đất trời</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PHỤ LỤC 2 -->
+        <section class="appendix-card" id="appendix-2">
+            <h3 class="appendix-heading">PHỤ LỤC 2: MA TRẬN 6 VẬT CHỨNG & PHÁP CHỨNG</h3>
+            <div style="overflow-x: auto;">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Nấc</th>
+                            <th>Nạn nhân / Đối tượng</th>
+                            <th>Địa bàn</th>
+                            <th>Vật chứng</th>
+                            <th>Cơ chế kỹ thuật / Pháp chứng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Hoàng Văn Nhẫn (Lò Văn Thìn)</td>
+                            <td>Rừng Quỳnh Lâm (2021)</td>
+                            <td>1 lá me rừng khô</td>
+                            <td>Rút chốt giá gỗ xưởng cưa</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Phạm Văn Sáu (Sùng A Đở)</td>
+                            <td>Mỏ đá Tây Phong (2022)</td>
+                            <td>2 mẩu dây gai rừng</td>
+                            <td>Kích nổ nêm nén vách đá vôi</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Đặng Văn Mười (Bàn Văn Chắt)</td>
+                            <td>Cảng Hải Khê (2023)</td>
+                            <td>3 hạt muồng đen khô</td>
+                            <td>Khóa van khí trơ buồng đáy tàu</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Nguyễn Văn Tư (Lý Văn Mằn)</td>
+                            <td>Hạ An (2024)</td>
+                            <td>4 bộ xương cá bống đá</td>
+                            <td>Siết cổ cơ học & D-Alkaloid Đoan Đắng</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Bùi Văn Vượng (Nhân chứng gian)</td>
+                            <td>Bến suối Lũng Nậm (2024)</td>
+                            <td>5 hòn sỏi suối xám chì</td>
+                            <td>Nhát đâm bó mạch nách lính trinh sát</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Hoàng Đình Thao (Kẻ chủ mưu)</td>
+                            <td>Biệt thự Mường Biên (2024)</td>
+                            <td>Chiếc thước mộc gỗ lim</td>
+                            <td>Bút tích phôi lệnh xe TN-1479 & Cưa đĩa 4mm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- LỜI BẠT -->
+        <section class="appendix-card" id="author-note">
+            <h3 class="appendix-heading">LỜI BẠT CỦA TÁC GIẢ HOÀNG TÙNG</h3>
+            <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1rem;">
+                <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ XRF sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
+            </p>
+            <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem;">
+                Hình ảnh chiếc thước mộc bằng gỗ lim của người thợ mộc Trần Văn Cửu — với những vết khắc mòn vẹt sau mười chín năm oan khuất — chính là chiếc neo đạo đức bất biến. Dù giông bão thời cuộc hay sự toan tính cá nhân có bẻ cong những phán quyết tạm thời, thì sự ngay thẳng và phẩm giá của người lao động lương thiện vẫn luôn tìm được con đường trở về với ánh sáng.
+            </p>
+            <p style="text-align: right; font-style: italic; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                <strong>Tác giả: Hoàng Tùng</strong><br>
+                Hạ An – Mường Biên – Mùa thu 2026
+            </p>
+        </section>
+
+    </main>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="btn-back-top" id="btn-back-top" title="Lên đầu trang">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div style="font-family: 'Cinzel', serif; font-size: 1.1rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">
+            SÁU HÒN SỎI
+        </div>
+        <p>Tiểu thuyết Trinh thám Procedural Noir • Tác giả: Hoàng Tùng</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-muted);">
+            Bản quyền tác phẩm © 2026 Hoàng Tùng. Mọi quyền được bảo lưu.
+        </p>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT -->
+    <script>
+        // Init Lucide icons
+        lucide.createIcons();
+
+        // Reading Progress
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+
+            // Back to top button visibility
+            const backTop = document.getElementById('btn-back-top');
+            if (winScroll > 400) {
+                backTop.classList.add('visible');
+            } else {
+                backTop.classList.remove('visible');
+            }
+        });
+
+        // Back to top click
+        document.getElementById('btn-back-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Drawer Toggle
+        const drawer = document.getElementById('drawer');
+        const overlay = document.getElementById('drawer-overlay');
+        const btnToc = document.getElementById('btn-toc');
+        const btnCloseDrawer = document.getElementById('btn-close-drawer');
+
+        function openDrawer() {
+            drawer.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        function closeDrawer() {
+            drawer.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        btnToc.addEventListener('click', openDrawer);
+        btnCloseDrawer.addEventListener('click', closeDrawer);
+        overlay.addEventListener('click', closeDrawer);
+
+        // Close drawer when clicking TOC link
+        document.querySelectorAll('.toc-item-link').forEach(link => {
+            link.addEventListener('click', closeDrawer);
+        });
+
+        // Theme Toggle (Dark / Light / Sepia)
+        const themeBtns = document.querySelectorAll('#theme-selector .seg-btn');
+        const btnThemeNav = document.getElementById('btn-theme');
+        const themes = ['dark', 'light', 'sepia'];
+
+        function setTheme(t) {
+            document.documentElement.setAttribute('data-theme', t);
+            themeBtns.forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-theme') === t);
+            });
+            localStorage.setItem('novel_theme', t);
+        }
+
+        themeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                setTheme(btn.getAttribute('data-theme'));
+            });
+        });
+
+        btnThemeNav.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme') || 'dark';
+            const nextIdx = (themes.indexOf(current) + 1) % themes.length;
+            setTheme(themes[nextIdx]);
+        });
+
+        // Font Selector
+        const fontBtns = document.querySelectorAll('#font-selector .seg-btn');
+        function setFont(f) {
+            document.documentElement.setAttribute('data-font', f);
+            fontBtns.forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-font') === f);
+            });
+            localStorage.setItem('novel_font', f);
+        }
+
+        fontBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                setFont(btn.getAttribute('data-font'));
+            });
+        });
+
+        // Font Size Adjuster
+        const btnFontSize = document.getElementById('btn-font-size');
+        const fontSizes = ['0.95rem', '1.08rem', '1.2rem', '1.35rem'];
+        let currentSizeIdx = 1;
+
+        btnFontSize.addEventListener('click', () => {
+            currentSizeIdx = (currentSizeIdx + 1) % fontSizes.length;
+            document.documentElement.style.setProperty('--content-font-size', fontSizes[currentSizeIdx]);
+        });
+
+        // Restore saved settings
+        const savedTheme = localStorage.getItem('novel_theme');
+        if (savedTheme) setTheme(savedTheme);
+        const savedFont = localStorage.getItem('novel_font');
+        if (savedFont) setFont(savedFont);
+    </script>
+</body>
+</html>

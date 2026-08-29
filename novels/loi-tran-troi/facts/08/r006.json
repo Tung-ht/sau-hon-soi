@@ -1,0 +1,93 @@
+{
+  "chapter": 8,
+  "revision": "r006",
+  "created_at": "2026-08-29T18:22:30+07:00",
+  "summary": "11:00-15:00 trưa - chiều thứ Hai tại Mường Biên, Hội đồng Giám định tư pháp mở niêm phong cỗ rương 2005. Kỹ sư Dũng bóc tách 3 tầng ngụy tạo chứng minh ông Cửu bị oan sai. Lần ra mắt xích xe TN-1479 của Đặng Tiến Đạt và Thao sắp xuất cảnh. 15:30 về Hạ An; 21:30 đối chất với Đạt; Đạt tự thú bi kịch 19 năm và giao nộp phôi lệnh xe gốc có bút tích của Thao cùng nhật ký công tác. Sáng thứ Ba tạm giữ Đạt, cấm xuất cảnh Thao. 21:00 thứ Ba trở lại Mường Biên.",
+  "timeline_events": [
+    {
+      "time": "Trưa - Chiều thứ Hai, 11:00-15:00",
+      "event": "Hội đồng Giám định tư pháp liên ngành tại Mường Biên mở niêm phong cỗ rương 2005; Kỹ sư Dũng giám định vết cưa đĩa đa lưỡi và keo Poly-resin; phát hiện mắt xích xe TN-1479 của Đạt và kế hoạch xuất cảnh của Thao.",
+      "chapter": 8
+    },
+    {
+      "time": "Tối thứ Hai, 21:30",
+      "event": "Nam đối chất với Chỉ huy Đặng Tiến Đạt tại Hạ An; Đạt tự thú nguồn cơn án oan 2005, giao nộp phôi lệnh xe gốc có bút tích Thao và nhật ký công tác 19 năm.",
+      "chapter": 8
+    },
+    {
+      "time": "Sáng thứ Ba, 08:00",
+      "event": "Cơ quan Cấp cao phục hồi Chuyên án 2005; tạm giữ Đạt; ban hành Lệnh Cấm Xuất cảnh đối với Thao.",
+      "chapter": 8
+    },
+    {
+      "time": "Tối thứ Ba, 21:00",
+      "event": "Nam cùng tổ đặc nhiệm cơ động lên xe đặc chủng trở lại Mường Biên.",
+      "chapter": 8
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_dat_guilt",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Đặng Tiến Đạt tự thú, giải tỏa bản án lương tâm 19 năm và giao nộp toàn bộ tài liệu gốc"
+    },
+    {
+      "id": "fs_dat_complicity",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Đặng Tiến Đạt tự thú, giao nộp bản phôi lệnh xe gốc có bút tích của Thao và bị tạm giữ"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 8
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 8
+    },
+    {
+      "name": "Kỹ sư Phạm Văn Dũng",
+      "brief_role": "Chuyên gia giám định cơ học gỗ độc lập",
+      "first_seen": 7,
+      "last_seen": 8
+    },
+    {
+      "name": "Lâm Văn Thành",
+      "brief_role": "Đội trưởng Hình sự Mường Biên",
+      "first_seen": 7,
+      "last_seen": 8
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án Hạ An",
+      "first_seen": 1,
+      "last_seen": 8
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Đặng Tiến Đạt",
+      "status": "Đối chất chân lý và thấu hiểu bi kịch thầy trò",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "case_proof_secured",
+      "value": "original_manuscript_orders_retrieved",
+      "chapter": 8
+    }
+  ],
+  "dependencies": [
+    "07"
+  ]
+}

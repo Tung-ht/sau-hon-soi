@@ -1,0 +1,56 @@
+{
+  "chapter": 3,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.586422",
+  "summary": "Tối thứ Ba, Nam và Huy đi ca-nô ra bãi xác tàu Cửa Lác khám sà-lan của Lê Văn Long. Lấy mẫu xỉ hàn và vỏ que hàn HK-7018M; XRF xác nhận cùng nhóm Cr-Mo. Lịch sà-lan trùng 3 địa bàn tai nạn cũ (Quỳnh Lâm, Tây Phong, Hải Khê). Long có mối thù gia đình từ vụ Lũng Nậm 2005. Nhật ký máy tàu bị xóa đè 6 giờ đêm thứ Hai.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Ba, 19:30-22:30",
+      "event": "Khám sà-lan Lê Văn Long tại Cửa Lác; thu xỉ hàn HK-7018M; phát hiện nhật ký máy tàu bị xóa đè 6h.",
+      "chapter": 3
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C02",
+      "description": "Que hàn HK-7018M và tỷ lệ Cr-Mo tương thích xỉ hiện trường N4",
+      "action": "advance",
+      "status": "active"
+    },
+    {
+      "id": "C04",
+      "description": "Mối thù gia đình người em trai thợ mộc của Long tại Lũng Nậm 2005",
+      "action": "introduce",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 3,
+      "last_seen": 3
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 3,
+      "last_seen": 3
+    },
+    {
+      "name": "Lê Văn Long",
+      "brief_role": "",
+      "first_seen": 3,
+      "last_seen": 3
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "",
+      "first_seen": 3,
+      "last_seen": 3
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

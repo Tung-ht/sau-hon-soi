@@ -1,0 +1,61 @@
+{
+  "chapter": 10,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.610251",
+  "summary": "Trưa và chiều thứ Sáu, Hội đồng Giám định mở niêm phong cỗ rương 2005: kính hiển vi soi nổi phát hiện vết cưa đĩa đa lưỡi và keo nhiệt Poly-resin; vách ngăn là gỗ thông ép Xưởng cưa số 2 thuộc người nhà Thao. Hồ sơ giải mật: 4 kẻ áp tải là N1-N4, nhân chứng là N5, lệnh xe TN-1479 do Đạt ký nhận. Huy phát hiện Thao sắp xuất cảnh sáng Chủ nhật. 16:00 Nam/Huy lên xe chạy về Hạ An.",
+  "timeline_events": [
+    {
+      "time": "Trưa thứ Sáu, 11:00-15:00",
+      "event": "Giám định cỗ rương phát hiện đáy giả cưa đĩa đa lưỡi và keo Poly-resin; phát hiện lệnh xe Đạt ký.",
+      "chapter": 10
+    },
+    {
+      "time": "Chiều thứ Sáu, 16:00-19:30",
+      "event": "Nam và Huy chạy hỏa tốc về Hạ An.",
+      "chapter": 10
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C11",
+      "description": "Kết cấu đáy rương cơ giới cưa đĩa đa lưỡi và keo nhiệt Poly-resin của Xưởng cưa số 2",
+      "action": "introduce",
+      "status": "active"
+    },
+    {
+      "id": "C12",
+      "description": "Lệnh xuất xe đặc chủng TN-1479 do Trung úy Đặng Tiến Đạt ký nhận năm 2005",
+      "action": "introduce",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 10,
+      "last_seen": 10
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 10,
+      "last_seen": 10
+    },
+    {
+      "name": "Kỹ sư Lâm nghiệp Phạm Văn Dũng",
+      "brief_role": "",
+      "first_seen": 10,
+      "last_seen": 10
+    },
+    {
+      "name": "Điều tra viên Lâm Văn Thành",
+      "brief_role": "",
+      "first_seen": 10,
+      "last_seen": 10
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

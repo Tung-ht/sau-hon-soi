@@ -1,0 +1,50 @@
+{
+  "chapter": 9,
+  "revision": "r004",
+  "created_at": "2026-08-29T18:08:50+07:00",
+  "summary": "Thao cố thủ trong biệt thự đồi thông; Sinh trinh sát đèo Gió cắt cáp thử nghiệm; Nam cùng tổ đặc nhiệm phát hiện dấu vết cơ khí của Sinh trên đỉnh đèo Gió và triển khai 3 mũi đột kích lúc 05:40 sáng Chủ nhật.",
+  "timeline_events": [
+    {
+      "time": "Đêm thứ Bảy - Rạng sáng Chủ nhật, 00:00-05:00",
+      "event": "Tổ điều tra bám sát Mường Biên; Sinh vượt đèo Gió cắt cáp trinh sát biệt thự Thao.",
+      "chapter": 9
+    },
+    {
+      "time": "Sáng Chủ nhật, 05:00-05:40",
+      "event": "Nam phát hiện dấu vết kìm cắt thủy lực và mẩu cáp thử nghiệm trên đỉnh đèo Gió; triển khai 3 mũi đột kích biệt thự Thao.",
+      "chapter": 9
+    }
+  ],
+  "foreshadow_updates": [],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 9
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 9
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Cựu Phó Thủ trưởng CQĐT Mường Biên",
+      "first_seen": 9,
+      "last_seen": 9
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "climax_approaching",
+      "value": "villa_raid_launched",
+      "chapter": 9
+    }
+  ],
+  "dependencies": [
+    "08"
+  ]
+}

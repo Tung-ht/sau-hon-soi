@@ -1,0 +1,93 @@
+{
+  "characters": [
+    {
+      "id": "Dang_Hoang_Nam",
+      "name": "Đặng Hoàng Nam",
+      "role": "Điều tra viên chính (ĐTV / I)",
+      "personality": "Điềm tĩnh, sắc bén, kiểm tra quyền lực bằng chứng cứ thay vì lòng trung thành mù quáng, khiêm nhường trước đời sống cần lao.",
+      "arc": "Từ sự kính trọng và tin cậy vào hai thế hệ tiền bối (P và M), từng bước phát hiện các vết rạn đạo đức và chứng cứ che giấu, dũng cảm đưa cả hệ thống ra trước ánh sáng pháp lý mà không mất đi sự thấu cảm."
+    },
+    {
+      "id": "Tran_Van_Sinh",
+      "name": "Trần Văn Sinh",
+      "role": "Kẻ báo thù (K) / Ba thợ cắt",
+      "personality": "Khắc khổ, kiên định, thợ cơ khí lành nghề, cựu trinh sát cơ động (2008-2013); có nguyên tắc không làm hại người vô tội; khao khát công lý và muốn được hệ thống pháp luật ngăn lại đúng lúc.",
+      "arc": "Mang mối hận thù 19 năm và hành trình truy tìm 11 năm, thực hiện 5 vụ trừng phạt có tính toán; thức tỉnh trước di vật chiếc thước mộc của cha và việc vụ án oan được phục hồi, chủ động buông dao và giao nộp kho thực nghiệm tự thú."
+    },
+    {
+      "id": "Dang_Tien_Dat",
+      "name": "Đặng Tiến Đạt",
+      "role": "Chỉ huy Đội Điều tra Trọng án Hạ An (M)",
+      "personality": "Trầm lặng, dằn vặt lương tâm suốt 19 năm vì bị Thao ép tham gia vụ án 2005; mang mặc cảm tội lỗi sâu sắc.",
+      "arc": "Bí mật nhận thư cảnh báo từ K từ năm 2021, tra cứu dữ liệu và lén gửi cảnh báo nhưng không dám công khai vì hèn nhát; tự ý đi xe riêng lên Lũng Nậm cảnh báo N5; đối chất với Nam, giao nộp bản nháp lệnh xe và nhật ký, chấp nhận bị tạm giữ để chuộc lỗi."
+    },
+    {
+      "id": "Hoang_Dinh_Thao",
+      "name": "Hoàng Đình Thao",
+      "role": "Chủ mưu Chuyên án 2005 (P)",
+      "personality": "Xảo quyệt, am hiểu tâm lý điều tra, uy tín cao trong xã hội với vai trò Chủ tịch danh dự Quỹ An sinh Lam Châu, cựu Phó Chỉ huy điều tra; nói đúng một nửa sự thật để đánh lạc hướng.",
+      "arc": "Xuất hiện sớm như một tiền bối đức cao vọng trọng hỗ trợ tổ án; ngầm bẻ hướng điều tra khỏi vụ án 2005; khi bị lộ, dùng luật sư và quyền lực trì hoãn để trốn thoát; bị bó chứng cứ độc lập và sự đối chất của Nam khuất phục tại tòa án cấp cao."
+    },
+    {
+      "id": "Le_Van_Long",
+      "name": "Lê Văn Long",
+      "role": "Chủ xưởng cứu hộ và trục vớt sà-lan (L / Long Sà-lan)",
+      "personality": "Thô ráp, ít lời, mang di chứng nghề lặn sâu (ù tai, sẹo áp suất); có thù với vụ án cũ vì em trai phụ việc bị ép cung phát điên rồi chết.",
+      "arc": "Nghi phạm vật chứng nặng ký đầu vụ án vì sà-lan đi qua 3 địa bàn và que hàn xỉ khớp xưởng; nói dối để giấu việc làm chui và cho 'Ba' làm thuê; được minh oan giết người qua dữ liệu máy tàu; hỗ trợ giao sổ vật tư kết nối với mạng lưới của P."
+    },
+    {
+      "id": "Tran_Van_Huy",
+      "name": "Trần Văn Huy",
+      "role": "Trinh sát điều tra",
+      "personality": "Năng nổ, nhạy bén, thẳng thắn chất vấn các điểm nghi vấn nội bộ, cộng sự tin cậy số một của Nam."
+    },
+    {
+      "id": "Chin_Gu",
+      "name": "Chín Gù",
+      "role": "Chủ vựa phế liệu ven sông Lam Châu",
+      "personality": "Lưng còng, sắc sảo giang hồ, cung cấp manh mối ban đầu về người thợ cơ khí Ba."
+    },
+    {
+      "id": "Bac_Si_Phong",
+      "name": "Bác sĩ Phong",
+      "role": "Giám định viên pháp y",
+      "personality": "Thận trọng, khoa học, chỉ đưa ra kết luận sơ bộ phù hợp thẩm quyền, phân tích độc chất D-Alkaloid Mường Biên."
+    },
+    {
+      "id": "Ky_Thuat_Vien_Quang",
+      "name": "Kỹ thuật viên Quang",
+      "role": "Cán bộ kỹ thuật hình sự",
+      "personality": "Tỉ mỉ, chuyên thu thập và bảo quản vi sợi, soi kính hiển vi lập thể và phân tích quang phổ XRF."
+    },
+    {
+      "id": "Bui_Van_Vuong",
+      "name": "Bùi Văn Vượng",
+      "role": "Nhân chứng gian năm 2005 (N5)",
+      "personality": "Lão lái đò bến suối Lũng Nậm, tham tiền khai man buộc tội ông Cửu, sống trong sợ hãi trước khi bị K sát hại rạng sáng thứ Sáu."
+    },
+    {
+      "id": "Giao_Su_Le_Dang_Khoa",
+      "name": "Giáo sư Lê Đăng Khoa",
+      "role": "Chuyên gia văn hóa dân gian Bảo tàng",
+      "personality": "Uyên bác, giải mã nguồn gốc thổ cẩm bản Dền và bài đồng dao đếm sỏi nguyên tác tiếng Lũng Nậm."
+    },
+    {
+      "id": "Truong_Ban_Lo_Van_Ban",
+      "name": "Trưởng bản Lò Văn Ban",
+      "role": "Trưởng bản Dền, thung lũng Lũng Nậm",
+      "personality": "Chân chất, kể lại chân dung ngay thẳng của người thợ mộc Cửu và thảm kịch gia đình."
+    },
+    {
+      "id": "Cu_Gia_Tho_Moc",
+      "name": "Cụ già thợ mộc bản Dền",
+      "role": "Người lưu giữ di vật chiếc thước mộc",
+      "personality": "Lão luyện, chân tình, trao lại chiếc thước mộc gỗ lim của ông Cửu cho ĐTV Nam như một lời gửi gắm lương tâm."
+    },
+    {
+      "id": "Me_Nam",
+      "name": "Mẹ ĐTV Nam",
+      "role": "Người mẹ bán cháo sườn góc chợ Đò Cũ",
+      "personality": "Tần tảo, ấm áp, bến đỗ bình yên của Nam mở đầu và khép lại tác phẩm."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "chapter": 7,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.601201",
+  "summary": "Tối thứ Năm, audit an ninh mạng cho thấy tài khoản Đạt đã tra cứu cả 5 nạn nhân N1-N5 trước mỗi vụ việc. Nam tìm Đạt đối chất thì phát hiện Đạt tự lái xe SUV xanh rêu rời trụ sở không lệnh. 21:00 Nam và Huy xuất phát ngược ngàn. Camera trạm đèo Gió ghi nhận xe Đạt chạy trước tổ án hơn 1 giờ.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Năm, 18:30-20:15",
+      "event": "Nam phát hiện audit tra cứu 5 nạn nhân; Đạt lái xe riêng rời trụ sở.",
+      "chapter": 7
+    },
+    {
+      "time": "Đêm thứ Năm, 21:00-22:00",
+      "event": "Nam và Huy lên đường vượt đèo Gió; camera đèo ghi nhận xe Đạt đi trước.",
+      "chapter": 7
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C07",
+      "description": "Dấu vết di chuyển xe SUV xanh rêu của Đạt lên Mường Biên trong đêm",
+      "action": "advance",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 7,
+      "last_seen": 7
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 7,
+      "last_seen": 7
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 7,
+      "last_seen": 7
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

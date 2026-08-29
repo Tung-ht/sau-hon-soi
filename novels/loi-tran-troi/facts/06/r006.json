@@ -1,0 +1,82 @@
+{
+  "chapter": 6,
+  "revision": "r006",
+  "created_at": "2026-08-29T16:56:00+07:00",
+  "summary": "Đến Trụ sở Công an xã Lũng Nậm xuất trình công lệnh, sau đó cùng công an xã xuống bản Dền gặp Trưởng bản Lò Văn Ban và cụ Mộc. Nghe kể bi kịch thợ mộc Trần Văn Cửu bị vu khống trong án ma túy 2005. Nam trả lời thận trọng về 4 nạn nhân; cụ Mộc nhìn 4 túi bùa tăng dần, nhớ lại nhóm 4 kẻ áp tải năm xưa và nhận ra nghi phạm chính là Trần Văn Sinh. Cụ Mộc trao chiếc thước mộc gỗ lim để đánh thức lương tri Sinh. Huy tra cứu vệ tinh xác nhận Sinh học cơ khí và phục vụ trinh sát cơ động (2008-2013). 05:45 nhận tin báo Bùi Văn Vượng bị giết tại bến đò.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Sáu, 04:30-05:00",
+      "event": "Xe đặc chủng đến Trụ sở Công an xã Lũng Nậm; Nam xuất trình văn bản ủy thác điều tra khẩn cấp.",
+      "chapter": 6
+    },
+    {
+      "time": "Sáng thứ Sáu, 05:15-05:45",
+      "event": "Tổ công tác cùng công an xã xuống bản Dền làm việc với Trưởng bản Lò Văn Ban và cụ Mộc; Nam đặt giả thuyết thận trọng; cụ Mộc nhận diện Sinh từ 4 túi bùa; tiếp nhận chiếc thước mộc gỗ lim; Huy đối soát vệ tinh lý lịch cơ khí và quân ngũ xác định Sinh là thợ Ba.",
+      "chapter": 6
+    },
+    {
+      "time": "Sáng thứ Sáu, 05:45",
+      "event": "Nhận tin báo khẩn cấp lão lái đò Bùi Văn Vượng bị sát hại tại bến đò Lũng Nậm cách bản Dền 3 km.",
+      "chapter": 6
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_father_ruler",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Tiếp nhận chiếc thước mộc gỗ lim di vật của ông Cửu để đánh thức lương tri Sinh"
+    },
+    {
+      "id": "fs_oan_sai_2005",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Cụ Mộc nhớ lại 4 tên áp tải hàng năm 2005 tương ứng 4 túi bùa tăng dần"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 6
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 6
+    },
+    {
+      "name": "Trưởng bản Lò Văn Ban",
+      "brief_role": "Trưởng bản Dền",
+      "first_seen": 6,
+      "last_seen": 6
+    },
+    {
+      "name": "Cụ Mộc",
+      "brief_role": "Thợ già bạn nghề của ông Cửu tại bản Dền",
+      "first_seen": 6,
+      "last_seen": 6
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Cụ Mộc",
+      "status": "Trao gửi niềm tin đánh thức lương tri",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "suspect_identified",
+      "value": "tran_van_sinh_recon_soldier",
+      "chapter": 6
+    }
+  ],
+  "dependencies": [
+    "05"
+  ]
+}

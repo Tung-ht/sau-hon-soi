@@ -1,0 +1,23 @@
+{
+  "chapter": 3,
+  "title": "Mảnh đồng dao",
+  "goal": "Bắt Tùng tại bến xe; thẩm vấn chuẩn điều lệnh minh oan cho Tùng; giải mã bài đồng dao đếm sỏi cổ và Cú nhảy số 1, 2, 3, 4 -> 6 (The Missing 5th); lần ra địa danh Lũng Nậm ở Mường Biên.",
+  "scenes": [
+    "4h30 sáng đón lõng bắt Tùng tại bến xe khách liên tỉnh",
+    "Hỏi cung chuẩn điều lệnh: Tùng giải thích alibi và lý do gạch tên ông Tư vì nghe còi cứu thương đêm qua",
+    "Đức gửi kết quả xác minh alibi vững chắc của Tùng",
+    "Tùng và Nam đối chiếu 5 lời trăn trối, phát hiện bài đồng dao đếm sỏi cổ và cú nhảy số 1, 2, 3, 4 -> 6 (thiếu hòn 5)",
+    "Gọi điện cho bà Nhu nghe bài đồng dao tiếng Mường cổ, xác định địa danh suối Lũng Nậm",
+    "Báo cáo Trung tá Đạt: Đạt cảnh báo về vụ án oan 2005 của Trần Văn Cửu nhưng ký giấy giới thiệu"
+  ],
+  "required_beats": [
+    "Xưng hô điều lệnh chuẩn mực anh - tôi trong phòng hỏi cung",
+    "Giải mã bài đồng dao tiếng Mường cổ (khum = hòn sỏi)",
+    "Phân tích cú twist The Missing 5th: tại sao người thứ 5 lại đọc câu thứ 6",
+    "Cảnh báo của Trung tá Đạt về bản án oan ma túy năm 2005"
+  ],
+  "payoff_points": [
+    "Minh oan cho Tùng, biến Tùng thành cộng sự giải mã; tìm ra nguồn gốc Lũng Nậm"
+  ],
+  "hook_goal": "Mảnh đồng dao dẫn về vụ án ma túy năm 2005 với người bị kết án oan Trần Văn Cửu"
+}

@@ -1,0 +1,75 @@
+{
+  "chapter": 2,
+  "revision": "r005",
+  "created_at": "2026-08-29T18:00:00+07:00",
+  "summary": "Phát hiện nhân thân Nguyễn Văn Tư là giả mạo; thẩm vấn Chín Gù (có bằng chứng ngoại phạm); Chín Gù khai ra thợ Ba cắt sà-lan trốn chạy; phát hiện biên lai chuyển tiền 60 triệu từ Hải Khê. Chỉ huy Đạt sang phòng án, thoáng ngập ngừng trước ảnh hiện trường và chỉ đạo dồn quân đánh hướng Hải Khê.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Năm, 08:30-10:00",
+      "event": "Đối soát nhân thân xác định Nguyễn Văn Tư dùng ID giả của người đã chết 10 năm trước.",
+      "chapter": 2
+    },
+    {
+      "time": "Trưa thứ Năm, 10:00-12:30",
+      "event": "Thẩm vấn Chín Gù; xác minh bằng chứng ngoại phạm; Chín Gù khai báo về sự biến mất của thợ Ba.",
+      "chapter": 2
+    },
+    {
+      "time": "Chiều thứ Năm, 14:00-15:30",
+      "event": "Khám chòi hoang ven đê; phát hiện biên lai 60 triệu từ Hải Khê; Đạt ngập ngừng chỉ đạo mở mũi Hải Khê.",
+      "chapter": 2
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_dat_guilt",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Đạt thoáng ngập ngừng trước ảnh hiện trường ông Tư và chỉ đạo dồn quân về Hải Khê"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án Hạ An",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Chín Gù",
+      "brief_role": "Chủ bãi phế liệu sà-lan",
+      "first_seen": 2,
+      "last_seen": 2
+    },
+    {
+      "name": "Ba thợ cắt",
+      "brief_role": "Thợ cắt kim loại (Nhân vật ẩn danh)",
+      "first_seen": 2,
+      "last_seen": 2
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "suspect_profile",
+      "value": "ba_metal_cutter_on_the_run",
+      "chapter": 2
+    }
+  ],
+  "dependencies": [
+    "01"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "chapter": 10,
+  "revision": "r003",
+  "created_at": "2026-08-29T17:51:15+07:00",
+  "summary": "Đột kích tầng hầm biệt thự; phát hiện Sinh đã vô hiệu hóa bảo vệ bằng hơi cay và dây thít nhựa mà không sát hại; lên tầng 2 thấy Sinh đang kề dao vào cổ Thao và rút ra hòn sỏi thứ 6.",
+  "timeline_events": [
+    {
+      "time": "Sáng Chủ nhật, 05:45-06:00",
+      "event": "Tổ đặc nhiệm đột kích tầng hầm biệt thự; phát hiện bảo vệ bị trói an toàn; tiếp cận phòng làm việc tầng 2 bắt gặp Sinh đang khống chế Thao.",
+      "chapter": 10
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_charm_pouches",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Sinh rút ra hòn sỏi thứ 6 chuẩn bị kết thúc chuỗi báo thù"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 10
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 10
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Cựu Phó Thủ trưởng CQĐT Mường Biên",
+      "first_seen": 9,
+      "last_seen": 10
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Kẻ báo thù / Ba thợ cắt",
+      "first_seen": 10,
+      "last_seen": 10
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "confrontation_imminent",
+      "value": "hostage_situation_active",
+      "chapter": 10
+    }
+  ],
+  "dependencies": [
+    "09"
+  ]
+}

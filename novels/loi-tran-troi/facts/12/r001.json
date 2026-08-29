@@ -1,0 +1,66 @@
+{
+  "chapter": 12,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.618309",
+  "summary": "Sáng thứ Bảy (08:30), Sinh gọi điện từ Mường Biên đặt hạn chót: nếu trước bình minh mai không bắt Thao sẽ thi hành hòn sỏi thứ 6. Nam thông báo án 2005 đã mở lại và Cửu vô tội. 11:00 Lê Văn Long nộp sổ vật tư 2005 liên kết xưởng cứu hộ và xưởng cưa Thao. 15:00 phê chuẩn Lệnh giữ người khẩn cấp Thao. 17:00 tổ đặc nhiệm hành quân lên Mường Biên.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Bảy, 08:30-09:00",
+      "event": "Sinh gọi điện đặt hạn chót bình minh Chủ nhật; Nam thông báo án phục hồi.",
+      "chapter": 12
+    },
+    {
+      "time": "Trưa thứ Bảy, 11:00-12:00",
+      "event": "Long nộp sổ vật tư 2005 liên kết xưởng cưa Thao.",
+      "chapter": 12
+    },
+    {
+      "time": "Chiều thứ Bảy, 15:00-17:00",
+      "event": "Phê chuẩn Lệnh giữ Thao; tổ đặc nhiệm hành quân thần tốc lên Mường Biên.",
+      "chapter": 12
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C13",
+      "description": "Cuốn sổ vật tư 2005 của Lê Văn Long kết nối gia công thép với xưởng của Thao",
+      "action": "introduce",
+      "status": "active"
+    },
+    {
+      "id": "C06",
+      "description": "Hạn chót bình minh Chủ nhật ứng với câu thứ 6 mạy lim dăng trời",
+      "action": "advance",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 12,
+      "last_seen": 12
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 12,
+      "last_seen": 12
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "",
+      "first_seen": 12,
+      "last_seen": 12
+    },
+    {
+      "name": "Lê Văn Long",
+      "brief_role": "",
+      "first_seen": 12,
+      "last_seen": 12
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

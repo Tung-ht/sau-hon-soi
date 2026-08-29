@@ -1,0 +1,71 @@
+{
+  "chapter": 7,
+  "revision": "r007",
+  "created_at": "2026-08-29T17:34:00+07:00",
+  "summary": "Khám nghiệm hiện trường Bùi Văn Vượng tại bến đò Lũng Nậm phối hợp cùng ĐTV Lâm Văn Thành; thu giữ túi bùa thứ 5 (5 hòn sỏi suối); Nam và Huy phân tích bước chuyển chiến thuật cận chiến và tâm lý kẻ săn lùng. 08:30 đến Kho lưu trữ Mường Biên, người quản lý kho giải thích hồ sơ mật đình chỉ 19 năm cần lệnh Viện Cấp cao; gửi báo cáo khẩn. 10:45 nhận Quyết định 48 của Viện Công tố Cấp cao phê chuẩn mở kho vật chứng.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Sáu, 06:00-08:00",
+      "event": "Phối hợp cùng ĐTV Lâm Văn Thành khám nghiệm hiện trường vụ sát hại Bùi Văn Vượng tại bến đò Lũng Nậm; thu giữ túi bùa thổ cẩm thứ 5 chứa 5 hòn sỏi suối; phân tích bước chuyển chiến thuật cận chiến.",
+      "chapter": 7
+    },
+    {
+      "time": "Sáng thứ Sáu, 08:30-10:45",
+      "event": "Đến Kho lưu trữ Tư pháp Mường Biên; người quản lý yêu cầu lệnh Viện Cấp cao để mở hồ sơ mật đình chỉ 2005; gửi báo cáo khẩn; 10:45 nhận Quyết định số 48 của Viện Công tố Cấp cao phê chuẩn mở kho vật chứng.",
+      "chapter": 7
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_charm_pouches",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Thu giữ túi bùa thứ 5 chứa 5 hòn sỏi suối tại bến đò Lũng Nậm"
+    },
+    {
+      "id": "fs_oan_sai_2005",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Viện Công tố Cấp cao phê chuẩn mở niêm phong hồ sơ mật và vật chứng Chuyên án 2005"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Lâm Văn Thành",
+      "brief_role": "Đội trưởng Hình sự Công an huyện Mường Biên",
+      "first_seen": 7,
+      "last_seen": 7
+    },
+    {
+      "name": "Bùi Văn Vượng",
+      "brief_role": "Lão lái đò Lũng Nậm (Nạn nhân thứ 5)",
+      "first_seen": 7,
+      "last_seen": 7
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "case_scope",
+      "value": "high_prosecutor_reopens_2005_case",
+      "chapter": 7
+    }
+  ],
+  "dependencies": [
+    "06"
+  ]
+}

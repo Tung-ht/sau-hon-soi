@@ -1,0 +1,50 @@
+{
+  "chapter": 11,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.614299",
+  "summary": "Tối thứ Sáu (21:30), đối chất Chỉ huy Đặng Tiến Đạt tại Hạ An. Đạt tự thú toàn bộ vụ án 2005 bị Thao đe dọa rút súng M-54 ép ký lệnh xe. Đạt mở két sắt nộp bản nháp Lệnh xuất xe TN-1479 có bút tích chỉ đạo của Thao và cuốn nhật ký công tác 2005. Cơ quan Cấp cao tạm giữ Đạt, phát lệnh cấm xuất cảnh khẩn cấp Thao. Đạt dặn Nam ngăn Sinh.",
+  "timeline_events": [
+    {
+      "time": "Đêm thứ Sáu, 21:30-23:45",
+      "event": "Đối chất Đạt; Đạt tự thú, nộp bản nháp lệnh xe TN-1479 và nhật ký; tạm giữ Đạt; cấm xuất cảnh Thao.",
+      "chapter": 11
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C12",
+      "description": "Thu giữ bản nháp gốc Lệnh xe TN-1479 có bút tích của Thao và nhật ký công tác của Đạt",
+      "action": "advance",
+      "status": "active"
+    },
+    {
+      "id": "C07",
+      "description": "Giải mã động cơ theo dõi của Đạt là ám ảnh tội lỗi và tìm cách cứu vãn",
+      "action": "resolve",
+      "status": "resolved"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 11,
+      "last_seen": 11
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 11,
+      "last_seen": 11
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 11,
+      "last_seen": 11
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

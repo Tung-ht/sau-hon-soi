@@ -1,0 +1,76 @@
+{
+  "chapter": 7,
+  "revision": "r005",
+  "created_at": "2026-08-29T17:18:00+07:00",
+  "summary": "Khám nghiệm hiện trường vụ sát hại Bùi Văn Vượng tại bến đò Lũng Nậm; thu giữ túi bùa thứ 5 (5 hòn sỏi suối); Nam và Huy phân tích bước chuyển chiến thuật cận chiến và tâm lý kẻ săn lùng. 08:30 đến Kho lưu trữ Mường Biên mở hồ sơ Chuyên án 2005; Kỹ sư Dũng giám định cưa đĩa đa lưỡi đáy rương; phát hiện Thao sắp xuất cảnh. 12:30 quay về Hạ An.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Sáu, 06:00",
+      "event": "Khám nghiệm hiện trường vụ sát hại Bùi Văn Vượng tại bến đò Lũng Nậm; thu giữ túi bùa thổ cẩm thứ 5 chứa 5 hòn sỏi suối; phân tích bước chuyển chiến thuật cận chiến.",
+      "chapter": 7
+    },
+    {
+      "time": "Sáng thứ Sáu, 08:30-11:30",
+      "event": "Mở hồ sơ gốc Chuyên án 2005 tại Kho lưu trữ Tư pháp Mường Biên; Kỹ sư Dũng kết luận đáy rương bị làm giả bằng cưa đĩa công nghiệp; phát hiện Thao chuẩn bị xuất cảnh chiều Chủ Nhật.",
+      "chapter": 7
+    },
+    {
+      "time": "Trưa thứ Sáu, 12:30",
+      "event": "Nam và Huy lên xe đặc chủng quay về Hạ An để đối chất với Chỉ huy Đạt.",
+      "chapter": 7
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_charm_pouches",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Thu giữ túi bùa thứ 5 chứa 5 hòn sỏi suối tại bến đò Lũng Nậm"
+    },
+    {
+      "id": "fs_oan_sai_2005",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Giám định kỹ thuật khẳng định đáy rương gỗ pơ-mu bị xẻ bằng cưa đĩa công nghiệp"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 7
+    },
+    {
+      "name": "Bùi Văn Vượng",
+      "brief_role": "Lão lái đò Lũng Nậm (Nạn nhân thứ 5)",
+      "first_seen": 7,
+      "last_seen": 7
+    },
+    {
+      "name": "Kỹ sư Phạm Văn Dũng",
+      "brief_role": "Chuyên gia giám định cơ học gỗ độc lập",
+      "first_seen": 7,
+      "last_seen": 7
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "case_scope",
+      "value": "frame_up_2005_exposed",
+      "chapter": 7
+    }
+  ],
+  "dependencies": [
+    "06"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "chapter": 2,
+  "title": "Vệt dầu",
+  "goal": "Bốn ngày sau khi vụ án bế tắc: nhận kết luận giám định pháp y chính thức; Đức từ Bình Nguyên gọi điện sau khi đọc Thông báo nghiệp vụ C02 kết nối chuỗi 5 vụ án mạng; lần ra tiệm Tùng Computer và phát hiện cuộc đào tẩu của Tùng.",
+  "scenes": [
+    "Bốn ngày bế tắc; Bác sĩ pháp y Phong trả kết luận: chết ngạt, rút 15ml máu tĩnh mạch, vết dầu phế liệu, dấu giày cỡ 45 quá khổ",
+    "Khoảng lặng đời thường: Nam ghé gánh bánh của bà Tư ngoài chợ, ăn bát cháo nóng mẹ nấu",
+    "Đức (Phòng CSHS Bình Nguyên) gọi điện sau khi đọc Bản tin thông báo nghiệp vụ C02: tiết lộ chuỗi 5 án mạng và lý do bế tắc của 4 vụ trước",
+    "Huy rà soát nhật ký tàng thư số hóa phát hiện IP tiệm Tùng Computer",
+    "22h đêm ập vào tiệm: Tùng vừa bỏ trốn, để lại bát mì nóng, cuốn sổ 5 cái tên (tên ông Tư bị gạch mực tươi) và vé xe khách"
+  ],
+  "required_beats": [
+    "Cảm giác bế tắc 4 ngày qua của Đội CSHS Hạ An",
+    "Kết quả giám định mẫu máu tĩnh mạch và vệt dầu máy phế liệu",
+    "Gánh cháo sườn mẹ Tư góc chợ",
+    "Cuộc gọi của Đức kết nối chuỗi 5 vụ án và giải thích lý do 4 vụ trước bị tạm đình chỉ",
+    "Khám xét tiệm Tùng Computer và phát hiện cuốn sổ bìa đen"
+  ],
+  "payoff_points": [
+    "Kết nối vụ án Hạ An với chuỗi án mạng 4 tỉnh; minh giải lý do công an bế tắc"
+  ],
+  "hook_goal": "Tùng bỏ trốn lúc nửa đêm để lại cuốn sổ có tên ông Tư bị gạch mực tươi"
+}

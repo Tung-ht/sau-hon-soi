@@ -1,0 +1,96 @@
+{
+  "chapter": 11,
+  "revision": "r002",
+  "created_at": "2026-08-29T07:05:00+07:00",
+  "summary": "Nam đưa bản sao giám định bút tích Thao và đặt chiếc thước mộc gỗ lim lên bàn đối thoại. Thao tự biện về đại cục vùng biên nhưng bị Nam bác bỏ. Sinh thức tỉnh buông dao và hòn sỏi thứ 6, chấp nhận đầu hàng, giải thích lý do cất giữ kho vật chứng thực nghiệm để phục hồi danh dự cho cha và nhận tội trước công lý. Đặc nhiệm đọc lệnh bắt giữ khẩn cấp, tước vũ khí và còng tay Hoàng Đình Thao tại chỗ.",
+  "timeline_events": [
+    {
+      "time": "Chủ nhật, 06:10-06:30",
+      "event": "Nam đặt chiếc thước mộc gỗ lim và bản sao giám định bút tích Thao lên bàn; Thao tự biện về đại cục vùng biên; Nam thuyết phục Sinh; Sinh thức tỉnh buông dao và hòn sỏi thứ 6.",
+      "chapter": 11
+    },
+    {
+      "time": "Chủ nhật, 06:35",
+      "event": "Sinh tự nguyện tra tay vào còng số 8 đầu hàng, khai báo vị trí giấu hồ sơ thực nghiệm giải oan dưới chân cầu bến đò Lũng Nậm; đặc nhiệm đọc lệnh bắt khẩn cấp và còng tay Hoàng Đình Thao tại chỗ.",
+      "chapter": 11
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_charm_pouches",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Hòn sỏi thứ 6 rơi xuống sàn; chuỗi báo thù dừng lại trước chiếc thước mộc"
+    },
+    {
+      "id": "fs_father_ruler",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Chiếc thước mộc thức tỉnh lương tri của Sinh và giải oan cho người cha"
+    },
+    {
+      "id": "fs_oan_sai_2005",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Hoàng Đình Thao bị bắt giữ, chuỗi chứng cứ Chuyên án 2005 được giải mã hoàn toàn"
+    },
+    {
+      "id": "fs_ba_tho_cat",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Ba thợ cắt chính là Trần Văn Sinh; đã tự thú và giao nộp vũ khí"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Kẻ báo thù đã tự thú",
+      "first_seen": 9,
+      "last_seen": 11
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Kẻ chủ mưu bị bắt giữ",
+      "first_seen": 9,
+      "last_seen": 11
+    },
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 11
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Trần Văn Sinh",
+      "status": "Sự thấu hiểu nhân cách và thực thi pháp luật nghiêm minh",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "thao_state",
+      "value": "arrested_under_warrant",
+      "chapter": 11
+    },
+    {
+      "key": "sinh_state",
+      "value": "surrendered_and_confessed",
+      "chapter": 11
+    }
+  ],
+  "dependencies": [
+    "10"
+  ]
+}

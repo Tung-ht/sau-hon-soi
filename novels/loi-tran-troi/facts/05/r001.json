@@ -1,0 +1,62 @@
+{
+  "chapter": 5,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.594683",
+  "summary": "Sáng thứ Năm, Bác sĩ Phong công bố độc chất D-Alkaloid rễ Đoan Đắng tích lũy do N4 uống giảm hoảng loạn. Khám chòi trạm bơm thu mỏ cắt hơi Tây Phong và que hàn HK-7018M. Giám định số bóc tách phôi thẻ Trần Hữu Bằng, làm lộ 4 danh tính giả N1-N4 và chuỗi 4 túi bùa tăng dần (1 lá me -> 2 dây gai -> 3 hạt muồng -> 4 xương cá). Đạt ký công văn ủy thác khẩn.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Năm, 08:00-11:30",
+      "event": "Công bố độc chất D-Alkaloid; khám chòi bơm; đối soát 4 nạn nhân N1-N4 và 4 túi bùa.",
+      "chapter": 5
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "description": "Xác lập chuỗi cấp số cộng 4 túi bùa thổ cẩm",
+      "action": "advance",
+      "status": "active"
+    },
+    {
+      "id": "C05",
+      "description": "Bốn nạn nhân mua cùng đợt phôi thẻ giả từ đường dây Trần Hữu Bằng",
+      "action": "introduce",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 5,
+      "last_seen": 5
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 5,
+      "last_seen": 5
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 5,
+      "last_seen": 5
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "",
+      "first_seen": 5,
+      "last_seen": 5
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "",
+      "first_seen": 5,
+      "last_seen": 5
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

@@ -1,0 +1,69 @@
+{
+  "chapter": 2,
+  "revision": "r002",
+  "created_at": "2026-08-29T07:15:00+07:00",
+  "summary": "Tra cứu tàng thư xác định thẻ định danh của Nguyễn Văn Tư là giả. Ngoại tuyến vựa phế liệu Chín Gù bên sông Lam Châu (Chín Gù có alibi vững chắc). Chín Gù cung cấp manh mối về thợ Ba cắt thép tay nghề cao. Khám xét chòi hoang thì thợ Ba đã rời đi. Xuất hiện tờ biên lai chuyển tiền phụ tùng Hải Khê. Chuẩn hóa show don't tell và danh xưng.",
+  "timeline_events": [
+    {
+      "time": "Thứ Tư, 08:00",
+      "event": "Đối soát tàng thư hộ tịch xác định thẻ định danh của Nguyễn Văn Tư là giả, xuất phát từ phôi thẻ của đường dây làm giả giấy tờ bị triệt phá 4 năm trước.",
+      "chapter": 2
+    },
+    {
+      "time": "Thứ Tư, 10:00-12:00",
+      "event": "Trinh sát ngoại tuyến Chín Gù; xác minh alibi quán nhậu bến đò bãi sông Lam Châu; Chín Gù khai về thợ Ba cắt thép.",
+      "chapter": 2
+    },
+    {
+      "time": "Thứ Tư, 14:00",
+      "event": "Khám xét chòi bơm nước bỏ hoang ven đê sông Lam Châu; thợ Ba đã thu dọn hành lý rời đi.",
+      "chapter": 2
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_ba_tho_cat",
+      "description": "Danh tính và hành tung thật sự của thợ Ba cắt thép lành nghề",
+      "action": "plant",
+      "status": "active",
+      "notes": "Thợ Ba tá túc chòi hoang và rời đi ngay sau án mạng"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 2
+    },
+    {
+      "name": "Chín Gù",
+      "brief_role": "Chủ vựa phế liệu ven sông Lam Châu",
+      "first_seen": 2,
+      "last_seen": 2
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Chín Gù",
+      "status": "Điều tra viên và người cung cấp thông tin ngoại tuyến",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "victim_identity",
+      "value": "fake_id_covert_resident",
+      "chapter": 2
+    }
+  ],
+  "dependencies": [
+    "01"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "chapter": 9,
+  "revision": "r002",
+  "created_at": "2026-08-29T07:15:00+07:00",
+  "summary": "00:00 Chủ nhật tiếp cận Mường Biên. Thao dùng luật sư khiếu nại thủ tục để cố thủ trong biệt thự với vệ sĩ riêng. 05:00-05:40 sáng phát hiện dấu vết trinh sát của Sinh trên đồi thông; xe chở luật sư nổ máy chuẩn bị đi nộp đơn khiếu nại. Tổ đặc nhiệm khép vòng vây.",
+  "timeline_events": [
+    {
+      "time": "Chủ nhật, 00:00",
+      "event": "Tổ đặc nhiệm tiếp cận đồi thông thị xã Mường Biên, bố trí vòng vây ngoại tuyến.",
+      "chapter": 9
+    },
+    {
+      "time": "Chủ nhật, 05:00-05:40",
+      "event": "Phát hiện dấu vết trinh sát của Sinh trên đèo Gió nhìn xuống biệt thự Thao; xe chở luật sư của Thao nổ máy lúc 05:30.",
+      "chapter": 9
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_ba_tho_cat",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Sinh chuẩn bị hòn sỏi thứ 6 và công cụ đột kích biệt thự"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 9
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 9
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Kẻ chủ mưu Chuyên án 2005",
+      "first_seen": 9,
+      "last_seen": 9
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Kẻ báo thù (Ba thợ cắt)",
+      "first_seen": 9,
+      "last_seen": 9
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "tactical_state",
+      "value": "perimeter_secured_ready_for_entry",
+      "chapter": 9
+    }
+  ],
+  "dependencies": [
+    "08"
+  ]
+}

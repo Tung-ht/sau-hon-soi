@@ -1,0 +1,25 @@
+{
+  "chapter": 8,
+  "title": "Bóng đè Lũng Nậm",
+  "goal": "Nam và Tùng thoát khỏi vòng vây của cảnh sát địa phương trong rừng phòng hộ Lũng Nậm; thâm nhập trạm kiểm lâm cũ trích xuất nhật ký tuần tra rừng năm 2005 và bàng hoàng phát hiện Trung tá Đạt chính là người lái xe dẫn đường cho đoàn xe ma túy năm xưa.",
+  "scenes": [
+    "Cuộc chạy trốn nghẹt thở trong rừng già Lũng Nậm trước sự truy đuổi của cảnh sát cơ động Mường Biên",
+    "Trú ẩn tại Trạm quản lý bảo vệ rừng bỏ hoang lưng chừng núi; Tùng kết nối bẻ khóa cơ sở dữ liệu nhật ký kiểm lâm năm 2005",
+    "Trích xuất biên bản trực ca đêm 14/11/2005: Đoàn 3 xe tải chở ma túy vượt biên trót lọt nhờ xe U-oát công an dẫn đường",
+    "Đối chiếu tàng thư phát hiện người trực tiếp lái xe dẫn đường là Đại úy Đặng Tiến Đạt; sự sụp đổ niềm tin của Nam"
+  ],
+  "required_beats": [
+    "Không gian rừng già Tây Bắc ẩm ướt, dốc đá trơn trượt",
+    "Quá trình Tùng khai thác nhật ký tuần tra rừng nguyên bản",
+    "Bức tranh toàn cảnh về chuyến hàng ma túy khủng năm 2005",
+    "Cú sốc tâm lý dữ dội của Nam khi phát hiện vết nhơ của người thầy"
+  ],
+  "forbidden_moves": [
+    "Không để Nam và Tùng giao tranh vũ lực với lực lượng công an Mường Biên",
+    "Không để Nam tuyệt vọng bỏ cuộc"
+  ],
+  "payoff_points": [
+    "Phơi bày vai trò của Trung tá Đạt trong chuyên án oan 19 năm trước"
+  ],
+  "hook_goal": "Sự thật về người thầy lộ diện, Nam thề đưa kẻ chủ mưu quyền lực nhất ra trước ánh sáng"
+}

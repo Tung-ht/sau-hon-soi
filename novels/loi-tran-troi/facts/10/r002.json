@@ -1,0 +1,56 @@
+{
+  "chapter": 10,
+  "revision": "r002",
+  "created_at": "2026-08-29T07:20:00+07:00",
+  "summary": "05:45 sáng Chủ nhật, Sinh dùng kìm cắt thủy lực cắt chốt cống ngầm, dùng hơi cay và dây thít nhựa khống chế 2 bảo vệ tư nhân dưới hầm rồi lên tầng 2 tước súng M-54 và kề dao vào cổ Thao. Nam và đặc nhiệm ập vào phòng làm việc. Tiết chế văn phong theo chuẩn Noir.",
+  "timeline_events": [
+    {
+      "time": "Chủ nhật, 05:45-06:00",
+      "event": "Sinh cắt chốt cống ngầm, dùng hơi cay và dây thít nhựa khống chế 2 bảo vệ tư nhân dưới hầm (mở vòi nước rửa mắt cho họ) rồi lên tầng 2 tước súng M-54 của Thao.",
+      "chapter": 10
+    },
+    {
+      "time": "Chủ nhật, 06:05",
+      "event": "Nam cùng tổ đặc nhiệm trườn qua cống ngầm, tiếp cận hành lang tầng 2 phòng làm việc của Thao.",
+      "chapter": 10
+    }
+  ],
+  "foreshadow_updates": [],
+  "cast": [
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Kẻ báo thù",
+      "first_seen": 9,
+      "last_seen": 10
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Kẻ chủ mưu",
+      "first_seen": 9,
+      "last_seen": 10
+    },
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 10
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 10
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "standoff_state",
+      "value": "hostage_confrontation_in_study",
+      "chapter": 10
+    }
+  ],
+  "dependencies": [
+    "09"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "chapter": 8,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.603218",
+  "summary": "Sáng thứ Sáu (04:30), đến bản Dền Lũng Nậm. Trưởng bản Ban và Cụ già thợ mộc kể biến cố 2005 của thợ mộc Trần Văn Cửu bị P bắt oan rồi chết trong tù. Cụ Mộc trao chiếc thước mộc gỗ lim di vật gửi cho Sinh. Đối soát quân ngũ xác nhận Ba thợ cắt là Trần Văn Sinh (cựu trinh sát). 05:45 nhận tin Bùi Văn Vượng bị giết tại bến đò và xe Đạt xuất hiện gần đó.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Sáu, 04:30-05:45",
+      "event": "Đến bản Dền; Cụ Mộc trao thước mộc di vật; xác nhận danh tính Trần Văn Sinh; tin báo án mạng bến đò.",
+      "chapter": 8
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C08",
+      "description": "Chiếc thước mộc gỗ lim di vật của người thợ mộc Trần Văn Cửu",
+      "action": "introduce",
+      "status": "active"
+    },
+    {
+      "id": "C09",
+      "description": "Trần Văn Sinh là cựu lính trinh sát cơ động có kỹ năng cận chiến và cơ khí",
+      "action": "introduce",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 8,
+      "last_seen": 8
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 8,
+      "last_seen": 8
+    },
+    {
+      "name": "Trưởng bản Ban",
+      "brief_role": "",
+      "first_seen": 8,
+      "last_seen": 8
+    },
+    {
+      "name": "Cụ già thợ mộc (Cụ Mộc)",
+      "brief_role": "",
+      "first_seen": 8,
+      "last_seen": 8
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "",
+      "first_seen": 8,
+      "last_seen": 8
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

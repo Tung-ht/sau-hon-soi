@@ -1,0 +1,52 @@
+{
+  "world_setting": {
+    "era": "Đương đại, bối cảnh trinh thám noir hư cấu trung tính",
+    "narrative_pov": "Ngôi thứ ba giới hạn (Third-Person Limited POV) tập trung theo chân Điều tra viên Nam.",
+    "provinces": [
+      "Hạ An (vùng hạ lưu ven sông Lam Châu)",
+      "Quỳnh Lâm (vùng rừng xẻ gỗ)",
+      "Tây Phong (vùng mỏ đá)",
+      "Hải Khê (vùng cửa biển đóng tàu)",
+      "Mường Biên (vùng núi cao biên viễn)",
+      "Lũng Nậm (thung lũng bản Dền)"
+    ],
+    "travel_time_rule": "Khoảng cách đường bộ từ Hạ An lên Mường Biên / Lũng Nậm là 130km đường đèo dốc; xe đặc chủng xuất phát lúc 21:00 đêm thứ Năm và tiến vào bản Dền lúc 04:30 sáng thứ Sáu (hơn 7.5 giờ di chuyển đêm liên tục qua đèo Gió hiểm trở trong sương mù dày đặc). Chuyến về chiều thứ Sáu mất hơn 3.5 giờ do đường thông quang đãng.",
+    "timeline_separation": "Vụ sát hại Bùi Văn Vượng xảy ra rạng sáng thứ Sáu tại bến suối Lũng Nậm (03:00-04:00); Đạt tự thú đêm thứ Sáu tại Hạ An (21:30-23:45); vụ đột kích biệt thự Hoàng Đình Thao xảy ra rạng sáng Chủ Nhật (05:45-06:35).",
+    "weapon_rule": "Súng ngắn công vụ tiêu chuẩn M-54 mang tính hư cấu trung tính.",
+    "tobacco_rule": "Thuốc lá bao bạc Lam Ngàn (nhãn hiệu nội địa hư cấu).",
+    "legal_framework": "Hệ thống tố tụng trung tính gồm Cơ quan Điều tra Cấp cao, Viện Công tố Cấp cao, Hội đồng Thẩm phán Tòa án Cấp cao, Thẻ định danh cư trú."
+  },
+  "drug_case_2005_lore": {
+    "case_nature": "Chuyên án Ma túy Oan sai năm 2005 tại Mường Biên (Kỳ án Lũng Nậm)",
+    "thao_motive": "Năm 2005, Hoàng Đình Thao (Phó Chỉ huy Cơ quan Điều tra Mường Biên khi đó) vừa chịu sức ép nặng nề về chỉ tiêu triệt phá ma túy để được bổ nhiệm thăng chức, vừa nhận một khoản tiền hối lộ lớn từ một đường dây ma túy vùng biên để bảo kê tuyến vận chuyển chính. Để vừa có thành tích báo cáo cấp trên, vừa che giấu việc bảo kê, Thao đã chọn xưởng mộc của ông Cửu làm 'con tốt thế mạng'.",
+    "thao_current_role": "Hiện tại Thao đã nghỉ hưu, giữ chức Chủ tịch danh dự Quỹ An sinh Lam Châu, là bậc tiền bối uy tín trong giới điều tra nhưng không có quyền ra lệnh hay ký văn bản tố tụng trực tiếp.",
+    "frame_up_mechanism": "Thao sai đàn em đặt đóng 6 chiếc rương gỗ pơ-mu, rồi ngầm cho xưởng cưa công nghiệp dùng cưa đĩa đa lưỡi và keo nhiệt dán đáy giả chứa ma túy vào khoang đáy rương. Thao dẫn quân ập vào bắt quả tang ông Cửu, mua chuộc lão lái đò Bùi Văn Vượng (N5) khai man, ép 4 tên đàn em áp tải (N1-N4) ký biên bản làm chứng khống, và ép Đặng Tiến Đạt ký nhận lệnh xe đặc chủng chở tang vật.",
+    "aftermath_and_coverup": "Ông Cửu uất ức đột quỵ qua đời trong trại giam tháng 9/2005; vợ khóc mù mắt rồi mất; con trai Trần Văn Sinh 15 tuổi mồ côi bỏ bản ra đi. Thao đạt được mục đích thăng tiến. Sợ vụ án bị lật lại sau này, Thao chi tiền và mua 4 phôi thẻ định danh giả cấp cho 4 tên áp tải tản đi 4 tỉnh xa xôi để bịt miệng vĩnh viễn.",
+    "revenge_and_redemption": "Trần Văn Sinh học nghề cơ khí, đi lính trinh sát cơ động (2008-2013). Sau khi phát hiện manh mối vụ án oan năm 2013, Sinh xuất ngũ, truy tìm và trừng phạt 6 kẻ gài bẫy theo thứ tự bài đồng dao đếm sỏi 6 câu quê hương. Sinh lưu giữ kho thực nghiệm để vừa giải oan cho cha, vừa nhận trách nhiệm trước pháp luật."
+  },
+  "forensics_and_evidence": {
+    "forensic_caution": "Pháp y chỉ kết luận dựa trên dấu vết cơ học ngạt, độc chất marker D-Alkaloid Mường Biên, vết thương sắc gọn vùng mạch máu cổ hoặc hõm nách. Phân tích XRF chỉ kết luận tương thích về tỷ lệ nguyên tố hợp kim đặc trưng Crom-Molypden thuộc cùng nhóm vật liệu cơ khí, không khẳng định định danh cá thể 1:1 tuyệt đối. Phân tích keo dán nhiệt sử dụng quang phổ hồng ngoại FTIR; dấu cưa đĩa soi dưới kính hiển vi lập thể so sánh toolmark.",
+    "chest_examination": "Giám định rương chia 2 giai đoạn: nhận định sơ bộ tại kho lưu trữ ngày thứ Sáu và kết luận chính thức của phòng thí nghiệm vào sáng thứ Bảy.",
+    "clue_discovery": "Manh mối tại sà-lan của L và chòi hoang gồm mẩu vỏ que hàn Hải Khê HK-7018M và mỏ cắt hơi thải loại; đối chiếu sổ vật tư xưởng và hóa đơn cung ứng.",
+    "identity_ring_clue": "Giải mã mã lô phôi bảo an quang học từ đường dây làm giả giấy tờ cũ, kết hợp đối soát nhận diện khuôn mặt sinh trắc học với tàng thư hộ tịch 4 địa phương để xác định 4 nạn nhân mang danh tính giả.",
+    "investigative_logic": "Điều tra viên Nam sử dụng phương pháp suy luận giả thuyết nghiệp vụ thận trọng, đối chiếu chéo nhiều nguồn chứng cứ độc lập."
+  },
+  "character_rules": {
+    "sinh_background": "Trần Văn Sinh (bí danh Ba thợ cắt) từng có 5 năm phục vụ trong lực lượng trinh sát cơ động (2008-2013). Năm 2013 phát hiện manh mối vụ án oan của cha nên xuất ngũ và âm thầm truy tìm suốt 11 năm.",
+    "sinh_ethics": "Sinh chỉ trừng phạt những kẻ trực tiếp gài bẫy và hại chết cha mẹ mình; tuyệt đối không làm hại tính mạng người vô tội (không lấy tiền ở Hạ An, dùng hơi cay và trói tay 2 bảo vệ tư nhân dưới hầm nhà Thao nhưng mở sẵn vòi nước rửa mắt cho họ).",
+    "sinh_confession": "Tại hiện trường và phiên tòa, Sinh tự thú chi tiết các cơ cấu cơ học bí mật (chốt U cước thép Quỳnh Lâm, nêm đá kíp nổ Tây Phong, khóa van thông gió xả khí trơ giảm O2 Hải Khê) và vị trí cất giấu kho thực nghiệm giải oan dưới chân cầu bến đò Lũng Nậm, trở thành căn cứ pháp lý để định tội và hưởng chính sách khoan hồng tha tội chết.",
+    "father_cuu_character": "Trần Văn Cửu là người thợ mộc mộc mạc, lương thiện, cả đời đục đẽo gỗ lim ngay thẳng; di vật là chiếc thước mộc gỗ lim được cụ già thợ mộc trao cho ĐTV Nam như biểu tượng lương tri; ông qua đời trong trại giam vào tháng Chín năm 2005.",
+    "thao_character": "Hoàng Đình Thao là cựu chỉ huy điều tra lọc lõi, lạm quyền, tha hóa vì nhận hối lộ và bệnh thành tích, cố thủ trong biệt thự riêng với đội vệ sĩ tư nhân và luật sư để trì hoãn triệu tập trước khi bị bắt giữ tại chỗ.",
+    "long_character": "Lê Văn Long là chủ xưởng trục vớt sà-lan, mang di chứng nghề lặn, thù vụ 2005 vì em trai phụ việc bị ép cung phát điên rồi chết; nói dối che giấu việc cho Sinh làm thuê và các chuyến lặn chui; được minh oan giết người qua dữ liệu máy tàu.",
+    "dat_character": "Đặng Tiến Đạt là chỉ huy hiện tại của Nam, bị Thao ép ký nhận lệnh xe năm 2005; từ năm 2021 nhận thư cảnh báo từ Sinh nên lén tra cứu dữ liệu N1-N5; tự ý đi xe riêng lên Lũng Nậm cảnh báo N5; tự thú giao nộp bản nháp lệnh xe và nhật ký."
+  },
+  "ritual_and_rhyme": {
+    "symbolic_progression": "Bộ túi bùa thổ cẩm sản vật tăng dần 1-5 là Signature MO do Sinh chủ động đặt vào để làm nghi thức tưởng nhớ cha và kích hoạt chuyên án liên tỉnh.",
+    "rhyme_rule": "Bài ca đếm sỏi cổ truyền bản Dền được Giáo sư Khoa giải mã hoa văn ở Chương 6 (đọc nguyên tác tiếng bản địa). Bản dịch thơ lục bát tiếng phổ thông hoàn chỉnh được Giáo sư Khoa ngâm khẽ ở vĩ thanh Chương 15."
+  },
+  "procedural_integrity": {
+    "conflict_of_interest": "Đặng Tiến Đạt tự thú và giao nộp tờ phôi lệnh xe bản nháp gốc năm 2005 mang bút tích chỉ đạo của Thao cùng sổ nhật ký cá nhân; Cơ quan Điều tra Cấp cao tiếp nhận và tạm giữ Đạt theo luật định.",
+    "tactical_entry": "Sinh đột nhập qua cống ngầm, tước súng và khống chế Thao; Nam dùng bản sao giám định chứng cứ độc lập và chiếc thước lim thuyết phục Sinh buông dao; đặc nhiệm đọc lệnh bắt giữ khẩn cấp và còng tay Thao.",
+    "court_verdicts": "Thao Tù Chung thân; Đạt 3 năm tù (hưởng khoan hồng nhờ tự thú); Sinh Tù Chung thân (tha tội chết nhờ tự thú và tự dừng tay); Ông Cửu hủy bỏ bản án oan, phục hồi danh dự và bồi thường oan sai."
+  }
+}

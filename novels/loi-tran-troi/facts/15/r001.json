@@ -1,0 +1,85 @@
+{
+  "chapter": 15,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.637516",
+  "summary": "Phiên tòa đại hình 18 tháng sau: Thao tù chung thân, Đạt 3 năm tù treo, Sinh tù chung thân (tha tội chết nhờ tự thú và kho vật chứng chân cầu Lũng Nậm); chính thức phục hồi danh dự ông Trần Văn Cửu. GS Khoa ngâm bài thơ lục bát giải mã trọn vẹn 6 câu đồng dao. Thước mộc đặt trang nghiêm trên bàn thờ bản Dền. Nam về Hạ An ăn cháo sườn nóng bên mẹ ở góc chợ Đò Cũ.",
+  "timeline_events": [
+    {
+      "time": "18 tháng sau",
+      "event": "Phiên tòa đại hình tuyên án Thao chung thân, Đạt 3 năm treo, Sinh chung thân, minh oan cho ông Cửu; lễ đặt thước mộc bản Dền.",
+      "chapter": 15
+    },
+    {
+      "time": "1 tuần sau phiên tòa",
+      "event": "Nam trở về Hạ An ăn cháo sườn mẹ góc chợ Đò Cũ.",
+      "chapter": 15
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "description": "Toàn bộ 6 túi bùa và bài đồng dao đếm sỏi được giải mã trọn vẹn",
+      "action": "resolve",
+      "status": "resolved"
+    },
+    {
+      "id": "C06",
+      "description": "Ý nghĩa câu hát thứ 6 mạy lim dăng trời - thước mộc giải oan đất trời",
+      "action": "resolve",
+      "status": "resolved"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 15,
+      "last_seen": 15
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "",
+      "first_seen": 15,
+      "last_seen": 15
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 15,
+      "last_seen": 15
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 15,
+      "last_seen": 15
+    },
+    {
+      "name": "Giáo sư Lê Đăng Khoa",
+      "brief_role": "",
+      "first_seen": 15,
+      "last_seen": 15
+    },
+    {
+      "name": "Mẹ Nam",
+      "brief_role": "",
+      "first_seen": 15,
+      "last_seen": 15
+    },
+    {
+      "name": "Trưởng bản Ban",
+      "brief_role": "",
+      "first_seen": 15,
+      "last_seen": 15
+    },
+    {
+      "name": "Cụ già thợ mộc (Cụ Mộc)",
+      "brief_role": "",
+      "first_seen": 15,
+      "last_seen": 15
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

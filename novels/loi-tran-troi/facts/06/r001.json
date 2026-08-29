@@ -1,0 +1,61 @@
+{
+  "chapter": 6,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.598675",
+  "summary": "Chiều thứ Năm, tiếp nhận 3 túi bùa cũ từ Quỳnh Lâm, Tây Phong, Hải Khê. GS Lê Đăng Khoa giải mã hoa văn dệt bản Dền, thung lũng Lũng Nậm và bài ca đếm sỏi 6 câu. Trong cuộc họp, Đạt biến sắc trước câu thứ 5 (tha đò bến lạnh). Hệ thống audit an ninh mạng ghi nhận Đạt âm thầm tra cứu Bùi Văn Vượng trước 3 giờ.",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Năm, 13:30-16:30",
+      "event": "GS Khoa giải mã thổ cẩm bản Dền và bài ca đếm sỏi 6 câu.",
+      "chapter": 6
+    },
+    {
+      "time": "Tối thứ Năm, 17:00-18:30",
+      "event": "Đạt nhìn thấy câu thứ 5; audit hệ thống ghi nhận Đạt tra cứu Bùi Văn Vượng.",
+      "chapter": 6
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C06",
+      "description": "Bài ca đếm sỏi bản Dền và câu thứ 5 tha đò bến lạnh",
+      "action": "introduce",
+      "status": "active"
+    },
+    {
+      "id": "C07",
+      "description": "Audit trail ghi nhận Đạt tra cứu thông tin nạn nhân trước các vụ tử vong",
+      "action": "introduce",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 6,
+      "last_seen": 6
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 6,
+      "last_seen": 6
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 6,
+      "last_seen": 6
+    },
+    {
+      "name": "Giáo sư Lê Đăng Khoa",
+      "brief_role": "",
+      "first_seen": 6,
+      "last_seen": 6
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

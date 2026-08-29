@@ -1,0 +1,94 @@
+[
+  {
+    "index": 1,
+    "volume": 1,
+    "title": "Tập 1: Dưới Xuôi",
+    "arcs": [
+      {
+        "index": 1,
+        "title": "Hồi 1: Dưới Xuôi — Mắt Xích Thứ Tư & Bẫy Đánh Lạc Hướng",
+        "chapters": [
+          {
+            "chapter": 1,
+            "title": "Đêm mưa phố Đò Cũ"
+          },
+          {
+            "chapter": 2,
+            "title": "Người cố vấn"
+          },
+          {
+            "chapter": 3,
+            "title": "Bóng đen bãi xác tàu"
+          },
+          {
+            "chapter": 4,
+            "title": "Đấu trí dưới đáy bùn"
+          },
+          {
+            "chapter": 5,
+            "title": "Bốn cái chết"
+          },
+          {
+            "chapter": 6,
+            "title": "Tiếng hát bản Dền"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "volume": 2,
+    "title": "Tập 2: Ngược Ngàn",
+    "arcs": [
+      {
+        "index": 1,
+        "title": "Hồi 2: Ngược Ngàn — Vết Dấu Nội Bộ & Án Oan 2005",
+        "chapters": [
+          {
+            "chapter": 7,
+            "title": "Dấu truy cập lúc nửa đêm"
+          },
+          {
+            "chapter": 8,
+            "title": "Thung lũng oan khuất"
+          },
+          {
+            "chapter": 9,
+            "title": "Bến đò trong sương"
+          },
+          {
+            "chapter": 10,
+            "title": "Dưới đáy rương"
+          },
+          {
+            "chapter": 11,
+            "title": "Người thầy giữ im lặng"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "title": "Hồi 3: Ánh Sáng Công Lý — Bó Chứng Cứ & Vĩ Thanh",
+        "chapters": [
+          {
+            "chapter": 12,
+            "title": "Cuộc gọi thứ sáu"
+          },
+          {
+            "chapter": 13,
+            "title": "Dấu chân trên đèo"
+          },
+          {
+            "chapter": 14,
+            "title": "Chiếc thước mộc"
+          },
+          {
+            "chapter": 15,
+            "title": "Ánh sáng thung lũng"
+          }
+        ]
+      }
+    ]
+  }
+]

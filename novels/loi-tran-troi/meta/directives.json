@@ -1,0 +1,21 @@
+[
+  {
+    "id": "dir_fictional_neutral_worldbuilding",
+    "type": "hard_constraint",
+    "content": "LOẠI BỎ HOÀN TOÀN CÁC CHI TIẾT CHỈ ĐÍCH DANH VIỆT NAM hoặc các cơ quan công quyền, tổ chức, pháp luật thực tế của Việt Nam. Bối cảnh tác phẩm là một thế giới hư cấu hoàn toàn (Fictional Noir Universe). Sử dụng thuật ngữ trung tính: Sở Cảnh sát / Cơ quan Cảnh sát Điều tra, Đội Điều tra Trọng án, Viện Công tố, Tòa án Cấp cao, Cục Trọng án, Lực lượng Trị an cơ sở, Thẻ định danh cư trú. Tuyệt đối không dùng: Công an, Bộ Công an, Viện Kiểm sát, CSHS, CMND, hộ khẩu, tiếng Kinh, Bangkok, súng K54, biển số xe thực tế, hoặc các địa danh ngoài đời.",
+    "created_at": "2026-08-28T16:50:00+07:00"
+  },
+  {
+    "id": "dir_investigative_scientific_rigor",
+    "type": "hard_constraint",
+    "content": "Quy chuẩn nghiệp vụ trinh thám noir: Không khẳng định vội vã 100% dựa trên dấu vết gián tiếp; sử dụng ngôn ngữ suy luận giả thuyết nghiệp vụ thận trọng; phân tích XRF đối chiếu thành phần hợp kim tương thích; vật chứng vận chuyển độc lập qua biên bản niêm phong; lời thú tội phải kèm chứng cứ cơ học kiểm chứng.",
+    "created_at": "2026-08-29T05:45:00+07:00"
+  },
+  {
+    "id": "dir_fair_play_upgrade_v2_proposal",
+    "type": "creative_direction_proposal",
+    "status": "pending_author_approval",
+    "content": "Đề xuất nâng cấp Fair-Play V2: mở rộng từ 12 lên 15 chương; gieo P từ Chương 1 với ảnh hưởng xã hội nhưng không có quyền chỉ đạo; thêm L làm nghi phạm vật chứng; phát triển M thành nghi phạm nội bộ qua audit dữ liệu và thư cảnh báo; kết tội P bằng bó chứng cứ độc lập. Không tạo hoặc accept revision theo hướng này trước khi tác giả duyệt sáu quyết định khóa trong outlines/fair_play_upgrade_plan_v2.md.",
+    "created_at": "2026-08-29T18:34:49+07:00"
+  }
+]

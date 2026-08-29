@@ -1,0 +1,69 @@
+{
+  "chapter": 5,
+  "revision": "r003",
+  "created_at": "2026-08-29T15:20:00+07:00",
+  "summary": "Tiếp nhận 3 túi bùa niêm phong chuyển phát độc lập từ 3 vùng về phòng thí nghiệm Hạ An. Giáo sư Lê Đăng Khoa giải mã hoa văn bản Dền và bài đồng dao đếm sỏi nguyên tác tiếng Lũng Nậm. Xác định địa bàn xuất xứ tại bản Dền, thung lũng Lũng Nậm, Mường Biên. Đúng 21:00 tối thứ Năm, Nam và Huy xuất phát ngược ngàn. Tinh chỉnh văn phong Noir line 11.",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Năm, 15:30",
+      "event": "Bàn giao tiếp nhận 3 gói vật chứng niêm phong độc lập từ 3 vùng về phòng thí nghiệm Hạ An.",
+      "chapter": 5
+    },
+    {
+      "time": "Chiều thứ Năm, 16:30-17:00",
+      "event": "Giáo sư Lê Đăng Khoa giải mã hoa văn thổ cẩm bản Dền và bài đồng dao đếm sỏi nguyên tác tiếng Lũng Nậm.",
+      "chapter": 5
+    },
+    {
+      "time": "Tối thứ Năm, 21:00",
+      "event": "Nam và Huy lên xe đặc chủng xuất phát từ Hạ An đi Mường Biên (quãng đường 130 km đèo dốc sương mù).",
+      "chapter": 5
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_counting_rhyme",
+      "description": "Bài đồng dao đếm sỏi cổ truyền bản Dền khớp với chuỗi vật chứng 1-6",
+      "action": "plant",
+      "status": "active",
+      "notes": "6 câu thơ đếm sỏi bí ẩn bằng tiếng Lũng Nậm nguyên bản"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Giáo sư Lê Đăng Khoa",
+      "brief_role": "Chuyên gia văn hóa dân gian Bảo tàng",
+      "first_seen": 5,
+      "last_seen": 5
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Giáo sư Lê Đăng Khoa",
+      "status": "Điều tra viên và chuyên gia tham vấn khoa học",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "origin_location",
+      "value": "ban_den_lung_nam_muong_bien",
+      "chapter": 5
+    }
+  ],
+  "dependencies": [
+    "04"
+  ]
+}

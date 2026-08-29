@@ -1,0 +1,21 @@
+{
+  "chapter": 1,
+  "title": "Người chết lẩm bẩm",
+  "goal": "Thiết lập hiện trường vụ án mạng thợ sửa xe Nguyễn Văn Tư tại Hạ An đêm mưa; phát hiện các dấu vết vi vết lạ lùng (rút máu tĩnh mạch viết chữ máu nhỏ, vệt dầu mạt sắt, miếng vải thêu) và kết thúc trong bầu không khí bế tắc nghẹt thở của đêm đầu tiên.",
+  "scenes": [
+    "Nam nhận tin báo án lúc 1h17 đêm mưa, chạy xe Dream đến ngõ trọ Nguyễn Trãi",
+    "Khám nghiệm phòng trọ số 3: thi thể chắp tay cầu nguyện, phát hiện vết tiêm rút máu tĩnh mạch, dòng chữ máu nhỏ giấu sau gờ tường, thu giữ miếng vải thêu và vệt dầu máy đặc",
+    "Lấy lời khai Hùng và bà chủ trọ về tiếng đọc lẩm bẩm khum rụng và tiếng thở dài lúc 22h",
+    "Nam về phòng làm việc lúc 4h sáng, đối mặt với hiện trường bí ẩn không dấu vết kẻ thủ ác"
+  ],
+  "required_beats": [
+    "Không khí đêm mưa dầm ẩm ướt của thị trấn Hạ An",
+    "Hiện trường ngăn nắp, thi thể chết trong tư thế sám hối cầu nguyện",
+    "Vết chọc kim tiêm tĩnh mạch rút máu và dòng chữ máu nhỏ ẩn giấu",
+    "Sự bế tắc và cô độc của Nam trước vụ án kỳ lạ"
+  ],
+  "payoff_points": [
+    "Mở màn vụ án mạng bí ẩn mở đầu tác phẩm"
+  ],
+  "hook_goal": "Sự im lặng đặc quánh của đêm đầu tiên và linh cảm về bóng ma quá khứ đang dõi theo"
+}

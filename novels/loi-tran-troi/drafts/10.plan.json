@@ -1,0 +1,25 @@
+{
+  "chapter": 10,
+  "title": "Hòn sỏi thứ sáu",
+  "goal": "Đột nhập biệt thự đồi thông trong đêm bão; Đạt nổ súng tước vũ khí Thao cứu Sinh và giao nộp hồ sơ gốc; Nam lần lượt tra còng số 8 vào tay Hoàng Đình Thao, Đặng Tiến Đạt và Trần Văn Sinh — tất cả đều phải chịu sự phán xét nghiêm minh của pháp luật; mở ra phiên tòa Tái thẩm minh oan cho chú Cửu.",
+  "scenes": [
+    "Nam và Tùng đột nhập căn biệt thự đồi thông trong đêm bão giông gào thét",
+    "Đối đầu nghẹt thở tại phòng làm việc tầng ba: Sinh đặt hòn sỏi thứ sáu ép Thao nhận tội; Thao toan rút súng bắn lén",
+    "Trung tá Đạt bất ngờ nổ súng tước vũ khí Thao, giao nộp tập hồ sơ gốc chuyên án 2005 và tự thú",
+    "Sinh buông rơi hòn sỏi thứ sáu; Nam thực hiện điều lệnh bắt giữ và tra còng số 8 cả ba người: Thao (chủ mưu), Đạt (đồng phạm tự thú) và Sinh (hung thủ giết người)",
+    "Ánh bình minh rọi sáng đồi thông; vĩ thanh về phiên tòa Tái thẩm tuyên bố chú Cửu vô tội và bản án nghiêm minh cho Thao, Đạt, Sinh"
+  ],
+  "required_beats": [
+    "Tính thượng tôn pháp luật tuyệt đối: Không ai đứng trên luật pháp",
+    "Cảnh Nam lần lượt tra còng số 8 cho Thao, Đạt và Sinh trong sự trang nghiêm của người chiến sĩ CAND",
+    "Sự thanh thản đón nhận hình phạt của Đạt và Sinh",
+    "Phiên tòa Tái thẩm lịch sử rửa sạch nỗi oan 19 năm của chú Cửu"
+  ],
+  "forbidden_moves": [
+    "Tuyệt đối không để Sinh hay Đạt trốn thoát hoặc được miễn trách nhiệm hình sự ngoài vòng pháp luật"
+  ],
+  "payoff_points": [
+    "Tất cả những người có tội đều bị pháp luật trừng trị; chú Cửu được minh oan chính thức"
+  ],
+  "hook_goal": "Khép lại toàn bộ tác phẩm với thông điệp công lý và pháp luật tối thượng"
+}

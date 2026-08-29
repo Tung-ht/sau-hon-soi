@@ -1,0 +1,81 @@
+{
+  "chapter": 12,
+  "revision": "r006",
+  "created_at": "2026-08-29T17:47:30+07:00",
+  "summary": "18 tháng sau, Tòa án Cấp cao tuyên án: Thao tù chung thân, Đạt 3 năm tù, Sinh tù chung thân (tha tội chết); tuyên hủy án oan 2005 phục hồi danh dự cho ông Cửu. Nam cùng GS Khoa về bản Dền dự lễ gắn biển di tích; nghe bài đồng dao tiếng phổ thông 6 câu khớp 6 hòn sỏi; Nam trở về Hạ An tiếp tục công tác, ăn cháo sườn mẹ.",
+  "timeline_events": [
+    {
+      "time": "18 tháng sau",
+      "event": "Phiên tòa xét xử đại án 2005 tại Mường Biên; tuyên án Thao, Đạt, Sinh; hủy bỏ bản án oan năm 2005.",
+      "chapter": 12
+    },
+    {
+      "time": "Sau phiên tòa",
+      "event": "Nam và GS Khoa về bản Dền gắn biển di tích; GS Khoa ngâm bài thơ dịch 6 câu đồng dao.",
+      "chapter": 12
+    },
+    {
+      "time": "1 tuần sau phiên tòa",
+      "event": "Nam trở về phố Đò Cũ ăn cháo sườn mẹ và tiếp tục công tác tại Đội Trọng án Hạ An.",
+      "chapter": 12
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_rhyme_poem",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Bài thơ 6 câu đồng dao cổ truyền giải mã toàn bộ hành trình công lý"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 12
+    },
+    {
+      "name": "GS Lê Đăng Khoa",
+      "brief_role": "Chuyên gia nhân chủng học",
+      "first_seen": 5,
+      "last_seen": 12
+    },
+    {
+      "name": "Mẹ Nam",
+      "brief_role": "Mẹ Nam, bán cháo sườn",
+      "first_seen": 1,
+      "last_seen": 12
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Bị cáo (tha tội chết)",
+      "first_seen": 11,
+      "last_seen": 12
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Bị cáo (Tù chung thân)",
+      "first_seen": 11,
+      "last_seen": 12
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Bị cáo (3 năm tù)",
+      "first_seen": 1,
+      "last_seen": 12
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "case_closed",
+      "value": "justice_fully_served",
+      "chapter": 12
+    }
+  ],
+  "dependencies": [
+    "11"
+  ]
+}

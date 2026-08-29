@@ -1,0 +1,67 @@
+{
+  "chapter": 4,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.588436",
+  "summary": "Chiều thứ Tư, hỏi cung Lê Văn Long tại Hạ An. Dữ liệu thủy triều, máy phát phụ và nhật ký kéo tàu chứng minh sà-lan mắc cạn lúc 21:00 đêm thứ Hai, loại trừ Long trực tiếp giết N4. Long khai cho thợ Ba ở nhờ và lấy mỏ cắt cũ Tây Phong. P gọi điện cho Đạt khuyên giữ Long trong trường hợp khẩn cấp.",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Tư, 14:00-16:30",
+      "event": "Hỏi cung Long; chứng minh ngoại phạm mắc cạn; Long khai về thợ Ba.",
+      "chapter": 4
+    },
+    {
+      "time": "Tối thứ Tư, 17:00-18:00",
+      "event": "P gọi điện cho Đạt khuyên giữ Long để đóng vụ án.",
+      "chapter": 4
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C03",
+      "description": "Long xác nhận thợ Ba lấy mỏ cắt cũ Tây Phong và que hàn HK-7018M",
+      "action": "advance",
+      "status": "active"
+    },
+    {
+      "id": "C10",
+      "description": "P gọi điện thúc giục Đạt giữ Long để khép án",
+      "action": "advance",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 4,
+      "last_seen": 4
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 4,
+      "last_seen": 4
+    },
+    {
+      "name": "Lê Văn Long",
+      "brief_role": "",
+      "first_seen": 4,
+      "last_seen": 4
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 4,
+      "last_seen": 4
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 4,
+      "last_seen": 4
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

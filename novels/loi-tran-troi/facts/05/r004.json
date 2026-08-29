@@ -1,0 +1,65 @@
+{
+  "chapter": 5,
+  "revision": "r004",
+  "created_at": "2026-08-29T17:45:45+07:00",
+  "summary": "Tiếp nhận 3 túi bùa từ 3 tỉnh; tham vấn GS Lê Đăng Khoa xác định nguồn gốc thổ cẩm bản Dền và bài đồng dao đếm sỏi 6 câu; 21:00 đêm thứ Năm xuất phát lên Mường Biên.",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Năm, 14:00-17:00",
+      "event": "Tiếp nhận 3 túi bùa từ 3 tỉnh; tham vấn GS Lê Đăng Khoa tại Bảo tàng Dân tộc học xác định nguồn gốc bản Dền và bài đồng dao đếm sỏi 6 câu.",
+      "chapter": 5
+    },
+    {
+      "time": "Đêm thứ Năm, 21:00",
+      "event": "Tổ điều tra xuất phát từ Hạ An lên Mường Biên bằng xe đặc chủng.",
+      "chapter": 5
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_charm_pouches",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Xác định nguồn gốc 4 túi bùa từ bản Dền, thung lũng Lũng Nậm, huyện Mường Biên"
+    },
+    {
+      "id": "fs_rhyme_poem",
+      "description": "",
+      "action": "introduce",
+      "status": "active",
+      "notes": "Tiếp cận bài đồng dao đếm sỏi cổ 6 câu bằng phương ngữ Lũng Nậm nguyên bản"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 5
+    },
+    {
+      "name": "GS Lê Đăng Khoa",
+      "brief_role": "Chuyên gia nhân chủng học và văn hóa dân gian",
+      "first_seen": 5,
+      "last_seen": 5
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [
+    {
+      "key": "case_focus",
+      "value": "target_ban_den_muong_bien",
+      "chapter": 5
+    }
+  ],
+  "dependencies": [
+    "04"
+  ]
+}

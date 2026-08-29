@@ -1,0 +1,98 @@
+{
+  "chapter": 1,
+  "revision": "r006",
+  "created_at": "2026-08-29T18:20:00+07:00",
+  "summary": "Tối thứ Tư Nam ăn cháo sườn mẹ, vào ca trực đêm thấy Chỉ huy Đạt chong đèn thức khuya bên bao thuốc Lam Ngàn và chiếc bật lửa trinh sát cũ. 21:00-23:00 Nguyễn Văn Tư bị sát hại. Sáng thứ Năm 05:30 nhận tin báo, khám nghiệm hiện trường, thu giữ vi sợi dính xỉ kim loại và túi bùa 4 bộ xương cá.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Tư, 18:30-19:00",
+      "event": "Nam ăn cháo sườn mẹ, vào ca trực đêm gặp Chỉ huy Đạt chong đèn thức khuya bên khói thuốc.",
+      "chapter": 1
+    },
+    {
+      "time": "Đêm thứ Tư, 21:00-23:00",
+      "event": "Nguyễn Văn Tư bị siết cổ tử vong tại nhà số 42 phố Đò Cũ trong đêm mưa to.",
+      "chapter": 1
+    },
+    {
+      "time": "Sáng thứ Năm, 05:30-07:30",
+      "event": "Huy báo tin; Nam cùng tổ kỹ thuật khám nghiệm hiện trường, thu giữ vi sợi dính xỉ kim loại và túi bùa 4 bộ xương cá.",
+      "chapter": 1
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_charm_pouches",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Thu giữ túi bùa thứ 4 chứa 4 bộ xương cá khô"
+    },
+    {
+      "id": "fs_dat_guilt",
+      "description": "",
+      "action": "introduce",
+      "status": "active",
+      "notes": "Chiếc bật lửa trinh sát cũ và thói quen thức trắng đêm bên khói thuốc Lam Ngàn của Chỉ huy Đạt"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án Hạ An",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Mẹ Nam",
+      "brief_role": "Mẹ Nam, bán cháo sườn chợ Đò Cũ",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Nguyễn Văn Tư",
+      "brief_role": "Thợ vá săm đêm (Nạn nhân thứ 4)",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "Giám định viên pháp y",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "Chuyên viên pháp chứng",
+      "first_seen": 1,
+      "last_seen": 1
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Đặng Tiến Đạt",
+      "status": "Thầy trò kính trọng, gắn bó 9 năm",
+      "action": "introduce"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "case_opened",
+      "value": "tu_murder_case_active",
+      "chapter": 1
+    }
+  ],
+  "dependencies": []
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "id": "C01",
+    "description": "Toàn bộ 6 túi bùa và bài đồng dao đếm sỏi được giải mã trọn vẹn",
+    "planted_at": 1,
+    "advanced_at": [
+      5,
+      9,
+      15
+    ],
+    "status": "resolved",
+    "resolved_at": 15,
+    "notes": ""
+  },
+  {
+    "id": "C02",
+    "description": "Que hàn HK-7018M và tỷ lệ Cr-Mo tương thích xỉ hiện trường N4",
+    "planted_at": 1,
+    "advanced_at": [
+      3
+    ],
+    "status": "active",
+    "resolved_at": null,
+    "notes": ""
+  },
+  {
+    "id": "C10",
+    "description": "P gọi điện thúc giục Đạt giữ Long để khép án",
+    "planted_at": 1,
+    "advanced_at": [
+      2,
+      4
+    ],
+    "status": "active",
+    "resolved_at": null,
+    "notes": ""
+  },
+  {
+    "id": "C03",
+    "description": "Long xác nhận thợ Ba lấy mỏ cắt cũ Tây Phong và que hàn HK-7018M",
+    "planted_at": 2,
+    "advanced_at": [
+      4
+    ],
+    "status": "active",
+    "resolved_at": null,
+    "notes": ""
+  },
+  {
+    "id": "C04",
+    "description": "Mối thù gia đình người em trai thợ mộc của Long tại Lũng Nậm 2005",
+    "planted_at": 3,
+    "advanced_at": [],
+    "status": "active",
+    "resolved_at": null,
+    "notes": ""
+  },
+  {
+    "id": "C05",
+    "description": "Bốn nạn nhân mua cùng đợt phôi thẻ giả từ đường dây Trần Hữu Bằng",
+    "planted_at": 5,
+    "advanced_at": [],
+    "status": "active",
+    "resolved_at": null,
+    "notes": ""
+  },
+  {
+    "id": "C06",
+    "description": "Ý nghĩa câu hát thứ 6 mạy lim dăng trời - thước mộc giải oan đất trời",
+    "planted_at": 6,
+    "advanced_at": [
+      12,
+      15
+    ],
+    "status": "resolved",
+    "resolved_at": 15,
+    "notes": ""
+  },
+  {
+    "id": "C07",
+    "description": "Giải mã động cơ theo dõi của Đạt là ám ảnh tội lỗi và tìm cách cứu vãn",
+    "planted_at": 6,
+    "advanced_at": [
+      7,
+      9,
+      11
+    ],
+    "status": "resolved",
+    "resolved_at": 11,
+    "notes": ""
+  },
+  {
+    "id": "C08",
+    "description": "Chiếc thước mộc thức tỉnh lương tri Sinh, giúp Sinh dừng tay",
+    "planted_at": 8,
+    "advanced_at": [
+      14
+    ],
+    "status": "resolved",
+    "resolved_at": 14,
+    "notes": ""
+  },
+  {
+    "id": "C09",
+    "description": "Kỹ năng trinh sát và cắt nguồn điện tổng của Sinh",
+    "planted_at": 8,
+    "advanced_at": [
+      13
+    ],
+    "status": "active",
+    "resolved_at": null,
+    "notes": ""
+  },
+  {
+    "id": "C11",
+    "description": "Bằng chứng độc lập đáy rương buộc tội Thao",
+    "planted_at": 10,
+    "advanced_at": [
+      14
+    ],
+    "status": "resolved",
+    "resolved_at": 14,
+    "notes": ""
+  },
+  {
+    "id": "C12",
+    "description": "Bản nháp lệnh xe TN-1479 đập tan vỏ bọc quyền uy của Thao",
+    "planted_at": 10,
+    "advanced_at": [
+      11,
+      14
+    ],
+    "status": "resolved",
+    "resolved_at": 14,
+    "notes": ""
+  },
+  {
+    "id": "C13",
+    "description": "Cuốn sổ vật tư 2005 của Lê Văn Long kết nối gia công thép với xưởng của Thao",
+    "planted_at": 12,
+    "advanced_at": [],
+    "status": "active",
+    "resolved_at": null,
+    "notes": ""
+  },
+  {
+    "id": "C14",
+    "description": "Vết cắt thử cáp đồng 12mm và kìm thủy lực pin của Sinh trên đèo Gió",
+    "planted_at": 13,
+    "advanced_at": [],
+    "status": "active",
+    "resolved_at": null,
+    "notes": ""
+  },
+  {
+    "id": "C15",
+    "description": "Hòn sỏi thứ 6 rơi xuống sàn gỗ, hoàn tất chuỗi số đếm",
+    "planted_at": 14,
+    "advanced_at": [],
+    "status": "resolved",
+    "resolved_at": 14,
+    "notes": ""
+  }
+]

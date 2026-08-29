@@ -1,0 +1,72 @@
+{
+  "chapter": 11,
+  "revision": "r009",
+  "created_at": "2026-08-29T18:23:30+07:00",
+  "summary": "06:00 sáng thứ Tư: Đấu trí tay ba trong phòng làm việc Thao; Nam dùng bản dập tỷ lệ 1:1 chiếc thước mộc và chứng cứ tự thú của Đạt để cảm hóa Sinh; Sinh buông dao thả rơi hòn sỏi thứ 6 nhận tội và giao nộp kho vật chứng; Nam bắt giữ khẩn cấp Thao.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Tư, 06:00-06:30",
+      "event": "Đối đầu tại phòng làm việc của Thao; Nam công bố sự tự thú của Đạt; đặt bản dập chiếc thước mộc lim; Sinh đầu hàng buông dao; bắt giữ Thao và Sinh.",
+      "chapter": 11
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_charm_pouches",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Hòn sỏi thứ 6 rơi xuống đất, kết thúc chuỗi 6 hòn sỏi báo thù"
+    },
+    {
+      "id": "fs_lim_ruler",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Di vật chiếc thước mộc đánh thức lương tri Sinh, giải oan cho người thợ mộc"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Cựu Phó Thủ trưởng CQĐT Mường Biên (Bị bắt)",
+      "first_seen": 9,
+      "last_seen": 11
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Kẻ báo thù (Đầu hàng nhận tội)",
+      "first_seen": 10,
+      "last_seen": 11
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Trần Văn Sinh",
+      "status": "Cảm hóa lương tri và bắt giữ công lý",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "crisis_resolved",
+      "value": "suspect_surrendered_perpetrator_arrested",
+      "chapter": 11
+    }
+  ],
+  "dependencies": [
+    "10"
+  ]
+}

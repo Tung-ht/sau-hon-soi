@@ -1,0 +1,62 @@
+{
+  "chapter": 9,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.606222",
+  "summary": "Sáng thứ Sáu (06:00), khám nghiệm hiện trường bến đò Lũng Nậm: Bùi Văn Vượng bị đâm hõm nách lúc 03:00-04:00, thu túi bùa thứ 5 chứa 5 hòn sỏi suối. Phát hiện vết lốp xe SUV của Đạt cách bến đò 200m. Nam gọi điện đối chất; Đạt ở cây xăng Mường Biên né tránh, bảo Nam đến Kho lưu trữ Mường Biên mở hồ sơ 2005.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Sáu, 06:00-08:30",
+      "event": "Khám nghiệm N5 Bùi Văn Vượng, thu túi 5 hòn sỏi; phát hiện vết lốp xe Đạt; Đạt gọi điện chỉ dẫn kho lưu trữ.",
+      "chapter": 9
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "description": "Thu giữ túi bùa thứ 5 chứa 5 hòn sỏi suối",
+      "action": "advance",
+      "status": "active"
+    },
+    {
+      "id": "C07",
+      "description": "Vết lốp xe Đạt tại hiện trường bến đò Lũng Nậm",
+      "action": "advance",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 9,
+      "last_seen": 9
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 9,
+      "last_seen": 9
+    },
+    {
+      "name": "Điều tra viên Lâm Văn Thành",
+      "brief_role": "",
+      "first_seen": 9,
+      "last_seen": 9
+    },
+    {
+      "name": "Bùi Văn Vượng",
+      "brief_role": "",
+      "first_seen": 9,
+      "last_seen": 9
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 9,
+      "last_seen": 9
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

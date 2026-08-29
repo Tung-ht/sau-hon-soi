@@ -1,0 +1,77 @@
+{
+  "chapter": 11,
+  "revision": "r004",
+  "created_at": "2026-08-29T16:35:00+07:00",
+  "summary": "Đột kích biệt thự Thao tại Mường Biên rạng sáng Chủ Nhật; Sinh khống chế Thao bằng dao; Thao nhận diện Nam và tự tin vào việc đã nghỉ hưu, thách thức nổ súng. Sinh tố cáo 40 bánh heroin đáy rương. Nam dùng chiếc thước lim và bản sao bút tích phôi lệnh xe thuyết phục; Sinh rơi nước mắt buông dao đầu hàng và thả rơi hòn sỏi thứ 6. Nam đọc lệnh bắt khẩn cấp Thao.",
+  "timeline_events": [
+    {
+      "time": "Chủ Nhật, 05:00-06:00",
+      "event": "Đột kích biệt thự đồi thông Mường Biên; giải cứu con tin và ngăn chặn Sinh hạ sát Thao; Thao nhận diện Nam và dùng luật khiêu khích; Sinh đầu hàng trước chiếc thước mộc; bắt giữ khẩn cấp Thao.",
+      "chapter": 11
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_father_ruler",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Chiếc thước mộc lim thức tỉnh Sinh buông dao và nhận thức công lý"
+    },
+    {
+      "id": "fs_thao_bribes",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Bắt giữ khẩn cấp Hoàng Đình Thao với đầy đủ chứng cứ bút tích"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 11
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Kẻ báo thù / Ba thợ cắt",
+      "first_seen": 11,
+      "last_seen": 11
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Cựu Phó Thủ trưởng CQĐT Mường Biên",
+      "first_seen": 11,
+      "last_seen": 11
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 11
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Trần Văn Sinh",
+      "status": "Cảm hóa bằng sự thật và lương tri",
+      "action": "update"
+    },
+    {
+      "pair": "Đặng Hoàng Nam - Hoàng Đình Thao",
+      "status": "Đối đầu pháp lý trực diện và bắt giữ",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "climax_resolved",
+      "value": "sinh_surrenders_thao_arrested",
+      "chapter": 11
+    }
+  ],
+  "dependencies": [
+    "10"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "chapter": 8,
+  "revision": "r002",
+  "created_at": "2026-08-29T07:15:00+07:00",
+  "summary": "15:30 về tới Hạ An. 21:30-23:45 đêm thứ Sáu, Nam đối chất Đặng Tiến Đạt. Đạt tự thú toàn bộ, giao nộp tờ phôi lệnh xe TN-1479 bản nháp gốc có bút tích chỉ đạo của Thao và sổ trực ban cũ. Cơ quan Điều tra Cấp cao lập hồ sơ, cấm xuất cảnh Thao. Tối thứ Bảy xuất phát lên Mường Biên.",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Sáu, 15:30",
+      "event": "Nam và Huy về tới trụ sở Đội Điều tra Trọng án Hạ An; rà soát hồ sơ 2005.",
+      "chapter": 8
+    },
+    {
+      "time": "Đêm thứ Sáu, 21:30-23:45",
+      "event": "Nam đối chất Đặng Tiến Đạt; Đạt tự thú toàn bộ và giao nộp tờ phôi lệnh xe TN-1479 bản nháp gốc có bút tích chỉ đạo của Hoàng Đình Thao cùng sổ trực ban cũ.",
+      "chapter": 8
+    },
+    {
+      "time": "Sáng thứ Bảy, 08:00",
+      "event": "Cơ quan Điều tra Cấp cao lập Ban Chuyên án Đặc biệt, ban hành Lệnh Cấm Xuất cảnh đối với Hoàng Đình Thao; Thao dùng luật sư khiếu nại và cố thủ trong biệt thự.",
+      "chapter": 8
+    },
+    {
+      "time": "Tối thứ Bảy, 21:00",
+      "event": "Nam cùng tổ đặc nhiệm xuất phát từ Hạ An lên Mường Biên.",
+      "chapter": 8
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_oan_sai_2005",
+      "description": "",
+      "action": "advance",
+      "status": "active",
+      "notes": "Đạt giao nộp bút tích chỉ đạo tiêu hủy chứng cứ của Thao"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 8
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra",
+      "first_seen": 1,
+      "last_seen": 8
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Cựu Chỉ huy Cảnh sát Điều tra Hạ An",
+      "first_seen": 4,
+      "last_seen": 8
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Đặng Tiến Đạt",
+      "status": "Đối diện với sự thật đau xót nhưng tôn trọng sự tự thú",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "dat_status",
+      "value": "confessed_and_detained",
+      "chapter": 8
+    },
+    {
+      "key": "thao_status",
+      "value": "exit_prohibited_barricaded",
+      "chapter": 8
+    }
+  ],
+  "dependencies": [
+    "07"
+  ]
+}

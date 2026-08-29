@@ -1,0 +1,67 @@
+{
+  "chapter": 13,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.622914",
+  "summary": "Đêm thứ Bảy (22:00) đến sáng Chủ nhật (05:00). Biệt thự Thao cố thủ với luật sư và 6 vệ sĩ. 02:00 Nam/Huy trinh sát đỉnh đèo Gió, phát hiện dấu gai giày, nhánh cây ngắm bắn và mẩu cáp đồng 12mm bị cắt thử bằng kìm thủy lực. Sinh chuẩn bị đột nhập qua cống ngầm. Chia 3 mũi tác chiến. 05:00 Sinh cắt điện tổng biệt thự.",
+  "timeline_events": [
+    {
+      "time": "Đêm thứ Bảy, 22:00-02:00",
+      "event": "Bao vây ngoại vi biệt thự đồi thông; Thao dùng luật sư khiếu nại câu giờ.",
+      "chapter": 13
+    },
+    {
+      "time": "Sáng Chủ nhật, 02:00-05:00",
+      "event": "Khám nghiệm vết cắt cáp trên đèo; triển khai 3 mũi; Sinh cắt điện tổng lúc 05:00.",
+      "chapter": 13
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C14",
+      "description": "Vết cắt thử cáp đồng 12mm và kìm thủy lực pin của Sinh trên đèo Gió",
+      "action": "introduce",
+      "status": "active"
+    },
+    {
+      "id": "C09",
+      "description": "Kỹ năng trinh sát và cắt nguồn điện tổng của Sinh",
+      "action": "advance",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 13,
+      "last_seen": 13
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 13,
+      "last_seen": 13
+    },
+    {
+      "name": "Điều tra viên Lâm Văn Thành",
+      "brief_role": "",
+      "first_seen": 13,
+      "last_seen": 13
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 13,
+      "last_seen": 13
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "",
+      "first_seen": 13,
+      "last_seen": 13
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

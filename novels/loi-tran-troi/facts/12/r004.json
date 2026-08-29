@@ -1,0 +1,87 @@
+{
+  "chapter": 12,
+  "revision": "r004",
+  "created_at": "2026-08-29T07:20:00+07:00",
+  "summary": "18 tháng sau: Tòa án Cấp cao công bố hồ sơ thực nghiệm cơ chế cơ học các vụ việc cũ và bản cung làm sáng tỏ lý do Sinh lưu giữ kho vật chứng để minh oan cho cha và nhận trách nhiệm trước pháp luật. Tòa tuyên phạt Thao Tù Chung thân, Đạt 3 năm tù, Sinh Tù Chung thân (tha tội chết), hủy án oan và phục hồi danh dự cho ông Cửu. Lễ gắn biển xưởng mộc tại bản Dền, GS Khoa ngâm bản dịch lục bát tiếng phổ thông. Nam trở về phố Đò Cũ ăn cháo sườn bên mẹ trong sớm thu bình yên bên dòng sông Lam Châu.",
+  "timeline_events": [
+    {
+      "time": "18 tháng sau",
+      "event": "Tòa án Cấp cao công bố chi tiết cơ chế cơ học các vụ cũ và bản cung của Sinh về động cơ lưu giữ kho vật chứng; tuyên phạt Thao Tù Chung thân, Đạt 3 năm tù, Sinh Tù Chung thân (tha tội chết); hủy án oan và phục hồi danh dự cho ông Cửu.",
+      "chapter": 12
+    },
+    {
+      "time": "Mùa thu sau phiên tòa",
+      "event": "Lễ gắn biển di tích xưởng mộc tại bản Dền; GS Khoa ngâm bản dịch lục bát tiếng phổ thông.",
+      "chapter": 12
+    },
+    {
+      "time": "Một tuần sau",
+      "event": "Nam trở về phố Đò Cũ ngồi ăn cháo sườn bên gánh hàng của mẹ trong sớm thu bình yên bên dòng sông Lam Châu.",
+      "chapter": 12
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "fs_counting_rhyme",
+      "description": "",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Bài đồng dao đếm sỏi được giải mã trọn vẹn bằng khúc ca giải oan đất trời"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "Điều tra viên chính",
+      "first_seen": 1,
+      "last_seen": 12
+    },
+    {
+      "name": "Giáo sư Lê Đăng Khoa",
+      "brief_role": "Chuyên gia văn hóa dân gian",
+      "first_seen": 5,
+      "last_seen": 12
+    },
+    {
+      "name": "Mẹ ĐTV Nam",
+      "brief_role": "Người mẹ bán cháo sườn góc chợ Đò Cũ",
+      "first_seen": 1,
+      "last_seen": 12
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Người con thợ mộc chấp hành án chung thân",
+      "first_seen": 9,
+      "last_seen": 12
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Phạm nhân tù chung thân",
+      "first_seen": 9,
+      "last_seen": 12
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Người thi hành án 3 năm",
+      "first_seen": 4,
+      "last_seen": 12
+    }
+  ],
+  "relationship_changes": [
+    {
+      "pair": "Đặng Hoàng Nam - Mẹ ĐTV Nam",
+      "status": "Bến đỗ bình yên của phẩm giá và tình mẫu tử",
+      "action": "update"
+    }
+  ],
+  "state_changes": [
+    {
+      "key": "novel_status",
+      "value": "fully_resolved_and_closed",
+      "chapter": 12
+    }
+  ],
+  "dependencies": [
+    "11"
+  ]
+}

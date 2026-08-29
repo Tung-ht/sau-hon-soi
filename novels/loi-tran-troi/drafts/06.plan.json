@@ -1,0 +1,25 @@
+{
+  "chapter": 6,
+  "title": "Dấu vết phế liệu",
+  "goal": "Nam bị Trung tá Đạt tước quyền thụ lý vụ án ông Tư để chuyển giao lên tỉnh; Nam cùng Tùng bí mật lần theo mạng lưới bãi phế liệu ven sông Đáy tìm thấy chiếc xe đạp thồ và manh mối chỉ về cựu Đại tá Hoàng Đình Thao ở Mường Biên.",
+  "scenes": [
+    "Sáng sớm tại trụ sở Công an huyện: Trung tá Đạt trao Quyết định rút hồ sơ chuyển lên Phòng CSHS tỉnh, yêu cầu Nam bàn giao toàn bộ vật chứng; Nam bí mật sao lưu hồ sơ trước khi giao nộp",
+    "Nam đến tiệm Tùng Computer: Tùng giải mã tài khoản quản trị cấp tỉnh từng mở đọc hồ sơ 2005 là của cựu Đại tá Hoàng Đình Thao (nguyên Phó Giám đốc Công an tỉnh Mường Biên)",
+    "Truy vết bãi phế liệu Chín Gù ven sông Đáy: Tìm thấy chiếc xe đạp thồ của Sinh gửi lại kèm tấm bản đồ vẽ tay tuyến đường lên đồi thông Mường Biên",
+    "Nam và Tùng quyết định bất chấp lệnh cấm, nổ máy xe máy xuyên đêm vượt đèo lên Mường Biên"
+  ],
+  "required_beats": [
+    "Cảm giác nghẹt thở khi bị tước quyền điều tra chính thức",
+    "Phát hiện danh tính cựu Đại tá Hoàng Đình Thao qua vết tích dữ liệu số hóa",
+    "Hình ảnh chiếc xe đạp thồ han gỉ của Sinh — biểu tượng cho 7 năm ẩn nhẫn",
+    "Quyết định vượt rào kỷ luật của Nam vì món nợ công lý"
+  ],
+  "forbidden_moves": [
+    "Không để Nam cãi vã mất kiểm soát với Trung tá Đạt",
+    "Không để Sinh xuất hiện trực tiếp trong chương này (chỉ để lại dấu vết)"
+  ],
+  "payoff_points": [
+    "Khám phá mục tiêu cuối cùng của Sinh nhắm vào cựu lãnh đạo cấp tỉnh"
+  ],
+  "hook_goal": "Nam và Tùng khởi hành chuyến xe máy xuyên đêm lên Mường Biên trong sự theo dõi ngầm"
+}

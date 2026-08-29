@@ -1,0 +1,23 @@
+{
+  "chapter": 4,
+  "title": "Đường cùng",
+  "goal": "Lên Lũng Nậm tìm thấy hồ sơ cháy dở năm 2005 và người con trai tên Sinh; trở về Hạ An đối mặt với bẫy manh mối giả của ông Lộc chủ trọ; Nam xé báo cáo khởi tố oan sau khi Tùng cảnh báo về bước chân.",
+  "scenes": [
+    "Chuyến xe khách lên Lũng Nậm (Mường Biên), nghe bà cụ bán nước kể về bi kịch chú Cửu và đứa con tên Sinh",
+    "Khám phá kho lưu trữ cũ của ông Bình: tìm thấy hộp hồ sơ LS 34/2005 với 6 cái tên (5 gạch đỏ, 1 khoanh tròn Trần Văn Cửu)",
+    "Về Hạ An: Đạt giục nộp báo cáo khởi tố; Huy báo cáo dấu giày và alibi giả của ông Lộc chủ trọ",
+    "Nam viết báo cáo khởi tố bị can Lộc; Tùng gọi điện can thiệp chỉ ra sai lệch chiều cao 1m62 và sải bước chân trên 1m",
+    "Nam triệu tập ông Lộc, xác minh alibi cờ bạc ven đê -> Nam xé nát báo cáo khởi tố oan",
+    "Tùng phát hiện hồ sơ 2005 bị tài khoản cấp tỉnh mở đọc 14 lần cách đây 3 tháng"
+  ],
+  "required_beats": [
+    "Không khí vùng cao Lũng Nậm và câu chuyện oan khiên của chú Cửu",
+    "Hồ sơ cháy dở có dấu vết bóc nhãn và chữ ký run rẩy",
+    "Bẫy điều tra manh mối giả ông Lộc và cuộc tranh luận về sải bước chân",
+    "Khoảnh khắc Nam giằng xé lương tâm và xé báo cáo khởi tố oan"
+  ],
+  "payoff_points": [
+    "Tránh được vết xe đổ bắt oan người vô tội; phát hiện có kẻ cấp cao dọn dẹp hồ sơ"
+  ],
+  "hook_goal": "Tài khoản quản trị cấp tỉnh đã mở đọc hồ sơ 2005 trước cả khi vụ án thứ 5 xảy ra"
+}

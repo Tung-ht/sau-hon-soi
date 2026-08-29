@@ -1,0 +1,96 @@
+{
+  "chapter": 1,
+  "revision": "r001",
+  "created_at": "2026-08-29T18:49:29.579392",
+  "summary": "Tối thứ Hai, P (Hoàng Đình Thao) ghé trụ sở trao đổi Quỹ An sinh, Nam ăn cháo sườn mẹ, Chỉ huy Đạt chong đèn trực đêm. 21:00-23:00 Nguyễn Văn Tư bị siết cổ chết tại 42 phố Đò Cũ. Sáng thứ Ba phát hiện thi thể, khám nghiệm hiện trường, thu giữ vi sợi dính xỉ kim loại và túi bùa 4 bộ xương cá suối.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Hai, 18:30-19:30",
+      "event": "P ghé trụ sở họp Quỹ An sinh; Nam ăn cháo sườn mẹ, vào ca trực đêm.",
+      "chapter": 1
+    },
+    {
+      "time": "Đêm thứ Hai, 21:00-23:00",
+      "event": "N4 Nguyễn Văn Tư bị siết cổ tử vong tại nhà số 42 phố Đò Cũ.",
+      "chapter": 1
+    },
+    {
+      "time": "Sáng thứ Ba, 05:30-07:30",
+      "event": "Phát hiện thi thể N4; Nam và tổ kỹ thuật khám nghiệm, thu xỉ kim loại và túi bùa 4 xương cá.",
+      "chapter": 1
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "description": "Túi bùa thổ cẩm thứ 4 chứa 4 bộ xương cá suối",
+      "action": "introduce",
+      "status": "active"
+    },
+    {
+      "id": "C02",
+      "description": "Bụi vi xỉ kim loại hợp kim Crom-Molypden dưới móng tay N4",
+      "action": "introduce",
+      "status": "active"
+    },
+    {
+      "id": "C10",
+      "description": "Hoàng Đình Thao xuất hiện tại trụ sở Đội Trọng án tối thứ Hai",
+      "action": "introduce",
+      "status": "active"
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Mẹ Nam",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Nguyễn Văn Tư",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "",
+      "first_seen": 1,
+      "last_seen": 1
+    }
+  ],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}
