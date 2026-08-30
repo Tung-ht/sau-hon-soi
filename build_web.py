@@ -598,67 +598,187 @@ CSS_WEB = """
         padding: 2.5rem 1.25rem;
     }
 
-    /* VOLUME DIVIDER HERO */
-    .volume-hero-card {
+    /* FULLSCREEN STANDALONE PAGES (100% Screen Height) */
+    .fullscreen-page {
+        min-height: 100vh;
+        min-height: 100dvh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: calc(60px + 1.5rem) 1.5rem 2rem 1.5rem;
+        background: radial-gradient(circle at 50% 30%, var(--bg-surface-elevated) 0%, var(--bg-body) 90%);
+        border-bottom: 1px solid var(--border-subtle);
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .fullscreen-card {
         background: var(--bg-surface);
         border: 1px solid var(--border-color);
-        border-radius: 12px;
-        overflow: hidden;
-        margin: 3.5rem 0 2.5rem 0;
-        box-shadow: var(--shadow-elevation);
+        border-radius: 16px;
+        padding: 2.5rem 2rem;
+        max-width: 860px;
+        width: 100%;
+        margin: auto 0;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
         text-align: center;
+        position: relative;
+        z-index: 2;
     }
 
-    .volume-art-banner {
+    @media (min-width: 768px) {
+        .fullscreen-card {
+            padding: 3.5rem 3rem;
+        }
+    }
+
+    /* EPIGRAPH FULLSCREEN */
+    .epigraph-fullscreen-quote {
+        font-family: 'Lora', serif;
+        font-style: italic;
+        font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+        line-height: 1.75;
+        color: var(--accent-gold);
+        margin-bottom: 0.75rem;
+    }
+
+    .epigraph-fullscreen-author {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .epigraph-ornament {
+        color: var(--accent-gold);
+        font-size: 0.9rem;
+        margin: 1.5rem 0;
+        opacity: 0.75;
+    }
+
+    /* VOLUME HERO FULLSCREEN */
+    .volume-fullscreen-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+        max-width: 1100px;
         width: 100%;
-        max-height: 320px;
+        margin: auto 0;
+        text-align: center;
+        z-index: 2;
+    }
+
+    @media (min-width: 768px) {
+        .volume-fullscreen-container {
+            flex-direction: row;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+            gap: 3.5rem;
+        }
+    }
+
+    .volume-fullscreen-art {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 320px;
+        border-radius: 14px;
         overflow: hidden;
+        border: 2px solid var(--border-color);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
     }
 
-    .volume-art-banner img {
+    @media (min-width: 768px) {
+        .volume-fullscreen-art {
+            max-width: 440px;
+        }
+    }
+
+    .volume-fullscreen-img {
         width: 100%;
-        height: 100%;
+        height: auto;
+        max-height: 55vh;
         object-fit: cover;
         display: block;
+        transition: transform 0.5s ease;
     }
 
-    .volume-hero-body {
-        padding: 2rem 1.5rem;
+    .volume-fullscreen-img:hover {
+        transform: scale(1.03);
     }
 
-    .volume-tag-label {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        font-size: 0.8rem;
-        font-weight: 700;
+    .volume-fullscreen-info {
+        flex-grow: 1;
+        max-width: 560px;
+    }
+
+    .volume-fullscreen-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.25rem 0.75rem;
+        background: rgba(212, 175, 55, 0.12);
+        border: 1px solid var(--border-color);
+        border-radius: 9999px;
         color: var(--accent-gold);
+        font-size: 0.75rem;
+        font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.65rem;
+        font-family: 'Be Vietnam Pro', sans-serif;
     }
 
-    .volume-hero-title {
+    .volume-fullscreen-title {
         font-family: 'Be Vietnam Pro', 'Segoe UI', Arial, sans-serif;
-        font-size: 1.85rem;
-        font-weight: 800;
+        font-size: clamp(2rem, 3.5vw, 2.6rem);
+        font-weight: 900;
         color: var(--text-main);
-        margin-bottom: 0.5rem;
+        line-height: 1.2;
+        margin-bottom: 0.35rem;
     }
 
-    .volume-hero-subtitle {
-        font-size: 0.95rem;
+    .volume-fullscreen-subtitle {
+        font-size: clamp(0.95rem, 1.8vw, 1.1rem);
         color: var(--text-muted);
         font-style: italic;
         margin-bottom: 1.25rem;
         font-family: 'Times New Roman', 'Lora', serif;
     }
 
-    .volume-epigraph-box {
+    .volume-fullscreen-epigraph {
         font-style: italic;
-        font-size: 0.95rem;
+        font-size: clamp(0.88rem, 1.5vw, 1rem);
         line-height: 1.65;
-        color: var(--text-muted);
-        max-width: 600px;
-        margin: 0 auto;
+        color: var(--accent-gold);
+        border-left: 3px solid var(--border-color);
+        padding-left: 1rem;
+        margin-bottom: 1.5rem;
         font-family: 'Times New Roman', 'Lora', serif;
+        text-align: left;
+    }
+
+    /* APPENDIX FULLSCREEN */
+    .appendix-fullscreen-card {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        padding: 2.25rem 1.75rem;
+        max-width: 960px;
+        width: 100%;
+        margin: auto 0;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+        z-index: 2;
+    }
+
+    @media (min-width: 768px) {
+        .appendix-fullscreen-card {
+            padding: 3rem 2.75rem;
+        }
     }
 
     /* CHAPTER CARD */
@@ -878,11 +998,11 @@ CSS_WEB = """
     }
 
     @media (max-width: 640px) {
-        .hero {
+        .hero, .fullscreen-page {
             padding: calc(60px + 1.25rem) 1rem 1.5rem 1rem;
             justify-content: flex-start;
         }
-        .hero-container {
+        .hero-container, .volume-fullscreen-container {
             gap: 1.25rem;
         }
         .hero-art {
@@ -926,7 +1046,27 @@ CSS_WEB = """
             padding: 0.5rem 1rem;
             font-size: 0.82rem;
         }
-        .volume-hero-title { font-size: 1.5rem; }
+        
+        .fullscreen-card, .appendix-fullscreen-card {
+            padding: 1.75rem 1.25rem;
+        }
+        .volume-fullscreen-art {
+            max-width: 280px;
+        }
+        .volume-fullscreen-img {
+            max-height: 32vh;
+        }
+        .volume-fullscreen-title {
+            font-size: 1.75rem;
+        }
+        .volume-fullscreen-subtitle {
+            font-size: 0.9rem;
+            margin-bottom: 0.85rem;
+        }
+        .volume-fullscreen-epigraph {
+            font-size: 0.85rem;
+            margin-bottom: 1.1rem;
+        }
     }
 """
 
@@ -1116,38 +1256,83 @@ def build_web_reader():
         </a>
     </header>
 
-    <!-- MAIN READING CONTAINER -->
-    <main class="novel-wrapper">
-
-        <!-- EPIGRAPH -->
-        <section class="appendix-card" id="epigraph" style="text-align: center;">
-            <div class="appendix-heading" style="font-size: 1.1rem;">LỜI ĐỀ TỪ</div>
-            <p style="font-style: italic; font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.5rem; color: var(--accent-gold); font-family: 'Lora', serif;">
+    <!-- EPIGRAPH FULLSCREEN PAGE -->
+    <section class="fullscreen-page" id="epigraph">
+        <div class="fullscreen-card">
+            <div class="hero-badge" style="margin-bottom: 1.5rem;">
+                <i data-lucide="feather" style="width: 14px; height: 14px;"></i>
+                LỜI ĐỀ TỪ & ĐỒNG DAO CỔ
+            </div>
+            
+            <p class="epigraph-fullscreen-quote">
                 “Cái cây gỗ trong rừng có cong queo thì mình đẽo cho thẳng được, chứ cái bụng người mình mà cong queo thì dựng cái nhà nào lên rồi cũng sập thôi con à.”
             </p>
-            <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 600;">
+            <p class="epigraph-fullscreen-author">
                 — Lời dặn của người thợ mộc Trần Văn Cửu (1958 – 2005)
             </p>
-        </section>
+
+            <div class="epigraph-ornament">❖   ❖   ❖</div>
+
+            <p class="epigraph-fullscreen-quote" style="font-size: clamp(1rem, 2vw, 1.15rem);">
+                “Một sỏi nhặt lá me rơi,<br>
+                Hai sỏi gai nhọn cào phơi vách đèo.<br>
+                Ba sỏi hạt đắng lưng đèo,<br>
+                Bốn sỏi xương cá lạnh theo thác ngàn.<br>
+                Năm sỏi bến nước đò tan,<br>
+                Sáu sỏi thước mộc giải oan đất trời.”
+            </p>
+            <p class="epigraph-fullscreen-author">
+                — Điệu đồng dao đếm sỏi dân gian Mường Biên
+            </p>
+        </div>
+        <a href="#tap-1" class="hero-scroll-indicator" title="Bắt đầu Tập 1">
+            <span>Bắt đầu Tập 1: Dưới Xuôi</span>
+            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+        </a>
+    </section>
 '''
 
-    for vol in VOLUMES:
+    for vol_idx, vol in enumerate(VOLUMES):
+        first_ch = vol["chapters"][0]
+        author_quote_html = ""
+        if "author_quote" in vol:
+            author_quote_html = f'<div style="font-size: 0.8rem; margin-top: 0.4rem; color: var(--text-muted); font-family: sans-serif; font-weight: 600;">{vol["author_quote"]}</div>'
+        
         full_html += f'''
-        <!-- VOLUME HERO: {vol["title"]} -->
-        <div class="volume-hero-card" id="{vol["id"]}">
-            <div class="volume-art-banner">
-                <img src="{vol["image"]}" alt="{vol["title"]}">
-            </div>
-            <div class="volume-hero-body">
-                <div class="volume-tag-label">Phần Sách</div>
-                <h2 class="volume-hero-title">{vol["title"]}</h2>
-                <div class="volume-hero-subtitle">{vol["subtitle"]}</div>
-                <div class="volume-epigraph-box">
-                    {vol["epigraph"]}
-                    {f'<div style="font-size: 0.8rem; margin-top: 0.25rem; font-weight: 600;">{vol["author_quote"]}</div>' if "author_quote" in vol else ''}
+        <!-- VOLUME FULLSCREEN PAGE: {vol["title"]} -->
+        <section class="fullscreen-page" id="{vol["id"]}">
+            <div class="volume-fullscreen-container">
+                <div class="volume-fullscreen-art">
+                    <img src="{vol["image"]}" alt="{vol["title"]}" class="volume-fullscreen-img">
+                </div>
+                <div class="volume-fullscreen-info">
+                    <div class="volume-fullscreen-badge">
+                        <i data-lucide="book" style="width: 14px; height: 14px;"></i>
+                        Phần Sách · {vol["title"].split(":")[0]}
+                    </div>
+                    <h2 class="volume-fullscreen-title">{vol["title"]}</h2>
+                    <div class="volume-fullscreen-subtitle">{vol["subtitle"]}</div>
+                    
+                    <div class="volume-fullscreen-epigraph">
+                        {vol["epigraph"]}
+                        {author_quote_html}
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#chuong-{first_ch}" class="btn-primary">
+                            <i data-lucide="book-open"></i> Đọc Chương {first_ch}
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <a href="#chuong-{first_ch}" class="hero-scroll-indicator" title="Cuộn xuống đọc các chương">
+                <span>Khám phá các chương {vol["title"].split(":")[0]}</span>
+                <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+            </a>
+        </section>
+
+        <!-- CHAPTERS CONTAINER FOR {vol["title"]} -->
+        <main class="novel-wrapper">
         '''
 
         for ch_num in vol["chapters"]:
@@ -1169,142 +1354,176 @@ def build_web_reader():
                     <div class="chapter-footer-nav">
                         {f'<a href="#chuong-{prev_ch}" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>' if prev_ch else '<span></span>'}
                         <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        {f'<a href="#chuong-{next_ch}" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>' if next_ch else '<span></span>'}
+                        {f'<a href="#chuong-{next_ch}" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>' if next_ch else f'<a href="#appendix-1" class="chapter-nav-btn">Xem Phụ lục <i data-lucide="chevron-right"></i></a>'}
                     </div>
                 </article>
                 '''
 
-    # APPENDICES & AUTHOR NOTE
+        full_html += '''
+        </main>
+        '''
+
+    # APPENDICES & AUTHOR NOTE FULLSCREEN PAGES
     full_html += '''
-        <!-- PHỤ LỤC 1 -->
-        <section class="appendix-card" id="appendix-1">
-            <h3 class="appendix-heading">PHỤ LỤC 1: BÀI ĐỒNG DAO ĐẾM SỎI LŨNG NẬM</h3>
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; text-align: justify;">
-                Bài đồng dao đếm 6 nấc sỏi là trò chơi truyền miệng ngàn đời của trẻ con đồng bào bản Dền, thung lũng Lũng Nậm bên dòng suối Nậm. Dưới đây là văn bản nguyên tác đối chiếu bản dịch thơ tiếng phổ thông của Giáo sư Lê Đăng Khoa:
-            </p>
-            <div class="clue-table-responsive">
-                <table class="web-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 15%;">Nấc sỏi</th>
-                            <th style="width: 45%;">Nguyên tác tiếng Lũng Nậm cổ</th>
-                            <th style="width: 40%;">Bản dịch thơ Lục bát phổ thông</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Hòn 1</strong></td>
-                            <td><em>Nừng thày — bạ mạy hua nặm</em></td>
-                            <td>Một sỏi nhặt lá me rơi</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hòn 2</strong></td>
-                            <td><em>Sóng thày — nhả khảm phia hin</em></td>
-                            <td>Hai sỏi gai nhọn cào phơi vách đèo</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hòn 3</strong></td>
-                            <td><em>Xảm thày — mác muồng nả bẩu</em></td>
-                            <td>Ba sỏi hạt đắng lưng đèo</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hòn 4</strong></td>
-                            <td><em>Xí thày — pa nặm vảng sâu</em></td>
-                            <td>Bốn sỏi xương cá lạnh theo thác ngàn</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hòn 5</strong></td>
-                            <td><em>Hả thày — tha đò bến lạnh</em></td>
-                            <td>Năm sỏi bến nước đò tan</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hòn 6</strong></td>
-                            <td><em>Hốc thày — mạy lim dăng trời</em></td>
-                            <td>Sáu sỏi thước mộc giải oan đất trời</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <!-- PHỤ LỤC 1 FULLSCREEN PAGE -->
+        <section class="fullscreen-page" id="appendix-1">
+            <div class="appendix-fullscreen-card">
+                <div style="text-align: center; margin-bottom: 1.25rem;">
+                    <div class="hero-badge">
+                        <i data-lucide="scroll" style="width: 14px; height: 14px;"></i>
+                        TÀI LIỆU DÂN GIAN & KHẢO CỨU
+                    </div>
+                    <h3 class="appendix-heading" style="margin-bottom: 0;">PHỤ LỤC 1: BÀI ĐỒNG DAO ĐẾM SỎI LŨNG NẬM</h3>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem; text-align: justify; line-height: 1.6;">
+                    Bài đồng dao đếm 6 nấc sỏi là trò chơi truyền miệng ngàn đời của trẻ con đồng bào bản Dền, thung lũng Lũng Nậm bên dòng suối Nậm. Dưới đây là văn bản nguyên tác đối chiếu bản dịch thơ tiếng phổ thông của Giáo sư Lê Đăng Khoa:
+                </p>
+                <div class="clue-table-responsive">
+                    <table class="web-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 15%;">Nấc sỏi</th>
+                                <th style="width: 45%;">Nguyên tác tiếng Lũng Nậm cổ</th>
+                                <th style="width: 40%;">Bản dịch thơ Lục bát phổ thông</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Hòn 1</strong></td>
+                                <td><em>Nừng thày — bạ mạy hua nặm</em></td>
+                                <td>Một sỏi nhặt lá me rơi</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hòn 2</strong></td>
+                                <td><em>Sóng thày — nhả khảm phia hin</em></td>
+                                <td>Hai sỏi gai nhọn cào phơi vách đèo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hòn 3</strong></td>
+                                <td><em>Xảm thày — mác muồng nả bẩu</em></td>
+                                <td>Ba sỏi hạt đắng lưng đèo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hòn 4</strong></td>
+                                <td><em>Xí thày — pa nặm vảng sâu</em></td>
+                                <td>Bốn sỏi xương cá lạnh theo thác ngàn</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hòn 5</strong></td>
+                                <td><em>Hả thày — tha đò bến lạnh</em></td>
+                                <td>Năm sỏi bến nước đò tan</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hòn 6</strong></td>
+                                <td><em>Hốc thày — mạy lim dăng trời</em></td>
+                                <td>Sáu sỏi thước mộc giải oan đất trời</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a href="#appendix-2" class="hero-scroll-indicator" title="Xem Phụ lục 2">
+                <span>Tiếp tục: Phụ lục 2 - Ma trận Vật chứng</span>
+                <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+            </a>
+        </section>
+
+        <!-- PHỤ LỤC 2 FULLSCREEN PAGE -->
+        <section class="fullscreen-page" id="appendix-2">
+            <div class="appendix-fullscreen-card">
+                <div style="text-align: center; margin-bottom: 1.25rem;">
+                    <div class="hero-badge">
+                        <i data-lucide="file-check-2" style="width: 14px; height: 14px;"></i>
+                        HỒ SƠ TƯ PHÁP & KHOA HỌC PHÁP Y
+                    </div>
+                    <h3 class="appendix-heading" style="margin-bottom: 0;">PHỤ LỤC 2: MA TRẬN 6 VẬT CHỨNG & PHÁP CHỨNG</h3>
+                </div>
+                <div class="clue-table-responsive">
+                    <table class="web-table">
+                        <thead>
+                            <tr>
+                                <th>Nấc</th>
+                                <th>Nạn nhân / Đối tượng</th>
+                                <th>Địa bàn</th>
+                                <th>Vật chứng để lại</th>
+                                <th>Cơ chế kỹ thuật / Pháp chứng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Hoàng Văn Nhẫn (Lò Văn Thìn)</td>
+                                <td>Rừng Quỳnh Lâm (2021)</td>
+                                <td>1 lá me rừng khô</td>
+                                <td>Rút chốt giá gỗ xưởng cưa</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Phạm Văn Sáu (Sùng A Đở)</td>
+                                <td>Mỏ đá Tây Phong (2022)</td>
+                                <td>2 mẩu dây gai rừng</td>
+                                <td>Kích nổ nêm nén vách đá vôi</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Đặng Văn Mười (Bàn Văn Chắt)</td>
+                                <td>Cảng Hải Khê (2023)</td>
+                                <td>3 hạt muồng đen khô</td>
+                                <td>Khóa van khí trơ buồng đáy tàu</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Nguyễn Văn Tư (Lý Văn Mằn)</td>
+                                <td>Hạ An (2024)</td>
+                                <td>4 bộ xương cá bống đá</td>
+                                <td>Siết cổ cơ học & D-Alkaloid Đoan Đắng</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Bùi Văn Vượng (Nhân chứng gian)</td>
+                                <td>Bến suối Lũng Nậm (2024)</td>
+                                <td>5 hòn sỏi suối xám chì</td>
+                                <td>Nhát đâm bó mạch nách lính trinh sát</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Hoàng Đình Thao (Kẻ chủ mưu)</td>
+                                <td>Biệt thự Mường Biên (2024)</td>
+                                <td>Chiếc thước mộc gỗ lim</td>
+                                <td>Bút tích phôi lệnh xe TN-1479, Keo Poly-resin & Cưa đĩa 4mm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a href="#author-note" class="hero-scroll-indicator" title="Xem Lời bạt của Tác giả">
+                <span>Tiếp tục: Lời bạt của Tác giả</span>
+                <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+            </a>
+        </section>
+
+        <!-- LỜI BẠT FULLSCREEN PAGE -->
+        <section class="fullscreen-page" id="author-note">
+            <div class="fullscreen-card" style="text-align: left;">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <div class="hero-badge">
+                        <i data-lucide="pen-tool" style="width: 14px; height: 14px;"></i>
+                        HẬU TỪ TÁC PHẨM
+                    </div>
+                    <h3 class="appendix-heading" style="margin-bottom: 0;">LỜI BẠT CỦA TÁC GIẢ HOÀNG TÙNG</h3>
+                </div>
+                <p style="text-align: justify; text-indent: 1.5em; line-height: 1.8; font-size: 1rem; margin-bottom: 1.25rem; font-family: 'Lora', serif;">
+                    <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ XRF sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
+                </p>
+                <p style="text-align: justify; text-indent: 1.5em; line-height: 1.8; font-size: 1rem; font-family: 'Lora', serif;">
+                    Hình ảnh chiếc thước mộc bằng gỗ lim của người thợ mộc Trần Văn Cửu — với những vết khắc mòn vẹt sau mười chín năm oan khuất — chính là chiếc neo đạo đức bất biến. Dù giông bão thời cuộc hay sự toan tính cá nhân có bẻ cong những phán quyết tạm thời, thì sự ngay thẳng và phẩm giá của người lao động lương thiện vẫn luôn tìm được con đường trở về với ánh sáng.
+                </p>
+                <p style="text-align: right; font-style: italic; margin-top: 2rem; font-size: 0.95rem; color: var(--accent-gold); font-family: 'Be Vietnam Pro', sans-serif; font-weight: 600;">
+                    <strong>Tác giả: Hoàng Tùng</strong><br>
+                    <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal;">Hạ An – Mường Biên – Mùa thu 2026</span>
+                </p>
             </div>
         </section>
-
-        <!-- PHỤ LỤC 2 -->
-        <section class="appendix-card" id="appendix-2">
-            <h3 class="appendix-heading">PHỤ LỤC 2: MA TRẬN 6 VẬT CHỨNG & PHÁP CHỨNG</h3>
-            <div class="clue-table-responsive">
-                <table class="web-table">
-                    <thead>
-                        <tr>
-                            <th>Nấc</th>
-                            <th>Nạn nhân / Đối tượng</th>
-                            <th>Địa bàn</th>
-                            <th>Vật chứng để lại</th>
-                            <th>Cơ chế kỹ thuật / Pháp chứng</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Hoàng Văn Nhẫn (Lò Văn Thìn)</td>
-                            <td>Rừng Quỳnh Lâm (2021)</td>
-                            <td>1 lá me rừng khô</td>
-                            <td>Rút chốt giá gỗ xưởng cưa</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Phạm Văn Sáu (Sùng A Đở)</td>
-                            <td>Mỏ đá Tây Phong (2022)</td>
-                            <td>2 mẩu dây gai rừng</td>
-                            <td>Kích nổ nêm nén vách đá vôi</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Đặng Văn Mười (Bàn Văn Chắt)</td>
-                            <td>Cảng Hải Khê (2023)</td>
-                            <td>3 hạt muồng đen khô</td>
-                            <td>Khóa van khí trơ buồng đáy tàu</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Nguyễn Văn Tư (Lý Văn Mằn)</td>
-                            <td>Hạ An (2024)</td>
-                            <td>4 bộ xương cá bống đá</td>
-                            <td>Siết cổ cơ học & D-Alkaloid Đoan Đắng</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Bùi Văn Vượng (Nhân chứng gian)</td>
-                            <td>Bến suối Lũng Nậm (2024)</td>
-                            <td>5 hòn sỏi suối xám chì</td>
-                            <td>Nhát đâm bó mạch nách lính trinh sát</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Hoàng Đình Thao (Kẻ chủ mưu)</td>
-                            <td>Biệt thự Mường Biên (2024)</td>
-                            <td>Chiếc thước mộc gỗ lim</td>
-                            <td>Bút tích phôi lệnh xe TN-1479, Keo Poly-resin & Cưa đĩa 4mm</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- LỜI BẠT -->
-        <section class="appendix-card" id="author-note">
-            <h3 class="appendix-heading">LỜI BẠT CỦA TÁC GIẢ HOÀNG TÙNG</h3>
-            <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1rem; font-family: 'Lora', serif;">
-                <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ XRF sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
-            </p>
-            <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem; font-family: 'Lora', serif;">
-                Hình ảnh chiếc thước mộc bằng gỗ lim của người thợ mộc Trần Văn Cửu — với những vết khắc mòn vẹt sau mười chín năm oan khuất — chính là chiếc neo đạo đức bất biến. Dù giông bão thời cuộc hay sự toan tính cá nhân có bẻ cong những phán quyết tạm thời, thì sự ngay thẳng và phẩm giá của người lao động lương thiện vẫn luôn tìm được con đường trở về với ánh sáng.
-            </p>
-            <p style="text-align: right; font-style: italic; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted); font-family: 'Be Vietnam Pro', sans-serif;">
-                <strong>Tác giả: Hoàng Tùng</strong><br>
-                Hạ An – Mường Biên – Mùa thu 2026
-            </p>
-        </section>
-
-    </main>
 
     <!-- BACK TO TOP BUTTON -->
     <button class="btn-back-top" id="btn-back-top" title="Lên đầu trang">
