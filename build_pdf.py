@@ -640,13 +640,13 @@ def build_complete_book():
 
 <!-- BÌA SÁCH (COVER) -->
 <div class="cover-page">
-    <div class="cover-badge">TIỂU THUYẾT TRINH THÁM HÌNH SỰ — PROCEDURAL NOIR</div>
+    <div class="cover-badge">TIỂU THUYẾT TRINH THÁM HÌNH SỰ ĐIỀU TRA QUY CHUẨN</div>
     <div class="cover-author">HOÀNG TÙNG</div>
     <div class="cover-title-group">
         <h1 class="cover-main-title">SÁU HÒN SỎI</h1>
         <div class="cover-subtitle">LỜI TRĂN TRỐI & KỲ ÁN LŨNG NẬM</div>
         <div class="cover-ornament">❖ ❖ ❖</div>
-        <img class="cover-img-preview" src="file:///{key_visual_path}" alt="Key Visual">
+        <img class="cover-img-preview" src="file:///{key_visual_path}" alt="Tranh minh họa chủ đạo">
         <p class="cover-tagline">“Khi lưỡi dao báo thù tì sát cổ họng kẻ chủ mưu, thứ duy nhất có thể hóa giải mười chín năm oan khuất không phải là họng súng, mà là một chiếc thước mộc gỗ lim mòn vẹt...”</p>
     </div>
     <div class="cover-footer">
@@ -659,7 +659,7 @@ def build_complete_book():
     <div>
         <div class="title-author-name">HOÀNG TÙNG</div>
         <div class="title-book-name">SÁU HÒN SỎI</div>
-        <div class="title-book-genre">Tiểu thuyết Trinh thám — Procedural Noir</div>
+        <div class="title-book-genre">Tiểu thuyết Trinh thám — Điều tra Quy chuẩn Hiện trường</div>
         <div class="title-page-divider"></div>
         <div style="font-size: 10pt; color: #444; font-style: italic;">Hành trình 11 năm đi tìm công lý và di vật chiếc thước mộc của người cha</div>
     </div>
@@ -821,7 +821,7 @@ def build_complete_book():
                     <td>Nguyễn Văn Tư (Lý Văn Mằn)</td>
                     <td>Hạ An (2024)</td>
                     <td>4 bộ xương cá bống đá</td>
-                    <td>Siết cổ cơ học & D-Alkaloid Đoan Đắng</td>
+                    <td>Siết cổ cơ học & Độc tố ancaloit thảo mộc Đoan Đắng</td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -845,7 +845,7 @@ def build_complete_book():
     <div class="appendix-page">
         <div class="appendix-title">LỜI BẠT CỦA TÁC GIẢ HOÀNG TÙNG</div>
         <p style="text-align: justify; text-indent: 1.5em; line-height: 1.6; font-size: 10pt;">
-            <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ XRF sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
+            <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ huỳnh quang tia X sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
         </p>
         <p style="text-align: justify; text-indent: 1.5em; line-height: 1.6; font-size: 10pt;">
             Hình ảnh chiếc thước mộc bằng gỗ lim của người thợ mộc Trần Văn Cửu — với những vết khắc mòn vẹt sau mười chín năm oan khuất — chính là chiếc neo đạo đức bất biến. Dù giông bão thời cuộc hay sự toan tính cá nhân có bẻ cong những phán quyết tạm thời, thì sự ngay thẳng và phẩm giá của người lao động lương thiện vẫn luôn tìm được con đường trở về với ánh sáng.
@@ -858,9 +858,9 @@ def build_complete_book():
 
     <!-- TRANG XUẤT BẢN (COLOPHON) -->
     <div class="colophon-page">
-        <div style="font-weight: 700; color: #1e293b; margin-bottom: 2mm;">SÁU HÒN SỎI — TIỂU THUYẾT TRINH THÁM PROCEDURAL NOIR</div>
+        <div style="font-weight: 700; color: #1e293b; margin-bottom: 2mm;">SÁU HÒN SỎI — TIỂU THUYẾT TRINH THÁM HÌNH SỰ ĐIỀU TRA</div>
         <div>Tác giả: Hoàng Tùng</div>
-        <div>Định dạng: Sách in tiêu chuẩn A5 (145 x 205 mm) & Digital Master PDF</div>
+        <div>Định dạng: Sách in tiêu chuẩn A5 (145 x 205 mm) & Bản PDF Sách Điện Tử Xuất Bản</div>
         <div>Dung lượng: 40.800 từ / 15 Chương hoàn chỉnh</div>
         <div>Bản quyền tác phẩm © 2026 Hoàng Tùng. Mọi quyền được bảo lưu.</div>
     </div>

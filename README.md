@@ -1,7 +1,7 @@
-# 📖 SÁU HÒN SỎI — TIỂU THUYẾT TRINH THÁM PROCEDURAL NOIR
+# 📖 SÁU HÒN SỎI — TIỂU THUYẾT TRINH THÁM HÌNH SỰ ĐIỀU TRA QUY CHUẨN
 **Tác giả:** Hoàng Tùng  
-**Thể loại:** Trinh thám hình sự / Procedural Noir / Cổ điển Fair-Play Mystery  
-**Quy mô:** 3 Hồi · 15 Chương hoàn chỉnh · 40.800 từ  
+**Thể loại:** Trinh thám hình sự thực nghiệm / Điều tra hiện trường / Công bằng chứng cứ  
+**Quy mô:** 3 Tập · 15 Chương hoàn chỉnh · 40.800 từ  
 **Bản quyền:** © 2026 Hoàng Tùng. Mọi quyền được bảo lưu.
 
 ---
@@ -9,12 +9,12 @@
 ## 🌐 1. Đọc Trực Tuyến & Tải Sách
 
 * 🚀 **Trang Đọc Sách Trực Tuyến (GitHub Pages):** [https://tung-ht.github.io/sau-hon-soi/](https://tung-ht.github.io/sau-hon-soi/)
-* 📄 **File PDF Sách In Tiêu Chuẩn (131 trang):** [`Sau_Hon_Soi_Master_Edition.pdf`](Sau_Hon_Soi_Master_Edition.pdf)
-* 💻 **File Nguồn HTML Dàn Trang:** [`Sau_Hon_Soi_Book.html`](Sau_Hon_Soi_Book.html)
+* 📄 **Tập Tin PDF Sách In Tiêu Chuẩn (131 trang):** [`Sau_Hon_Soi_Master_Edition.pdf`](Sau_Hon_Soi_Master_Edition.pdf)
+* 💻 **Tập Tin Nguồn HTML Dàn Trang:** [`Sau_Hon_Soi_Book.html`](Sau_Hon_Soi_Book.html)
 
 ---
 
-## 🔍 2. Giới Thiệu Tác Phẩm (Blurb)
+## 🔍 2. Giới Thiệu Tác Phẩm
 
 > *“Tại ngõ chợ nghèo Đò Cũ, một người thợ vá săm sống dưới danh tính giả bị siết cổ chết trong đêm mưa gió, để lại chiếc túi bùa thổ cẩm chứa bốn bộ xương cá bống đá khô kiệt.*
 > 
@@ -24,7 +24,7 @@
 
 ---
 
-## 🎨 3. Hình Ảnh Minh Họa Tác Phẩm (Concept Art)
+## 🎨 3. Tranh Minh Họa Tác Phẩm
 
 | Tập 1: Dưới Xuôi | Tập 2: Ngược Ngàn | Tập 3: Ánh Sáng Công Lý |
 |:---:|:---:|:---:|
@@ -37,24 +37,24 @@
 
 ### TẬP 1: DƯỚI XUÔI — Mắt Xích Thứ Tư & Bẫy Đánh Lạc Hướng
 1. **Chương 1:** Đêm mưa phố Đò Cũ
-2. **Chương 2:** Người cố vấn *(Gieo Mastermind Hoàng Đình Thao)*
-3. **Chương 3:** Bóng đen bãi xác tàu *(Gieo Red Herring Long Sà-lan)*
-4. **Chương 4:** Đấu trí dưới đáy bùn *(Phá Alibi máy tàu)*
+2. **Chương 2:** Tiền và người thợ bí danh
+3. **Chương 3:** Bóng đen bãi xác tàu
+4. **Chương 4:** Đấu trí dưới đáy bùn
 5. **Chương 5:** Bốn cái chết
 6. **Chương 6:** Tiếng hát bản Dền
 
 ### TẬP 2: NGƯỢC NGÀN — Vết Dấu Nội Bộ & Kỳ Án 2005
-7. **Chương 7:** Dấu truy cập lúc nửa đêm *(Nghi án nội gián Đặng Tiến Đạt)*
-8. **Chương 8:** Thung lũng oan khuất
-9. **Chương 9:** Bến đò trong sương *(5 hòn sỏi)*
-10. **Chương 10:** Dưới đáy rương *(Hội đồng giám định cơ học gỗ 3 tầng)*
-11. **Chương 11:** Người thầy giữ im lặng *(Đạt tự thú & Giao nộp phôi lệnh xe)*
+7. **Chương 7:** Dấu truy cập lúc nửa đêm
+8. **Chương 8:** Bến nước trong sương
+9. **Chương 9:** Thung lũng oan khuất
+10. **Chương 10:** Dưới đáy rương
+11. **Chương 11:** Người thầy giữ im lặng
 
 ### TẬP 3: ÁNH SÁNG CÔNG LÝ — Bó Chứng Cứ & Vĩ Thanh Bản Dền
 12. **Chương 12:** Cuộc gọi thứ sáu
-13. **Chương 13:** Dấu chân trên đèo
-14. **Chương 14:** Chiếc thước mộc *(Hóa giải xung đột)*
-15. **Chương 15:** Ánh sáng thung lũng *(Phiên tòa đại hình & Dư ba)*
+13. **Chương 13:** Hai vòng vây
+14. **Chương 14:** Lựa chọn thứ sáu
+15. **Chương 15:** Ánh sáng thung lũng
 
 ---
 
@@ -72,5 +72,5 @@
 ---
 
 ## 🛠️ 6. Lệnh Biên Tập & Tái Tạo Bản Thảo
-* Chạy lại build PDF: `python build_pdf.py`
-* Chạy lại build Web: `python build_web.py`
+* Chạy lại xuất bản PDF: `python build_pdf.py`
+* Chạy lại xuất bản Trang đọc web: `python build_web.py`
