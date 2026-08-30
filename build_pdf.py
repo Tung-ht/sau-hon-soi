@@ -821,7 +821,7 @@ def build_complete_book():
                     <td>Nguyễn Văn Tư (Lý Văn Mằn)</td>
                     <td>Hạ An (2024)</td>
                     <td>4 bộ xương cá bống đá</td>
-                    <td>Siết cổ cơ học & Độc tố ancaloit thảo mộc Đoan Đắng</td>
+                    <td>Siết cổ cơ học & D-Alkaloid Đoan Đắng</td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -835,7 +835,7 @@ def build_complete_book():
                     <td>Hoàng Đình Thao (Kẻ chủ mưu)</td>
                     <td>Biệt thự Mường Biên (2024)</td>
                     <td>Chiếc thước mộc gỗ lim</td>
-                    <td>Bút tích phôi lệnh xe TN-1479 & Cưa đĩa 4mm</td>
+                    <td>Bút tích phôi lệnh xe TN-1479, Keo Poly-resin & Cưa đĩa 4mm</td>
                 </tr>
             </tbody>
         </table>
@@ -845,7 +845,7 @@ def build_complete_book():
     <div class="appendix-page">
         <div class="appendix-title">LỜI BẠT CỦA TÁC GIẢ HOÀNG TÙNG</div>
         <p style="text-align: justify; text-indent: 1.5em; line-height: 1.6; font-size: 10pt;">
-            <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ huỳnh quang tia X sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
+            <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ XRF sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
         </p>
         <p style="text-align: justify; text-indent: 1.5em; line-height: 1.6; font-size: 10pt;">
             Hình ảnh chiếc thước mộc bằng gỗ lim của người thợ mộc Trần Văn Cửu — với những vết khắc mòn vẹt sau mười chín năm oan khuất — chính là chiếc neo đạo đức bất biến. Dù giông bão thời cuộc hay sự toan tính cá nhân có bẻ cong những phán quyết tạm thời, thì sự ngay thẳng và phẩm giá của người lao động lương thiện vẫn luôn tìm được con đường trở về với ánh sáng.

@@ -926,9 +926,9 @@ def build_web_reader():
                 <div class="setting-row">
                     <span class="setting-label">Kiểu chữ</span>
                     <div class="segmented-control" id="font-selector">
-                        <button class="seg-btn active" data-font="be-vietnam">Hiện đại</button>
-                        <button class="seg-btn" data-font="lora">Cổ điển</button>
-                        <button class="seg-btn" data-font="merriweather">Trang nhã</button>
+                        <button class="seg-btn active" data-font="be-vietnam">Modern</button>
+                        <button class="seg-btn" data-font="lora">Lora</button>
+                        <button class="seg-btn" data-font="merriweather">Merri</button>
                     </div>
                 </div>
                 <div class="setting-row">
@@ -1140,7 +1140,7 @@ def build_web_reader():
                             <td>Nguyễn Văn Tư (Lý Văn Mằn)</td>
                             <td>Hạ An (2024)</td>
                             <td>4 bộ xương cá bống đá</td>
-                            <td>Siết cổ cơ học & Độc tố ancaloit thảo mộc Đoan Đắng</td>
+                            <td>Siết cổ cơ học & D-Alkaloid Đoan Đắng</td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -1154,7 +1154,7 @@ def build_web_reader():
                             <td>Hoàng Đình Thao (Kẻ chủ mưu)</td>
                             <td>Biệt thự Mường Biên (2024)</td>
                             <td>Chiếc thước mộc gỗ lim</td>
-                            <td>Bút tích phôi lệnh xe TN-1479 & Cưa đĩa 4mm</td>
+                            <td>Bút tích phôi lệnh xe TN-1479, Keo Poly-resin & Cưa đĩa 4mm</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1165,7 +1165,7 @@ def build_web_reader():
         <section class="appendix-card" id="author-note">
             <h3 class="appendix-heading">LỜI BẠT CỦA TÁC GIẢ HOÀNG TÙNG</h3>
             <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1rem; font-family: 'Lora', serif;">
-                <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ huỳnh quang tia X sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
+                <em>Sáu Hòn Sỏi</em> được khởi thảo từ khát khao khắc họa một tác phẩm trinh thám hình sự mang đậm linh hồn và bản sắc hiện thực Việt Nam. Nơi đó, cuộc đấu tranh bảo vệ công lý không chỉ diễn ra giữa các thiết bị đo quang phổ XRF sắc lạnh hay những quy chuẩn tố tụng tư pháp khắt khe, mà trước hết là cuộc đấu tranh thầm lặng trong tâm khảm của mỗi con người trước lằn ranh tha hóa của quyền lực.
             </p>
             <p style="text-align: justify; text-indent: 1.5em; line-height: 1.7; font-size: 0.95rem; font-family: 'Lora', serif;">
                 Hình ảnh chiếc thước mộc bằng gỗ lim của người thợ mộc Trần Văn Cửu — với những vết khắc mòn vẹt sau mười chín năm oan khuất — chính là chiếc neo đạo đức bất biến. Dù giông bão thời cuộc hay sự toan tính cá nhân có bẻ cong những phán quyết tạm thời, thì sự ngay thẳng và phẩm giá của người lao động lương thiện vẫn luôn tìm được con đường trở về với ánh sáng.
