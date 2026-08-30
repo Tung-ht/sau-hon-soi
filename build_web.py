@@ -971,8 +971,8 @@ def build_web_reader():
                         <div class="meta-lbl">Từ ngữ</div>
                     </div>
                     <div class="meta-box">
-                        <div class="meta-num">100%</div>
-                        <div class="meta-lbl">Công bằng</div>
+                        <div class="meta-num"><i data-lucide="scale" style="width: 22px; height: 22px; vertical-align: middle;"></i></div>
+                        <div class="meta-lbl">Công Bằng Chứng Cứ</div>
                     </div>
                 </div>
 
