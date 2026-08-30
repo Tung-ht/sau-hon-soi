@@ -1,0 +1,26 @@
+{
+  "chapter": 6,
+  "revision": "r014",
+  "created_at": "2026-08-30T08:34:53.653576",
+  "summary": "Chương 6 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
+  "timeline_events": [
+    {
+      "time": "Chương 6 Timeline",
+      "event": "Sự kiện chính Chương 6",
+      "chapter": 6
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C06",
+      "description": "",
+      "action": "track",
+      "status": "planted",
+      "notes": "Manh mối Chương 6"
+    }
+  ],
+  "cast": [],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "C01",
+    "description": "Thao xuất hiện với tư cách Chủ tịch danh dự Quỹ An sinh, bóng gió về hồ sơ chìm dưới đáy bùn Lam Châu.",
+    "planted_chapter": 1,
+    "resolved_chapter": 15,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C02",
+    "description": "Đạt khựng lại và xoay bật lửa Zippo khi nghe Thao nhắc về những vụ án cũ tưởng đã chìm.",
+    "planted_chapter": 1,
+    "resolved_chapter": 11,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C03",
+    "description": "Thu thập vi sợi len dệt chàm dính xỉ kim loại dưới móng tay N4 tại phố Đò Cũ.",
+    "planted_chapter": 1,
+    "resolved_chapter": 5,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C04",
+    "description": "Túi thổ cẩm chứa 4 bộ xương cá khô xếp ngay ngắn ở đáy hộp đồ nghề của N4.",
+    "planted_chapter": 1,
+    "resolved_chapter": 6,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C05",
+    "description": "Nam gặp Ba thợ cắt tại bãi phế liệu Chín Gù, quan sát vết bỏng xỉ hàn trên mu bàn tay.",
+    "planted_chapter": 2,
+    "resolved_chapter": 9,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C06",
+    "description": "Khoản tiền 60 triệu chuyển qua công ty bình phong vận tải Hải Khê cho N4 trước khi chết.",
+    "planted_chapter": 2,
+    "resolved_chapter": 11,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C07",
+    "description": "Que hàn chịu mặn HK-7018M và mỏ cắt hơi thải loại thu được tại sà-lan Lê Văn Long.",
+    "planted_chapter": 3,
+    "resolved_chapter": 5,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C08",
+    "description": "Cuốn sổ vật tư xưởng mộc 2005 ghi nhận 6 tấm gỗ ép và keo nhiệt xuất xưởng.",
+    "planted_chapter": 3,
+    "resolved_chapter": 10,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C09",
+    "description": "Alibi máy tời phụ sà-lan chứng minh Lê Văn Long lặn chui cứu tàu, không giết N4.",
+    "planted_chapter": 4,
+    "resolved_chapter": 4,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C10",
+    "description": "Bốn nạn nhân N1-N4 mang danh tính giả từ cùng một phôi giấy tờ bảo an quang học.",
+    "planted_chapter": 5,
+    "resolved_chapter": 10,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C11",
+    "description": "Bài đồng dao cổ đếm sỏi 6 nấc bản Dền được Giáo sư Khoa giải mã từ hoa văn thổ cẩm.",
+    "planted_chapter": 6,
+    "resolved_chapter": 15,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C12",
+    "description": "Đạt lén tra cứu dữ liệu tàng thư N1-N5 trên máy tính nội bộ trong đêm.",
+    "planted_chapter": 7,
+    "resolved_chapter": 8,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C13",
+    "description": "N5 (Bùi Văn Vượng) bị siết cổ tại bến suối Lũng Nậm trước khi Đạt tiếp cận hiện trường.",
+    "planted_chapter": 8,
+    "resolved_chapter": 8,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C14",
+    "description": "Đạt khai ra Biên bản phụ ghi nhận mùi keo mới và vết máy cưa 2005 bị Thao loại khỏi hồ sơ.",
+    "planted_chapter": 8,
+    "resolved_chapter": 10,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C15",
+    "description": "Cụ Mộc bản Dền trao lại chiếc thước mộc gỗ lim di vật của ông Cửu cho Nam.",
+    "planted_chapter": 9,
+    "resolved_chapter": 14,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C16",
+    "description": "Mở niêm phong 6 chiếc rương chứng minh đáy giả bằng gỗ ép công nghiệp và keo poly-resin.",
+    "planted_chapter": 10,
+    "resolved_chapter": 10,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C17",
+    "description": "Bản nháp lệnh điều động xe chở tang vật 2005 có bút tích gạch bỏ ý kiến phản đối của Đạt.",
+    "planted_chapter": 10,
+    "resolved_chapter": 11,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C18",
+    "description": "Đạt giao nộp USB nhật ký và thừa nhận hành vi che giấu tội phạm suốt 19 năm.",
+    "planted_chapter": 11,
+    "resolved_chapter": 15,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C19",
+    "description": "Thao bị phong tỏa đường biển, buộc phải quay về Lũng Nậm tẩu tán tài liệu gốc.",
+    "planted_chapter": 12,
+    "resolved_chapter": 13,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C20",
+    "description": "Hai vòng vây chiến thuật khép chặt đồi Nhà tưởng niệm khi K phục kích tước súng P-9 của Thao.",
+    "planted_chapter": 13,
+    "resolved_chapter": 14,
+    "status": "resolved",
+    "action": "resolve"
+  },
+  {
+    "id": "C21",
+    "description": "Nam đưa ra Quyết định Tái thẩm và Lệnh giữ người khẩn cấp, K buông dao vì danh dự của cha.",
+    "planted_chapter": 14,
+    "resolved_chapter": 15,
+    "status": "resolved",
+    "action": "resolve"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "chapter": 15,
+  "revision": "r009",
+  "summary": "18 tháng sau, Tòa án Cấp cao tuyên Thao Tù Chung thân, Đạt 3 năm án treo, Sinh Tù Chung thân khoan hồng, phục hồi danh dự cho ông Cửu. Thước mộc trở về bản Dền. Nam trở về Hạ An ăn cháo sườn bên mẹ.",
+  "timeline_events": [
+    {
+      "time": "Mười tám tháng sau",
+      "event": "Phiên tòa đại hình tuyên án Kỳ án Lũng Nậm 2005."
+    },
+    {
+      "time": "Sau phiên tòa",
+      "event": "Lễ gắn biển di tích xưởng mộc ông Cửu tại bản Dền."
+    },
+    {
+      "time": "Một tuần sau",
+      "event": "Nam trở về phố Đò Cũ Hạ An bên gánh hàng cháo sườn của mẹ."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Thao lĩnh án Chung thân."
+    },
+    {
+      "id": "C11",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Bài đồng dao hoàn tất 6 nấc định mệnh."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Giáo sư Lê Đăng Khoa",
+      "brief_role": "Chuyên gia văn hóa"
+    },
+    {
+      "name": "Mẹ Nam",
+      "brief_role": "Mẹ ĐTV Nam"
+    }
+  ]
+}

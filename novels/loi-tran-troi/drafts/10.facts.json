@@ -1,76 +1,18 @@
 {
-  "chapter": 10,
+  "summary": "Chương 10 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
   "timeline_events": [
     {
-      "time": "Chiều thứ Sáu, 14:00–17:30",
-      "event": "Hội đồng liên ngành mở niêm phong 6 chiếc rương tang vật 2005 tại Kho Vật chứng Trung tâm theo đúng trình tự tố tụng; phát hiện dấu cưa đĩa đa lưỡi xẻ rãnh, keo dán nhiệt Poly-resin và mã lô gỗ ép công nghiệp đáy giả LOT-2005-WD-06 (C07, C16); thu hồi biên bản phụ bị loại và lệnh điều động xe TN-1479 có bút tích 'phương án B' của Thao (C17); chuyên gia đưa nhận định sơ bộ; Thao chính thức trở thành đối tượng điều tra trọng tâm."
+      "time": "Chương 10 Timeline",
+      "event": "Sự kiện chính Chương 10"
     }
   ],
-  "cast": [
-    {
-      "name": "Đặng Hoàng Nam",
-      "role": "Điều tra viên chính",
-      "first_seen": 1,
-      "last_seen": 10
-    },
-    {
-      "name": "Trần Văn Huy",
-      "role": "Trinh sát điều tra",
-      "first_seen": 1,
-      "last_seen": 10
-    },
-    {
-      "name": "Kỹ sư Lâm nghiệp Phạm Văn Dũng",
-      "role": "Chuyên gia giám định gỗ",
-      "first_seen": 10,
-      "last_seen": 10
-    },
-    {
-      "name": "Kỹ thuật viên Quang",
-      "role": "Cán bộ kỹ thuật hình sự",
-      "first_seen": 1,
-      "last_seen": 10
-    },
-    {
-      "name": "Hoàng Đình Thao",
-      "role": "Chủ mưu bị bóc trần (P)",
-      "first_seen": 1,
-      "last_seen": 10
-    }
-  ],
-  "relationships": {
-    "Dang_Hoang_Nam": {
-      "Hoang_Dinh_Thao": "Xác lập chuỗi chứng cứ vật chất và tài liệu gốc buộc tội chủ mưu"
-    }
-  },
-  "state_changes": {
-    "Sau_chiec_ruong": "Mở niêm phong hợp thức; chứng minh bị can thiệp cơ học xẻ rãnh cưa đĩa và dán đáy giả gỗ ép (C07, C16)",
-    "Hoang_Dinh_Thao": "Bị chứng minh bút tích chỉ đạo 'phương án B' và làm sai lệch hồ sơ (C17); trở thành đối tượng điều tra trọng tâm"
-  },
   "foreshadow_updates": [
     {
-      "id": "C16",
-      "status": "planted",
-      "action": "plant",
-      "chapter": 10
-    },
-    {
-      "id": "C17",
-      "status": "planted",
-      "action": "plant",
-      "chapter": 10
-    },
-    {
-      "id": "C07",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 10
-    },
-    {
       "id": "C10",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 10
+      "action": "track",
+      "status": "planted",
+      "notes": "Manh mối Chương 10"
     }
-  ]
+  ],
+  "cast_introduced": []
 }

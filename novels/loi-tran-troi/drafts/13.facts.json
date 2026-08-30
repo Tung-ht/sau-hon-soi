@@ -1,77 +1,18 @@
 {
-  "chapter": 13,
+  "summary": "Chương 13 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
   "timeline_events": [
     {
-      "time": "Tối thứ Bảy, 19:00–23:30",
-      "event": "Hoàng Đình Thao trốn khỏi nơi cư trú lúc 19:00 lên Nhà tưởng niệm Lũng Nậm; Trần Văn Sinh cắt điện tổng bằng kìm thủy lực pin, tước vũ khí và khống chế Thao lúc 20:50; Nam và tổ đặc nhiệm thiết lập 2 vòng vây nghiêm ngặt lúc 21:30; Nam không mang vật chứng gốc mà mang bản sao hồ sơ phục hồi và chiếc thước mộc gỗ lim di vật vào đại sảnh đối diện với Sinh (C21)."
+      "time": "Chương 13 Timeline",
+      "event": "Sự kiện chính Chương 13"
     }
   ],
-  "cast": [
-    {
-      "name": "Đặng Hoàng Nam",
-      "role": "Điều tra viên chính",
-      "first_seen": 1,
-      "last_seen": 13
-    },
-    {
-      "name": "Trần Văn Huy",
-      "role": "Trinh sát điều tra",
-      "first_seen": 1,
-      "last_seen": 13
-    },
-    {
-      "name": "Hoàng Đình Thao",
-      "role": "Chủ mưu bị khống chế (P)",
-      "first_seen": 1,
-      "last_seen": 13
-    },
-    {
-      "name": "Trần Văn Sinh",
-      "role": "Kẻ săn mưu (K)",
-      "first_seen": 2,
-      "last_seen": 13
-    }
-  ],
-  "relationships": {
-    "Dang_Hoang_Nam": {
-      "Tran_Van_Sinh": "Bước vào đàm phán giải cứu bằng chiếc thước mộc di vật và hồ sơ phục hồi",
-      "Hoang_Dinh_Thao": "Ngăn chặn hành vi giết người và bảo vệ quyền năng tố tụng"
-    }
-  },
-  "state_changes": {
-    "Hoang_Dinh_Thao": "Bị Trần Văn Sinh tước súng và khống chế bằng dây cáp siết tại bục tưởng niệm",
-    "Tran_Van_Sinh": "Khống chế Thao; đối diện với Nam trong cuộc đàm phán quyết định (C21)"
-  },
   "foreshadow_updates": [
     {
-      "id": "C21",
-      "status": "planted",
-      "action": "plant",
-      "chapter": 13
-    },
-    {
-      "id": "C09",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 13
-    },
-    {
-      "id": "C14",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 13
-    },
-    {
-      "id": "C15",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 13
-    },
-    {
-      "id": "C20",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 13
+      "id": "C13",
+      "action": "track",
+      "status": "resolved",
+      "notes": "Manh mối Chương 13"
     }
-  ]
+  ],
+  "cast_introduced": []
 }

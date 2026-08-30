@@ -1,0 +1,38 @@
+{
+  "chapter": 13,
+  "revision": "r008",
+  "summary": "Rạng sáng Chủ nhật, Sinh cắt điện phục kích tước súng P-9 của Thao tại Nhà tưởng niệm. Nam chỉ đạo lập hai vòng vây, cởi áo giáp bước vào đại sảnh đối thoại lúc 05:10.",
+  "timeline_events": [
+    {
+      "time": "Chủ nhật 04:35-04:45",
+      "event": "Thao vào trạm kho; Sinh cắt điện phục kích tước súng P-9."
+    },
+    {
+      "time": "Chủ nhật 04:55-05:10",
+      "event": "Tổ án lập hai vòng vây; Nam cởi áo giáp vào đại sảnh đối thoại."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C20",
+      "description": "Hai vòng vây chiến thuật khép chặt đồi Nhà tưởng niệm khi K khống chế P.",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Cao trào đối đầu."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Kẻ báo thù (K)"
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Kẻ chủ mưu (P)"
+    }
+  ]
+}

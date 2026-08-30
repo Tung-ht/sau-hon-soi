@@ -1,0 +1,26 @@
+{
+  "chapter": 2,
+  "revision": "r011",
+  "created_at": "2026-08-30T08:34:50.503641",
+  "summary": "Chương 2 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
+  "timeline_events": [
+    {
+      "time": "Chương 2 Timeline",
+      "event": "Sự kiện chính Chương 2",
+      "chapter": 2
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C02",
+      "description": "",
+      "action": "track",
+      "status": "planted",
+      "notes": "Manh mối Chương 2"
+    }
+  ],
+  "cast": [],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

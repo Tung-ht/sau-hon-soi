@@ -1,95 +1,18 @@
 {
-  "chapter": 14,
+  "summary": "Chương 14 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
   "timeline_events": [
     {
-      "time": "Rạng sáng Chủ nhật, 00:00–05:30",
-      "event": "Nam đàm phán giải cứu con tin với Trần Văn Sinh bằng hồ sơ phục hồi Chuyên án 2005 và chiếc thước mộc gỗ lim di vật; Sinh thức tỉnh lương tri buông vũ khí chấp nhận sự phán xét của pháp luật (C21); Nam đối chất bóc trần Hoàng Đình Thao bằng 4 nguồn chứng cứ độc lập; Kiểm sát viên cao cấp tống đạt Lệnh giữ người trong trường hợp khẩn cấp đối với Thao lúc 04:40 sáng Chủ nhật; dẫn giải hai đối tượng về quy án."
+      "time": "Chương 14 Timeline",
+      "event": "Sự kiện chính Chương 14"
     }
   ],
-  "cast": [
-    {
-      "name": "Đặng Hoàng Nam",
-      "role": "Điều tra viên chính",
-      "first_seen": 1,
-      "last_seen": 14
-    },
-    {
-      "name": "Trần Văn Huy",
-      "role": "Trinh sát điều tra",
-      "first_seen": 1,
-      "last_seen": 14
-    },
-    {
-      "name": "Trần Văn Sinh",
-      "role": "Kẻ săn mưu quy án (K)",
-      "first_seen": 2,
-      "last_seen": 14
-    },
-    {
-      "name": "Hoàng Đình Thao",
-      "role": "Chủ mưu bị bắt giữ (P)",
-      "first_seen": 1,
-      "last_seen": 14
-    }
-  ],
-  "relationships": {
-    "Dang_Hoang_Nam": {
-      "Tran_Van_Sinh": "Thuyết phục thức tỉnh lương tri và tiếp nhận đầu thú",
-      "Hoang_Dinh_Thao": "Thi hành lệnh giữ người khẩn cấp và đấu tranh pháp lý"
-    }
-  },
-  "state_changes": {
-    "Tran_Van_Sinh": "Buông vũ khí đầu thú; trao lại chiếc thước mộc di vật; hợp tác khai báo thành khẩn (C21)",
-    "Hoang_Dinh_Thao": "Bị khóa 4 nguồn độc lập; bị bắt giữ khẩn cấp lúc 04:40 sáng Chủ nhật; tra còng số 8"
-  },
   "foreshadow_updates": [
     {
-      "id": "C18",
+      "id": "C14",
+      "action": "track",
       "status": "resolved",
-      "action": "resolve",
-      "chapter": 14
-    },
-    {
-      "id": "C19",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 14
-    },
-    {
-      "id": "C20",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 14
-    },
-    {
-      "id": "C21",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 14
-    },
-    {
-      "id": "C08",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 14
-    },
-    {
-      "id": "C11",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 14
-    },
-    {
-      "id": "C12",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 14
-    },
-    {
-      "id": "C15",
-      "status": "resolved",
-      "action": "resolve",
-      "chapter": 14
+      "notes": "Manh mối Chương 14"
     }
-  ]
+  ],
+  "cast_introduced": []
 }

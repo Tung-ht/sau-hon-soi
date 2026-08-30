@@ -1,84 +1,18 @@
 {
-  "chapter": 9,
+  "summary": "Chương 9 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
   "timeline_events": [
     {
-      "time": "Sáng thứ Sáu, 06:00–10:30",
-      "event": "Nam và Huy vào bản Dền tìm hiểu quá khứ qua Trưởng bản Ban và Cụ Mộc; Cụ Mộc trao chiếc thước mộc gỗ lim di vật đạo đức (C15); Huy đối soát hồ sơ trinh sát cơ động xác nhận danh tính K là Trần Văn Sinh; phát hiện phiếu bàn giao 6 thân rương ban đầu của ông Cửu; cơ quan cấp cao ban hành quyết định phục hồi Chuyên án 2005 và lệnh mở niêm phong 6 rương tang vật."
+      "time": "Chương 9 Timeline",
+      "event": "Sự kiện chính Chương 9"
     }
   ],
-  "cast": [
-    {
-      "name": "Đặng Hoàng Nam",
-      "role": "Điều tra viên chính",
-      "first_seen": 1,
-      "last_seen": 9
-    },
-    {
-      "name": "Trần Văn Huy",
-      "role": "Trinh sát điều tra",
-      "first_seen": 1,
-      "last_seen": 9
-    },
-    {
-      "name": "Trưởng bản Ban",
-      "role": "Trưởng bản Dền",
-      "first_seen": 8,
-      "last_seen": 9
-    },
-    {
-      "name": "Cụ già thợ mộc (Cụ Mộc)",
-      "role": "Nghệ nhân mộc bản Dền",
-      "first_seen": 8,
-      "last_seen": 9
-    },
-    {
-      "name": "Trần Văn Sinh",
-      "role": "Kẻ săn mưu (K)",
-      "first_seen": 2,
-      "last_seen": 9
-    }
-  ],
-  "relationships": {
-    "Dang_Hoang_Nam": {
-      "Cu_Moc": "Tiếp nhận chiếc thước mộc gỗ lim di vật tâm lý",
-      "Tran_Van_Sinh": "Xác lập danh tính pháp lý và hồ sơ quân ngũ"
-    }
-  },
-  "state_changes": {
-    "Tran_Van_Sinh": "Được xác lập trọn vẹn danh tính K (Ba thợ cắt, cựu lính trinh sát cơ động); C04, C09 payoff",
-    "Chuyen_An_2005": "Được chính thức phục hồi điều tra theo quyết định tố tụng của Viện Công tố",
-    "Vat_chung": "Tiếp nhận chiếc thước mộc gỗ lim (C15, di vật tâm lý), bản scan phiếu bàn giao 6 rương 2005"
-  },
   "foreshadow_updates": [
     {
-      "id": "C15",
-      "status": "planted",
-      "action": "plant",
-      "chapter": 9
-    },
-    {
-      "id": "C01",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 9
-    },
-    {
-      "id": "C02",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 9
-    },
-    {
-      "id": "C04",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 9
-    },
-    {
       "id": "C09",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 9
+      "action": "track",
+      "status": "planted",
+      "notes": "Manh mối Chương 9"
     }
-  ]
+  ],
+  "cast_introduced": []
 }

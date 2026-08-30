@@ -1,110 +1,80 @@
 [
   {
     "name": "Đặng Hoàng Nam",
-    "brief_role": "",
+    "brief_role": "ĐTV chính",
     "first_seen": 1,
-    "last_seen": 13
+    "last_seen": 15
   },
   {
     "name": "Mẹ Nam",
-    "brief_role": "",
+    "brief_role": "Mẹ ĐTV Nam",
     "first_seen": 1,
-    "last_seen": 1
+    "last_seen": 15
   },
   {
     "name": "Đặng Tiến Đạt",
-    "brief_role": "",
+    "brief_role": "Chỉ huy Đội Trọng án",
     "first_seen": 1,
     "last_seen": 11
   },
   {
     "name": "Hoàng Đình Thao",
-    "brief_role": "",
+    "brief_role": "Kẻ chủ mưu (P)",
     "first_seen": 1,
-    "last_seen": 13
+    "last_seen": 14
   },
   {
     "name": "Nguyễn Văn Tư",
-    "brief_role": "",
+    "brief_role": "Nạn nhân N4",
     "first_seen": 1,
     "last_seen": 1
   },
   {
     "name": "Trần Văn Huy",
-    "brief_role": "",
+    "brief_role": "Trinh sát điều tra",
     "first_seen": 1,
-    "last_seen": 13
+    "last_seen": 9
   },
   {
     "name": "Bác sĩ Phong",
-    "brief_role": "",
+    "brief_role": "Giám định viên",
     "first_seen": 1,
     "last_seen": 5
   },
   {
     "name": "Kỹ thuật viên Quang",
-    "brief_role": "",
+    "brief_role": "Cán bộ KTHS",
     "first_seen": 1,
     "last_seen": 10
   },
   {
-    "name": "Bà Năm",
-    "brief_role": "",
-    "first_seen": 1,
-    "last_seen": 1
-  },
-  {
-    "name": "Anh Thắng",
-    "brief_role": "",
-    "first_seen": 1,
-    "last_seen": 1
-  },
-  {
     "name": "Chín Gù",
-    "brief_role": "",
+    "brief_role": "Chủ bãi phế liệu",
     "first_seen": 2,
     "last_seen": 2
   },
   {
     "name": "Trần Văn Sinh",
-    "brief_role": "",
+    "brief_role": "Kẻ báo thù (K)",
     "first_seen": 2,
-    "last_seen": 13
+    "last_seen": 14
   },
   {
     "name": "Lê Văn Long",
-    "brief_role": "",
+    "brief_role": "Chủ xưởng sà-lan",
     "first_seen": 3,
     "last_seen": 4
   },
   {
     "name": "Giáo sư Lê Đăng Khoa",
-    "brief_role": "",
+    "brief_role": "Chuyên gia văn hóa",
     "first_seen": 6,
-    "last_seen": 6
+    "last_seen": 15
   },
   {
-    "name": "Bùi Văn Vượng",
-    "brief_role": "",
-    "first_seen": 8,
-    "last_seen": 8
-  },
-  {
-    "name": "Trưởng bản Ban",
-    "brief_role": "",
+    "name": "Cụ Mộc",
+    "brief_role": "Nghệ nhân mộc bản Dền",
     "first_seen": 9,
     "last_seen": 9
-  },
-  {
-    "name": "Cụ già thợ mộc (Cụ Mộc)",
-    "brief_role": "",
-    "first_seen": 9,
-    "last_seen": 9
-  },
-  {
-    "name": "Kỹ sư Lâm nghiệp Phạm Văn Dũng",
-    "brief_role": "",
-    "first_seen": 10,
-    "last_seen": 10
   }
 ]

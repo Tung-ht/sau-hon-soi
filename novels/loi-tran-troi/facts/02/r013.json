@@ -1,0 +1,45 @@
+{
+  "chapter": 2,
+  "revision": "r013",
+  "summary": "Truy vết nguồn tiền 60 triệu qua công ty bình phong vận tải Hải Khê. Nam đến bãi phế liệu Chín Gù, đối thoại với người thợ cơ khí Ba mang vết bỏng xỉ hàn trên mu bàn tay.",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Ba 14:00",
+      "event": "Xác minh khoản tiền 60 triệu chuyển qua công ty vận tải Hải Khê cho N4."
+    },
+    {
+      "time": "Chiều thứ Ba 16:30",
+      "event": "Nam gặp Ba thợ cắt tại bãi phế liệu Chín Gù."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C05",
+      "description": "Nam gặp Ba thợ cắt tại bãi phế liệu Chín Gù, quan sát vết sẹo bỏng xỉ hàn.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "K xuất hiện trực tiếp."
+    },
+    {
+      "id": "C06",
+      "description": "Khoản tiền 60 triệu chuyển qua công ty bình phong vận tải Hải Khê.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Dòng tiền bịt miệng của P."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Chín Gù",
+      "brief_role": "Chủ bãi phế liệu"
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Ba thợ cắt (K)"
+    }
+  ]
+}

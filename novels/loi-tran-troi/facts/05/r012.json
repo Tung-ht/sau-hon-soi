@@ -1,0 +1,50 @@
+{
+  "chapter": 5,
+  "revision": "r012",
+  "summary": "Khám chòi trạm bơm thu mỏ cắt Tây Phong và cặn xỉ Crom-Molypden. Bác sĩ Phong xác định N4 dùng D-Alkaloid mạn tính. Mở rộng chuỗi 4 nạn nhân N1-N4 mang danh tính giả nhận tiền trợ cấp từ Hải Khê.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Năm 08:00",
+      "event": "Bác sĩ Phong báo cáo độc chất học N4; khám chòi trạm bơm ven đê."
+    },
+    {
+      "time": "Trưa thứ Năm 11:30",
+      "event": "Đối soát tàng thư xác định chuỗi 4 nạn nhân mang danh tính giả từ đường dây phôi bảo an."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C03",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Khớp XRF vi xỉ Crom-Molypden."
+    },
+    {
+      "id": "C07",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Khớp mỏ cắt và que hàn."
+    },
+    {
+      "id": "C10",
+      "description": "Bốn nạn nhân N1-N4 mang danh tính giả từ cùng một phôi giấy tờ bảo an quang học.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Kết nối chuỗi án liên tỉnh."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "Giám định viên"
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "Cán bộ KTHS"
+    }
+  ]
+}

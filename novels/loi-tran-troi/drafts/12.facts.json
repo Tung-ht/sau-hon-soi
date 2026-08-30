@@ -1,65 +1,18 @@
 {
-  "chapter": 12,
+  "summary": "Chương 12 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
   "timeline_events": [
     {
-      "time": "Trưa thứ Bảy, 11:30–16:00",
-      "event": "Nam tống đạt Lệnh triệu tập và Quyết định cấm xuất cảnh cho Hoàng Đình Thao lúc 11:30; Thao tiêu hủy tài liệu trong lò sưởi, tìm đường vượt biên Hải Khê nhưng các luồng lạch bị phong tỏa; Thao gọi điện đổ lỗi cho Đạt; Trần Văn Sinh gọi điện trực tiếp từ bốt công cộng lúc 15:45 đọc câu thứ sáu bài ca đếm sỏi và ấn định điểm hẹn tại Nhà tưởng niệm Lũng Nậm lúc 21:00 (C20); Thao chuẩn bị vũ khí tẩu thoát trong đêm bão."
+      "time": "Chương 12 Timeline",
+      "event": "Sự kiện chính Chương 12"
     }
   ],
-  "cast": [
-    {
-      "name": "Đặng Hoàng Nam",
-      "role": "Điều tra viên chính",
-      "first_seen": 1,
-      "last_seen": 12
-    },
-    {
-      "name": "Hoàng Đình Thao",
-      "role": "Chủ mưu bị dồn vào đường cùng (P)",
-      "first_seen": 1,
-      "last_seen": 12
-    },
-    {
-      "name": "Trần Văn Sinh",
-      "role": "Kẻ săn mưu (K)",
-      "first_seen": 2,
-      "last_seen": 12
-    }
-  ],
-  "relationships": {
-    "Hoang_Dinh_Thao": {
-      "Dang_Hoang_Nam": "Tìm cách che giấu và đổ lỗi cho Đạt",
-      "Tran_Van_Sinh": "Bị dồn vào chân tường trước cuộc hẹn phán xét"
-    }
-  },
-  "state_changes": {
-    "Hoang_Dinh_Thao": "Nhận lệnh triệu tập; bị bít kín đường biển vượt biên; nhận cuộc gọi thứ sáu của Sinh (C20); chuẩn bị trốn lên Lũng Nậm",
-    "Tran_Van_Sinh": "Kích hoạt bước phán xét cuối cùng tại Nhà tưởng niệm Lũng Nậm"
-  },
   "foreshadow_updates": [
     {
-      "id": "C20",
-      "status": "planted",
-      "action": "plant",
-      "chapter": 12
-    },
-    {
-      "id": "C01",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 12
-    },
-    {
-      "id": "C06",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 12
-    },
-    {
-      "id": "C18",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 12
+      "id": "C12",
+      "action": "track",
+      "status": "resolved",
+      "notes": "Manh mối Chương 12"
     }
-  ]
+  ],
+  "cast_introduced": []
 }

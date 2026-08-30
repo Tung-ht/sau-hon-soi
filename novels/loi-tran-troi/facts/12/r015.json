@@ -1,0 +1,30 @@
+{
+  "chapter": 12,
+  "revision": "r015",
+  "summary": "Thao bị khóa đường biển, nhận cuộc gọi hẹn gặp từ Sinh nên lái xe quay về Lũng Nậm tẩu tán tài liệu gốc tại trạm kho cũ Nhà tưởng niệm. Tổ án bí mật bám theo.",
+  "timeline_events": [
+    {
+      "time": "Thứ Bảy 22:00",
+      "event": "Thao nhận cuộc gọi thứ 6 từ Sinh; quay xe trong đêm bão về Lũng Nậm."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C19",
+      "description": "Thao bị phong tỏa đường biển, quay về Lũng Nậm tẩu tán tài liệu gốc.",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "P bị dồn vào bẫy phục kích."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Kẻ chủ mưu (P)"
+    }
+  ]
+}

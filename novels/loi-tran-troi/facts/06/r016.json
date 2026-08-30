@@ -1,0 +1,40 @@
+{
+  "chapter": 6,
+  "revision": "r016",
+  "summary": "Giáo sư Lê Đăng Khoa giải mã hoa văn túi thổ cẩm và bài ca đếm sỏi 6 nấc bản Dền. Nam phát hiện Đạt lén tra cứu dữ liệu tàng thư N1-N5 trên máy tính nội bộ trong đêm.",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Năm 15:00",
+      "event": "GS Khoa giải mã bài ca đếm sỏi 6 nấc; phát hiện Đạt tra cứu tàng thư trái phép."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C04",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Giải mã dị vật thứ 4 trong bài đồng dao."
+    },
+    {
+      "id": "C11",
+      "description": "Bài đồng dao cổ đếm sỏi 6 nấc bản Dền được GS Khoa giải mã từ hoa văn thổ cẩm.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Gieo bài ca định mệnh."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Giáo sư Lê Đăng Khoa",
+      "brief_role": "Chuyên gia văn hóa"
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án"
+    }
+  ]
+}

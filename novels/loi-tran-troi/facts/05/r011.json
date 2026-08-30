@@ -1,0 +1,26 @@
+{
+  "chapter": 5,
+  "revision": "r011",
+  "created_at": "2026-08-30T08:34:52.892136",
+  "summary": "Chương 5 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
+  "timeline_events": [
+    {
+      "time": "Chương 5 Timeline",
+      "event": "Sự kiện chính Chương 5",
+      "chapter": 5
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C05",
+      "description": "",
+      "action": "track",
+      "status": "planted",
+      "notes": "Manh mối Chương 5"
+    }
+  ],
+  "cast": [],
+  "relationship_changes": [],
+  "state_changes": [],
+  "dependencies": []
+}

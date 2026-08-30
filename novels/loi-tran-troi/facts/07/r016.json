@@ -1,0 +1,34 @@
+{
+  "chapter": 7,
+  "revision": "r016",
+  "summary": "Tổ án khẩn cấp hành quân lên Mường Biên qua Tuyến lộ 9 và đèo Mây trong đêm bão. Đạt bí mật lái xe riêng bám theo sau.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Năm 21:00",
+      "event": "Tổ án xuất phát đi Mường Biên; đoạn sạt lở đèo Mây làm chậm hành trình."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C12",
+      "description": "Đạt lén tra cứu dữ liệu tàng thư N1-N5 trên máy tính nội bộ và đi xe riêng lên núi.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Hành tung đáng ngờ của M."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra"
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án"
+    }
+  ]
+}

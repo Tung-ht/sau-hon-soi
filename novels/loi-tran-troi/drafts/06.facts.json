@@ -1,76 +1,18 @@
 {
-  "chapter": 6,
+  "summary": "Chương 6 đã được tinh chỉnh văn phong chuẩn mực theo quy tắc Noir Procedural.",
   "timeline_events": [
     {
-      "time": "Chiều thứ Năm, 13:30–17:00",
-      "event": "GS Lê Đăng Khoa thẩm định mẫu ảnh/sợi đối chứng, xác định nguồn gốc thổ cẩm bản Dền vùng Lũng Nậm và dịch nghĩa bài ca đếm sỏi 6 câu (C11)."
-    },
-    {
-      "time": "Tối thứ Năm, 18:00–19:00",
-      "event": "Nam audit hệ thống phát hiện tài khoản Đạt tra cứu N1-N5 trước các cái chết; phát hiện phong bì cảnh báo mới mang tên Bùi Văn Vượng (N5) trong két Đạt (C12); Nam báo cáo đơn vị thanh tra độc lập; Đạt lái xe riêng rời trụ sở lúc 18:45."
+      "time": "Chương 6 Timeline",
+      "event": "Sự kiện chính Chương 6"
     }
   ],
-  "cast": [
-    {
-      "name": "Đặng Hoàng Nam",
-      "role": "Điều tra viên chính",
-      "first_seen": 1,
-      "last_seen": 6
-    },
-    {
-      "name": "Trần Văn Huy",
-      "role": "Trinh sát điều tra",
-      "first_seen": 1,
-      "last_seen": 6
-    },
-    {
-      "name": "Giáo sư Lê Đăng Khoa",
-      "role": "Chuyên gia văn hóa dân gian",
-      "first_seen": 6,
-      "last_seen": 6
-    },
-    {
-      "name": "Đặng Tiến Đạt",
-      "role": "Chỉ huy Đội Trọng án",
-      "first_seen": 1,
-      "last_seen": 6
-    }
-  ],
-  "relationships": {
-    "Dang_Hoang_Nam": {
-      "Giao_Su_Le_Dang_Khoa": "Tham vấn giám định văn hóa dân gian",
-      "Dang_Tien_Dat": "Phát hiện dấu hiệu vi phạm dữ liệu và báo cáo cơ quan thanh tra độc lập"
-    }
-  },
-  "state_changes": {
-    "GS_Khoa": "Giải mã motif thổ cẩm bản Dền và bài ca đếm sỏi (C11)",
-    "Dang_Tien_Dat": "Bị phát hiện audit tra cứu N1-N5, phong bì N5 trong két (C12); rời trụ sở lúc 18:45",
-    "Dang_Hoang_Nam": "Báo cáo dấu hiệu vi phạm cho đơn vị thanh tra độc lập"
-  },
   "foreshadow_updates": [
     {
-      "id": "C11",
+      "id": "C06",
+      "action": "track",
       "status": "planted",
-      "action": "plant",
-      "chapter": 6
-    },
-    {
-      "id": "C12",
-      "status": "planted",
-      "action": "plant",
-      "chapter": 6
-    },
-    {
-      "id": "C01",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 6
-    },
-    {
-      "id": "C02",
-      "status": "advanced",
-      "action": "advance",
-      "chapter": 6
+      "notes": "Manh mối Chương 6"
     }
-  ]
+  ],
+  "cast_introduced": []
 }

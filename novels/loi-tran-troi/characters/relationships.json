@@ -1,62 +1,92 @@
-{
-  "factions": {
-    "investigation_team": [
-      "Đặng Hoàng Nam",
-      "Trần Văn Huy",
-      "Quang (Kỹ thuật hình sự)",
-      "Kiểm sát viên cao cấp"
-    ],
-    "suspects_and_perpetrators": [
-      "Trần Văn Sinh (K / Ba)",
-      "Hoàng Đình Thao (P)"
-    ],
-    "historical_witnesses_victims": [
-      "Nguyễn Văn Tư (N1)",
-      "Trịnh Đình Bách (N2)",
-      "Lê Văn Long (N3)",
-      "Phan Chu Hoạt (N4)",
-      "Bùi Văn Vượng (N5)"
-    ],
-    "insiders_and_mentors": [
-      "Đặng Tiến Đạt (M)",
-      "Trần Văn Cửu (O - Nạn nhân oan sai 2005)"
-    ],
-    "experts_and_village_elders": [
-      "Giáo sư Lê Đăng Khoa",
-      "Cụ Mộc bản Dền",
-      "Trưởng bản Ban"
-    ]
+[
+  {
+    "source": "Dang_Hoang_Nam",
+    "target": "Dang_Tien_Dat",
+    "type": "mentor_subordinate",
+    "description": "Cấp trên và cấp dưới trực tiếp; Nam tôn trọng nhưng kiên quyết điều tra dấu hiệu che giấu của Đạt."
   },
-  "matrices": [
-    {
-      "from": "Đặng Hoàng Nam",
-      "to": "Trần Văn Sinh",
-      "relation": "Đối chất tư pháp, thức tỉnh lương tri bằng di vật và sự thật",
-      "act": "Hồi III"
-    },
-    {
-      "from": "Đặng Hoàng Nam",
-      "to": "Đặng Tiến Đạt",
-      "relation": "Thầy trò, phân hóa điều tra độc lập, tiếp nhận tự thú",
-      "act": "Hồi II-III"
-    },
-    {
-      "from": "Hoàng Đình Thao",
-      "to": "Trần Văn Cửu",
-      "relation": "Chủ mưu ngụy tạo án oan 2005 cướp công danh lợi",
-      "act": "Tiền đề"
-    },
-    {
-      "from": "Trần Văn Sinh",
-      "to": "5 nhân chứng gian dối",
-      "relation": "Báo thù bằng chuỗi án mạng liên hoàn có tính toán",
-      "act": "Hồi I-II"
-    },
-    {
-      "from": "Cụ Mộc",
-      "to": "Đặng Hoàng Nam",
-      "relation": "Trao lại chiếc thước mộc gia bảo đạo đức",
-      "act": "Hồi II"
-    }
-  ]
-}
+  {
+    "source": "Dang_Hoang_Nam",
+    "target": "Hoang_Dinh_Thao",
+    "type": "investigator_suspect",
+    "description": "Ban đầu là tiền bối kính trọng, sau trở thành kẻ chủ mưu bị Nam thu thập chứng cứ vạch trần."
+  },
+  {
+    "source": "Dang_Hoang_Nam",
+    "target": "Tran_Van_Sinh",
+    "type": "investigator_avenger",
+    "description": "Đối đầu trí tuệ; Nam thấu hiểu nỗi oan của Sinh nhưng kiên quyết ngăn chặn bạo lực ngoài vòng pháp luật."
+  },
+  {
+    "source": "Dang_Tien_Dat",
+    "target": "Hoang_Dinh_Thao",
+    "type": "former_accomplice_blackmailed",
+    "description": "Đạt bị Thao ép tham gia vụ 2005; mang mặc cảm tội lỗi 19 năm trước khi tự thú giao nộp chứng cứ."
+  },
+  {
+    "source": "Tran_Van_Sinh",
+    "target": "Hoang_Dinh_Thao",
+    "type": "nemesis_target",
+    "description": "Sinh truy lùng Thao suốt 11 năm để báo thù cho cái chết oan khuất của cha mẹ."
+  },
+  {
+    "source": "Tran_Van_Sinh",
+    "target": "Tran_Van_Cuu",
+    "type": "son_father",
+    "description": "Tình phụ tử thiêng liêng; Sinh hành động để đòi lại danh dự và sự trong sạch cho cha."
+  },
+  {
+    "source": "Le_Van_Long",
+    "target": "Tran_Van_Sinh",
+    "type": "employer_worker",
+    "description": "Long cưu mang Sinh (Ba thợ cắt) làm thợ cơ khí; cả hai đều mang nỗi đau từ vụ án 2005."
+  },
+  {
+    "source": "Dang_Hoang_Nam",
+    "target": "Tran_Van_Huy",
+    "type": "close_colleagues",
+    "description": "Đồng đội điều tra ăn ý, tin cậy trong các mũi trinh sát và đối soát dữ liệu."
+  },
+  {
+    "source": "Dang_Hoang_Nam",
+    "target": "Giao_Su_Le_Dang_Khoa",
+    "type": "consultant_expert",
+    "description": "Chuyên gia văn hóa giải mã hoa văn thổ cẩm và bài đồng dao cổ bản Dền cho tổ án."
+  },
+  {
+    "source": "Hoang_Dinh_Thao",
+    "target": "Hoang_Van_Nhan",
+    "type": "mastermind_pawn",
+    "description": "N1 nhận tiền của Thao để gài bẫy ông Cửu năm 2005; bịt miệng bằng trợ cấp định kỳ."
+  },
+  {
+    "source": "Hoang_Dinh_Thao",
+    "target": "Pham_Van_Sau",
+    "type": "mastermind_pawn",
+    "description": "N2 tham gia cắt rãnh đáy rương năm 2005; nhận tiền bịt miệng tản đi Tây Phong."
+  },
+  {
+    "source": "Hoang_Dinh_Thao",
+    "target": "Dang_Van_Muoi",
+    "type": "mastermind_pawn",
+    "description": "N3 nạp hàng cấm và dán keo nhiệt năm 2005; nhận tiền bịt miệng tản đi Hải Khê."
+  },
+  {
+    "source": "Hoang_Dinh_Thao",
+    "target": "Nguyen_Van_Tu",
+    "type": "mastermind_pawn",
+    "description": "N4 ký lời khai khống năm 2005; nhận thêm 60 triệu bịt miệng trước khi bị sát hại."
+  },
+  {
+    "source": "Hoang_Dinh_Thao",
+    "target": "Bui_Van_Vuong",
+    "type": "mastermind_pawn",
+    "description": "N5 nhận tiền ký lời chứng gian năm 2005; bị sát hại tại bến suối Lũng Nậm."
+  },
+  {
+    "source": "Dang_Hoang_Nam",
+    "target": "Me_Nam",
+    "type": "mother_son",
+    "description": "Tình mẫu tử ấm áp, điểm tựa bình yên của Nam tại ngõ chợ Đò Cũ."
+  }
+]

@@ -968,7 +968,7 @@ def build_web():
                     <a href="#chuong-1" class="btn-primary">
                         <i data-lucide="book-open"></i> Đọc Ngay
                     </a>
-                    <a href="Sau_Hon_Soi_Tieu_Thuyet_Trinh_Tham.pdf" target="_blank" class="btn-secondary">
+                    <a href="Sau_Hon_Soi_Ban_Chuan_Xuat_Ban.pdf" target="_blank" class="btn-secondary">
                         <i data-lucide="download"></i> Tải Bản PDF
                     </a>
                 </div>
