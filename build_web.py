@@ -756,6 +756,15 @@ CSS_WEB = """
         line-height: 1.8;
     }
 
+    .chapter-content p.dialogue {
+        text-indent: 0 !important;
+        padding-left: 0.75rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.95rem;
+        font-weight: 500;
+        line-height: 1.85;
+    }
+
     .chapter-footer-nav {
         display: flex;
         justify-content: space-between;

@@ -461,13 +461,22 @@ body {
     text-justify: inter-word;
     text-indent: 1.5em;
     margin: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.55em;
     line-height: 1.65;
 }
 
 .chapter-body p.no-indent,
 .chapter-body > p:first-of-type {
     text-indent: 0 !important;
+}
+
+.chapter-body p.dialogue {
+    text-indent: 0 !important;
+    text-align: justify;
+    margin-top: 0.3em !important;
+    margin-bottom: 0.45em !important;
+    padding-left: 0.5em !important;
+    line-height: 1.65 !important;
 }
 
 .chapter-body > p:first-of-type::first-letter {
@@ -495,8 +504,7 @@ blockquote,
 
 .chapter-body blockquote p,
 blockquote p,
-.poetry-block p,
-p.dialogue {
+.poetry-block p {
     text-indent: 0 !important;
     text-align: left !important;
     margin: 0 !important;
