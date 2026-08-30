@@ -860,15 +860,29 @@
         line-height: 1.85;
     }
 
+    .chapter-card,
+    .fullscreen-page,
+    #hero,
+    #epigraph,
+    #tap-1,
+    #tap-2,
+    #tap-3,
+    #appendix-1,
+    #appendix-2,
+    #author-note {
+        scroll-margin-top: 75px;
+    }
+
     .chapter-footer-nav {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
         align-items: center;
         margin-top: 2.5rem;
         padding-top: 1.5rem;
         border-top: 1px solid var(--border-color);
         font-size: 0.85rem;
         font-family: 'Be Vietnam Pro', sans-serif;
+        gap: 0.5rem;
     }
 
     .chapter-nav-btn {
@@ -878,11 +892,51 @@
         text-decoration: none;
         color: var(--accent-gold);
         font-weight: 600;
-        transition: opacity 0.2s;
+        transition: opacity 0.2s, background-color 0.2s;
+        padding: 0.45rem 0.75rem;
+        border-radius: 6px;
     }
 
     .chapter-nav-btn:hover {
-        opacity: 0.8;
+        opacity: 0.9;
+        background: var(--bg-surface-elevated);
+    }
+
+    .chapter-nav-prev {
+        justify-self: start;
+        text-align: left;
+    }
+
+    .chapter-nav-center {
+        justify-self: center;
+        text-align: center;
+        background: rgba(212, 175, 55, 0.08);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-main);
+    }
+
+    .chapter-nav-center:hover {
+        color: var(--accent-gold);
+        border-color: var(--accent-gold);
+    }
+
+    .chapter-nav-next {
+        justify-self: end;
+        text-align: right;
+    }
+
+    @media (max-width: 640px) {
+        .chapter-footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .chapter-nav-prev, .chapter-nav-center, .chapter-nav-next {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            box-sizing: border-box;
+        }
     }
 
     /* APPENDIX CARDS */
@@ -1298,9 +1352,15 @@
 <p>Nam niêm phong chiếc túi thổ cẩm vào hộp bảo quản vật chứng theo đúng quy trình. Phía ngoài ngõ chợ, tiếng còi xe nghiệp vụ vang lên giữa màn sương lạnh buốt của buổi sớm mai.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <span></span>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-2" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#tap-1" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Trang trước (TẬP 1)
+                        </a>
+                        <a href="#chuong-1" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-1" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-2" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.2) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1368,9 +1428,15 @@
 <p>Dưới cái nắng hanh nồng đứng bóng. Nam nhìn dòng sông Lam Châu đang cuộn sóng đục ngầu phù sa. Một đầu mối mới vừa mở ra từ bãi phế liệu, kéo tổ án hướng thẳng về phía bãi xác tàu cửa lác mù mịt sóng gió.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-1" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-3" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-1" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.1)
+                        </a>
+                        <a href="#chuong-2" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-2" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-3" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.3) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1427,9 +1493,15 @@
 <p>Trên bờ ca-bin, những tiếng còi tàu hàng từ vịnh cảng Hải Khê vọng lại từng hồi trầm đục trong màn sương đêm. Nam ký tên vào biên bản niêm phong tài liệu và giao nhiệm vụ cho hai trinh sát ở lại phong tỏa hiện trường sà-lan. Lê Văn Long lặng lẽ mặc chiếc áo khoác bạt sờn rách, bước xuống ca-nô theo tổ công tác, Đôi mắt lão nhìn đăm đăm vào mặt nước sông đen ngòm, nơi những con sóng cuộn trào mang theo bao điều bí ẩn của quá khứ.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-2" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-4" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-2" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.2)
+                        </a>
+                        <a href="#chuong-3" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-3" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-4" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.4) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1488,9 +1560,15 @@
 — Cậu cùng Huy đưa tổ kỹ thuật hình sự trang bị đầy đủ phương tiện bảo vệ hiện trường. Tiếp cận căn chòi theo hướng đê bao, ưu tiên thu thập và niêm phong toàn bộ mẫu vật cơ học, phế liệu và dấu vết sinh học còn sót lại. Đạt đứng lặng nhìn làn khói thuốc lá bay lững lờ ngoài hành lang, ngón tay vô thức xiết chặt chiếc điện thoại, giọng trầm ngâm: — Vậy thì phải. Chuyển toàn bộ trọng tâm sang căn chòi trạm bơm nước bỏ hoang và lật lại toàn bộ danh tính của người thợ tên Ba đó ngay trong đêm nay!</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-3" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-5" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-3" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.3)
+                        </a>
+                        <a href="#chuong-4" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-4" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-5" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.5) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1546,9 +1624,15 @@
 <p class="dialogue">— Báo cáo anh Đạt, chứng cứ khoa học kỹ thuật và dữ liệu phôi thẻ giả không có định kiến cá nhân. — Nam nhìn thẳng vào ánh mắt đang dao động của thủ trưởng. — Bốn cái chết đã xảy ra theo đúng chuỗi số đếm của những túi thổ cẩm. Nếu chúng ta không truy tìm nguồn gốc của những chiếc túi bùa này đến cùng, nạn nhân thứ năm và thứ sáu chắc chắn sẽ xuất hiện. Đạt cầm bút máy, dứt khoát ký tên vào công văn ủy thác khẩn cấp gửi ba địa phương yêu cầu bàn giao. Toàn bộ hồ sơ kỹ thuật và vật chứng gốc: — Đi làm việc với các chuyên gia văn hóa ngay đi. Nam. Phải giải mã biểu tượng này trước khi lưỡi dao thứ năm vung lên!</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-4" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-6" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-4" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.4)
+                        </a>
+                        <a href="#chuong-5" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-5" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-6" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.6) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1604,9 +1688,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Nam nhìn đồng hồ: Đạt đã rời đi được gần mười lăm phút. Cuộc đua trong đêm mưa bão lên thung lũng Lũng Nậm chính thức bắt đầu.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-5" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-7" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-5" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.5)
+                        </a>
+                        <a href="#chuong-6" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-6" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#tap-2" class="chapter-nav-btn chapter-nav-next">
+                            Tập kế (TẬP 2) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1699,9 +1789,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Chiếc xe chuyên dụng xé toang màn sương mù dày đặc, lao vun vút xuống thung lũng đen ngòm trong đêm mưa gió lạnh buốt.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-6" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-8" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#tap-2" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Trang trước (TẬP 2)
+                        </a>
+                        <a href="#chuong-7" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-7" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-8" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.8) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1760,9 +1856,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Lời trăn trối nghẹn ngào của Đạt tan vào màn sương đêm lạnh buốt, mở toang bức màn bí mật che phủ chuyên án lịch sử suốt từ năm 2005 qua.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-7" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-9" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-7" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.7)
+                        </a>
+                        <a href="#chuong-8" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-8" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-9" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.9) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1811,9 +1913,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Nam và Huy chào tạm biệt Cụ Mộc và Trưởng bản Ban, bước ra khỏi cổng bản Dền khi nắng trưa bắt đầu rọi thẳng xuống lòng thung lũng. Chiếc thước mộc gỗ lim nằm gọn gàng trong ba lô như một lời nhắc nhở thiêng liêng về sứ mệnh của những người bảo vệ công lý, Đoàn xe điều tra nổ máy, khẩn trương quay trở về trung tâm thị trấn để kịp giờ mở niêm phong toàn bộ số rương tang vật tang vật theo quyết định tố tụng của Viện Công tố.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-8" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-10" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-8" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.8)
+                        </a>
+                        <a href="#chuong-9" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-9" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-10" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.10) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1862,9 +1970,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Khi những ngọn đèn pha trong tầng hầm gian phòng ngầm từ từ tắt bớt. Nam đứng lại nhìn sáu hiện vật gỗ gỗ pơ-mu lần cuối, sáu cỗ rương từng là biểu tượng của thành tích phá án lẫy lừng gần hai thập kỷ trước, nay đã trở thành bằng chứng tố cáo tội ác có tính xác thực cao của kẻ thủ ác, từng chi tiết cơ học, từng dòng chữ trên biên bản phụ và từng mã số lô gỗ ép đã được giải mã trọn vẹn, mở toang cánh cửa dẫn tới hồi kết của bản án lương tâm.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-9" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-11" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-9" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.9)
+                        </a>
+                        <a href="#chuong-10" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-10" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-11" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.11) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1905,9 +2019,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Trước khi rời phòng lấy lời khai. Nam kiểm tra lại lần cuối từng tệp dữ liệu lưu trong thẻ nhớ mã hóa. Những bản chụp scan tài liệu năm xưa hiện lên với độ sắc nét tuyệt đối, từ chữ ký của từng thành viên hội đồng khen thưởng đến các số hiệu tài khoản ngân hàng chuyển tiền. Mọi chứng cứ đã sẵn sàng để đối chất trực tiếp với kẻ chủ mưu.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-10" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-12" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-10" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.10)
+                        </a>
+                        <a href="#chuong-11" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-11" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#tap-3" class="chapter-nav-btn chapter-nav-next">
+                            Tập kế (TẬP 3) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -1999,9 +2119,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Nam bước ra sân trụ sở, kiểm tra lại khẩu súng ngắn tiêu chuẩn và chiếc máy bộ đàm mã hóa. Từng tổ trinh sát lên xe đặc chủng, động cơ gầm rú sẵn sàng xuất phát. Trận tuyến bảo vệ công lý đã vào vị trí.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-11" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-13" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#tap-3" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Trang trước (TẬP 3)
+                        </a>
+                        <a href="#chuong-12" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-12" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-13" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.13) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -2062,9 +2188,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Nam giữ khoảng cách an toàn, ánh mắt nhìn thẳng vào khuôn mặt sạm đen vì gió bão của Sinh. Từng giọt mồ hôi hòa cùng nước mưa lăn dài trên thái dương của người cựu trinh sát. Cuộc đàm phán giải cứu con tin và bảo vệ chân lý lịch sử chính thức bước vào giây phút căng thẳng nhất.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-12" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-14" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-12" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.12)
+                        </a>
+                        <a href="#chuong-13" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-13" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-14" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.14) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -2132,9 +2264,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Nam tháo chiếc găng tay công tác, khẽ mỉm cười với huy khi chiếc xe tiến vào cổng trụ sở, một vụ án oan sai mười chín năm trước đã chính thức được khép lại bằng tinh thần thượng tôn pháp luật và lòng dũng cảm của những người chiến sĩ cảnh sát trung kiên.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-13" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#chuong-15" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-13" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.13)
+                        </a>
+                        <a href="#chuong-14" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-14" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#chuong-15" class="chapter-nav-btn chapter-nav-next">
+                            Chương kế (Ch.15) <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -2189,9 +2327,15 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 <p>Hơi ấm từ chiếc bát sành truyền qua lòng bàn tay. Nam bưng thìa cháo nóng đưa lên miệng. Ngoài bờ sông, dòng nước Lam Châu phẳng lặng trôi xuôi dưới ánh nắng sớm mùa thu.</p>
                     </div>
                     <div class="chapter-footer-nav">
-                        <a href="#chuong-14" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        <a href="#appendix-1" class="chapter-nav-btn">Xem Phụ lục <i data-lucide="chevron-right"></i></a>
+                        <a href="#chuong-14" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> Chương trước (Ch.14)
+                        </a>
+                        <a href="#chuong-15" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-15" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="#appendix-1" class="chapter-nav-btn chapter-nav-next">
+                            Xem Phụ lục <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 
@@ -2395,6 +2539,20 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
 
         document.getElementById('btn-back-top').addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Top of Chapter Navigation Logic
+        document.querySelectorAll('.btn-chapter-top').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = btn.getAttribute('data-target');
+                const targetEl = document.getElementById(targetId);
+                if (targetEl) {
+                    const navHeight = 70;
+                    const topPos = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    window.scrollTo({ top: topPos, behavior: 'smooth' });
+                }
+            });
         });
 
         // Drawer Control

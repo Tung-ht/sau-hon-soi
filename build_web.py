@@ -885,15 +885,29 @@ CSS_WEB = """
         line-height: 1.85;
     }
 
+    .chapter-card,
+    .fullscreen-page,
+    #hero,
+    #epigraph,
+    #tap-1,
+    #tap-2,
+    #tap-3,
+    #appendix-1,
+    #appendix-2,
+    #author-note {
+        scroll-margin-top: 75px;
+    }
+
     .chapter-footer-nav {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
         align-items: center;
         margin-top: 2.5rem;
         padding-top: 1.5rem;
         border-top: 1px solid var(--border-color);
         font-size: 0.85rem;
         font-family: 'Be Vietnam Pro', sans-serif;
+        gap: 0.5rem;
     }
 
     .chapter-nav-btn {
@@ -903,11 +917,51 @@ CSS_WEB = """
         text-decoration: none;
         color: var(--accent-gold);
         font-weight: 600;
-        transition: opacity 0.2s;
+        transition: opacity 0.2s, background-color 0.2s;
+        padding: 0.45rem 0.75rem;
+        border-radius: 6px;
     }
 
     .chapter-nav-btn:hover {
-        opacity: 0.8;
+        opacity: 0.9;
+        background: var(--bg-surface-elevated);
+    }
+
+    .chapter-nav-prev {
+        justify-self: start;
+        text-align: left;
+    }
+
+    .chapter-nav-center {
+        justify-self: center;
+        text-align: center;
+        background: rgba(212, 175, 55, 0.08);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-main);
+    }
+
+    .chapter-nav-center:hover {
+        color: var(--accent-gold);
+        border-color: var(--accent-gold);
+    }
+
+    .chapter-nav-next {
+        justify-self: end;
+        text-align: right;
+    }
+
+    @media (max-width: 640px) {
+        .chapter-footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .chapter-nav-prev, .chapter-nav-center, .chapter-nav-next {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            box-sizing: border-box;
+        }
     }
 
     /* APPENDIX CARDS */
@@ -1294,6 +1348,9 @@ def build_web_reader():
 
     for vol_idx, vol in enumerate(VOLUMES):
         first_ch = vol["chapters"][0]
+        last_ch = vol["chapters"][-1]
+        next_vol = VOLUMES[vol_idx + 1] if vol_idx + 1 < len(VOLUMES) else None
+        
         author_quote_html = ""
         if "author_quote" in vol:
             author_quote_html = f'<div style="font-size: 0.8rem; margin-top: 0.4rem; color: var(--text-muted); font-family: sans-serif; font-weight: 600;">{vol["author_quote"]}</div>'
@@ -1338,8 +1395,26 @@ def build_web_reader():
         for ch_num in vol["chapters"]:
             if ch_num in chapters_data:
                 ch = chapters_data[ch_num]
-                prev_ch = ch_num - 1 if ch_num > 1 else None
-                next_ch = ch_num + 1 if ch_num < 15 else None
+                
+                # Determine Previous Link & Label
+                if ch_num == first_ch:
+                    prev_href = f"#{vol['id']}"
+                    prev_label = f"Trang trước ({vol['title'].split(':')[0]})"
+                else:
+                    prev_href = f"#chuong-{ch_num - 1}"
+                    prev_label = f"Chương trước (Ch.{ch_num - 1})"
+                
+                # Determine Next Link & Label
+                if ch_num == last_ch:
+                    if next_vol:
+                        next_href = f"#{next_vol['id']}"
+                        next_label = f"Tập kế ({next_vol['title'].split(':')[0]})"
+                    else:
+                        next_href = "#appendix-1"
+                        next_label = "Xem Phụ lục"
+                else:
+                    next_href = f"#chuong-{ch_num + 1}"
+                    next_label = f"Chương kế (Ch.{ch_num + 1})"
                 
                 full_html += f'''
                 <!-- CHAPTER {ch_num} -->
@@ -1352,9 +1427,15 @@ def build_web_reader():
                         {ch["html"]}
                     </div>
                     <div class="chapter-footer-nav">
-                        {f'<a href="#chuong-{prev_ch}" class="chapter-nav-btn"><i data-lucide="chevron-left"></i> Chương trước</a>' if prev_ch else '<span></span>'}
-                        <a href="#hero" class="chapter-nav-btn"><i data-lucide="arrow-up"></i> Về đầu trang</a>
-                        {f'<a href="#chuong-{next_ch}" class="chapter-nav-btn">Chương tiếp <i data-lucide="chevron-right"></i></a>' if next_ch else f'<a href="#appendix-1" class="chapter-nav-btn">Xem Phụ lục <i data-lucide="chevron-right"></i></a>'}
+                        <a href="{prev_href}" class="chapter-nav-btn chapter-nav-prev">
+                            <i data-lucide="chevron-left"></i> {prev_label}
+                        </a>
+                        <a href="#chuong-{ch_num}" class="chapter-nav-btn chapter-nav-center btn-chapter-top" data-target="chuong-{ch_num}" title="Cuộn lên đầu chương này">
+                            <i data-lucide="arrow-up"></i> Về đầu chương
+                        </a>
+                        <a href="{next_href}" class="chapter-nav-btn chapter-nav-next">
+                            {next_label} <i data-lucide="chevron-right"></i>
+                        </a>
                     </div>
                 </article>
                 '''
@@ -1563,6 +1644,20 @@ def build_web_reader():
 
         document.getElementById('btn-back-top').addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Top of Chapter Navigation Logic
+        document.querySelectorAll('.btn-chapter-top').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = btn.getAttribute('data-target');
+                const targetEl = document.getElementById(targetId);
+                if (targetEl) {
+                    const navHeight = 70;
+                    const topPos = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    window.scrollTo({ top: topPos, behavior: 'smooth' });
+                }
+            });
         });
 
         // Drawer Control
