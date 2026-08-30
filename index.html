@@ -66,11 +66,15 @@
     [data-font="merriweather"] { --font-content: 'Merriweather', Georgia, serif; }
     [data-font="be-vietnam"] { --font-content: 'Be Vietnam Pro', 'Segoe UI', sans-serif; }
 
+    html {
+        scroll-behavior: smooth;
+        scroll-snap-type: y proximity;
+    }
+
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        scroll-behavior: smooth;
     }
 
     body {
@@ -332,6 +336,8 @@
         border-bottom: 1px solid var(--border-subtle);
         position: relative;
         box-sizing: border-box;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
     }
 
     .hero-container {
@@ -502,29 +508,34 @@
 
     .hero-scroll-indicator {
         margin-top: auto;
-        padding-top: 0.75rem;
+        padding: 0.65rem 1.4rem;
+        background: rgba(212, 175, 55, 0.1);
+        border: 1px solid var(--border-color);
+        border-radius: 9999px;
         color: var(--accent-gold);
         text-decoration: none;
-        display: flex;
-        flex-direction: column;
+        display: inline-flex;
         align-items: center;
-        gap: 0.2rem;
-        font-size: 0.72rem;
-        font-weight: 600;
+        gap: 0.6rem;
+        font-size: 0.82rem;
+        font-weight: 700;
         font-family: 'Be Vietnam Pro', sans-serif;
-        opacity: 0.75;
-        transition: opacity 0.2s, transform 0.2s;
-        animation: bounce 2.2s infinite ease-in-out;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+        transition: all 0.25s ease;
+        animation: subtleFloat 2.6s infinite ease-in-out;
+        z-index: 10;
     }
 
     .hero-scroll-indicator:hover {
-        opacity: 1;
+        background: var(--accent-gold);
+        color: #000;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
     }
 
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-        40% { transform: translateY(-5px); }
-        60% { transform: translateY(-2px); }
+    @keyframes subtleFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
     }
 
     .btn-primary {
@@ -587,6 +598,8 @@
         border-bottom: 1px solid var(--border-subtle);
         position: relative;
         box-sizing: border-box;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
     }
 
     .fullscreen-card {
@@ -1223,9 +1236,10 @@
                 </div>
             </div>
         </div>
-        <a href="#epigraph" class="hero-scroll-indicator" title="Cuộn xuống đọc tác phẩm">
-            <span>Khám phá tác phẩm</span>
-            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+        <a href="#epigraph" class="hero-scroll-indicator" title="Tiếp tục: Lời đề từ">
+            <i data-lucide="book-open" style="width: 16px; height: 16px;"></i>
+            <span>Tiếp tục: Khám phá tác phẩm</span>
+            <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
         </a>
     </header>
 
@@ -1258,9 +1272,10 @@
                 — Điệu đồng dao đếm sỏi dân gian Mường Biên
             </p>
         </div>
-        <a href="#tap-1" class="hero-scroll-indicator" title="Bắt đầu Tập 1">
-            <span>Bắt đầu Tập 1: Dưới Xuôi</span>
-            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+        <a href="#tap-1" class="hero-scroll-indicator" title="Tiếp tục: Bắt đầu Tập 1">
+            <i data-lucide="compass" style="width: 16px; height: 16px;"></i>
+            <span>Tiếp tục: Bắt đầu Tập 1 (Dưới Xuôi)</span>
+            <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
         </a>
     </section>
 
@@ -1290,8 +1305,9 @@
                     </div>
                 </div>
             </div>
-            <a href="#chuong-1" class="hero-scroll-indicator" title="Cuộn xuống đọc các chương">
-                <span>Khám phá các chương TẬP 1</span>
+            <a href="#chuong-1" class="hero-scroll-indicator" title="Bắt đầu đọc các chương">
+                <i data-lucide="play-circle" style="width: 16px; height: 16px;"></i>
+                <span>Bắt đầu đọc TẬP 1 (Chương 1)</span>
                 <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
             </a>
         </section>
@@ -1728,8 +1744,9 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
                     </div>
                 </div>
             </div>
-            <a href="#chuong-7" class="hero-scroll-indicator" title="Cuộn xuống đọc các chương">
-                <span>Khám phá các chương TẬP 2</span>
+            <a href="#chuong-7" class="hero-scroll-indicator" title="Bắt đầu đọc các chương">
+                <i data-lucide="play-circle" style="width: 16px; height: 16px;"></i>
+                <span>Bắt đầu đọc TẬP 2 (Chương 7)</span>
                 <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
             </a>
         </section>
@@ -2059,8 +2076,9 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
                     </div>
                 </div>
             </div>
-            <a href="#chuong-12" class="hero-scroll-indicator" title="Cuộn xuống đọc các chương">
-                <span>Khám phá các chương TẬP 3</span>
+            <a href="#chuong-12" class="hero-scroll-indicator" title="Bắt đầu đọc các chương">
+                <i data-lucide="play-circle" style="width: 16px; height: 16px;"></i>
+                <span>Bắt đầu đọc TẬP 3 (Chương 12)</span>
                 <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
             </a>
         </section>
@@ -2398,9 +2416,10 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
                     </table>
                 </div>
             </div>
-            <a href="#appendix-2" class="hero-scroll-indicator" title="Xem Phụ lục 2">
-                <span>Tiếp tục: Phụ lục 2 - Ma trận Vật chứng</span>
-                <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+            <a href="#appendix-2" class="hero-scroll-indicator" title="Xem tiếp Phụ lục 2">
+                <i data-lucide="file-text" style="width: 16px; height: 16px;"></i>
+                <span>Tiếp tục: Phụ lục 2 (Ma trận 6 Vật chứng)</span>
+                <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
             </a>
         </section>
 
@@ -2472,7 +2491,8 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
                     </table>
                 </div>
             </div>
-            <a href="#author-note" class="hero-scroll-indicator" title="Xem Lời bạt của Tác giả">
+            <a href="#author-note" class="hero-scroll-indicator" title="Xem tiếp Lời bạt của Tác giả">
+                <i data-lucide="pen-tool" style="width: 16px; height: 16px;"></i>
                 <span>Tiếp tục: Lời bạt của Tác giả</span>
                 <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
             </a>
@@ -2499,6 +2519,10 @@ Sáu hòn sỏi tròn đo bằng thước mộc dăng trời.</p>
                     <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal;">Hạ An – Mường Biên – Mùa thu 2026</span>
                 </p>
             </div>
+            <a href="#hero" class="hero-scroll-indicator" style="margin-top: 1.5rem;" title="Về Trang bìa tác phẩm">
+                <i data-lucide="arrow-up" style="width: 16px; height: 16px;"></i>
+                <span>Về Trang bìa tác phẩm</span>
+            </a>
         </section>
 
     <!-- BACK TO TOP BUTTON -->
