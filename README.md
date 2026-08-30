@@ -9,7 +9,7 @@
 ## 🌐 1. Đọc Trực Tuyến & Tải Sách
 
 * 🚀 **Trang Đọc Sách Trực Tuyến (GitHub Pages):** [https://tung-ht.github.io/sau-hon-soi/](https://tung-ht.github.io/sau-hon-soi/)
-* 📄 **Tập Tin PDF Sách In Tiêu Chuẩn (131 trang):** [`Sau_Hon_Soi_Master_Edition.pdf`](Sau_Hon_Soi_Master_Edition.pdf)
+* 📄 **Tập Tin PDF Sách In Tiêu Chuẩn (113 trang):** [`Sau_Hon_Soi_Master_Edition.pdf`](Sau_Hon_Soi_Master_Edition.pdf)
 * 💻 **Tập Tin Nguồn HTML Dàn Trang:** [`Sau_Hon_Soi_Book.html`](Sau_Hon_Soi_Book.html)
 
 ---

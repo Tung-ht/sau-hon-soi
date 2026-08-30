@@ -1,0 +1,51 @@
+{
+  "chapter": 8,
+  "revision": "r014",
+  "summary": "Phát hiện N5 (Bùi Văn Vượng) bị siết cổ chết tại bến suối Lũng Nậm (22:00-22:45). Đạt tiếp cận lúc 23:15, được 4 nguồn dữ liệu minh oan giết người. Đạt khai về Biên bản phụ 2005 bị Thao loại bỏ.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Năm 22:00-22:45",
+      "event": "Bùi Văn Vượng (N5) bị sát hại tại bến suối Lũng Nậm."
+    },
+    {
+      "time": "Rạng sáng thứ Sáu 03:00",
+      "event": "Tổ án tiếp cận hiện trường bến suối; lấy lời khai Đạt và đối soát alibi."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C12",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Minh oan trực tiếp cho Đạt qua 4 nguồn alibi."
+    },
+    {
+      "id": "C13",
+      "description": "N5 bị siết cổ tại bến suối Lũng Nậm trước khi Đạt đến.",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "N5 bỏ mạng theo câu thứ 5."
+    },
+    {
+      "id": "C14",
+      "description": "Đạt khai ra Biên bản phụ ghi nhận mùi keo mới và vết máy cưa 2005 bị Thao loại bỏ.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Manh mối biên bản bị giấu."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án"
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra"
+    }
+  ]
+}

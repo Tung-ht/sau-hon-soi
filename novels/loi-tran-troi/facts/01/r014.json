@@ -1,0 +1,83 @@
+{
+  "chapter": 1,
+  "revision": "r014",
+  "summary": "Tối thứ Hai, Nam vào ca trực gặp Thao và Đạt tại trụ sở Hạ An. Rạng sáng thứ Ba, phát hiện Tư (N4) bị siết cổ chết tại tiệm vá săm số 42 phố Đò Cũ. Thu thập vi sợi len dệt chàm dính xỉ kim loại và túi thổ cẩm 4 bộ xương cá.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Hai 18:30",
+      "event": "Nam ăn cháo sườn mẹ ở chợ Đò Cũ, vào ca trực gặp Thao và Đạt."
+    },
+    {
+      "time": "Tối thứ Hai 21:00-23:00",
+      "event": "Nguyễn Văn Tư (N4) bị siết cổ chết tại tiệm vá săm số 42 phố Đò Cũ."
+    },
+    {
+      "time": "Sáng thứ Ba 05:30",
+      "event": "Phát hiện thi thể N4; tổ khám nghiệm thu giữ vi sợi len dệt chàm dính xỉ kim loại và túi thổ cẩm 4 bộ xương cá."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C01",
+      "description": "Thao xuất hiện với tư cách Chủ tịch Quỹ An sinh, bóng gió về hồ sơ chìm dưới đáy bùn Lam Châu.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "P gieo nghi vấn hồ sơ chìm."
+    },
+    {
+      "id": "C02",
+      "description": "Đạt khựng lại và xoay bật lửa Zippo khi nghe Thao nhắc về các vụ án cũ.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "M biểu hiện tâm lý bất an."
+    },
+    {
+      "id": "C03",
+      "description": "Thu thập vi sợi len dệt chàm dính xỉ kim loại dưới móng tay N4.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Manh mối vật liệu."
+    },
+    {
+      "id": "C04",
+      "description": "Túi thổ cẩm chứa 4 bộ xương cá khô trong hộp đồ nghề của N4.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Signature MO."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Mẹ Nam",
+      "brief_role": "Mẹ ĐTV Nam"
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án"
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Cựu Phó Chỉ huy"
+    },
+    {
+      "name": "Nguyễn Văn Tư",
+      "brief_role": "Nạn nhân N4"
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra"
+    },
+    {
+      "name": "Bác sĩ Phong",
+      "brief_role": "Giám định viên pháp y"
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "Cán bộ KTHS"
+    }
+  ]
+}

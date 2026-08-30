@@ -1,0 +1,40 @@
+{
+  "chapter": 9,
+  "revision": "r013",
+  "summary": "Nam vào thung lũng bản Dền; Cụ Mộc trao lại chiếc thước mộc gỗ lim di vật của ông Cửu. Cán bộ trực ban Hạ An gửi dữ liệu mã hóa xác định chân dung Trần Văn Sinh cựu lính trinh sát.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Sáu 08:30",
+      "event": "Cụ Mộc trao thước mộc lim cho Nam; xác định danh tính Trần Văn Sinh."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C05",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Xác định Ba thợ cắt chính là Trần Văn Sinh."
+    },
+    {
+      "id": "C15",
+      "description": "Cụ Mộc bản Dền trao lại chiếc thước mộc gỗ lim di vật của ông Cửu cho Nam.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Di vật đạo đức."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Cụ Mộc",
+      "brief_role": "Nghệ nhân mộc bản Dền"
+    },
+    {
+      "name": "Trần Văn Huy",
+      "brief_role": "Trinh sát điều tra"
+    }
+  ]
+}

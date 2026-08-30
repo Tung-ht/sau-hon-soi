@@ -1,0 +1,55 @@
+{
+  "chapter": 10,
+  "revision": "r013",
+  "summary": "Mở niêm phong 6 chiếc rương tang vật: phát hiện đáy giả gỗ ép mã LOT-2005-WD-06, keo Poly-resin và dấu cưa đĩa công nghiệp. Thu hồi Biên bản phụ bị Thao loại bỏ.",
+  "timeline_events": [
+    {
+      "time": "Chiều thứ Sáu 14:00",
+      "event": "Hội đồng liên ngành mở niêm phong 6 chiếc rương tại kho lưu trữ Mường Biên."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C08",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Khớp mã LOT-2005-WD-06 với sổ vật tư xưởng mộc."
+    },
+    {
+      "id": "C10",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Khóa chặt cơ chế gài bẫy đáy rương giả."
+    },
+    {
+      "id": "C14",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Thu hồi Biên bản phụ có bút tích Thao."
+    },
+    {
+      "id": "C16",
+      "description": "Mở niêm phong 6 chiếc rương chứng minh đáy giả gỗ ép và keo nhiệt.",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Bằng chứng khoa học mở toang vụ án."
+    },
+    {
+      "id": "C17",
+      "description": "Bản nháp lệnh điều động xe 2005 có bút tích gạch bỏ ý kiến phản đối của Đạt.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Bút tích chỉ đạo của P."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "Cán bộ KTHS"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "chapter": 14,
+  "revision": "r010",
+  "summary": "Nam công bố Quyết định Tái thẩm phục hồi danh dự cho ông Cửu và bó chứng cứ 4 nguồn. Sinh buông dao vì danh dự cha. Bắt giữ Thao theo Lệnh khẩn cấp.",
+  "timeline_events": [
+    {
+      "time": "Chủ nhật 05:20-05:40",
+      "event": "Nam đối thoại với Sinh; Sinh buông vũ khí trước thước mộc; bắt giữ Thao."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C15",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Thước mộc lim giúp hóa giải hận thù."
+    },
+    {
+      "id": "C21",
+      "description": "Nam đưa ra Quyết định Tái thẩm và Lệnh giữ người khẩn cấp, Sinh buông dao vì danh dự cha.",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Tháo gỡ nút thắt cao trào."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Trần Văn Sinh",
+      "brief_role": "Kẻ báo thù (K)"
+    },
+    {
+      "name": "Hoàng Đình Thao",
+      "brief_role": "Kẻ chủ mưu (P)"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "chapter": 3,
+  "revision": "r018",
+  "summary": "Tổ án khám xét sà-lan cứu hộ của Lê Văn Long tại bãi xác tàu Cửa Lác. Thu giữ que hàn chịu mặn HK-7018M, mỏ cắt hơi thải loại và cuốn sổ nhật ký vật tư xưởng mộc 2005.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Ba 20:00",
+      "event": "Khám xét sà-lan Lê Văn Long tại bãi xác tàu Cửa Lác."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C07",
+      "description": "Que hàn chịu mặn HK-7018M và mỏ cắt thải loại thu trên sà-lan Lê Văn Long.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Khớp vi xỉ N4."
+    },
+    {
+      "id": "C08",
+      "description": "Cuốn sổ vật tư xưởng mộc 2005 ghi nhận 6 tấm gỗ ép và keo nhiệt xuất xưởng.",
+      "action": "plant",
+      "status": "planted",
+      "notes": "Gieo vật tư 2005."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Lê Văn Long",
+      "brief_role": "Chủ xưởng cứu hộ sà-lan"
+    },
+    {
+      "name": "Kỹ thuật viên Quang",
+      "brief_role": "Cán bộ KTHS"
+    }
+  ]
+}

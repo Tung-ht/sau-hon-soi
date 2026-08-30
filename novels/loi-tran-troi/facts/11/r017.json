@@ -1,0 +1,48 @@
+{
+  "chapter": 11,
+  "revision": "r017",
+  "summary": "Lấy lời khai Đặng Tiến Đạt trước kiểm sát viên độc lập; Đạt giao nộp USB nhật ký và bản nháp lệnh xe. Viện Công tố ban hành Lệnh cấm xuất cảnh và Lệnh triệu tập đối với Hoàng Đình Thao.",
+  "timeline_events": [
+    {
+      "time": "Tối thứ Sáu 20:30",
+      "event": "Đạt tự thú giao nộp tài liệu gốc; Viện Công tố cấm xuất cảnh Thao."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C02",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Đạt giải tỏa mặc cảm tội lỗi bằng việc giao nộp tài liệu."
+    },
+    {
+      "id": "C06",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Bóc tách dòng tiền 3 lớp của Thao."
+    },
+    {
+      "id": "C17",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Bản nháp lệnh xe được giao nộp chính thức."
+    },
+    {
+      "id": "C18",
+      "description": "Đạt giao nộp USB nhật ký và thừa nhận hành vi che giấu tội phạm 19 năm.",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Tự thú phục vụ tái thẩm."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án"
+    }
+  ]
+}

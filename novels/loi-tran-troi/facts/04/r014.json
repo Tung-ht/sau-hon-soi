@@ -1,0 +1,34 @@
+{
+  "chapter": 4,
+  "revision": "r014",
+  "summary": "Đấu trí ngoại phạm của Lê Văn Long: log máy tời phụ và camera bến phà chứng minh Long lặn chui cứu tàu. Long khai Ba thợ cắt xin mỏ cắt thải loại và que hàn trước khi chuyển về chòi trạm bơm.",
+  "timeline_events": [
+    {
+      "time": "Sáng thứ Tư 09:00",
+      "event": "Lấy lời khai Lê Văn Long; minh oan giết người cho Long qua alibi máy phụ."
+    }
+  ],
+  "foreshadow_updates": [
+    {
+      "id": "C09",
+      "description": "Alibi máy tời phụ sà-lan chứng minh Lê Văn Long lặn chui cứu tàu, không giết N4.",
+      "action": "resolve",
+      "status": "resolved",
+      "notes": "Minh oan cho L."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Đặng Hoàng Nam",
+      "brief_role": "ĐTV chính"
+    },
+    {
+      "name": "Lê Văn Long",
+      "brief_role": "Chủ xưởng sà-lan"
+    },
+    {
+      "name": "Đặng Tiến Đạt",
+      "brief_role": "Chỉ huy Đội Trọng án"
+    }
+  ]
+}
